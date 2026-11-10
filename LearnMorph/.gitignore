@@ -64,3 +64,7 @@ outputs/
 
 # Remotion staging scratch
 remotion/.tpl_v4_stage/
+
+# old v1 planning notes: kept locally, not published
+legacy/ROADMAP.md
+legacy/briefs/

@@ -12,7 +12,7 @@
   `learnmorph_video.py true`.
 
 Reconstructed from file timestamps, `runs/*/log.md` (times only, no dates; dates below come from file
-modification times) and `legacy/ROADMAP.md`. Anything uncertain is marked.
+modification times) and the v1 planning notes (not published). Anything uncertain is marked.
 
 ## 2026-11-08 to 2026-11-10 (v2 video stage)
 - Several render and QA passes for demo1 (3b1b and lecturer) logged in `runs/demo1/log.md`, then demo2
@@ -33,7 +33,7 @@ modification times) and `legacy/ROADMAP.md`. Anything uncertain is marked.
 - `legacy/briefs/archive/2026-07-05_phase_2.md` and `legacy/docs/LOOP_PLAYBOOK.md` dated this day (v1 phase 2 work). Uncertain what shipped.
 
 ## 2026-06-28
-- `legacy/ROADMAP.md` (4-phase plan), `legacy/docs/RESEARCH_2026-06.md` and `PLAN_REVISION_2026-06.md` written.
+- A 4-phase plan (not published), `legacy/docs/RESEARCH_2026-06.md` and `PLAN_REVISION_2026-06.md` written.
 
 ## 2026-06-07
-- v1 Phase 1 (validation prototype) marked DONE in `legacy/ROADMAP.md`: `today_demo.mp4` produced (352 KB).
+- v1 Phase 1 (validation prototype) marked done in the v1 plan: `today_demo.mp4` produced (352 KB).
