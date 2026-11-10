@@ -61,3 +61,6 @@ outputs/
 *.onnx
 *.bin
 *.tgz
+
+# Remotion staging scratch
+remotion/.tpl_v4_stage/

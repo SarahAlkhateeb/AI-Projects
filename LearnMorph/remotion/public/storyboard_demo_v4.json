@@ -1,0 +1,32 @@
+{
+  "teacher": "demo_v4",
+  "fps": 30,
+  "theme": {
+    "palette": { "bg": "#000000", "fg": "#FFFFFF", "accent": "#58C4DD", "accent2": "#F5D547", "muted": "#9AA5B1" },
+    "font": { "family": "'Noto Sans', 'DejaVu Sans', Helvetica, Arial, sans-serif" },
+    "motion": { "speed": "medium", "easing": "ease", "camera": "drift", "shot_seconds": [3, 8] }
+  },
+  "beats": [
+    {
+      "i": 1, "beat": "visual", "audio": "audio/silence.mp3", "duration_s": 36,
+      "narration": "Demo of the v4 chart templates (silent).",
+      "shots": [
+        { "start_s": 0, "end_s": 5, "template": "bar_chart",
+          "props": { "title": "Crime Is Skyrocketing!", "bars": [{ "label": "Last year", "value": 98.3 }, { "label": "This year", "value": 98.5 }], "y_min": 98.2, "y_max": 98.6, "unit": "%", "highlight_index": 1 } },
+        { "start_s": 5, "end_s": 10, "template": "bar_chart",
+          "props": { "title": "Crime Is Skyrocketing!", "bars": [{ "label": "Last year", "value": 98.3 }, { "label": "This year", "value": 98.5 }], "y_min": 0, "y_max": 120, "unit": "%", "highlight_index": 1 } },
+        { "start_s": 10, "end_s": 16, "template": "line_chart",
+          "props": { "title": "Cherry-picked window", "x_labels": ["2018", "2019", "2020", "2021", "2022", "2023"], "points": [{ "x": 0, "y": 40 }, { "x": 1, "y": 52 }, { "x": 2, "y": 31 }, { "x": 3, "y": 29 }, { "x": 4, "y": 44 }, { "x": 5, "y": 58 }], "y_min": 0, "highlight_range": [2, 5] } },
+        { "start_s": 16, "end_s": 21, "template": "line_chart",
+          "props": { "title": "Cherry-picked window", "x_labels": ["2018", "2019", "2020", "2021", "2022", "2023"], "points": [{ "x": 0, "y": 40 }, { "x": 1, "y": 52 }, { "x": 2, "y": 31 }, { "x": 3, "y": 29 }, { "x": 4, "y": 44 }, { "x": 5, "y": 58 }], "y_min": 20, "highlight_range": [0, 2] } },
+        { "start_s": 21, "end_s": 29, "template": "compare_split",
+          "props": {
+            "left": { "title": "Misleading", "chart": { "bars": [{ "label": "A", "value": 98.3 }, { "label": "B", "value": 98.5 }], "y_min": 98.2, "y_max": 98.6, "unit": "%" } },
+            "right": "{\"title\": \"Honest\", \"chart\": \"{\\\"bars\\\": [{\\\"label\\\": \\\"A\\\", \\\"value\\\": 98.3}, {\\\"label\\\": \\\"B\\\", \\\"value\\\": 98.5}], \\\"y_min\\\": 0, \\\"y_max\\\": 120, \\\"unit\\\": \\\"%\\\"}\"}",
+            "verdict": "Same data. Different axis." } },
+        { "start_s": 29, "end_s": 36, "template": "stat_reveal",
+          "props": { "value": 0.2, "unit": "%", "from": 0, "caption": "The real change between the two bars" } }
+      ]
+    }
+  ]
+}

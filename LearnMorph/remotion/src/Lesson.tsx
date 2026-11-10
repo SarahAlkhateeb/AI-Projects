@@ -1,7 +1,7 @@
 import React from "react";
 import { AbsoluteFill, Audio, Sequence, staticFile, useVideoConfig, useCurrentFrame, interpolate } from "remotion";
 import type { Storyboard, Shot, Theme } from "./types";
-import { TEMPLATES } from "./templates";
+import { TEMPLATES, coerceProps } from "./templates";
 
 /** Slow camera drift so no frame is ever static. Seeded per shot so each moves differently. */
 const Camera = ({ theme, seed, frames, children }: { theme: Theme; seed: number; frames: number; children: React.ReactNode }) => {
@@ -16,12 +16,15 @@ const Camera = ({ theme, seed, frames, children }: { theme: Theme; seed: number;
   return <AbsoluteFill style={{ transform: `translate(${x}px, ${y}px) scale(${scale})`, transformOrigin: "50% 50%" }}>{children}</AbsoluteFill>;
 };
 
-/** Cross-fade in/out at shot edges. */
-const Fade = ({ frames, children }: { frames: number; children: React.ReactNode }) => {
+/** Cross-fade in/out at shot edges. Scene shots that continue into/from a neighbour skip the edge they share. */
+const Fade = ({ frames, fadeIn = true, fadeOut = true, children }: { frames: number; fadeIn?: boolean; fadeOut?: boolean; children: React.ReactNode }) => {
   const f = useCurrentFrame(); const fade = 9;
-  const o = interpolate(f, [0, fade, Math.max(fade + 1, frames - fade), frames], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const o = interpolate(f, [0, fade, Math.max(fade + 1, frames - fade), frames], [fadeIn ? 0 : 1, 1, 1, fadeOut ? 0 : 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return <AbsoluteFill style={{ opacity: o }}>{children}</AbsoluteFill>;
 };
+
+/** Templates that persist across consecutive shots: later shots get `continued` + the previous shot's props. */
+const SCENE_TEMPLATES = ["plot", "diagram_nodes", "number_line", "bar_chart", "line_chart", "compare_split"];
 
 export const Lesson = ({ sb }: { sb: Storyboard | null }) => {
   const { fps } = useVideoConfig();
@@ -44,11 +47,15 @@ export const Lesson = ({ sb }: { sb: Storyboard | null }) => {
               const sf = Math.round(s.start_s * fps); const sd = Math.max(1, Math.round((s.end_s - s.start_s) * fps));
               const Tpl = TEMPLATES[s.template] ?? TEMPLATES.callout; seed++;
               const prev = k > 0 ? b.shots[k - 1] : null;
-              const continues = !!prev && prev.template === s.template && ["plot", "diagram_nodes", "number_line"].includes(s.template);
+              const nxt = k + 1 < b.shots.length ? b.shots[k + 1] : null;
+              const continues = !!prev && prev.template === s.template && SCENE_TEMPLATES.includes(s.template);
+              const continuesNext = !!nxt && nxt.template === s.template && SCENE_TEMPLATES.includes(s.template);
               return (
                 <Sequence key={k} from={sf} durationInFrames={sd} name={`${s.template}`}>
                   <Camera theme={sb.theme} seed={seed} frames={sd}>
-                    {continues ? <Tpl {...s.props} theme={sb.theme} continued /> : <Fade frames={sd}><Tpl {...s.props} theme={sb.theme} /></Fade>}
+                    <Fade frames={sd} fadeIn={!continues} fadeOut={!continuesNext}>
+                      {continues ? <Tpl {...coerceProps(s.props)} prevProps={prev!.props} theme={sb.theme} continued /> : <Tpl {...coerceProps(s.props)} theme={sb.theme} />}
+                    </Fade>
                   </Camera>
                 </Sequence>
               );

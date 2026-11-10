@@ -44,6 +44,14 @@ TEMPLATES = {
     "misconception":   {"claim": "str", "correction": "str"},
     "diagram_nodes":   {"nodes": "[{id,label}]", "edges": "[{from,to,label?}]", "highlight": "id?"},
     "whiteboard_write": {"lines": "[str] 1-3"},
+    "bar_chart":       {"bars": "[{label,value}] ≤ 24", "y_min": "number? truncates the axis (draws an axis break when > 0)",
+                        "y_max": "number?", "highlight_index": "int?", "title": "str?", "unit": "str? e.g. '%'",
+                        "show_values": "bool? default true"},
+    "line_chart":      {"points": "[{x,y}] ≤ 400 (or series: [{name,points}] ≤ 6)", "x_labels": "[str]? ≤ 12",
+                        "y_min": "number?", "y_max": "number?", "highlight_range": "[x0,x1]? shaded window", "title": "str?"},
+    "compare_split":   {"left": "{title, chart}", "right": "{title, chart}",
+                        "verdict": "str? ≤ 8 words; chart = bar_chart or line_chart props object"},
+    "stat_reveal":     {"value": "number", "unit": "str?", "caption": "str ≤ 12 words", "from": "number? count-up start, default 0"},
 }
 
 
@@ -239,6 +247,8 @@ def stage_storyboard(run, teacher, beats, visual, max_rounds):
                 "nothing added or dropped. Each shot SHOWS what its phrase says: a number spoken appears on screen; "
                 "'slide to x=2' moves the dot. Consecutive shots using a scene template (plot, diagram_nodes, "
                 "number_line) share one scene — same fn/x_range/nodes, change only point_at/highlight/bars_at. "
+                "bar_chart, line_chart and compare_split are scene templates too (keep the same bars/points, change only "
+                "y_min/highlight): use them for any bar or data-series chart, never plot; stat_reveal for one big number. "
                 "'draw': true only on the first shot of a plot scene. On-screen text ≤ 12 words, never a transcript. "
                 "Rhythm: open on a scene, cut to an equation/callout for the key line, return to the scene." + fbtxt,
                 f"Templates and prop schemas:\n{json.dumps(TEMPLATES)}\nVisual profile:\n{json.dumps(visual)}\n"
