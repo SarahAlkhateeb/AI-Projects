@@ -12,6 +12,7 @@ if [ "$STAGE" = render ]; then
   ( cd remotion
     npm install --no-audit --no-fund
     npx remotion browser ensure || true )
+  uv run learnmorph_video.py --run demo2 --teacher 3b1b --render-only
   uv run learnmorph_video.py --run demo2 --teacher lecturer --render-only
   echo; echo "VIDEOS:"; ls -la runs/demo1/video/*.mp4
 fi

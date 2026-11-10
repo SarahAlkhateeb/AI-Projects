@@ -1,536 +1,584 @@
 {
   "stills": [
     [
-      153.3,
-      7.866667
+      10.033333,
+      12.066667
     ],
     [
-      185.033333,
-      6.9
+      106.766667,
+      7.9
     ],
     [
-      257.033333,
-      7.166667
+      130.0,
+      5.133333
+    ],
+    [
+      146.4,
+      4.1
+    ],
+    [
+      196.733333,
+      8.266667
+    ],
+    [
+      258.833333,
+      7.466667
+    ],
+    [
+      351.0,
+      10.466667
+    ],
+    [
+      367.766667,
+      4.033333
     ]
   ],
   "shots": [
     {
       "beat": 1,
       "shot": 0,
-      "avg": 3.0,
-      "min": 3,
-      "fix": "Fix the overlapping x-axis labels (x=1 and x=2 are struck through by tick marks). Use y_range [97,99] or a truncated axis so the bars show a visible 'skyrocketing' rise. Alternatively, make the bars height-differentiated. The title 'THE PUZZLE' sits top-left rather than centered. Move the label off the line so it doesn't look crowded."
+      "avg": 4.666666666666667,
+      "min": 4,
+      "fix": "Optionally set the title in light cyan, as the layout specifies, rather than white."
     },
     {
       "beat": 1,
       "shot": 1,
-      "avg": 3.0,
+      "avg": 4.333333333333333,
       "min": 3,
-      "fix": "Fix the overlap between the 'height 98.50' label and the '98.50' bar label. Move the point label up or to the left. Label the bars 'Last year' and 'This year' directly instead of using the line label. Extend the bars to the bottom axis so they read as bars. Move the title to the centre top, as the layout specifies."
+      "fix": "Title is white rather than centred light cyan, and the frame has no chapter icons. Set the title color to the cyan accent (#5CD0E6). Otherwise the truncated y-axis (98.2\u201398.6) with the squiggle break exaggerates a tiny change, matching the 'skyrocketing' puzzle. Leave as is."
     },
     {
       "beat": 1,
       "shot": 2,
       "avg": 4.0,
       "min": 3,
-      "fix": "Keep the callout, but move it off-centre or top-left to match the layout. Use a pure black background instead of the dark vignette. Add a small visual such as an axis with labels or braces beside the text."
+      "fix": "Frame is clean and the callout matches the spoken 'do something most people skip', with 'skip' highlighted. To fit the style better, move the text to the top as a centred cyan title or off-centre, and add a small supporting visual so the canvas is less empty."
     },
     {
       "beat": 1,
       "shot": 3,
-      "avg": 3.0,
-      "min": 2,
-      "fix": "The phrase says to look at the numbers on the side, but the frame shows a sloped line with two bar labels and no real side numbers. Add a y-axis with visible tick labels (98.2 to 98.6) and highlight them in yellow, or label the bars more prominently. Move the title 'THE PUZZLE' to the centered top in light cyan, and shrink or reposition the label so it doesn't sit at the end of the line."
+      "avg": 3.6666666666666665,
+      "min": 3,
+      "fix": "Draw the line vertically so it reads as a y-axis, and make the title cyan and centered at the top instead of small and left-aligned. Raise the contrast and size of the 'End: 98.6' label so it matches the 'Start: 98.2' label."
     },
     {
       "beat": 1,
       "shot": 4,
-      "avg": 3.6666666666666665,
+      "avg": 4.0,
       "min": 3,
-      "fix": "Move the 'y-axis: 98.2 to 98.6' label off the line's end so they don't overlap. Add tick labels 98.2 and 98.6 on the y-axis. Make the y-axis line more visible. Consider adding a white frame and keeping the 'THE PUZZLE' title centered at top in light cyan to match the style."
+      "fix": "Make the title cyan, as the style requires, and consider a brace or label marking the 0.2 difference between the bars. A y_min of 98.2 with a truncated axis is deliberate for the misleading-chart point, but the break marker could be clearer."
     },
     {
       "beat": 1,
       "shot": 5,
-      "avg": 3.6666666666666665,
+      "avg": 4.0,
       "min": 3,
-      "fix": "Add a brace or label between the two bars marking the 0.2 gap. Keep the label inside the frame with more margin, since it crowds the top-right line end. Put the title centred at the top instead of the small top-left tag, and rescale the y_range so the bars read clearly."
+      "fix": "Shift the callout off-centre or top-left, add a brace or label under +0.2 (e.g. 'tiny change'), and move the 'THE PUZZLE' title to the centred top position in light cyan."
     },
     {
       "beat": 1,
       "shot": 6,
-      "avg": 3.3333333333333335,
+      "avg": 3.6666666666666665,
       "min": 3,
-      "fix": "Fix the overlapping x-axis labels (x=1 and x=2 are struck through by the tick labels); move the bar labels or tick numbers so they do not collide. Make the 'gap = 0.2' label cyan or yellow and anchor it near the bars with a brace. Shrink the y-axis range so the 0.2 gap is more visible, or add a zoom bracket to emphasize that the gap is tiny."
+      "fix": "Bar heights are drawn at about 80 even though the values are 98.3 and 98.5, which is a rendering mismatch. Make the bar heights match the labeled values on the 0-100 axis. Style: make the title light cyan instead of white, and consider adding a small cyan chapter icon row or a brace to match the palette."
     },
     {
       "beat": 1,
       "shot": 7,
-      "avg": 3.6666666666666665,
+      "avg": 4.333333333333333,
       "min": 3,
-      "fix": "Raise the contrast of the bars, which are dim teal and fade into the black. Move the 'bars unchanged' label away from the top-right corner. Center the title at the top in light cyan per the style. Extend the y_range so the bars show their full height, or add a baseline."
-    },
-    {
-      "beat": 1,
-      "shot": 8,
-      "avg": 4.0,
-      "min": 3,
-      "fix": "Add a small visual (e.g., a bar chart with a movable baseline) off-centre or top-left, and make the callout title sit centred at the top in light cyan, per the style notes."
+      "fix": "Text is centred and the frame is otherwise bare. To fit the style, move it off-centre or top-left and add a small visual, such as an axis with a brace or label marking where it starts. The cyan emphasis on 'axis begins' already works."
     },
     {
       "beat": 2,
       "shot": 0,
-      "avg": 3.3333333333333335,
+      "avg": 4.0,
       "min": 3,
-      "fix": "Widen the bars (they render as thin slivers) and fix the overlapping 'x=1' and 'x=2' tick labels, which look struck through. Move the 'Axis from 0' label away from the line, and shrink or remove the 'WORKED EXAMPLE' tag to match the centred-title style."
+      "fix": "Drop or reword the 'Crime is skyrocketing' title, e.g. 'Same data, honest axis', since it contradicts the honest redraw. Also move the value labels slightly lower so they don't crowd the title, and set the title in light cyan to match the style."
     },
     {
       "beat": 2,
       "shot": 1,
       "avg": 4.0,
-      "min": 4,
-      "fix": "Raise the y_range lower bound so the bars are fully visible, and make the 98.30 and 98.50 labels slightly larger. Optionally move the 'Which is taller?' label closer to the bars."
+      "min": 3,
+      "fix": "Make the title cyan, as the style guide specifies, and give it more space from the value labels. The title now sits tight against the 98.3% and 98.5% labels. Otherwise the frame works: the near-equal bars on a 0-100 axis show the phrase well."
     },
     {
       "beat": 2,
       "shot": 2,
-      "avg": 4.333333333333333,
-      "min": 3,
-      "fix": "Layout drifts from the style notes: the equation is centred on the canvas rather than off-centre or top-left, and there is no brace or label attached to it. Consider adding a brace labelled 'base \u2248 98' under the right-hand side, and shifting the equation up and left."
+      "avg": 3.6666666666666665,
+      "min": 2,
+      "fix": "Match the palette: use a pure black background (#000000) instead of the dark teal vignette, and move the equation off-centre or top-left. Add labels or braces for '0.2 points' and 'base \u2248 98', and consider a centred light-cyan title at the top."
     },
     {
       "beat": 2,
       "shot": 3,
-      "avg": 3.3333333333333335,
+      "avg": 3.6666666666666665,
       "min": 3,
-      "fix": "Make the bar look like a physical object by giving it more width and a visible 3D or solid shape. Rescale y_range so the bar extends further above the baseline instead of running off the bottom edge. Move the label closer to the bar, and add a brace and clearer axis ticks to match the style."
+      "fix": "Make the bar read as a physical object, e.g. add a 3D or shaded look, or a brace labeling its height. Set the title color to light cyan (#5CD0E6) per the palette. Show the value labels only when they are discussed so the chart does not look like a plain data comparison."
     },
     {
       "beat": 2,
       "shot": 4,
       "avg": 4.333333333333333,
       "min": 3,
-      "fix": "Add a small visual, such as a bar chart with one bar drawn 3\u00d7 taller beside a 0.2% difference, placed off-centre or top-left, and move the text beside or beneath it. The current text-only layout is centred and lacks the braces and labels from the style."
+      "fix": "Left-align the visual off-centre or top-left per the layout, and use a light cyan title centred at the top instead of the 'WORKED EXAMPLE' tag. Otherwise the split comparison matches the phrase well."
     },
     {
       "beat": 2,
       "shot": 5,
       "avg": 4.0,
       "min": 3,
-      "fix": "Move the callout off-centre or top-left and attach a visual element, such as a brace or label for the 3, so it matches the style's sparse but structured layout. The text itself is fine."
+      "fix": "Title is white rather than light cyan as the style specifies. Consider recoloring it to cyan and adding a '3x' callout or bracket between the bars to reinforce the 'three times' claim."
     },
     {
       "beat": 2,
       "shot": 6,
-      "avg": 3.0,
-      "min": 2,
-      "fix": "Show the visible region clipped at 98.2: shade or highlight only the part above the floor, and add a dashed floor line at 98.2 with the 98.3 and 98.5 bars visible. Also move the 'Floor: 98.2' label next to the line, and make the cyan chapter text larger."
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Show the verdict caption 'Bottom 98.2 is hidden' beneath the charts to fill the empty lower third. Enlarge the grey value labels on the right chart and raise their contrast. Tint the right chart's title or break marks to match the palette."
     },
     {
       "beat": 2,
       "shot": 7,
-      "avg": 3.0,
-      "min": 2,
-      "fix": "Show the two bars at different heights so they visibly leave 0.1 and 0.3 (e.g. braces labeled 0.1 and 0.3 on each bar). Both bars currently read 98.40 and look identical, and the bars run off the bottom of the frame. Set the y_range so the bars are visible and use distinct bar values, or add brace labels."
+      "avg": 4.666666666666667,
+      "min": 4,
+      "fix": "Title is white rather than light cyan, and the 'WORKED EXAMPLE' tag is extra. Otherwise the chart matches the phrase. Optionally push the chart off-centre or top-left to follow the layout notes."
     },
     {
       "beat": 2,
       "shot": 8,
-      "avg": 4.333333333333333,
-      "min": 4,
-      "fix": "Remove the faint ghosted '0.3' artifact behind the equation (mid-morph residue). Optionally make the highlighted '3' in the denominator match the numerator's emphasis, or highlight the left-hand '3' (the ratio) instead."
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Shift the equation off-centre or top-left per the layout. Add a label or brace such as 'leftovers' under 0.3/0.1 and 'real quantities' under 98.5/98.3. The accent highlight should sit on 3 in the middle, not on the denominator's trailing 3."
     },
     {
       "beat": 2,
       "shot": 9,
       "avg": 3.6666666666666665,
       "min": 3,
-      "fix": "Move the 'WORKED EXAMPLE' header to a centred cyan title at the top, as the layout specifies. Make the '98' axis label larger and add a tick at 98.2. Pull the caption in closer to the visual. Reduce the empty lower half, for example by narrowing y_range to center the line."
+      "fix": "Make the axis labels and the 'WORKED EXAMPLE' tag larger. Shorten the title or move it to the top-left to match the off-centre layout. The yellow break marks sit on the bars and crowd the 98.2 label, so give them more space."
     },
     {
       "beat": 2,
       "shot": 10,
-      "avg": 3.3333333333333335,
+      "avg": 4.0,
       "min": 3,
-      "fix": "Show the bars_at lines at 98.3 and 98.5 as horizontal bars so the tight floor is visible, and add y-axis tick labels. Titles should be centred at the top in cyan; move the label to match that, or put it beside the curve with a brace."
+      "fix": "Make the title light cyan (#5CD0E6) as the palette specifies instead of white. Enlarge the y-axis tick labels and the 'WORKED EXAMPLE' tag. Make the 'Last year' bar a more saturated cyan so it contrasts better with the black background."
     },
     {
       "beat": 2,
       "shot": 11,
+      "avg": 3.3333333333333335,
+      "min": 3,
+      "fix": "Fix the right panel: the grey 98.3% and 98.5% value labels are low contrast and the 98.3% label is hidden behind the axis break, so raise value_label_color contrast and add offset so the label sits above the short bar. The titles render yellow and cyan instead of the specified #A5F3FC, so make them a consistent light cyan. The verdict 'Closer cut, bigger gap' is not visible, so show it beneath the charts. Also leave less cramped space between the bars and axis labels."
+    },
+    {
+      "beat": 2,
+      "shot": 12,
+      "avg": 2.6666666666666665,
+      "min": 2,
+      "fix": "The frame caught the equation_morph mid-transition, so the from and to equations overlap into an unreadable mess (0.2/98.3 \u2248 0.2% over 0.3/0.1 = 3\u00d7). Hold the morph on the final state, or lengthen the transition so the old equation fully fades before the new one appears. Offset the equation to the top-left to match the layout, and keep the highlighted '3\u00d7' in cyan."
+    },
+    {
+      "beat": 2,
+      "shot": 13,
       "avg": 4.333333333333333,
       "min": 3,
-      "fix": "Layout drifts from the style spec: the equation is centered rather than off-centre or top-left, and the cyan title is missing. To fix, move the equation block off-centre or top-left and add a light cyan centered title at the top. The text is legible and matches the phrase well, and the cyan highlight on 'skyrocket' is good."
+      "fix": "Mostly good. To fit the style better, add more empty space and move the visual off-centre. Make the titles light cyan and centred (the 'Honest' title is currently yellow). Shrink the verdict caption or move it beside the chart. Optionally add a brace or label marking the 0.2 difference on the truncated chart."
     },
     {
       "beat": 3,
       "shot": 0,
-      "avg": 3.0,
-      "min": 3,
-      "fix": "Move the label so it no longer sits on the horizontal line and give it a clear gap above the plot. Fix the x-axis tick labels, which are struck through by the bars (x=1, x=2, x=3); place them below the axis line. Thin the bars. Shorten the label to something like 'Constant: 98.3' so the visual better matches 'catch this without redoing arithmetic'."
+      "avg": 4.333333333333333,
+      "min": 4,
+      "fix": "Optionally make the title cyan and centred, as the style specifies, and add a callout to the axis break, such as an arrow to the zigzag, to show the catch without arithmetic."
     },
     {
       "beat": 3,
       "shot": 1,
-      "avg": 2.3333333333333335,
+      "avg": 3.0,
       "min": 2,
-      "fix": "Cut bars_at to one or two points (or remove the value labels) so the 98.30 labels and x tick labels stop overlapping. Add a ruler-like element, such as tick marks along the y-axis or a plain rectangle laid against it, so the frame reads as a wooden ruler. Change the fn so it isn't a flat step at 98.3 that ends abruptly, and shorten the 'height 98.30' label so it doesn't collide with the axis."
+      "fix": "Set orientation to vertical so the ruler runs along the y-axis. The frame shows a horizontal number line. Add the 'y-axis ruler' brace label, which is missing. Place the visual off-centre or top-left, and use ruler-style ticks, with minor ticks between the labeled values."
     },
     {
       "beat": 3,
       "shot": 2,
-      "avg": 3.0,
+      "avg": 3.6666666666666665,
       "min": 3,
-      "fix": "Move the 'height 98.30' label away from the '98.30' bar label above x=2 so they stop overlapping. Place the caption so it doesn't collide with the horizontal line. Mark the zero baseline explicitly (e.g. highlight y=0 with a yellow marker) so 'where zero sits' is shown, not just implied. Tidy the overlapping x-axis tick labels (x\u2081 with 1, x\u2082 with 2, x\u2083 with 3)."
+      "fix": "Add a bar whose length matches the 50 mark so 'length means value' is visible. Enlarge the small labels. Move the line off-center or top-left, and center the title in cyan at the top, to match the layout."
     },
     {
       "beat": 3,
       "shot": 3,
-      "avg": 2.6666666666666665,
-      "min": 2,
-      "fix": "The bars_at values of 98.3 don't render as bars, so the chart shows only a line and a dot. Make the bars visible (e.g. bars_at [60, 80, 98.3], or check that the bar rendering works) and put the 'Ruler end at 0' label near the baseline (y=0) rather than at the top, where it overlaps the cyan line. Also move point_at to the base of the bars so the ruler end visibly sits at the bar base. The title is also not centred at the top in cyan as the style specifies."
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Highlight the zero baseline, for example with an accent2 yellow line or a 'ruler' bracket at 0, so 'the ruler's end sits at the base' is visible. Make the title cyan and centered, and add a short caption beneath, to match the style notes."
     },
     {
       "beat": 3,
       "shot": 4,
-      "avg": 3.3333333333333335,
+      "avg": 3.6666666666666665,
       "min": 3,
-      "fix": "Make the sawn-off chunk obvious: draw the bars' bottoms cut off by the rising baseline, e.g. raise the y_range lower bound to about 98.2 so the bottom edge visibly passes the foot of each bar. Show the removed part in a different color such as yellow. Move the title to the top centre and add a frame or brace."
+      "fix": "Make the title light cyan as the palette specifies (it is currently white). Add a clearer cue that the baseline has slid up, such as an arrow or a faded ghost of the old baseline at 0. Enlarge the tiny y-axis labels."
     },
     {
       "beat": 3,
       "shot": 5,
-      "avg": 3.0,
-      "min": 2,
-      "fix": "Thin out the x-axis tick labels (show only every 10th or 20th) so they stop overlapping into an unreadable smear. Move the 'Cut: 0 to 98' label so it doesn't collide with the 98.30 value. Consider a brace over the bar to show the chunk size, and keep the title centred at the top in cyan."
+      "avg": 3.6666666666666665,
+      "min": 3,
+      "fix": "Make the title cyan and centred as the palette specifies. Add a brace or label marking the 0.2 chunk between the bars. Enlarge the small axis tick labels. Move the highlight to the 'This year' bar so the chunk stands out."
     },
     {
       "beat": 3,
       "shot": 6,
-      "avg": 4.0,
-      "min": 3,
-      "fix": "Move the equation off-centre or top-left and add a bar visual with a brace and label (98 of 98.3) so it matches the layout; the equation text already matches the phrase."
+      "avg": 3.0,
+      "min": 2,
+      "fix": "Position the points proportionally to their values (a linear scale from 0 to 98.3). The cut-edge dot at 98.2 should sit almost on top of the bar-top dot at 98.3, not at the midpoint, so the line reads as 'nearly all of it'. Stagger the two labels, one above and one below, so they don't collide. Optionally shade the 0 to 98.2 segment in yellow."
     },
     {
       "beat": 3,
       "shot": 7,
-      "avg": 2.6666666666666665,
-      "min": 2,
-      "fix": "Fix the label overlap with the top line and bar, and the garbled x-axis tick labels (x1/x2/x3 overlapping with strikethrough). The bars span 0\u201398.3 on a 0\u2013100 axis, so they don't show a sliver versus the full bar. Set y_range to [90, 100], or draw a truncated-axis bar beside a faded full 0\u2013100 bar, so the cropped view is evident. Move the label to the left or below the top line."
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Set the left title_color to the cyan accent (#5CD0E6) to match the right title, which is currently cyan while the left renders yellow. Fill the empty bottom third by adding the verdict caption 'Nearly all of the bar is cut', and raise the tick label contrast."
     },
     {
       "beat": 3,
       "shot": 8,
-      "avg": 3.3333333333333335,
+      "avg": 4.0,
       "min": 3,
-      "fix": "Move the 'A different chart' label away from the line and the 90.00 bar label, since it overlaps the line near the top right. Also fix the x-axis tick labels (x1, x2, x3), which are struck through by the tick marks. Keep the label clear of the plot by placing it beside or beneath the chart."
+      "fix": "Style: the title is white rather than light cyan, and the 'PICTURE IT' tag is not in the palette. Set the title color to cyan and drop the tag. The chart suits 'nothing special' since it is plain, but the nearly identical bars could be emphasized, for example by setting y_min to 90 or by labeling the small difference."
     },
     {
       "beat": 3,
       "shot": 9,
-      "avg": 3.3333333333333335,
+      "avg": 3.6666666666666665,
       "min": 3,
-      "fix": "Show the ruler explicitly (e.g. a draggable horizontal line or marker) and a bar with a visibly cut-off or truncated axis, so 'slide the ruler' and 'measure what was cut' are visible. Set y_range to [0, 100] or add a truncation marker. Also fix the bar_at values so 3 bars appear, since the first bar at x=1 is off-screen at the bottom."
+      "fix": "Add a ruler or measuring bracket on the axis break, labeled with the cut range (0\u201390), so 'measure what was cut' is shown. Make the title light cyan and centred, as the palette specifies."
     },
     {
       "beat": 3,
       "shot": 10,
-      "avg": 4.333333333333333,
-      "min": 3,
-      "fix": "Style note: the palette calls for titles centred at the top in light cyan. Move the title to the top and color it #5CD0E6, or add a small visual such as a ruler graphic off-centre. Otherwise the card matches the phrase."
+      "avg": 4.666666666666667,
+      "min": 4,
+      "fix": "empty"
     },
     {
       "beat": 3,
       "shot": 11,
-      "avg": 4.0,
+      "avg": 4.333333333333333,
       "min": 3,
-      "fix": "Move the equation off-centre or top-left and add a bar visual with a brace labelled 'length', so it matches the layout and the phrase's 'bar' reference."
+      "fix": "Move the equation off-centre or top-left, as the layout calls for, and add a bar visual with braces or labels beside it. Make the '?' accent cyan more visible, or highlight it in yellow (accent2)."
     },
     {
       "beat": 4,
       "shot": 0,
       "avg": 3.6666666666666665,
       "min": 3,
-      "fix": "Show the full callout text, 'Not just crime. Not just bars.' The frame shows only 'Not just crime.', so the 'Not just bars.' line is missing or hasn't appeared yet. Add it as a second line or stagger it in. Also move the callout off-centre or top-left, as the layout calls for, instead of dead centre."
+      "fix": "Make the axis labels and the 'THE RULE' tag larger, and move the chart off-centre with a caption beside it, as the layout describes. Also keep the title in light cyan rather than white."
     },
     {
       "beat": 4,
       "shot": 1,
-      "avg": 3.3333333333333335,
+      "avg": 4.333333333333333,
       "min": 3,
-      "fix": "Add faint axis tick labels (dates and dollar values) so the two-week zoom is readable. Move the label to the top-left, near the visual, and raise the grid contrast slightly. The chart is the right idea, but the sparse grid and missing axis values hide the 'zoomed in' point. The label is also off-centre from the curve, away from where the style guide places it. Optionally highlight the final climb in accent2 yellow."
+      "fix": "Style notes: the chart is centred and fills the frame, whereas the layout calls for an off-centre or top-left visual with generous empty space and a caption beside or beneath it. Shrink the chart and shift it to the upper left, then add a short caption such as 'Zoomed in: two weeks'. The title is white, but the layout specifies light cyan, so change it to the accent color."
     },
     {
       "beat": 4,
       "shot": 2,
-      "avg": 3.6666666666666665,
+      "avg": 3.3333333333333335,
       "min": 3,
-      "fix": "Zoom the y_range out (e.g. 80-120) so the sideways drift looks flatter. Remove or shorten the late upward kick (the 0.5*Math.max(0, x-514) term) so the line stays sideways to the end. Move the 'Ten years' label away from the top-right corner or place it beneath the plot, and left-align the plot with empty space around it to match the style."
+      "fix": "Make the 'sharp climb' read as an illusion: the y-axis is truncated (99.8 to 101), so the gain of under 1 looks dramatic. Add a label such as 'only +0.9%' or an axis-break note. Move the chart off-centre or top-left with a caption beside it, and drop the olive highlight fill for a cleaner black canvas."
     },
     {
       "beat": 4,
       "shot": 3,
-      "avg": 3.3333333333333335,
-      "min": 3,
-      "fix": "Show the sliver more clearly: shrink the y_range so the kink at x=514 is visible without a steep jump, and label the 'two weeks' span on the x-axis. Raise the grid contrast or drop it, and add x-axis ticks. Make the caption cyan and move it to the top-left, as in the style notes."
-    },
-    {
-      "beat": 4,
-      "shot": 4,
-      "avg": 3.3333333333333335,
-      "min": 3,
-      "fix": "Make the visual read as a 3D pie: add a pie outline or a second, back slice so the front slice looks closer. Change the label to something like 'front slice (closer)'. Move the x=\u00b10.5 labels off the axis line, and add the thin white frame and the centered cyan title the layout calls for."
-    },
-    {
-      "beat": 4,
-      "shot": 5,
-      "avg": 3.0,
-      "min": 3,
-      "fix": "Move the x=0.9 and -0.22 labels apart, since they overlap the curve and each other, and the x=0 label is garbled. Draw visible bars at x=0 and x=0.9 so the tall front slice and short back slice can be compared. Put the label in the accent color or move it to the top-left, so it fits the layout."
-    },
-    {
-      "beat": 4,
-      "shot": 6,
-      "avg": 4.0,
-      "min": 3,
-      "fix": "Brighten the struck-through claim so it reads better against the black. Move the text off-centre or top-left, with a centred cyan title at the top, to match the layout. Optionally add a small visual (e.g. two bars or circles of different area) beside the text."
-    },
-    {
-      "beat": 4,
-      "shot": 7,
-      "avg": 4.333333333333333,
-      "min": 3,
-      "fix": "Center the diagram's title per the style guide, or shift the tree off-centre as the layout suggests. The '3D pie' node looks dimmer than the others, so make all non-highlighted nodes the same cyan."
-    },
-    {
-      "beat": 4,
-      "shot": 8,
-      "avg": 4.0,
-      "min": 3,
-      "fix": "Text is clear and matches the phrase's key question, with 'proportional' highlighted. The layout is a plain centered callout, so it misses the style's off-centre visual with braces and labels. Consider adding a small visual (e.g. a shape with a brace labeled r or dx) beside the text, and adding 'always ask' to the callout wording."
-    },
-    {
-      "beat": 4,
-      "shot": 9,
-      "avg": 4.333333333333333,
-      "min": 3,
-      "fix": "Style mismatch: the palette asks for a pure black canvas, and this frame has a dark gradient background. Use solid #000000. Titles should be centred at the top in light cyan, but 'THE RULE' is a small top-left label. The bullets could be left-aligned with the off-centre layout, and the last item could use the yellow accent."
-    },
-    {
-      "beat": 5,
-      "shot": 0,
-      "avg": 4.333333333333333,
-      "min": 3,
-      "fix": "Title card matches the phrase 'a caveat' well and is easy to read. To fit the palette/layout better, make the title light cyan and place it at the top instead of centred. Optionally add a visual element such as a thin frame or chapter icon."
-    },
-    {
-      "beat": 5,
-      "shot": 1,
-      "avg": 4.0,
-      "min": 3,
-      "fix": "Raise the contrast of the struck-through claim, since the gray text on near-black is dim. Use a pure black background without the vignette gradient. Move the visual off-centre or top-left, per the layout. Consider a larger cyan correction and a short caption beneath it."
-    },
-    {
-      "beat": 5,
-      "shot": 2,
-      "avg": 4.0,
-      "min": 3,
-      "fix": "Center the 'ONE SUBTLETY' title at the top in light cyan, and move the label beside the curve so it sits closer to the visual rather than floating in the top-right."
-    },
-    {
-      "beat": 5,
-      "shot": 3,
-      "avg": 4.0,
-      "min": 3,
-      "fix": "Text matches the phrase well and is clearly readable. To fit the style better, move the callout off-centre or top-left and add a visual, such as a thermometer or number line with a brace labelling 0\u00b0F, instead of leaving a lone line of text on empty black."
-    },
-    {
-      "beat": 5,
-      "shot": 4,
-      "avg": 3.6666666666666665,
-      "min": 3,
-      "fix": "Title \"ONE SUBTLETY\" is top-left rather than centred at the top. Move it to centre. A faint dashed line at y=100 marking the fever threshold would show \"a single degree\" more clearly. The point label \"height 99.59\" is not relevant to fever, so change point_at or remove it."
-    },
-    {
-      "beat": 5,
-      "shot": 5,
-      "avg": 4.0,
-      "min": 3,
-      "fix": "Y-axis tick labels are small and low-contrast, so enlarge them. Move the title to the top center in light cyan as the style specifies, rather than the small top-left tag. Optionally add a faint comparison showing the zoomed-in version."
-    },
-    {
-      "beat": 5,
-      "shot": 6,
-      "avg": 3.3333333333333335,
-      "min": 3,
-      "fix": "Show the bars rising from the cut baseline at 98.2 with visibly different heights, and add a ruler or ticks to show the distortion. Currently both bars are labeled 98.40 and hang down from a horizontal line, so they look odd and confusing. Make the axis orientation clear, with the baseline at the bottom and bars growing upward. Keep the caption off the plot area and shift the visual toward the top-left."
-    },
-    {
-      "beat": 5,
-      "shot": 7,
-      "avg": 4.0,
+      "avg": 4.666666666666667,
       "min": 4,
-      "fix": "Increase the axis tick label size and the 'height'/'slope' label size slightly. Shift the 'height 99.79' label so it doesn't crowd the tangent line. The 'Trend persists' label could also be cyan to match the title style."
+      "fix": "Optional: the final point jumps up to 100.8 right at the end, which slightly undercuts 'sideways'. Change the last point to y=100 or 99.9. Also consider a more visible title colour (light cyan) to match the layout."
     },
     {
-      "beat": 5,
-      "shot": 8,
-      "avg": 4.0,
-      "min": 3,
-      "fix": "Add a small bar chart and line chart beside the bullets, with a zero baseline marked on each. Move the title to the centred top in light cyan, and shift the content off-centre to match the palette/layout."
-    },
-    {
-      "beat": 5,
-      "shot": 9,
-      "avg": 4.333333333333333,
-      "min": 3,
-      "fix": "Style mismatch: the title label \"ONE SUBTLETY\" sits top-left instead of centred at the top, and the equation is dead centre with nothing attached. Centre the title, or move the equation off-centre and add a brace or label."
-    },
-    {
-      "beat": 6,
-      "shot": 0,
-      "avg": 3.0,
-      "min": 2,
-      "fix": "The phrase is about testing the ruler idea on something with no axis, but the frame shows a standard plotted line with axes and tick labels. Change the label and shot to something axis-free, such as a ruler laid against an object, or drop the axes. Also fix the y-axis ticks (8335, 6668, 5001 and so on), which are awkward numbers, and the bars, which are dim. Use the yellow accent2 for the bars. Move the title to a centred cyan title at the top, per the layout."
-    },
-    {
-      "beat": 6,
-      "shot": 1,
-      "avg": 4.0,
-      "min": 3,
-      "fix": "Make the callout feel less generic: move it off-centre or top-left per the layout, and add a small supporting visual such as a toothpaste or tooth icon or a down-arrow with the 50%. The accent color should also be the specified #5CD0E6 (it looks close), and the 'WORKED EXAMPLE' label should be consistent with the cyan title style."
-    },
-    {
-      "beat": 6,
-      "shot": 2,
-      "avg": 3.0,
-      "min": 3,
-      "fix": "Fix the x-axis labels, which overlap ('x=1' and 'x=2' render as garbled 'x\u00b11' and 'x\u00b22'); use clean tick labels such as 1 and 2. Make the bars a brighter accent so 2.00 \u2192 1.00 reads clearly, and consider relabeling the y-axis as cavities per 10,000. Drop the generic 'WORKED EXAMPLE' header or center a light-cyan title at the top, per the layout."
-    },
-    {
-      "beat": 6,
-      "shot": 3,
-      "avg": 4.333333333333333,
-      "min": 3,
-      "fix": "Use a pure black background (#000000) instead of the dark teal vignette. Move the callout off-centre or top-left and add a visual, such as a brace labeled 2, so it fits the layout description."
-    },
-    {
-      "beat": 6,
+      "beat": 4,
       "shot": 4,
-      "avg": 4.333333333333333,
-      "min": 3,
-      "fix": "Shift the equation off-centre or top-left and add a brace or label under 0.01 pp, such as 'barely noticeable'. Consider using accent2 yellow for the highlight, and drop the 'WORKED EXAMPLE' tag or center a title at the top."
-    },
-    {
-      "beat": 6,
-      "shot": 5,
       "avg": 3.6666666666666665,
       "min": 3,
-      "fix": "Fix the garbled x-axis tick labels (x=1 and x=2 overlap with strikethrough-like marks). Make the bar labels larger. Move the caption to sit beside the plot rather than top-right. Align the title with the style by centering it at the top in light cyan."
+      "fix": "Shorten the last x-label to \"Now\" so it isn't truncated (\"Now (shaded\u2026\"). Make the shaded band slightly wider or brighter so the sliver reads clearly. Optionally add a label such as \"last 2 weeks\" on the band. Center the title in light cyan as the style specifies, rather than white."
     },
     {
-      "beat": 6,
+      "beat": 4,
+      "shot": 5,
+      "avg": 3.0,
+      "min": 2,
+      "fix": "Show an actual 3D-rendered pie chart (tilted, with the front slice looking larger) beside the flat pie, rather than bar charts. If bars are kept, make the 3D side's bar heights visibly differ and brighten the dim grey '50%' labels on the right. Also use the light cyan title color for the left heading, not yellow."
+    },
+    {
+      "beat": 4,
       "shot": 6,
       "avg": 4.0,
       "min": 3,
-      "fix": "Shift the equation off-centre or top-left and add a brace or label on the 20 pp part, per the layout. Optionally highlight '50%' in the second accent colour to show that it is the same value."
+      "fix": "Style: the layout and palette brief calls for a pure black canvas, a light-cyan centred title, and a visual placed off-centre with a caption beside or beneath it. This frame has a dark gradient background, a split layout with a divider, and a yellow left title. Use a pure #000000 background, and make the titles cyan and centred. Phrase: the frame shows the front slice looking bigger (68% vs 32%) but nothing about distance. Add a note such as 'closer to you' to the front slice label."
     },
     {
-      "beat": 6,
+      "beat": 4,
       "shot": 7,
-      "avg": 3.0,
-      "min": 2,
-      "fix": "Shorten or resize the node labels so '50%: 40 in 100' and '50%: 2 in 10,000' are not clipped by their circles, for example by enlarging the nodes or using smaller text. Also change the title from 'WORKED EXAMPLE' to a centered light-cyan title, and move the graph off-centre if possible."
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Style: shift the 'True value' and 'Apparent size in 3D' titles to light cyan (#5CD0E6) for consistency, and tone down the yellow. Phrase: the spoken line is about a front slice looking bigger than an equal back slice, so highlight the front slice (index 0) or the 68% vs 32% pair in the right chart."
     },
     {
-      "beat": 6,
+      "beat": 4,
       "shot": 8,
-      "avg": 3.3333333333333335,
+      "avg": 4.0,
       "min": 3,
-      "fix": "Shrink the label font or enlarge the nodes so 'Relative 50%' and '0.01 points' fit inside their circles without clipping. Add a short caption such as '50% (40 to 20 in 100)' beside the diagram. Move the cluster off-centre and add a centred cyan title to match the layout."
+      "fix": "Keep the diagram. To fit the palette better, shift the layout off-centre or top-left, add a centred light-cyan title, and make the highlighted node a cleaner yellow so the text contrasts more. Move the edge endpoints to the node borders so the lines don't cross the 'Size \u2260 value' label."
     },
     {
-      "beat": 6,
+      "beat": 4,
       "shot": 9,
-      "avg": 3.6666666666666665,
+      "avg": 4.333333333333333,
       "min": 3,
-      "fix": "Move the 'Cut-off bar again' label away from the line's end so it doesn't overlap the cyan line. Add braces or labels (e.g. dx) to the bars, and shift the plot off-centre to match the layout notes. Brighten the bar values and the 'WORKED EXAMPLE' header."
+      "fix": "Layout is centred with no braces or labels, and the near-black vignette background differs from the pure #000000 canvas. Use a flat black background and move the equation off-centre or top-left. Add a brace or label to the equation, and drop the 'THE RULE' tag, or keep it only if it matches the title style."
     },
     {
-      "beat": 6,
+      "beat": 4,
       "shot": 10,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Move the diagram off-centre or top-left as the layout describes, and add a centred light-cyan title at the top. Keep the label text clear of the edge lines, which currently cross the 'Size\u2260value' text. Optionally add a short caption beneath the diagram."
+    },
+    {
+      "beat": 4,
+      "shot": 11,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Nothing needed for the phrase. To match the style better, move the equation off-centre or top-left and add a brace or label, or add a centred cyan title at the top."
+    },
+    {
+      "beat": 4,
+      "shot": 12,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Bullets match the phrase well. To fit the style better, centre a light-cyan title at the top and move the list off-centre or top-left. Consider adding a small visual such as a labelled diagram beside the list."
+    },
+    {
+      "beat": 5,
+      "shot": 0,
+      "avg": 4.333333333333333,
+      "min": 4,
+      "fix": "Optional: add a short caveat caption, e.g. 'Truncated y-axis exaggerates the gap', to make the point more explicit. Otherwise the frame works as is."
+    },
+    {
+      "beat": 5,
+      "shot": 1,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Raise the contrast of the struck-through claim, since the gray on black is dim. Move the visual off-centre or top-left and center the 'ONE SUBTLETY' title at the top in cyan, to match the layout description."
+    },
+    {
+      "beat": 5,
+      "shot": 2,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Style: the chart is centred and fills the frame, whereas the layout calls for an off-centre or top-left visual with generous empty space. Shrink the chart and move it to the left, then add a short caption beside it. Align the title with the style notes (centred, light cyan). Chart content matches the phrase: a week of body temperature on a 97-101\u00b0F axis."
+    },
+    {
+      "beat": 5,
+      "shot": 3,
       "avg": 3.3333333333333335,
       "min": 3,
-      "fix": "Shorten or shrink the 'Denominator' label, or enlarge that node, so the text isn't clipped at the circle edge (it currently reads 'Denominato'). Move the layout off-centre or top-left to match the style."
+      "fix": "The '0\u00b0F meaningless' label is clipped at the left edge of the frame, so shift the number line right or add left padding. Also, the 0 point sits very close to 97 on the line, which hides how far 0 is from the normal range. Consider a broken axis or a more accurate scale. The header is left-aligned, while the style calls for a centred cyan title."
+    },
+    {
+      "beat": 5,
+      "shot": 4,
+      "avg": 3.6666666666666665,
+      "min": 3,
+      "fix": "Add a label or arrow on the Thu peak (e.g. '100.4\u00b0F = fever') to stress the one-degree jump. Move the title to light cyan as the style specifies, and shrink the chart toward the top-left to leave empty space."
+    },
+    {
+      "beat": 5,
+      "shot": 5,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Legibility and style are mostly fine. To better match the style, left-align the chart or place it off-centre with a caption beside it. Add a brace or label on the flat line, such as 'range: 98\u2013100'. Highlight the Thu peak in yellow (accent2). Make the axis tick labels slightly larger."
+    },
+    {
+      "beat": 5,
+      "shot": 6,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Raise the contrast of the small gray axis tick labels and the 'ONE SUBTLETY' tag. Leave more empty space and shift the visual off-centre as the style describes. Make the cut-baseline break marker more prominent."
+    },
+    {
+      "beat": 5,
+      "shot": 7,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Style: the layout calls for a visual placed off-centre or top-left with the caption beside or beneath it, and cyan titles. Change the left title from yellow to cyan, or use yellow only as a deliberate accent, and reduce the split-panel framing. Optionally enlarge the axis tick labels, which are small."
+    },
+    {
+      "beat": 5,
+      "shot": 8,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Mostly fine. To match the style, move the bullets off-centre or top-left, center the title in light cyan at the top (it is currently small and left-aligned), and use a yellow accent on 'zero'. Optionally add a small bar and line chart visual beside the bullets."
+    },
+    {
+      "beat": 5,
+      "shot": 9,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Style: the equation is dead-centre and the background is a dark vignette rather than pure black. Move the equation off-centre or top-left, use a flat #000000 background, and add a brace or label if one fits. The 'ONE SUBTLETY' tag is top-left, whereas titles are meant to be centred at the top."
+    },
+    {
+      "beat": 6,
+      "shot": 0,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Move the callout toward top-left or add a simple visual, such as a ruler with no axis. Center the text less. Use light cyan for the title, and the 'WORKED EXAMPLE' label can stay."
+    },
+    {
+      "beat": 6,
+      "shot": 1,
+      "avg": 3.6666666666666665,
+      "min": 3,
+      "fix": "The frame shows 47% while the phrase and props say 50%. This is probably a mid-animation count-up frame from 0 to 50, so let the animation finish and hold on 50. If a static frame is wanted, make it the final value, 50. To match the style more closely, move the stat off-centre or top-left and add a brace or label."
+    },
+    {
+      "beat": 6,
+      "shot": 2,
+      "avg": 4.666666666666667,
+      "min": 4,
+      "fix": "empty"
+    },
+    {
+      "beat": 6,
+      "shot": 3,
+      "avg": 4.333333333333333,
+      "min": 4,
+      "fix": "Optionally add a bracket or label on the 'Before' bar reading '50% of 2' to tie the highlighted bar to the 'of 2' phrase. The title color is white rather than light cyan, so switching it to cyan would match the palette better."
+    },
+    {
+      "beat": 6,
+      "shot": 4,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Layout and palette drift from the spec: the dark vignette gradient replaces a pure black canvas, and the equation is centred rather than placed off-centre or top-left. Use a #000000 background and move the equation off-centre. Optionally add a caption such as 'absolute change' and highlight with accent2 yellow."
+    },
+    {
+      "beat": 6,
+      "shot": 5,
+      "avg": 4.666666666666667,
+      "min": 4,
+      "fix": ""
+    },
+    {
+      "beat": 6,
+      "shot": 6,
+      "avg": 3.6666666666666665,
+      "min": 2,
+      "fix": "Frame matches the phrase well: 20 points with caption 'Same 50%...'. For style, move the stat off-centre or top-left, add a light cyan title centred at the top, and attach a brace or label to the number. Consider changing the unit to 'percentage points' so it matches the narration exactly."
+    },
+    {
+      "beat": 6,
+      "shot": 7,
+      "avg": 3.0,
+      "min": 2,
+      "fix": "Add the sublabels ('2 to 1 in 10,000', '40 to 20 in 100') under the Town A/B labels so the specific numbers from the phrase appear. Make the 0.01 pts label clearer, since the bar is invisible. Change the 'Relative' title from yellow to the light cyan (#A5F3FC) set in the props. Remove the 'WORKED EXAMPLE' tag and the bottom bar, which don't fit the pure-black style."
+    },
+    {
+      "beat": 6,
+      "shot": 8,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Optionally make the match clearer: the right chart shows two equal 50% bars with a zero baseline, which does not read as a 'disguised cut-off bar'. Change the right chart to a truncated relative-% example, such as y_min 45 with values 50 and 52, so it visibly repeats the trick. Alternatively, mark the cut-off on both charts. Also add the chapter-icon row and heading style from the palette notes."
+    },
+    {
+      "beat": 6,
+      "shot": 9,
+      "avg": 3.0,
+      "min": 2,
+      "fix": "Fix the label rendering: the text in the cyan nodes overflows the circles and the line passes through 'Hidden denominator', so it is partly unreadable. Enlarge the node circles or reduce the font size so the labels fit. Use white or dark text with enough contrast, and stop the edge from running through the label by ending it at the circle's edge. Use line breaks so 'Hidden\\nbaseline' and 'Hidden\\ndenominator' show on two lines."
     },
     {
       "beat": 7,
       "shot": 0,
-      "avg": 3.6666666666666665,
-      "min": 3,
-      "fix": "Add a visible y-axis with tick labels (98.2 at the bottom) so the truncated axis is clear. Frame the plot area so the bars' cut-off bottom edge reads as the trick. Move the label off the top-right to sit beside the plot. Make the bar labels slightly larger."
+      "avg": 4.333333333333333,
+      "min": 4,
+      "fix": "Make the y-axis labels slightly larger and brighter, and consider highlighting the truncated 98.2 baseline with a callout label so it reads clearly at a glance."
     },
     {
       "beat": 7,
       "shot": 1,
       "avg": 4.0,
       "min": 3,
-      "fix": "Make the 'Axis from 0' label smaller and move it away from the top-right corner so it doesn't crowd the line. Use the accent color for the bar labels. Add a faint 'before' ghost line to show the earlier cliff, if the template allows."
+      "fix": "Style: shrink the split panel and move it off-centre, as the layout describes. Make the axis titles light cyan instead of yellow, with yellow only for the baseline marker. Add more empty black space and optionally a brace on the 0.2 difference."
     },
     {
       "beat": 7,
       "shot": 2,
-      "avg": 3.6666666666666665,
+      "avg": 4.0,
       "min": 3,
-      "fix": "Frame is mostly legible, but the axis labels and bar value labels are small and low-contrast. The title is white, not centred in light cyan as the palette specifies. Use larger tick and label text, centre the title in cyan, and cut the 'BEHIND THE IDEA' header clutter. The y-axis ticks (1667, 3334...) are odd, so use round values."
+      "fix": "Make the toothpaste link explicit, e.g. add a small 'toothpaste ad' label or icon. To fit the palette, use a cyan title in both panels and drop the 'BEHIND THE IDEA' tag and the bottom line."
     },
     {
       "beat": 7,
       "shot": 3,
       "avg": 4.0,
       "min": 3,
-      "fix": "Style: the palette and layout call for an off-centre or top-left visual and a light cyan title centred at the top. Move the title up, set it in cyan, and add a small element such as a '3' brace or a chapter icon. Content already matches the phrase."
+      "fix": "Keep the title. To match the style notes, move the title block off-centre or top-left, or add a simple visual such as a checklist icon with three numbered items. The palette is fine, but the faint vignette and the bottom line are not part of the pure black spec."
     },
     {
       "beat": 7,
       "shot": 4,
       "avg": 4.333333333333333,
       "min": 3,
-      "fix": "Move the bullet list off-centre or top-left and use a centred light-cyan title. Add a visual element, such as a small axis sketch, to fit the style."
+      "fix": "Style: the layout is a centred bullet list, while the style calls for an off-centre or top-left visual. Move the list to the left or top-left, and consider a cyan or yellow accent on key words (axis, percent, compared). The section label is small but acceptable."
     },
     {
       "beat": 7,
       "shot": 5,
-      "avg": 3.0,
-      "min": 2,
-      "fix": "Labels overflow their circles and are clipped or overlapping the edges ('ad chart caugh', 'Percent of wh', 'pared to w'), and black text on the black canvas is hard to read. Enlarge the node circles or shrink the font so the text fits, keep the line breaks, and use a wider radius. The central 'Bad chart caught' node needs to be larger, and the layout could shift off-centre as the style suggests."
+      "avg": 3.6666666666666665,
+      "min": 3,
+      "fix": "Enlarge the callout text, since it is small for the empty canvas. Optionally add the numeral 3 or a brace to match the palette's labeled-visual style. Place it off-centre or top-left per the layout."
     },
     {
       "beat": 7,
       "shot": 6,
-      "avg": 2.6666666666666665,
-      "min": 2,
-      "fix": "Fix the top node label: 'Bent numbers' overflows the circle and is clipped to 'ent number'. Enlarge the node or shrink the font so the label fits. Add the 'part of' edge label, which isn't showing. Optionally shorten the label to 'Bent numbers' on two lines."
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Style: the layout calls for an off-centre or top-left visual with labels, but this is only centered text on a dark gradient. Consider adding a small related visual, or move the callout off-centre. The 'peek' emphasis already fits the phrase."
     },
     {
       "beat": 7,
       "shot": 7,
-      "avg": 4.0,
+      "avg": 4.333333333333333,
       "min": 3,
-      "fix": "Title and subtitle are crisp and match the phrase. To fit the style better, put the title at the top in light cyan and add a small visual (e.g. a cherry or a scatter plot) off-centre. Also consider a title that covers both topics, such as 'Still to cover', with the two items listed."
+      "fix": "Content matches the phrase well. To fit the style better, shift the bullet list off-centre or top-left, and make the title a centred light-cyan heading at the top rather than a small label. Highlight the 'Next video' item with the yellow accent."
     },
     {
       "beat": 7,
       "shot": 8,
-      "avg": 4.0,
+      "avg": 3.0,
       "min": 3,
-      "fix": "Let the write-on animation finish so the second line reads 'find one misleading chart' instead of the truncated 'char|'. To match the style, add a cyan accent to 'Exercise:' and move the title to the top, centred. The small 'BEHIND THE IDEA' label is fine."
+      "fix": "Hold the frame until the typing finishes so 'Small' and 'exercise' are fully visible. Make the handwriting larger and move it nearer the centre or top-left. Add an accent-coloured underline or a small visual to fill the empty space."
     },
     {
       "beat": 7,
       "shot": 9,
       "avg": 4.0,
       "min": 3,
-      "fix": "Optionally add a short caption such as 'Ask the 3 questions' beside the diagram. Also move the diagram off-centre or top-left, and use a centred light-cyan title at the top to match the palette and layout notes."
+      "fix": "Add a small misleading chart sketch off-centre or top-left, and shift the bullets beside or beneath it. Move the title to a centred light-cyan heading at the top, and use accent2 yellow to highlight 'axis' or a key word."
+    },
+    {
+      "beat": 7,
+      "shot": 10,
+      "avg": 3.6666666666666665,
+      "min": 3,
+      "fix": "Make the y-axis labels and the 'BEHIND THE IDEA' tag larger. Add a visible cue to the truncated axis, such as a bigger break marker or a callout, so the 'spot it' moment is clearer. Move the chart off-centre or top-left to match the layout, and make the title light cyan (#5CD0E6)."
     }
   ]
 }

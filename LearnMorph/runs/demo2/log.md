@@ -6,3 +6,19 @@
 - 22:01:34 [render:3b1b] r3 shots pass 35/74
 - 22:06:08 [render:3b1b] max rounds; video at runs/demo2/video/3b1b.mp4 with remaining issues
 - 22:06:08 done → runs/demo2/video/3b1b.mp4
+- 22:06:51 [render:3b1b] r1 rendered; still runs ≥4s: 7
+- 22:10:56 [render:3b1b] r1 shots pass 49/78
+- 22:15:21 [render:3b1b] r2 rendered; still runs ≥4s: 8
+- 22:19:03 [render:3b1b] r2 shots pass 52/78
+- 22:23:01 [render:3b1b] r3 rendered; still runs ≥4s: 8
+- 22:29:19 [render:3b1b] r3 shots pass 55/78
+- 22:31:28 [render:3b1b] max rounds; video at runs/demo2/video/3b1b.mp4 with remaining issues
+- 22:31:28 done → runs/demo2/video/3b1b.mp4
+- 22:33:04 [render:lecturer] r1 rendered; still runs ≥4s: 2
+- 22:39:32 [render:lecturer] r1 shots pass 48/70
+- 22:43:27 [render:lecturer] r2 rendered; still runs ≥4s: 4
+- 22:47:53 [render:lecturer] r2 shots pass 47/70
+- 22:51:46 [render:lecturer] r3 rendered; still runs ≥4s: 3
+- 22:54:44 [render:lecturer] r3 shots pass 51/70
+- 22:56:33 [render:lecturer] max rounds; video at runs/demo2/video/lecturer.mp4 with remaining issues
+- 22:56:33 done → runs/demo2/video/lecturer.mp4

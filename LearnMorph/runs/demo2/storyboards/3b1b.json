@@ -7,174 +7,133 @@
       "narration": "Here's a bar chart, the kind you'd glance at over breakfast. 'Crime Is Skyrocketing!' it says. Two bars: 'Last year' is tall, and 'This year' is towering. It's a little scary, right? Now I want you to do something most people skip. Look at the numbers on the side. The y-axis starts at 98.2 and ends at 98.6. The real values are 98.3 and 98.5, so the actual change is two tenths. Does that look like a disaster to you? The bars didn't move at all. Your sense of the story did, and it moved because of one quiet choice about where the axis begins.",
       "shots": [
         {
-          "phrase": "Here's a bar chart, the kind you'd glance at over breakfast. 'Crime Is Skyrocketing!' it says.",
-          "template": "plot",
+          "phrase": "Here's a bar chart, the kind you'd glance at over breakfast.",
+          "template": "bar_chart",
           "props": {
-            "fn": "98.3+0.2*(x-1)",
-            "x_range": [
-              0,
-              3
+            "bars": [
+              {
+                "label": "Last year",
+                "value": 98.3
+              },
+              {
+                "label": "This year",
+                "value": 98.5
+              }
             ],
-            "y_range": [
-              98.2,
-              98.6
-            ],
-            "label": "Crime Is Skyrocketing!",
-            "bars_at": [
-              1,
-              2
-            ],
-            "draw": true
+            "y_min": 98.2,
+            "y_max": 98.6,
+            "title": "Crime Is Skyrocketing!",
+            "show_values": false
           },
-          "why": "Open on the headline chart"
+          "why": "Open on the hook chart"
         },
         {
-          "phrase": "Two bars: 'Last year' is tall, and 'This year' is towering. It's a little scary, right?",
-          "template": "plot",
+          "phrase": "'Crime Is Skyrocketing!' it says. Two bars: 'Last year' is tall, and 'This year' is towering.",
+          "template": "bar_chart",
           "props": {
-            "fn": "98.3+0.2*(x-1)",
-            "x_range": [
-              0,
-              3
+            "bars": [
+              {
+                "label": "Last year",
+                "value": 98.3
+              },
+              {
+                "label": "This year",
+                "value": 98.5
+              }
             ],
-            "y_range": [
-              98.2,
-              98.6
-            ],
-            "label": "Last year | This year",
-            "bars_at": [
-              1,
-              2
-            ],
-            "point_at": 2
+            "y_min": 98.2,
+            "y_max": 98.6,
+            "title": "Crime Is Skyrocketing!",
+            "highlight_index": 1,
+            "show_values": false
           },
-          "why": "Same chart, tall vs towering"
+          "why": "Tall bar gets the emphasis"
         },
         {
-          "phrase": "Now I want you to do something most people skip.",
+          "phrase": "It's a little scary, right? Now I want you to do something most people skip.",
           "template": "callout",
           "props": {
-            "text": "Check the axis",
+            "text": "First, the axis",
             "emphasis": "axis"
           },
-          "why": "Key instruction as a short callout"
+          "why": "Redirect attention to the axis"
         },
         {
-          "phrase": "Look at the numbers on the side.",
-          "template": "plot",
+          "phrase": "Look at the numbers on the side. The y-axis starts at 98.2 and ends at 98.6.",
+          "template": "number_line",
           "props": {
-            "fn": "98.3+0.2*(x-1)",
-            "x_range": [
-              0,
-              3
-            ],
-            "y_range": [
+            "values": [
               98.2,
               98.6
             ],
-            "label": "98.2 and 98.6",
-            "bars_at": [
-              1,
-              2
-            ]
+            "labels": [
+              "y-axis bottom: 98.2",
+              "y-axis top: 98.6"
+            ],
+            "highlight_index": 0
           },
-          "why": "Back to chart, highlight axis ticks"
-        },
-        {
-          "phrase": "The y-axis starts at 98.2 and ends at 98.6.",
-          "template": "plot",
-          "props": {
-            "fn": "98.3+0.2*(x-1)",
-            "x_range": [
-              0,
-              3
-            ],
-            "y_range": [
-              98.2,
-              98.6
-            ],
-            "label": "start 98.2, end 98.6",
-            "bars_at": [
-              1,
-              2
-            ],
-            "point_at": 1
-          },
-          "why": "Axis floor and ceiling marked"
+          "why": "Zoom on the axis tick labels"
         },
         {
           "phrase": "The real values are 98.3 and 98.5, so the actual change is two tenths.",
-          "template": "plot",
+          "template": "bar_chart",
           "props": {
-            "fn": "98.3+0.2*(x-1)",
-            "x_range": [
-              0,
-              3
+            "bars": [
+              {
+                "label": "Last year",
+                "value": 98.3
+              },
+              {
+                "label": "This year",
+                "value": 98.5
+              }
             ],
-            "y_range": [
-              98.2,
-              98.6
-            ],
-            "label": "98.3 \u2192 98.5",
-            "bars_at": [
-              1,
-              2
-            ],
-            "point_at": 2
+            "y_min": 98.2,
+            "y_max": 98.6,
+            "title": "Crime Is Skyrocketing!",
+            "highlight_index": 1,
+            "show_values": true
           },
-          "why": "Label each bar's true value"
+          "why": "Real values appear on the bars"
         },
         {
           "phrase": "Does that look like a disaster to you?",
-          "template": "plot",
+          "template": "callout",
           "props": {
-            "fn": "98.3+0.2*(x-1)",
-            "x_range": [
-              0,
-              3
-            ],
-            "y_range": [
-              98.2,
-              98.6
-            ],
-            "label": "gap = 0.2",
-            "bars_at": [
-              1,
-              2
-            ],
-            "point_at": 2
+            "text": "98.3 \u2192 98.5 = +0.2",
+            "emphasis": "+0.2"
           },
-          "why": "Ghost the small 0.2 gap"
+          "why": "Tiny change, stated numerically"
         },
         {
           "phrase": "The bars didn't move at all.",
-          "template": "plot",
+          "template": "bar_chart",
           "props": {
-            "fn": "98.3+0.2*(x-1)",
-            "x_range": [
-              0,
-              3
+            "bars": [
+              {
+                "label": "Last year",
+                "value": 98.3
+              },
+              {
+                "label": "This year",
+                "value": 98.5
+              }
             ],
-            "y_range": [
-              98.2,
-              98.6
-            ],
-            "label": "same bars, 0.2 apart",
-            "bars_at": [
-              1,
-              2
-            ]
+            "y_min": 98.2,
+            "y_max": 98.6,
+            "title": "Crime Is Skyrocketing!",
+            "show_values": true
           },
-          "why": "Values unchanged, gap stays tiny"
+          "why": "Same truncated chart, values shown"
         },
         {
           "phrase": "Your sense of the story did, and it moved because of one quiet choice about where the axis begins.",
           "template": "callout",
           "props": {
-            "text": "Where does the axis begin?",
-            "emphasis": "axis"
+            "text": "One quiet choice: where the axis begins",
+            "emphasis": "axis begins"
           },
-          "why": "Name the hidden choice"
+          "why": "Name the culprit"
         }
       ]
     },
@@ -185,198 +144,362 @@
       "shots": [
         {
           "phrase": "Redraw it honestly: 98.3 and 98.5, axis starting at 0.",
-          "template": "plot",
+          "template": "bar_chart",
           "props": {
-            "fn": "98.4",
-            "x_range": [
-              0,
-              3
+            "bars": [
+              {
+                "label": "Last year",
+                "value": 98.3
+              },
+              {
+                "label": "This year",
+                "value": 98.5
+              }
             ],
-            "y_range": [
-              0,
-              110
-            ],
-            "bars_at": [
-              98.3,
-              98.5
-            ],
-            "label": "Axis from 0",
-            "draw": true
+            "y_min": 0,
+            "y_max": 100,
+            "title": "Crime is skyrocketing",
+            "unit": "%",
+            "show_values": true
           },
-          "why": "Honest chart opens the scene"
+          "why": "Hook chart redrawn from zero"
         },
         {
           "phrase": "The two bars stand nearly side by side, and you'd have to squint to see which is taller.",
-          "template": "plot",
+          "template": "bar_chart",
           "props": {
-            "fn": "98.4",
-            "x_range": [
-              0,
-              3
+            "bars": [
+              {
+                "label": "Last year",
+                "value": 98.3
+              },
+              {
+                "label": "This year",
+                "value": 98.5
+              }
             ],
-            "y_range": [
-              0,
-              110
-            ],
-            "bars_at": [
-              98.3,
-              98.5
-            ],
-            "label": "Which is taller?"
+            "y_min": 0,
+            "y_max": 100,
+            "highlight_index": 1,
+            "title": "Crime is skyrocketing",
+            "unit": "%",
+            "show_values": true
           },
-          "why": "Same bars, nearly indistinguishable"
+          "why": "Same chart, near-identical bars"
         },
         {
           "phrase": "The difference is 0.2 points on a base of roughly 98.",
           "template": "equation",
           "props": {
-            "tex": "98.5 - 98.3 = 0.2 \\quad \\text{on a base of} \\; \\approx 98",
-            "highlight": "0.2"
+            "tex": "\\frac{0.2}{98.3}\\approx 0.2\\%",
+            "highlight": "0.2\\%"
           },
-          "why": "Key numbers as equation"
+          "why": "Key number: tiny relative change"
         },
         {
           "phrase": "Maybe you start by imagining the bar as a physical object:",
-          "template": "plot",
+          "template": "bar_chart",
           "props": {
-            "fn": "98.4",
-            "x_range": [
-              0,
-              3
+            "bars": [
+              {
+                "label": "Last year",
+                "value": 98.3
+              },
+              {
+                "label": "This year",
+                "value": 98.5
+              }
             ],
-            "y_range": [
-              98.2,
-              98.6
-            ],
-            "bars_at": [
-              98.3,
-              98.5
-            ],
-            "label": "Cut-off bars"
+            "y_min": 0,
+            "y_max": 100,
+            "highlight_index": 1,
+            "title": "Bar height = how much stuff",
+            "unit": "%",
+            "show_values": true
           },
-          "why": "Bring back truncated chart to compare"
+          "why": "Full-height bars read as solid objects"
         },
         {
           "phrase": "the chart is saying one bar is three times taller, but the value is only 0.2% larger.",
-          "template": "misconception",
+          "template": "compare_split",
           "props": {
-            "claim": "Chart: one bar is 3\u00d7 taller",
-            "correction": "Value: only 0.2% larger"
+            "left": {
+              "title": "Chart says: 3\u00d7 taller",
+              "chart": {
+                "bars": [
+                  {
+                    "label": "Last year",
+                    "value": 98.3
+                  },
+                  {
+                    "label": "This year",
+                    "value": 98.5
+                  }
+                ],
+                "y_min": 98.2,
+                "y_max": 98.6,
+                "unit": "%"
+              }
+            },
+            "right": {
+              "title": "Value is: 0.2% larger",
+              "chart": {
+                "bars": [
+                  {
+                    "label": "Last year",
+                    "value": 98.3
+                  },
+                  {
+                    "label": "This year",
+                    "value": 98.5
+                  }
+                ],
+                "y_min": 0,
+                "y_max": 100,
+                "unit": "%"
+              }
+            },
+            "verdict": "Looks 3\u00d7, really 1.002\u00d7"
           },
-          "why": "Visual claim vs true value"
+          "why": "Hook chart beside the real picture"
         },
         {
           "phrase": "So how did the first chart manage three times?",
-          "template": "callout",
+          "template": "bar_chart",
           "props": {
-            "text": "How did it get 3\u00d7?",
-            "emphasis": "3\u00d7"
+            "bars": [
+              {
+                "label": "Last year",
+                "value": 98.3
+              },
+              {
+                "label": "This year",
+                "value": 98.5
+              }
+            ],
+            "y_min": 98.2,
+            "y_max": 98.6,
+            "title": "Crime is skyrocketing",
+            "unit": "%",
+            "show_values": true
           },
-          "why": "Pose the question"
+          "why": "Return to the truncated hook chart"
         },
         {
           "phrase": "Well, it only drew the part above 98.2.",
-          "template": "plot",
+          "template": "compare_split",
           "props": {
-            "fn": "98.4",
-            "x_range": [
-              0,
-              3
-            ],
-            "y_range": [
-              98.2,
-              98.6
-            ],
-            "bars_at": [
-              98.3,
-              98.5
-            ],
-            "label": "Floor: 98.2"
+            "left": {
+              "title": "Full bars, from 0",
+              "chart": {
+                "bars": [
+                  {
+                    "label": "Last year",
+                    "value": 98.3
+                  },
+                  {
+                    "label": "This year",
+                    "value": 98.5
+                  }
+                ],
+                "y_min": 0,
+                "y_max": 100,
+                "unit": "%"
+              }
+            },
+            "right": {
+              "title": "Drawn: only above 98.2",
+              "chart": {
+                "bars": [
+                  {
+                    "label": "Last year",
+                    "value": 98.3
+                  },
+                  {
+                    "label": "This year",
+                    "value": 98.5
+                  }
+                ],
+                "y_min": 98.2,
+                "y_max": 98.6,
+                "unit": "%"
+              }
+            },
+            "verdict": "Bottom 98.2 is hidden"
           },
-          "why": "Show the floor that was cut"
+          "why": "Show the hidden 0\u201398.2 portion"
         },
         {
           "phrase": "That leaves 0.1 for one bar and 0.3 for the other.",
-          "template": "plot",
+          "template": "bar_chart",
           "props": {
-            "fn": "98.4",
-            "x_range": [
-              0,
-              3
+            "bars": [
+              {
+                "label": "Last year",
+                "value": 0.1
+              },
+              {
+                "label": "This year",
+                "value": 0.3
+              }
             ],
-            "y_range": [
-              98.2,
-              98.6
-            ],
-            "bars_at": [
-              98.3,
-              98.5
-            ],
-            "label": "Leftovers: 0.1 and 0.3"
+            "y_min": 0,
+            "y_max": 0.4,
+            "title": "What's left above 98.2",
+            "show_values": true
           },
-          "why": "Both visible slivers named"
+          "why": "Leftover heights as bars"
         },
         {
           "phrase": "Three to one, but that's a ratio of leftovers, not of the real quantities.",
-          "template": "equation_morph",
+          "template": "equation",
           "props": {
-            "from_tex": "\\frac{0.3}{0.1} = 3",
-            "to_tex": "\\frac{98.5}{98.3} \\approx 1.002",
+            "tex": "\\frac{0.3}{0.1}=3\\;\\neq\\;\\frac{98.5}{98.3}",
             "highlight": "3"
           },
-          "why": "Leftover ratio morphs to real ratio"
+          "why": "Leftover ratio vs real ratio"
         },
         {
           "phrase": "And there's nothing special about 98.2.",
-          "template": "plot",
+          "template": "bar_chart",
           "props": {
-            "fn": "98.4",
-            "x_range": [
-              0,
-              3
+            "bars": [
+              {
+                "label": "Last year",
+                "value": 98.3
+              },
+              {
+                "label": "This year",
+                "value": 98.5
+              }
             ],
-            "y_range": [
-              97.8,
-              98.6
-            ],
-            "bars_at": [
-              98.3,
-              98.5
-            ],
-            "label": "Floor: 97.8"
+            "y_min": 98.0,
+            "y_max": 98.6,
+            "title": "Cut at 98.0 instead",
+            "unit": "%",
+            "show_values": true
           },
-          "why": "Floor slides; ratio changes"
+          "why": "Different cutoff, same trick"
         },
         {
-          "phrase": "Any starting point near your data will exaggerate a small change, and the closer you cut, the louder it gets.",
-          "template": "plot",
+          "phrase": "Any starting point near your data will exaggerate a small change,",
+          "template": "bar_chart",
           "props": {
-            "fn": "98.4",
-            "x_range": [
-              0,
-              3
+            "bars": [
+              {
+                "label": "Last year",
+                "value": 98.3
+              },
+              {
+                "label": "This year",
+                "value": 98.5
+              }
             ],
-            "y_range": [
-              98.28,
-              98.52
-            ],
-            "bars_at": [
-              98.3,
-              98.5
-            ],
-            "label": "Tighter floor"
+            "y_min": 98.2,
+            "y_max": 98.6,
+            "title": "Cut at 98.2",
+            "unit": "%",
+            "show_values": true
           },
-          "why": "Tighter range looks louder"
+          "why": "Closer cut makes gap bigger"
         },
         {
-          "phrase": "This is the whole trick. Keep the numbers, shrink the base, and a two-tenths wobble looks like a skyrocket.",
+          "phrase": "and the closer you cut, the louder it gets.",
+          "template": "compare_split",
+          "props": {
+            "left": {
+              "title": "Cut at 98.25",
+              "chart": {
+                "bars": [
+                  {
+                    "label": "Last year",
+                    "value": 98.3
+                  },
+                  {
+                    "label": "This year",
+                    "value": 98.5
+                  }
+                ],
+                "y_min": 98.25,
+                "y_max": 98.52,
+                "unit": "%"
+              }
+            },
+            "right": {
+              "title": "Cut at 98.28",
+              "chart": {
+                "bars": [
+                  {
+                    "label": "Last year",
+                    "value": 98.3
+                  },
+                  {
+                    "label": "This year",
+                    "value": 98.5
+                  }
+                ],
+                "y_min": 98.28,
+                "y_max": 98.52,
+                "unit": "%"
+              }
+            },
+            "verdict": "Closer cut, bigger gap"
+          },
+          "why": "Progression of baselines, rising exaggeration"
+        },
+        {
+          "phrase": "This is the whole trick. Keep the numbers, shrink the base,",
           "template": "equation_morph",
           "props": {
-            "from_tex": "0.2 \\; \\text{wobble}",
-            "to_tex": "\\text{skyrocket}",
-            "highlight": "skyrocket"
+            "from_tex": "\\frac{0.2}{98.3}\\approx 0.2\\%",
+            "to_tex": "\\frac{0.3}{0.1}=3\\times",
+            "highlight": "3\\times"
           },
-          "why": "Payoff: wobble becomes skyrocket"
+          "why": "Base shrinks, ratio explodes"
+        },
+        {
+          "phrase": "and a two-tenths wobble looks like a skyrocket.",
+          "template": "compare_split",
+          "props": {
+            "left": {
+              "title": "Honest",
+              "chart": {
+                "bars": [
+                  {
+                    "label": "Last year",
+                    "value": 98.3
+                  },
+                  {
+                    "label": "This year",
+                    "value": 98.5
+                  }
+                ],
+                "y_min": 0,
+                "y_max": 100,
+                "unit": "%"
+              }
+            },
+            "right": {
+              "title": "Truncated",
+              "chart": {
+                "bars": [
+                  {
+                    "label": "Last year",
+                    "value": 98.3
+                  },
+                  {
+                    "label": "This year",
+                    "value": 98.5
+                  }
+                ],
+                "y_min": 98.2,
+                "y_max": 98.6,
+                "unit": "%"
+              }
+            },
+            "verdict": "Same numbers, different base"
+          },
+          "why": "Wobble beside skyrocket"
         }
       ]
     },
@@ -387,220 +510,244 @@
       "shots": [
         {
           "phrase": "Here's a way to catch this without redoing any arithmetic.",
-          "template": "plot",
+          "template": "bar_chart",
           "props": {
-            "fn": "98.3",
-            "x_range": [
-              0,
-              4
+            "bars": [
+              {
+                "label": "Last year",
+                "value": 98.3
+              },
+              {
+                "label": "This year",
+                "value": 98.5
+              }
             ],
-            "y_range": [
-              0,
-              110
-            ],
-            "bars_at": [
-              98.3,
-              98.3,
-              98.3
-            ],
-            "label": "Three bars",
-            "draw": true
+            "y_min": 98.2,
+            "y_max": 98.6,
+            "title": "Crime rate",
+            "show_values": true
           },
-          "why": "Open on the chart we'll test"
+          "why": "Reopen on the hook chart"
         },
         {
           "phrase": "Picture a wooden ruler laid against the y-axis.",
-          "template": "plot",
+          "template": "number_line",
           "props": {
-            "fn": "98.3",
-            "x_range": [
+            "values": [
               0,
-              4
+              25,
+              50,
+              75,
+              100
             ],
-            "y_range": [
-              0,
-              110
-            ],
-            "bars_at": [
-              98.3,
-              98.3,
-              98.3
-            ],
-            "label": "Ruler on y-axis",
-            "point_at": 0
+            "labels": [
+              "0",
+              "25",
+              "50",
+              "75",
+              "100"
+            ]
           },
-          "why": "Marker at x=0 stands in for the ruler"
+          "why": "The ruler drawn as a scale"
         },
         {
           "phrase": "Mark where zero sits, and let the bar's length mean its value.",
-          "template": "plot",
+          "template": "number_line",
           "props": {
-            "fn": "98.3",
-            "x_range": [
+            "values": [
               0,
-              4
+              25,
+              50,
+              75,
+              100
             ],
-            "y_range": [
-              0,
-              110
+            "labels": [
+              "zero",
+              "25",
+              "50",
+              "75",
+              "100"
             ],
-            "bars_at": [
-              98.3,
-              98.3,
-              98.3
-            ],
-            "label": "length = value",
-            "point_at": 0
+            "highlight_index": 0
           },
-          "why": "Annotate the rule on the chart itself"
+          "why": "Zero marked on the ruler"
         },
         {
           "phrase": "On the honest chart, the ruler's end sits right at the base of the bars, and nothing is hidden.",
-          "template": "plot",
+          "template": "bar_chart",
           "props": {
-            "fn": "98.3",
-            "x_range": [
-              0,
-              4
+            "bars": [
+              {
+                "label": "Last year",
+                "value": 98.3
+              },
+              {
+                "label": "This year",
+                "value": 98.5
+              }
             ],
-            "y_range": [
-              0,
-              110
-            ],
-            "bars_at": [
-              98.3,
-              98.3,
-              98.3
-            ],
-            "label": "Zero at base",
-            "point_at": 0
+            "y_min": 0,
+            "y_max": 100,
+            "title": "Crime rate: ruler starts at zero",
+            "show_values": true
           },
-          "why": "Ruler end meets bar feet"
+          "why": "Full bars, zero baseline"
         },
         {
           "phrase": "Now slide it up. The bottom edge climbs past the foot of each bar, and a chunk is sawed off.",
-          "template": "plot",
+          "template": "bar_chart",
           "props": {
-            "fn": "98.3",
-            "x_range": [
-              0,
-              4
+            "bars": [
+              {
+                "label": "Last year",
+                "value": 98.3
+              },
+              {
+                "label": "This year",
+                "value": 98.5
+              }
             ],
-            "y_range": [
-              98,
-              98.6
-            ],
-            "bars_at": [
-              98.3,
-              98.3,
-              98.3
-            ],
-            "label": "Chunk sawed off"
+            "y_min": 50,
+            "y_max": 100,
+            "title": "Ruler slides up: bottom cut off",
+            "show_values": true
           },
-          "why": "y_range animates: the ruler slides up"
+          "why": "Baseline climbing, bars shrinking"
         },
         {
           "phrase": "How big a chunk? Well, the ruler shows you:",
-          "template": "plot",
+          "template": "bar_chart",
           "props": {
-            "fn": "98.3",
-            "x_range": [
-              0,
-              4
+            "bars": [
+              {
+                "label": "Last year",
+                "value": 98.3
+              },
+              {
+                "label": "This year",
+                "value": 98.5
+              }
             ],
-            "y_range": [
-              0,
-              110
-            ],
-            "bars_at": [
-              98.3,
-              98.3,
-              98.3
-            ],
-            "label": "Cut: 0 to 98"
+            "y_min": 98.2,
+            "y_max": 98.6,
+            "highlight_index": 0,
+            "title": "Ruler edge now at 98.2",
+            "show_values": true
           },
-          "why": "Zoom back out to see what was cut"
+          "why": "Ruler edge reaches the hook chart's axis"
         },
         {
           "phrase": "here it's about 98 units of a roughly 98.3-unit bar, nearly all of it.",
-          "template": "equation",
+          "template": "number_line",
           "props": {
-            "tex": "\\text{cut} \\approx 98 \\text{ of } 98.3",
-            "highlight": "98"
+            "values": [
+              0,
+              98.2,
+              98.3
+            ],
+            "labels": [
+              "zero",
+              "cut edge 98.2",
+              "bar top 98.3"
+            ],
+            "highlight_index": 1
           },
-          "why": "Key numbers get their own beat"
+          "why": "Cut portion spans zero to 98.2"
         },
         {
           "phrase": "The bar you see is a sliver of the bar that exists.",
-          "template": "plot",
+          "template": "compare_split",
           "props": {
-            "fn": "98.3",
-            "x_range": [
-              0,
-              4
-            ],
-            "y_range": [
-              90,
-              100
-            ],
-            "bars_at": [
-              98.3,
-              98.3,
-              98.3
-            ],
-            "label": "Sliver vs full bar"
+            "left": {
+              "title": "Bar that exists",
+              "chart": {
+                "bars": [
+                  {
+                    "label": "Last year",
+                    "value": 98.3
+                  },
+                  {
+                    "label": "This year",
+                    "value": 98.5
+                  }
+                ],
+                "y_min": 0,
+                "y_max": 100,
+                "highlight_index": 0
+              }
+            },
+            "right": {
+              "title": "Bar you see",
+              "chart": {
+                "bars": [
+                  {
+                    "label": "Last year",
+                    "value": 98.3
+                  },
+                  {
+                    "label": "This year",
+                    "value": 98.5
+                  }
+                ],
+                "y_min": 98.2,
+                "y_max": 98.6,
+                "highlight_index": 0
+              }
+            },
+            "verdict": "Nearly all of the bar is cut"
           },
-          "why": "Tiny visible tip against the full bar"
+          "why": "Full bar beside its visible sliver"
         },
         {
           "phrase": "And there's nothing special about this chart;",
-          "template": "plot",
+          "template": "bar_chart",
           "props": {
-            "fn": "60",
-            "x_range": [
-              0,
-              4
+            "bars": [
+              {
+                "label": "Last year",
+                "value": 98.3
+              },
+              {
+                "label": "This year",
+                "value": 98.5
+              }
             ],
-            "y_range": [
-              0,
-              100
-            ],
-            "bars_at": [
-              40,
-              72,
-              95
-            ],
-            "label": "A different chart"
+            "y_min": 98.2,
+            "y_max": 98.6,
+            "highlight_index": 1,
+            "title": "Crime rate",
+            "show_values": true
           },
-          "why": "Switch to new bar heights"
+          "why": "Back to the crime chart"
         },
         {
           "phrase": "slide the ruler on any bar chart and you can measure what was cut.",
-          "template": "plot",
+          "template": "bar_chart",
           "props": {
-            "fn": "60",
-            "x_range": [
-              0,
-              4
+            "bars": [
+              {
+                "label": "Last year",
+                "value": 98.3
+              },
+              {
+                "label": "This year",
+                "value": 98.5
+              }
             ],
-            "y_range": [
-              60,
-              100
-            ],
-            "bars_at": [
-              40,
-              72,
-              95
-            ],
-            "label": "Slide, then measure"
+            "y_min": 90,
+            "y_max": 100,
+            "highlight_index": 1,
+            "title": "Slide the ruler: see what was cut",
+            "show_values": true
           },
-          "why": "Same trick works on other bars"
+          "why": "Different baseline reveals hidden amount"
         },
         {
           "phrase": "If you want a name for it, call this the ruler test.",
-          "template": "title_card",
+          "template": "callout",
           "props": {
-            "title": "The Ruler Test"
+            "text": "The ruler test",
+            "emphasis": "ruler test"
           },
           "why": "Name the method"
         },
@@ -608,10 +755,10 @@
           "phrase": "Does the bar's length still equal its value?",
           "template": "equation",
           "props": {
-            "tex": "\\text{length} \\stackrel{?}{=} \\text{value}",
-            "highlight": "length"
+            "tex": "\\text{bar length} \\overset{?}{=} \\text{value}",
+            "highlight": "?"
           },
-          "why": "Closing question as the test itself"
+          "why": "The test as a question"
         }
       ]
     },
@@ -621,111 +768,525 @@
       "narration": "So is this just a crime-chart problem? Not at all. There's nothing special about crime or about bars. Picture a line chart of a stock, zoomed in on two weeks. It looks dramatic, a sharp climb. But zoom out and the same stock has gone sideways for ten years. The two weeks are real, but they're a sliver, like the sliver of bar we sawed off. Now picture a pie chart rendered in 3D. The front slice sits closer to you, so it looks bigger than a slice of the same size at the back. Different chart, different trick, same failure. What your eye reads as size isn't the size of the number. That's the family, and truncation is one member. Which gives you a rule that works anywhere: always ask what the visual size is proportional to. Length? Area? Distance from the camera? Then check whether that matches the value.",
       "shots": [
         {
-          "phrase": "So is this just a crime-chart problem? Not at all. There's nothing special about crime or about bars.",
-          "template": "callout",
+          "phrase": "So is this just a crime-chart problem? Not at all.",
+          "template": "bar_chart",
           "props": {
-            "text": "Not just crime. Not just bars.",
-            "emphasis": "Not just"
+            "bars": [
+              {
+                "label": "Last year",
+                "value": 98.3
+              },
+              {
+                "label": "This year",
+                "value": 98.5
+              }
+            ],
+            "y_min": 98.2,
+            "y_max": 98.6,
+            "unit": "%",
+            "title": "Crime chart (hook)",
+            "show_values": true
           },
-          "why": "Opens the generalization with one merged callout"
+          "why": "Recall the hook chart"
         },
         {
-          "phrase": "Picture a line chart of a stock, zoomed in on two weeks. It looks dramatic, a sharp climb.",
-          "template": "plot",
+          "phrase": "There's nothing special about crime or about bars. Picture a line chart of a stock, zoomed in on two weeks.",
+          "template": "line_chart",
           "props": {
-            "fn": "100 + 3*Math.sin(x/30) + 0.5*Math.max(0, x-514)",
-            "x_range": [
-              508,
-              520
+            "points": [
+              {
+                "x": 0,
+                "y": 99.9
+              },
+              {
+                "x": 2,
+                "y": 100.0
+              },
+              {
+                "x": 4,
+                "y": 100.2
+              },
+              {
+                "x": 6,
+                "y": 100.1
+              },
+              {
+                "x": 8,
+                "y": 100.4
+              },
+              {
+                "x": 10,
+                "y": 100.5
+              },
+              {
+                "x": 12,
+                "y": 100.7
+              },
+              {
+                "x": 14,
+                "y": 100.8
+              }
             ],
-            "y_range": [
-              98,
-              104
+            "x_labels": [
+              "Day 1",
+              "Day 14"
             ],
-            "label": "Two weeks",
-            "draw": true
+            "y_min": 99.8,
+            "y_max": 101,
+            "title": "Stock, last two weeks"
           },
-          "why": "Zoomed window shows the dramatic climb"
+          "why": "New chart type, zoomed window"
+        },
+        {
+          "phrase": "It looks dramatic, a sharp climb.",
+          "template": "line_chart",
+          "props": {
+            "points": [
+              {
+                "x": 0,
+                "y": 99.9
+              },
+              {
+                "x": 2,
+                "y": 100.0
+              },
+              {
+                "x": 4,
+                "y": 100.2
+              },
+              {
+                "x": 6,
+                "y": 100.1
+              },
+              {
+                "x": 8,
+                "y": 100.4
+              },
+              {
+                "x": 10,
+                "y": 100.5
+              },
+              {
+                "x": 12,
+                "y": 100.7
+              },
+              {
+                "x": 14,
+                "y": 100.8
+              }
+            ],
+            "x_labels": [
+              "Day 1",
+              "Day 14"
+            ],
+            "y_min": 99.8,
+            "y_max": 101,
+            "highlight_range": [
+              0,
+              14
+            ],
+            "title": "Stock, last two weeks"
+          },
+          "why": "Shade the whole steep climb"
         },
         {
           "phrase": "But zoom out and the same stock has gone sideways for ten years.",
-          "template": "plot",
+          "template": "line_chart",
           "props": {
-            "fn": "100 + 3*Math.sin(x/30) + 0.5*Math.max(0, x-514)",
-            "x_range": [
-              0,
-              520
+            "points": [
+              {
+                "x": 0,
+                "y": 100
+              },
+              {
+                "x": 0.5,
+                "y": 101
+              },
+              {
+                "x": 1,
+                "y": 99.5
+              },
+              {
+                "x": 1.5,
+                "y": 100.5
+              },
+              {
+                "x": 2,
+                "y": 101.5
+              },
+              {
+                "x": 2.5,
+                "y": 100
+              },
+              {
+                "x": 3,
+                "y": 99
+              },
+              {
+                "x": 3.5,
+                "y": 100.5
+              },
+              {
+                "x": 4,
+                "y": 101
+              },
+              {
+                "x": 4.5,
+                "y": 99.5
+              },
+              {
+                "x": 5,
+                "y": 100
+              },
+              {
+                "x": 5.5,
+                "y": 101
+              },
+              {
+                "x": 6,
+                "y": 100.5
+              },
+              {
+                "x": 6.5,
+                "y": 99.5
+              },
+              {
+                "x": 7,
+                "y": 100
+              },
+              {
+                "x": 7.5,
+                "y": 101
+              },
+              {
+                "x": 8,
+                "y": 100.5
+              },
+              {
+                "x": 8.5,
+                "y": 99.8
+              },
+              {
+                "x": 9,
+                "y": 100.3
+              },
+              {
+                "x": 9.5,
+                "y": 100.2
+              },
+              {
+                "x": 9.96,
+                "y": 99.9
+              },
+              {
+                "x": 10,
+                "y": 100.8
+              }
             ],
-            "y_range": [
-              90,
-              110
+            "x_labels": [
+              "10 yrs ago",
+              "5 yrs",
+              "Now"
             ],
-            "label": "Ten years"
+            "y_min": 96,
+            "y_max": 104,
+            "title": "Same stock, ten years"
           },
-          "why": "Same fn, x_range animates out to full history"
+          "why": "Zoom out: flat wander"
         },
         {
           "phrase": "The two weeks are real, but they're a sliver, like the sliver of bar we sawed off.",
-          "template": "plot",
+          "template": "line_chart",
           "props": {
-            "fn": "100 + 3*Math.sin(x/30) + 0.5*Math.max(0, x-514)",
-            "x_range": [
-              0,
-              520
+            "points": [
+              {
+                "x": 0,
+                "y": 100
+              },
+              {
+                "x": 0.5,
+                "y": 101
+              },
+              {
+                "x": 1,
+                "y": 99.5
+              },
+              {
+                "x": 1.5,
+                "y": 100.5
+              },
+              {
+                "x": 2,
+                "y": 101.5
+              },
+              {
+                "x": 2.5,
+                "y": 100
+              },
+              {
+                "x": 3,
+                "y": 99
+              },
+              {
+                "x": 3.5,
+                "y": 100.5
+              },
+              {
+                "x": 4,
+                "y": 101
+              },
+              {
+                "x": 4.5,
+                "y": 99.5
+              },
+              {
+                "x": 5,
+                "y": 100
+              },
+              {
+                "x": 5.5,
+                "y": 101
+              },
+              {
+                "x": 6,
+                "y": 100.5
+              },
+              {
+                "x": 6.5,
+                "y": 99.5
+              },
+              {
+                "x": 7,
+                "y": 100
+              },
+              {
+                "x": 7.5,
+                "y": 101
+              },
+              {
+                "x": 8,
+                "y": 100.5
+              },
+              {
+                "x": 8.5,
+                "y": 99.8
+              },
+              {
+                "x": 9,
+                "y": 100.3
+              },
+              {
+                "x": 9.5,
+                "y": 100.2
+              },
+              {
+                "x": 9.96,
+                "y": 99.9
+              },
+              {
+                "x": 10,
+                "y": 100.8
+              }
             ],
-            "y_range": [
-              90,
-              110
+            "x_labels": [
+              "10 yrs ago",
+              "5 yrs",
+              "Now"
             ],
-            "label": "A sliver",
-            "point_at": 516
+            "y_min": 96,
+            "y_max": 104,
+            "highlight_range": [
+              9.96,
+              10
+            ],
+            "title": "Same stock, ten years"
           },
-          "why": "Marks the two-week sliver on the long curve"
+          "why": "Tiny shaded two-week sliver"
         },
         {
-          "phrase": "Now picture a pie chart rendered in 3D. The front slice sits closer to you,",
-          "template": "plot",
+          "phrase": "Now picture a pie chart rendered in 3D.",
+          "template": "compare_split",
           "props": {
-            "fn": "-0.5*Math.sqrt(1-x*x)",
-            "x_range": [
-              -1.2,
-              1.2
-            ],
-            "y_range": [
-              -1,
-              1
-            ],
-            "label": "Tilted 3D pie",
-            "draw": true
+            "left": {
+              "title": "Flat pie: equal slices",
+              "chart": {
+                "bars": [
+                  {
+                    "label": "Front slice",
+                    "value": 50
+                  },
+                  {
+                    "label": "Back slice",
+                    "value": 50
+                  }
+                ],
+                "y_min": 0,
+                "y_max": 100,
+                "unit": "%"
+              }
+            },
+            "right": {
+              "title": "3D pie: equal slices",
+              "chart": {
+                "bars": [
+                  {
+                    "label": "Front slice",
+                    "value": 50
+                  },
+                  {
+                    "label": "Back slice",
+                    "value": 50
+                  }
+                ],
+                "y_min": 0,
+                "y_max": 100,
+                "unit": "%"
+              }
+            },
+            "verdict": "Two equal slices"
           },
-          "why": "Draws the tilted pie's near edge"
+          "why": "Set up equal slices, flat vs tilted"
         },
         {
-          "phrase": "so it looks bigger than a slice of the same size at the back.",
-          "template": "plot",
+          "phrase": "The front slice sits closer to you, so it looks bigger",
+          "template": "compare_split",
           "props": {
-            "fn": "-0.5*Math.sqrt(1-x*x)",
-            "x_range": [
-              -1.2,
-              1.2
-            ],
-            "y_range": [
-              -1,
-              1
-            ],
-            "label": "Front looks bigger",
-            "point_at": 0.3
+            "left": {
+              "title": "True value",
+              "chart": {
+                "bars": [
+                  {
+                    "label": "Front slice",
+                    "value": 50
+                  },
+                  {
+                    "label": "Back slice",
+                    "value": 50
+                  }
+                ],
+                "y_min": 0,
+                "y_max": 100,
+                "unit": "%",
+                "highlight_index": 0
+              }
+            },
+            "right": {
+              "title": "Apparent size in 3D",
+              "chart": {
+                "bars": [
+                  {
+                    "label": "Front slice",
+                    "value": 68
+                  },
+                  {
+                    "label": "Back slice",
+                    "value": 32
+                  }
+                ],
+                "y_min": 0,
+                "y_max": 100,
+                "unit": "%",
+                "highlight_index": 0
+              }
+            },
+            "verdict": "Front looks bigger"
           },
-          "why": "Highlights the near slice looking larger"
+          "why": "Apparent front slice grows"
         },
         {
-          "phrase": "Different chart, different trick, same failure. What your eye reads as size isn't the size of the number.",
-          "template": "misconception",
+          "phrase": "than a slice of the same size at the back.",
+          "template": "compare_split",
           "props": {
-            "claim": "Visual size = the number",
-            "correction": "Visual size \u2260 value"
+            "left": {
+              "title": "True value",
+              "chart": {
+                "bars": [
+                  {
+                    "label": "Front slice",
+                    "value": 50
+                  },
+                  {
+                    "label": "Back slice",
+                    "value": 50
+                  }
+                ],
+                "y_min": 0,
+                "y_max": 100,
+                "unit": "%",
+                "highlight_index": 1
+              }
+            },
+            "right": {
+              "title": "Apparent size in 3D",
+              "chart": {
+                "bars": [
+                  {
+                    "label": "Front slice",
+                    "value": 68
+                  },
+                  {
+                    "label": "Back slice",
+                    "value": 32
+                  }
+                ],
+                "y_min": 0,
+                "y_max": 100,
+                "unit": "%",
+                "highlight_index": 1
+              }
+            },
+            "verdict": "Same value, unequal look"
           },
-          "why": "Core claim corrected concisely"
+          "why": "Highlight shrunken back slice"
+        },
+        {
+          "phrase": "Different chart, different trick, same failure.",
+          "template": "diagram_nodes",
+          "props": {
+            "nodes": [
+              {
+                "id": "bars",
+                "label": "Cut-off bars"
+              },
+              {
+                "id": "line",
+                "label": "Zoomed line"
+              },
+              {
+                "id": "pie",
+                "label": "3D pie"
+              },
+              {
+                "id": "fail",
+                "label": "Size \u2260 value"
+              }
+            ],
+            "edges": [
+              {
+                "from": "bars",
+                "to": "fail"
+              },
+              {
+                "from": "line",
+                "to": "fail"
+              },
+              {
+                "from": "pie",
+                "to": "fail"
+              }
+            ],
+            "highlight": "fail"
+          },
+          "why": "Three tricks, one failure"
+        },
+        {
+          "phrase": "What your eye reads as size isn't the size of the number.",
+          "template": "equation",
+          "props": {
+            "tex": "\\text{apparent size} \\neq \\text{value}",
+            "highlight": "\\neq"
+          },
+          "why": "Key claim as equation"
         },
         {
           "phrase": "That's the family, and truncation is one member.",
@@ -733,47 +1294,48 @@
           "props": {
             "nodes": [
               {
-                "id": "fam",
-                "label": "Misleading size"
+                "id": "bars",
+                "label": "Cut-off bars"
               },
               {
-                "id": "trunc",
-                "label": "Truncated axis"
-              },
-              {
-                "id": "zoom",
-                "label": "Zoomed window"
+                "id": "line",
+                "label": "Zoomed line"
               },
               {
                 "id": "pie",
                 "label": "3D pie"
+              },
+              {
+                "id": "fail",
+                "label": "Size \u2260 value"
               }
             ],
             "edges": [
               {
-                "from": "fam",
-                "to": "trunc"
+                "from": "bars",
+                "to": "fail"
               },
               {
-                "from": "fam",
-                "to": "zoom"
+                "from": "line",
+                "to": "fail"
               },
               {
-                "from": "fam",
-                "to": "pie"
+                "from": "pie",
+                "to": "fail"
               }
             ],
-            "highlight": "trunc"
-          }
+            "highlight": "bars"
+          },
+          "why": "Truncation is one member"
         },
         {
           "phrase": "Which gives you a rule that works anywhere: always ask what the visual size is proportional to.",
-          "template": "callout",
+          "template": "equation",
           "props": {
-            "text": "What is visual size proportional to?",
-            "emphasis": "proportional"
+            "tex": "\\text{visual size} \\propto \\; ?",
+            "highlight": "?"
           },
-          "why": "States the portable rule"
+          "why": "The rule as an open question"
         },
         {
           "phrase": "Length? Area? Distance from the camera? Then check whether that matches the value.",
@@ -783,10 +1345,10 @@
               "Length?",
               "Area?",
               "Distance from camera?",
-              "Does it match the value?"
+              "Matches the value?"
             ]
           },
-          "why": "Builds the checklist question by question"
+          "why": "Checklist builds line by line"
         }
       ]
     },
@@ -797,121 +1359,330 @@
       "shots": [
         {
           "phrase": "Before you take this too far, though, I should add a caveat.",
-          "template": "title_card",
+          "template": "bar_chart",
           "props": {
-            "title": "A caveat",
-            "subtitle": "Zero isn't always required"
+            "bars": [
+              {
+                "label": "Last year",
+                "value": 98.3
+              },
+              {
+                "label": "This year",
+                "value": 98.5
+              }
+            ],
+            "y_min": 98.2,
+            "y_max": 98.6,
+            "title": "Crime rate",
+            "show_values": true
           },
-          "why": "Opens the beat with the caveat"
+          "why": "Return to the hook chart"
         },
         {
           "phrase": "It might sound like I'm saying any axis that doesn't start at zero is lying. But that's not quite right.",
           "template": "misconception",
           "props": {
-            "claim": "Non-zero axis = lying",
+            "claim": "Axis not at zero = lying",
             "correction": "Depends on the chart type"
           },
-          "why": "Claim, then the corrected version"
+          "why": "State the misconception, then correct it"
         },
         {
           "phrase": "Imagine charting your body temperature over a week, with the axis running from 97 to 101\u00b0F.",
-          "template": "plot",
+          "template": "line_chart",
           "props": {
-            "fn": "98.6 + 0.8*Math.sin(2*x) + 0.1*x",
-            "x_range": [
-              0,
-              7
+            "points": [
+              {
+                "x": 0,
+                "y": 98.2
+              },
+              {
+                "x": 1,
+                "y": 98.6
+              },
+              {
+                "x": 2,
+                "y": 99.1
+              },
+              {
+                "x": 3,
+                "y": 100.4
+              },
+              {
+                "x": 4,
+                "y": 99.3
+              },
+              {
+                "x": 5,
+                "y": 98.7
+              },
+              {
+                "x": 6,
+                "y": 98.4
+              }
             ],
-            "y_range": [
-              97,
-              101
+            "x_labels": [
+              "Mon",
+              "Tue",
+              "Wed",
+              "Thu",
+              "Fri",
+              "Sat",
+              "Sun"
             ],
-            "label": "Body temp, 97\u2013101\u00b0F",
-            "draw": true
+            "y_min": 97,
+            "y_max": 101,
+            "title": "Body temperature (\u00b0F)"
           },
-          "why": "Temperature line scene opens"
+          "why": "Introduce the temperature line chart"
         },
         {
           "phrase": "Should it start at 0? Well, no. 0\u00b0F is meaningless for a human body,",
-          "template": "callout",
+          "template": "number_line",
           "props": {
-            "text": "0\u00b0F means nothing for a body",
-            "emphasis": "0\u00b0F"
+            "values": [
+              0,
+              97,
+              98.6,
+              101
+            ],
+            "labels": [
+              "0\u00b0F",
+              "97",
+              "98.6 normal",
+              "101"
+            ],
+            "highlight_index": 0
           },
-          "why": "Key line gets a callout"
+          "why": "Show 0\u00b0F is far from any real body"
         },
         {
           "phrase": "and a single degree can mean you're sick.",
-          "template": "plot",
+          "template": "line_chart",
           "props": {
-            "fn": "98.6 + 0.8*Math.sin(2*x) + 0.1*x",
-            "x_range": [
-              0,
-              7
+            "points": [
+              {
+                "x": 0,
+                "y": 98.2
+              },
+              {
+                "x": 1,
+                "y": 98.6
+              },
+              {
+                "x": 2,
+                "y": 99.1
+              },
+              {
+                "x": 3,
+                "y": 100.4
+              },
+              {
+                "x": 4,
+                "y": 99.3
+              },
+              {
+                "x": 5,
+                "y": 98.7
+              },
+              {
+                "x": 6,
+                "y": 98.4
+              }
             ],
-            "y_range": [
-              97,
-              101
+            "x_labels": [
+              "Mon",
+              "Tue",
+              "Wed",
+              "Thu",
+              "Fri",
+              "Sat",
+              "Sun"
             ],
-            "label": "99.6 vs 100.6\u00b0F: fever",
-            "point_at": 3
+            "y_min": 97,
+            "y_max": 101,
+            "highlight_range": [
+              2,
+              3
+            ],
+            "title": "Body temperature (\u00b0F)"
           },
-          "why": "Marks the one-degree fever gap"
+          "why": "Highlight a small but meaningful rise"
         },
         {
           "phrase": "Start at zero and the interesting part gets squashed into a flat line.",
-          "template": "plot",
+          "template": "line_chart",
           "props": {
-            "fn": "98.6 + 0.8*Math.sin(2*x) + 0.1*x",
-            "x_range": [
-              0,
-              7
+            "points": [
+              {
+                "x": 0,
+                "y": 98.2
+              },
+              {
+                "x": 1,
+                "y": 98.6
+              },
+              {
+                "x": 2,
+                "y": 99.1
+              },
+              {
+                "x": 3,
+                "y": 100.4
+              },
+              {
+                "x": 4,
+                "y": 99.3
+              },
+              {
+                "x": 5,
+                "y": 98.7
+              },
+              {
+                "x": 6,
+                "y": 98.4
+              }
             ],
-            "y_range": [
-              0,
-              101
+            "x_labels": [
+              "Mon",
+              "Tue",
+              "Wed",
+              "Thu",
+              "Fri",
+              "Sat",
+              "Sun"
             ],
-            "label": "Axis from 0: flat"
+            "y_min": 0,
+            "y_max": 101,
+            "title": "Body temperature (\u00b0F)"
           },
-          "why": "Same line, axis drops to zero"
+          "why": "Same data, baseline at zero: flat"
         },
         {
           "phrase": "So what's the difference from the bars? Bars encode length, so a cut-off baseline breaks the ruler.",
-          "template": "plot",
+          "template": "compare_split",
           "props": {
-            "fn": "98.4",
-            "x_range": [
-              0,
-              3
-            ],
-            "y_range": [
-              98.2,
-              98.6
-            ],
-            "label": "Bars: length = value",
-            "bars_at": [
-              1,
-              2
-            ]
+            "left": {
+              "title": "Full ruler",
+              "chart": {
+                "bars": [
+                  {
+                    "label": "Last year",
+                    "value": 98.3
+                  },
+                  {
+                    "label": "This year",
+                    "value": 98.5
+                  }
+                ],
+                "y_min": 0,
+                "y_max": 100,
+                "title": "Crime rate"
+              }
+            },
+            "right": {
+              "title": "Ruler cut off",
+              "chart": {
+                "bars": [
+                  {
+                    "label": "Last year",
+                    "value": 98.3
+                  },
+                  {
+                    "label": "This year",
+                    "value": 98.5
+                  }
+                ],
+                "y_min": 98.2,
+                "y_max": 98.6,
+                "title": "Crime rate"
+              }
+            },
+            "verdict": "Cut baseline breaks the length"
           },
-          "why": "Return to truncated bars from earlier"
+          "why": "Bar lengths lie when truncated"
         },
         {
           "phrase": "Lines, in a sense, encode trend, and trend survives zooming.",
-          "template": "plot",
+          "template": "compare_split",
           "props": {
-            "fn": "98.6 + 0.8*Math.sin(2*x) + 0.1*x",
-            "x_range": [
-              0,
-              7
-            ],
-            "y_range": [
-              97,
-              101
-            ],
-            "label": "Trend survives zoom"
+            "left": {
+              "title": "Zoomed in",
+              "chart": {
+                "points": [
+                  {
+                    "x": 0,
+                    "y": 98.2
+                  },
+                  {
+                    "x": 1,
+                    "y": 98.6
+                  },
+                  {
+                    "x": 2,
+                    "y": 99.1
+                  },
+                  {
+                    "x": 3,
+                    "y": 100.4
+                  },
+                  {
+                    "x": 4,
+                    "y": 99.3
+                  },
+                  {
+                    "x": 5,
+                    "y": 98.7
+                  },
+                  {
+                    "x": 6,
+                    "y": 98.4
+                  }
+                ],
+                "y_min": 97,
+                "y_max": 101
+              }
+            },
+            "right": {
+              "title": "From zero",
+              "chart": {
+                "points": [
+                  {
+                    "x": 0,
+                    "y": 98.2
+                  },
+                  {
+                    "x": 1,
+                    "y": 98.6
+                  },
+                  {
+                    "x": 2,
+                    "y": 99.1
+                  },
+                  {
+                    "x": 3,
+                    "y": 100.4
+                  },
+                  {
+                    "x": 4,
+                    "y": 99.3
+                  },
+                  {
+                    "x": 5,
+                    "y": 98.7
+                  },
+                  {
+                    "x": 6,
+                    "y": 98.4
+                  }
+                ],
+                "y_min": 0,
+                "y_max": 101
+              }
+            },
+            "verdict": "Same rise and fall, both views"
           },
-          "why": "Zoomed temperature line returns"
+          "why": "Zoomed view first; trend persists"
         },
         {
           "phrase": "It's roughly a rule of thumb: zero is essential for bars, much less so for lines.",
@@ -919,19 +1690,19 @@
           "props": {
             "items": [
               "Bars: zero essential",
-              "Lines: zero optional"
+              "Lines: much less so"
             ]
           },
-          "why": "States the rule of thumb"
+          "why": "Rule of thumb summary"
         },
         {
           "phrase": "The real rule is still the one from before. Ask what the size is proportional to.",
           "template": "equation",
           "props": {
-            "tex": "\\text{size} \\propto \\ ?",
+            "tex": "\\text{size} \\propto \\; ?",
             "highlight": "?"
           },
-          "why": "Closing rule as a question"
+          "why": "Real rule: what is size proportional to"
         }
       ]
     },
@@ -942,216 +1713,199 @@
       "shots": [
         {
           "phrase": "Let's test the ruler idea on something with no axis whatsoever.",
-          "template": "plot",
+          "template": "callout",
           "props": {
-            "fn": "0",
-            "x_range": [
-              0,
-              3
-            ],
-            "y_range": [
-              0,
-              10000
-            ],
-            "label": "Per 10,000 people",
-            "draw": true
+            "text": "The ruler test, with no axis",
+            "emphasis": "no axis"
           },
-          "why": "Open on empty 0\u201310,000 scale"
+          "why": "Sets up the new test"
         },
         {
           "phrase": "A toothpaste ad announces, 'Cavities down 50%!'",
-          "template": "callout",
+          "template": "stat_reveal",
           "props": {
-            "text": "Cavities down 50%!",
-            "emphasis": "50%"
+            "value": 50,
+            "unit": "%",
+            "caption": "Toothpaste ad: cavities down",
+            "from": 0
           },
-          "why": "The ad's headline claim"
+          "why": "Ad's headline number"
         },
         {
           "phrase": "Picture the actual numbers: 2 cavities per 10,000 people before, 1 per 10,000 after.",
-          "template": "plot",
+          "template": "bar_chart",
           "props": {
-            "fn": "0",
-            "x_range": [
-              0,
-              3
+            "bars": [
+              {
+                "label": "Before",
+                "value": 2
+              },
+              {
+                "label": "After",
+                "value": 1
+              }
             ],
-            "y_range": [
-              0,
-              10000
-            ],
-            "bars_at": [
-              2,
-              1
-            ],
-            "label": "2 \u2192 1"
+            "y_min": 0,
+            "y_max": 2.5,
+            "title": "Cavities per 10,000 people",
+            "show_values": true
           },
-          "why": "Two near-invisible bars on full scale"
+          "why": "Actual numbers as bars"
         },
         {
           "phrase": "Half, yes. But fifty percent of what? Of 2.",
-          "template": "callout",
+          "template": "bar_chart",
           "props": {
-            "text": "50% of what? Of 2.",
-            "emphasis": "2"
+            "bars": [
+              {
+                "label": "Before",
+                "value": 2
+              },
+              {
+                "label": "After",
+                "value": 1
+              }
+            ],
+            "y_min": 0,
+            "y_max": 2.5,
+            "title": "Cavities per 10,000 people",
+            "highlight_index": 0,
+            "show_values": true
           },
-          "why": "Key question, denominator emphasized"
+          "why": "Highlight the base of 2"
         },
         {
           "phrase": "That's an absolute change of 0.01 percentage points, which you'd never notice in a real mouth.",
           "template": "equation",
           "props": {
-            "tex": "\\text{relative: } 50\\% \\quad|\\quad \\text{absolute: } 0.01\\text{ pp}",
-            "highlight": "0.01"
+            "tex": "\\frac{2}{10{,}000} - \\frac{1}{10{,}000} = 0.01\\%",
+            "highlight": "0.01\\%"
           },
-          "why": "Side by side, not equal"
+          "why": "Tiny absolute change"
         },
         {
           "phrase": "Now imagine a different town where cavities fall from 40 per 100 to 20 per 100.",
-          "template": "plot",
+          "template": "bar_chart",
           "props": {
-            "fn": "0",
-            "x_range": [
-              0,
-              3
+            "bars": [
+              {
+                "label": "Before",
+                "value": 40
+              },
+              {
+                "label": "After",
+                "value": 20
+              }
             ],
-            "y_range": [
-              0,
-              100
-            ],
-            "bars_at": [
-              40,
-              20
-            ],
-            "label": "40 \u2192 20 per 100"
+            "y_min": 0,
+            "y_max": 50,
+            "title": "Cavities per 100 people",
+            "show_values": true
           },
-          "why": "Big visible drop on a 0\u2013100 scale"
+          "why": "Second town's numbers"
         },
         {
           "phrase": "Same 50%, but now 20 percentage points of people are better off.",
-          "template": "equation",
+          "template": "stat_reveal",
           "props": {
-            "tex": "\\text{relative: } 50\\% \\quad|\\quad \\text{absolute: } 20\\text{ pp}",
-            "highlight": "20"
+            "value": 20,
+            "unit": "points",
+            "caption": "Same 50%, far bigger real change",
+            "from": 0
           },
-          "why": "Same relative, large absolute"
+          "why": "Big absolute change"
         },
         {
-          "phrase": "Relative | Absolute 50% (2 to 1 in 10,000) | 0.01 points",
-          "template": "diagram_nodes",
+          "phrase": "Relative | Absolute 50% (2 to 1 in 10,000) | 0.01 points 50% (40 to 20 in 100) | 20 points",
+          "template": "compare_split",
           "props": {
-            "nodes": [
-              {
-                "id": "hr",
-                "label": "Relative"
-              },
-              {
-                "id": "ha",
-                "label": "Absolute"
-              },
-              {
-                "id": "r1",
-                "label": "50%: 2 to 1 in 10,000"
-              },
-              {
-                "id": "a1",
-                "label": "0.01 points"
-              },
-              {
-                "id": "r2",
-                "label": "50%: 40 to 20 in 100"
-              },
-              {
-                "id": "a2",
-                "label": "20 points"
+            "left": {
+              "title": "Relative",
+              "chart": {
+                "bars": [
+                  {
+                    "label": "Town A",
+                    "value": 50
+                  },
+                  {
+                    "label": "Town B",
+                    "value": 50
+                  }
+                ],
+                "y_min": 0,
+                "y_max": 60,
+                "unit": "%",
+                "show_values": true
               }
-            ],
-            "edges": [
-              {
-                "from": "hr",
-                "to": "ha"
-              },
-              {
-                "from": "r1",
-                "to": "a1"
-              },
-              {
-                "from": "r2",
-                "to": "a2"
+            },
+            "right": {
+              "title": "Absolute",
+              "chart": {
+                "bars": [
+                  {
+                    "label": "Town A",
+                    "value": 0.01
+                  },
+                  {
+                    "label": "Town B",
+                    "value": 20
+                  }
+                ],
+                "y_min": 0,
+                "y_max": 25,
+                "unit": " pts",
+                "show_values": true
               }
-            ],
-            "highlight": "a1"
+            },
+            "verdict": "Same 50%, very different impact"
           },
-          "why": "Two-column table, tiny row lit"
-        },
-        {
-          "phrase": "50% (40 to 20 in 100) | 20 points",
-          "template": "diagram_nodes",
-          "props": {
-            "nodes": [
-              {
-                "id": "hr",
-                "label": "Relative"
-              },
-              {
-                "id": "ha",
-                "label": "Absolute"
-              },
-              {
-                "id": "r1",
-                "label": "50%: 2 to 1 in 10,000"
-              },
-              {
-                "id": "a1",
-                "label": "0.01 points"
-              },
-              {
-                "id": "r2",
-                "label": "50%: 40 to 20 in 100"
-              },
-              {
-                "id": "a2",
-                "label": "20 points"
-              }
-            ],
-            "edges": [
-              {
-                "from": "hr",
-                "to": "ha"
-              },
-              {
-                "from": "r1",
-                "to": "a1"
-              },
-              {
-                "from": "r2",
-                "to": "a2"
-              }
-            ],
-            "highlight": "a2"
-          },
-          "why": "Same table, large row lit"
+          "why": "Table as paired bars"
         },
         {
           "phrase": "The attentive viewers among you may notice this is the cut-off bar again, just in disguise.",
-          "template": "plot",
+          "template": "compare_split",
           "props": {
-            "fn": "0",
-            "x_range": [
-              0,
-              3
-            ],
-            "y_range": [
-              98.2,
-              98.6
-            ],
-            "bars_at": [
-              98.3,
-              98.5
-            ],
-            "label": "Cut-off bar again"
+            "left": {
+              "title": "Cut-off bar",
+              "chart": {
+                "bars": [
+                  {
+                    "label": "Last year",
+                    "value": 98.3
+                  },
+                  {
+                    "label": "This year",
+                    "value": 98.5
+                  }
+                ],
+                "y_min": 98.2,
+                "y_max": 98.6,
+                "title": "Crime rate",
+                "show_values": true
+              }
+            },
+            "right": {
+              "title": "Relative %",
+              "chart": {
+                "bars": [
+                  {
+                    "label": "Town A",
+                    "value": 50
+                  },
+                  {
+                    "label": "Town B",
+                    "value": 50
+                  }
+                ],
+                "y_min": 0,
+                "y_max": 60,
+                "unit": "%",
+                "show_values": true
+              }
+            },
+            "verdict": "Same trick, new costume"
           },
-          "why": "Flash beat-1 truncated chart"
+          "why": "Callback beside the new chart"
         },
         {
           "phrase": "Hiding the baseline breaks the ruler, and hiding the denominator does the same thing.",
@@ -1159,31 +1913,31 @@
           "props": {
             "nodes": [
               {
-                "id": "b",
+                "id": "a",
                 "label": "Hidden baseline"
               },
               {
-                "id": "d",
+                "id": "b",
                 "label": "Hidden denominator"
               },
               {
-                "id": "r",
+                "id": "c",
                 "label": "Broken ruler"
               }
             ],
             "edges": [
               {
-                "from": "b",
-                "to": "r"
+                "from": "a",
+                "to": "c"
               },
               {
-                "from": "d",
-                "to": "r"
+                "from": "b",
+                "to": "c"
               }
             ],
-            "highlight": "r"
+            "highlight": "c"
           },
-          "why": "Two causes, one broken ruler"
+          "why": "Both hides lead to broken ruler"
         }
       ]
     },
@@ -1194,213 +1948,206 @@
       "shots": [
         {
           "phrase": "Remember that crime chart? The axis starting at 98.2 was the whole trick.",
-          "template": "plot",
+          "template": "bar_chart",
           "props": {
-            "fn": "98.4",
-            "x_range": [
-              0,
-              3
+            "bars": [
+              {
+                "label": "Last year",
+                "value": 98.3
+              },
+              {
+                "label": "This year",
+                "value": 98.5
+              }
             ],
-            "y_range": [
-              98.2,
-              98.6
-            ],
-            "bars_at": [
-              98.3,
-              98.5
-            ],
-            "label": "Axis starts at 98.2",
-            "draw": true
+            "y_min": 98.2,
+            "y_max": 98.6,
+            "title": "Crime Rate",
+            "show_values": true
           },
-          "why": "Reuse the beat-1 chart exactly"
+          "why": "Recall the exact hook chart"
         },
         {
           "phrase": "Once you saw where the ruler began, the dramatic cliff shrank back into a small wobble.",
-          "template": "plot",
+          "template": "compare_split",
           "props": {
-            "fn": "98.4",
-            "x_range": [
-              0,
-              3
-            ],
-            "y_range": [
-              0,
-              100
-            ],
-            "bars_at": [
-              98.3,
-              98.5
-            ],
-            "label": "Axis from 0"
+            "left": {
+              "title": "Axis from 98.2",
+              "chart": {
+                "bars": [
+                  {
+                    "label": "Last year",
+                    "value": 98.3
+                  },
+                  {
+                    "label": "This year",
+                    "value": 98.5
+                  }
+                ],
+                "y_min": 98.2,
+                "y_max": 98.6,
+                "show_values": true
+              }
+            },
+            "right": {
+              "title": "Axis from 0",
+              "chart": {
+                "bars": [
+                  {
+                    "label": "Last year",
+                    "value": 98.3
+                  },
+                  {
+                    "label": "This year",
+                    "value": 98.5
+                  }
+                ],
+                "y_min": 0,
+                "y_max": 100,
+                "show_values": true
+              }
+            },
+            "verdict": "Same bars, honest baseline"
           },
-          "why": "Animate y_range to zero; cliff shrinks"
+          "why": "Cliff becomes wobble, same data"
         },
         {
           "phrase": "And the toothpaste ad was the same trick wearing a different outfit.",
-          "template": "plot",
+          "template": "compare_split",
           "props": {
-            "fn": "0",
-            "x_range": [
-              0,
-              3
-            ],
-            "y_range": [
-              0,
-              10000
-            ],
-            "bars_at": [
-              1,
-              2
-            ],
-            "label": "Toothpaste ad"
+            "left": {
+              "title": "Per 10,000",
+              "chart": {
+                "bars": [
+                  {
+                    "label": "Town A",
+                    "value": 2
+                  },
+                  {
+                    "label": "Town B",
+                    "value": 1
+                  }
+                ],
+                "y_min": 0,
+                "show_values": true
+              }
+            },
+            "right": {
+              "title": "Relative",
+              "chart": {
+                "bars": [
+                  {
+                    "label": "Town A",
+                    "value": 100
+                  },
+                  {
+                    "label": "Town B",
+                    "value": 50
+                  }
+                ],
+                "y_min": 0,
+                "unit": "%",
+                "show_values": true
+              }
+            },
+            "verdict": "Same trick, new outfit"
           },
-          "why": "Reprise the beat-6 tiny-bars visual"
+          "why": "Recall the 50% relative-stat bars"
         },
         {
           "phrase": "So here's a little checklist you can carry around.",
           "template": "title_card",
           "props": {
-            "title": "The checklist",
+            "title": "The Checklist",
             "subtitle": "Three questions"
           },
-          "why": "Mark the shift to takeaways"
+          "why": "Introduce the checklist"
         },
         {
           "phrase": "First: what does the axis start at? Second: percent of what? Third: compared to what?",
           "template": "bullet_build",
           "props": {
             "items": [
-              "Where does the axis start?",
+              "What does the axis start at?",
               "Percent of what?",
               "Compared to what?"
             ]
           },
-          "why": "Questions appear as they're spoken"
+          "why": "Questions appear one by one"
         },
         {
           "phrase": "Three questions, and they'll catch a surprising number of bad charts.",
-          "template": "diagram_nodes",
+          "template": "callout",
           "props": {
-            "nodes": [
-              {
-                "id": "q1",
-                "label": "Axis?"
-              },
-              {
-                "id": "q2",
-                "label": "Percent of what?"
-              },
-              {
-                "id": "q3",
-                "label": "Compared to what?"
-              },
-              {
-                "id": "bad",
-                "label": "Bad chart caught"
-              }
-            ],
-            "edges": [
-              {
-                "from": "q1",
-                "to": "bad"
-              },
-              {
-                "from": "q2",
-                "to": "bad"
-              },
-              {
-                "from": "q3",
-                "to": "bad"
-              }
-            ],
-            "highlight": "bad"
+            "text": "Three questions",
+            "emphasis": "Three"
           },
-          "why": "Show questions converging on a catch"
+          "why": "Short label for the takeaway"
         },
         {
           "phrase": "But all of this is only a high-level view, just a peek at how numbers get bent.",
-          "template": "diagram_nodes",
+          "template": "callout",
           "props": {
-            "nodes": [
-              {
-                "id": "all",
-                "label": "How numbers get bent"
-              },
-              {
-                "id": "today",
-                "label": "This video"
-              }
-            ],
-            "edges": [
-              {
-                "from": "today",
-                "to": "all",
-                "label": "small part"
-              }
-            ],
-            "highlight": "today"
+            "text": "Just a peek",
+            "emphasis": "peek"
           },
-          "why": "Scope: this video is a slice"
+          "why": "Scope limit, kept brief"
         },
         {
           "phrase": "I haven't touched cherry-picked dates, or the whole mess of correlation versus causation. That's the next video.",
-          "template": "title_card",
+          "template": "bullet_build",
           "props": {
-            "title": "Cherry-picked dates",
-            "subtitle": "Correlation vs. causation: next video"
+            "items": [
+              "Cherry-picked dates",
+              "Correlation vs. causation",
+              "Next video"
+            ]
           },
-          "why": "Tease topics; next video as subtitle"
+          "why": "Untouched topics, then teaser"
         },
         {
-          "phrase": "Until then, here's a small exercise. This week, find one misleading chart in your feed.",
+          "phrase": "Until then, here's a small exercise.",
           "template": "whiteboard_write",
           "props": {
             "lines": [
-              "Exercise:",
-              "find one misleading chart"
+              "Small exercise"
             ]
           },
-          "why": "Assignment written out"
+          "why": "Introduce the homework"
         },
         {
-          "phrase": "Ask the three questions. I think you'll be a little annoyed at how quickly you spot it.",
-          "template": "diagram_nodes",
+          "phrase": "This week, find one misleading chart in your feed. Ask the three questions.",
+          "template": "bullet_build",
           "props": {
-            "nodes": [
-              {
-                "id": "feed",
-                "label": "Your feed"
-              },
-              {
-                "id": "chart",
-                "label": "Misleading chart"
-              },
-              {
-                "id": "qs",
-                "label": "3 questions"
-              },
-              {
-                "id": "spot",
-                "label": "Spotted"
-              }
-            ],
-            "edges": [
-              {
-                "from": "feed",
-                "to": "chart"
-              },
-              {
-                "from": "chart",
-                "to": "qs"
-              },
-              {
-                "from": "qs",
-                "to": "spot"
-              }
-            ],
-            "highlight": "spot"
+            "items": [
+              "What does the axis start at?",
+              "Percent of what?",
+              "Compared to what?"
+            ]
           },
-          "why": "Workflow ends in quick spotting"
+          "why": "Questions reused word for word"
+        },
+        {
+          "phrase": "I think you'll be a little annoyed at how quickly you spot it.",
+          "template": "bar_chart",
+          "props": {
+            "bars": [
+              {
+                "label": "Last year",
+                "value": 98.3
+              },
+              {
+                "label": "This year",
+                "value": 98.5
+              }
+            ],
+            "y_min": 98.2,
+            "y_max": 98.6,
+            "title": "Crime Rate",
+            "highlight_index": 1,
+            "show_values": true
+          },
+          "why": "Hook chart, trick now obvious"
         }
       ]
     }

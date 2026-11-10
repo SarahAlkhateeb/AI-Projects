@@ -1,0 +1,508 @@
+{
+  "stills": [
+    [
+      31.8,
+      4.733333
+    ],
+    [
+      89.8,
+      8.666667
+    ],
+    [
+      298.266667,
+      7.833333
+    ]
+  ],
+  "shots": [
+    {
+      "beat": 1,
+      "shot": 0,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Title card matches the phrase and is easy to read. The palette/layout notes describe a slope graph, which does not apply here, so the plain black title card is a mismatch in style only. Optionally add a small accent underline or a faint chart motif to tie it to the palette."
+    },
+    {
+      "beat": 1,
+      "shot": 1,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Add the 'helps' label on the Opinions\u2192Choices edge, which the shot spec includes but the frame omits. Also use a palette matched to the diagram (the slope-graph roles don't apply here), and keep the layout centered and balanced."
+    },
+    {
+      "beat": 1,
+      "shot": 2,
+      "avg": 3.0,
+      "min": 2,
+      "fix": "Shorten the highlighted node label (e.g. 'Chart (lying)') or enlarge the circle so the text fits; the current label overflows and is clipped at both edges ('Chart (lying' with the \u26a0 cut off). Also keep the label text on the node colors with enough contrast."
+    },
+    {
+      "beat": 1,
+      "shot": 3,
+      "avg": 3.6666666666666665,
+      "min": 3,
+      "fix": "Keep the truncated-axis bar chart, which fits 'like you'd see on the news'. Add a brief news-style headline or a y-axis label so the chart reads as a news graphic. Also make the '49' break label less cramped against the axis. Consider a lighter background or accent color to match the palette roles, since the layout notes describe line graphs rather than bars."
+    },
+    {
+      "beat": 1,
+      "shot": 4,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Frame matches the phrase: title 'Crime Is Skyrocketing!' is shown and there are two bars (Before, Now). The truncated y-axis (49-53) with a break marker is intentional for the misleading-chart puzzle. The palette/layout description refers to a slope/curve graph, not a bar chart, so the style match is only partial. No prop change needed."
+    },
+    {
+      "beat": 1,
+      "shot": 5,
+      "avg": 3.3333333333333335,
+      "min": 2,
+      "fix": "The 'Now' bar renders orange (#F5A623) rather than the requested red (#E8453C), so the phrase 'red for the tall one' is contradicted. Make the color prop take effect on bar index 1 (red, not accent2), and make the 'Before' bar a neutral color so the red stands out. The tall bar is also only marginally taller (52 vs 50), so consider a larger gap or a y_min above 0 if the point is that the tall one is visibly taller."
+    },
+    {
+      "beat": 1,
+      "shot": 6,
+      "avg": 3.6666666666666665,
+      "min": 2,
+      "fix": "Style: the palette/layout notes describe a slope/curve graph, and this bar chart does not match them. The legibility issue is the truncated axis, where the y-axis break is drawn over the bars. Keep the truncated y_min of 49 to illustrate the 'five times taller' illusion, but make the axis-break marker clearer, or move it off the bars. Consider adding a red accent to the highlighted bar instead of orange for consistency."
+    },
+    {
+      "beat": 1,
+      "shot": 7,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Frame matches the phrase well: '52 vs 50' with 52 highlighted in red. The palette/layout notes describe slope graphs, which this frame doesn't use, so it's a minimal equation card. Optionally enlarge the text, since it looks small in a mostly empty frame, or add a subtle supporting element."
+    },
+    {
+      "beat": 1,
+      "shot": 8,
+      "avg": 3.6666666666666665,
+      "min": 2,
+      "fix": "Swap the palette/layout description for one that fits a bar chart, since the current one describes slope graphs. Optionally add a second chart with a truncated y-axis (e.g. y_min 48) next to this one to show 'same chart, very different story'."
+    },
+    {
+      "beat": 2,
+      "shot": 0,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Palette/layout notes describe a slope-graph scene (orange/blue accents, left and right graphs), which doesn't match this bar chart. Use a palette and layout written for bar charts. The chart itself is fine, but you could add y-axis context or a faint 'your chart' cue to strengthen the prompt."
+    },
+    {
+      "beat": 2,
+      "shot": 1,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Palette/layout notes describe a slope/line graph, not a bar chart, so the style match is only partial. The frame shows bar heights prominently with small axis labels, which fits the phrase. The Q4 highlight is a reasonable emphasis on the bars. To strengthen the phrase, make the axis labels dimmer or smaller, or add a subtle emphasis on the bars; otherwise no change needed."
+    },
+    {
+      "beat": 2,
+      "shot": 2,
+      "avg": 4.666666666666667,
+      "min": 4,
+      "fix": "empty"
+    },
+    {
+      "beat": 2,
+      "shot": 3,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Frame matches the phrase: bar A is 52 and bar B is 50, both labeled with values. The palette and layout notes describe slope graphs, which this bar chart doesn't use, so on_style is only partly confirmed. The bars are red (accent) on black, which fits. Optionally set y_min to 40 to make the 52 vs 50 difference visible, though the zero baseline is more honest for the example."
+    },
+    {
+      "beat": 2,
+      "shot": 4,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Make the truncated axis start more prominent by drawing the axis line and break marks in green, to match the 'green marker' wording. Also fix the palette/layout mismatch: the layout describes slope graphs, not a bar chart."
+    },
+    {
+      "beat": 2,
+      "shot": 5,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Equation matches the phrase and the 3 is highlighted. The palette notes describe a graph layout, so this frame doesn't match them. Consider also highlighting the 1 in B, or add a short label such as 'A is 3 units tall' under each side. The equation is vertically centered, so the layout is fine."
+    },
+    {
+      "beat": 2,
+      "shot": 6,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Keep the truncated y-axis (49 to 53) so bar A looks about 3x as tall as B. Make the axis break clearer and give the '49' label the same color as the other tick labels. Palette roles mention slope graphs, which don't apply here, so a plain bar chart is fine."
+    },
+    {
+      "beat": 2,
+      "shot": 7,
+      "avg": 4.0,
+      "min": 2,
+      "fix": "Frame matches the phrase well: the truncated-axis crime chart is the callback to the earlier headline, and the squiggle break at 49 makes the trick visible. Legibility is good, with clear labels, values and title. The style score is low because the palette/layout notes describe a slope/secant graph (red curves, blue accent, left/right graphs), which does not match this bar chart. The chart does use the orange accent and black background. To fit the style better, keep the bar chart but recolor the 'Before' bar to accent3 or fg, or raise the red 'WORKED EXAMPLE' tag contrast. Optionally add a callout in the empty bottom area such as 'Axis starts at 49, not 0'."
+    },
+    {
+      "beat": 2,
+      "shot": 8,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Frame matches the phrase well: the y-axis starts at 0 and bars A (52) and B (50) look nearly equal. The palette/layout notes describe a slope/curve graph, which doesn't apply here, so the fit with that spec is weak. The bar chart uses the accent red and a black background, so no prop change is needed. Optionally, use accent2 to highlight the small gap between the bars."
+    },
+    {
+      "beat": 2,
+      "shot": 9,
+      "avg": 4.666666666666667,
+      "min": 4,
+      "fix": "Optional: the layout description mentions graphs and a slope label, but this equation template shows only the equation, which is fine for this phrase. No change needed."
+    },
+    {
+      "beat": 2,
+      "shot": 10,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Frame matches the phrase exactly: 2/50 = 0.04 = 4% with the 4% highlighted in red. The palette and layout notes describe a slope-graph scene, so only the dark background, white text and red accent apply here. No change needed."
+    },
+    {
+      "beat": 2,
+      "shot": 11,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Caption and big number fit the phrase well. The palette/layout notes describe slope graphs, which this frame does not use, so the mismatch is in the notes, not the frame. To show 'dressed up as big' more clearly, add a contrasting visual, e.g. caption 'Looked 200% bigger. Actually just 4%.' with the 200% emphasized in the accent color."
+    },
+    {
+      "beat": 2,
+      "shot": 12,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Redraw the honest chart so its bar heights match the data (52 and 50 on a 0-60 axis); they currently look like about 49 and 47. The palette/layout notes describe a slope/line graph, not this bar-chart compare_split, so the guidance doesn't match the shot. Also move the bars and labels off the empty bottom 30% of the frame."
+    },
+    {
+      "beat": 3,
+      "shot": 0,
+      "avg": 4.0,
+      "min": 4,
+      "fix": "Optional: add a faint center fold or crease animation so the 'fold in half' reads more clearly; the axes and titles are otherwise clear. Contrast of the gridlines is very low."
+    },
+    {
+      "beat": 3,
+      "shot": 1,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Frame matches the phrase: left axis runs 49 to 53 with bars A and B and a truncation break marker. The palette/layout notes describe a line graph with slope triangle, which does not match this bar-chart split, so style fit is partial. No prop change needed; optionally label the axis break or fill the right panel in a later beat."
+    },
+    {
+      "beat": 3,
+      "shot": 2,
+      "avg": 3.6666666666666665,
+      "min": 3,
+      "fix": "Add the 'Zoomed' label under the left chart. The x_label should appear beneath the axis, but the left title sits above and nothing is written underneath. Also make the zoomed chart's A-B gap look more dramatic. The palette notes describe a slope/secant graph and do not match this bar-chart layout."
+    },
+    {
+      "beat": 3,
+      "shot": 3,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Layout and palette notes describe a slope/secant graph scene, which doesn't match this bar-chart comparison. The frame itself is clean and accurate. Optionally highlight the right chart's 0-60 axis (e.g. an accent2 bracket or label) while the phrase is spoken."
+    },
+    {
+      "beat": 3,
+      "shot": 4,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Highlight the right 'Honest' panel, for example by dimming the left panel or adding an accent outline, so the 'that panel' reference is clear. The palette/layout notes describe slope graphs and don't match this bar-chart compare, so align the styling with the bar-chart template."
+    },
+    {
+      "beat": 3,
+      "shot": 5,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Frame matches the phrase well: the zoomed chart's truncated axis starting at 49 with an orange break marker contrasts with the honest zero baseline. To improve, highlight the baseline value (49 vs 0) with an accent color or callout. The palette/layout notes describe a slope/secant graph and don't match this bar-chart comparison, so style fit is only partial."
+    },
+    {
+      "beat": 3,
+      "shot": 6,
+      "avg": 2.6666666666666665,
+      "min": 2,
+      "fix": "Set baseline_color, break_marker_color and tick_label_color to the blue #7FB8E0 on the left chart, and the same on the right. In the frame the break marker and the '49' label are still orange (#F5A623), and the right chart's baseline and ticks are grey/white. The phrase says the color switches from orange to blue, so the highlighted baseline elements need to render blue. Also make sure the palette roles match this chart template, since the roles text describes a slope graph."
+    },
+    {
+      "beat": 3,
+      "shot": 7,
+      "avg": 3.0,
+      "min": 2,
+      "fix": "Draw the circle marker (radius ~22, stroke 4, accent3 blue) around the 49 baseline on the left chart. At the moment the '49' label is plain orange text with no circle, and the baseline break is a zigzag. Make the baseline_marker render in accent3 blue, and make sure the circle is visible and centered on the 49 tick."
+    },
+    {
+      "beat": 3,
+      "shot": 8,
+      "avg": 3.6666666666666665,
+      "min": 3,
+      "fix": "Add a highlight on the right 'Honest' chart, such as a callout or marker at the 0 baseline, since the phrase refers to it. Show the blue circle baseline marker at 0 on the right chart and the 49 marker on the left, as the props specify. Remove the unused slope/cursor roles from the palette notes."
+    },
+    {
+      "beat": 3,
+      "shot": 9,
+      "avg": 2.6666666666666665,
+      "min": 2,
+      "fix": "Add the specified \u0394 = 2 bracket annotations between bars A and B in both panels (anchor bar_top), in matching color, so the equal delta is visible. Set the left panel's axis_break to false (the frame shows a wavy break despite the shot spec) and add the blue baseline markers (#7FB8E0) at 49 and 0. Replace the orange/red title and bar colors with the palette roles from the spec."
+    },
+    {
+      "beat": 3,
+      "shot": 10,
+      "avg": 2.6666666666666665,
+      "min": 2,
+      "fix": "Draw the circled baseline marker (blue circle, size 28, stroke 4) at the 49 baseline on the left and the 0 baseline on the right. Currently the left baseline uses an orange zigzag axis break and the right has no circle, so nothing is actually circled. Set axis_break false on the left, show the \u0394 = 2 annotations on both charts, and use the blue accent3 for the baseline marker so the 'circled spot' reads clearly."
+    },
+    {
+      "beat": 4,
+      "shot": 0,
+      "avg": 3.0,
+      "min": 2,
+      "fix": "Match the shot to the palette and layout, which describe a slope/secant graph. Remove the mismatched bar-chart split or retitle it. Replace 'blue circle' in the titles with the actual referent, since no blue circle appears and the bars are red and orange. Fix the right chart's bar heights: the 52 bar is drawn below its true height. Also stop the orange label on the right from sitting on the bar edge."
+    },
+    {
+      "beat": 4,
+      "shot": 1,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Palette/layout notes describe a slope/line-graph scene, so the frame's roles don't match. Align the shot with the palette by using red as the bar color (it currently looks dark maroon, not #E8453C). Make the left chart's y-axis break more obvious, and consider a caption like 'visual change bigger or smaller' to tie it to the phrase."
+    },
+    {
+      "beat": 4,
+      "shot": 2,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Mostly fine. The palette/layout notes describe a slope graph and do not match this bar-chart compare_split, so on_style is uncertain. To strengthen the phrase, add a visual link between the two charts, such as a bracket marking +2 on each, or tint the verdict in accent2."
+    },
+    {
+      "beat": 4,
+      "shot": 3,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Frame is clear and matches the phrase as an equation, but the palette/layout notes describe a slope graph (left/right graphs, delta labels). Only the highlighted accent proportional symbol fits the palette, so on_style is partial. Consider enlarging the highlighted \\propto or adding a small bar or circle size-vs-quantity visual to reinforce the idea."
+    },
+    {
+      "beat": 4,
+      "shot": 4,
+      "avg": 4.666666666666667,
+      "min": 4,
+      "fix": ""
+    },
+    {
+      "beat": 4,
+      "shot": 5,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Keep the equation, but replace the palette/layout notes, which describe slope graphs and don't match this shot. Optionally shorten the label to 'size of effect shown' to mirror the narration more closely."
+    },
+    {
+      "beat": 4,
+      "shot": 6,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Frame catches the morph mid-transition: a ghost of the old 'lie factor = effect shown in graphic' still overlaps the new fraction, which hurts legibility. Hold the final state longer or end the morph earlier. The palette note describes a slope/graph scheme (orange numerator, blue denominator), so color the numerator orange and the denominator blue or keep the red highlight on 'effect in data' consistently."
+    },
+    {
+      "beat": 4,
+      "shot": 7,
+      "avg": 3.0,
+      "min": 2,
+      "fix": "The shot specifies a caption 'lie factor = graphic \u00f7 data' under the left panel, but the frame shows no caption. Make sure the left.caption renders beneath the Zoomed chart, in the empty space below the x-axis labels. Also fix the right panel's value labels: they render dim gray/brown instead of the specified white #FFFFFF."
+    },
+    {
+      "beat": 4,
+      "shot": 8,
+      "avg": 4.0,
+      "min": 2,
+      "fix": "Layout and palette notes describe a slope/secant graph (line, curve, triangle), not a bar-chart compare_split, so the style match is weak. If the bars are intended, update the palette/layout spec. The right chart's value labels (50, 52) are only slightly different in color from the left; make highlight and label colors consistent."
+    },
+    {
+      "beat": 4,
+      "shot": 9,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Optional: color the numerator 2 orange and the denominator 50 blue, matching the palette roles. The palette/layout notes describe a graph scene, so this equation card is a style departure, but it works as a stand-alone equation shot."
+    },
+    {
+      "beat": 4,
+      "shot": 10,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Frame shows the equation correctly with the 50 highlighted in red. The palette and layout notes describe a slope graph (orange numerator, blue denominator), which this frame doesn't follow: the numerator and denominator are plain white. Optionally color 200 orange and 4 blue to match the palette roles."
+    },
+    {
+      "beat": 4,
+      "shot": 11,
+      "avg": 4.666666666666667,
+      "min": 4,
+      "fix": "empty"
+    },
+    {
+      "beat": 5,
+      "shot": 0,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Optionally add a visible 'Truncated axis' callout near the zigzag break to make the stretched-axis point clearer. Also, the palette/layout notes describe slope graphs, which do not match this bar chart, so confirm the intended style."
+    },
+    {
+      "beat": 5,
+      "shot": 1,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Frame is a clean callout whose text restates the phrase, and the emphasis on 'Misleading' in red accent matches the palette. It is legible, with high contrast and a centered layout. The one weakness is style: the layout notes describe graphs with slope and secant elements, but this frame is plain text on black. Optionally add a faint axis or chart motif behind the text so it ties into the graph visuals; otherwise no change is needed."
+    },
+    {
+      "beat": 5,
+      "shot": 2,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Chart matches the phrase: 5.1 to 4.9 over Jan-Mar with a clear title. Style mismatch with the layout notes: the chart is centered and wide, not in the left-graph region (x 10-38%). Keep the axes in the left-graph box and shrink the chart width, or leave it if a full-width chart is acceptable."
+    },
+    {
+      "beat": 5,
+      "shot": 3,
+      "avg": 3.3333333333333335,
+      "min": 2,
+      "fix": "Chart matches the phrase (10-year zoomed-out data). Style mismatch: the layout notes describe a small graph in the left/right 10-80% region with the bottom 30% left empty, but this chart fills the full frame. Shrink it to the layout zone and reduce the highlight_range band, which is too thin to read as a highlight."
+    },
+    {
+      "beat": 5,
+      "shot": 4,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Layout and palette notes describe a different slide (slope triangle, convex curve), so the split-compare style is only partly matched. Fine for the phrase. Small tweaks: enlarge axis tick labels and make the highlight dashes more visible, and add a label for the highlighted range on the right chart linking it to the 3-month view."
+    },
+    {
+      "beat": 6,
+      "shot": 0,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Add the '?' to the second line (the frame shows a cursor bar where the '?' should be). The palette/layout notes describe graphs that aren't used here, so only the whiteboard text is relevant. Optionally add an accent color to the text."
+    },
+    {
+      "beat": 6,
+      "shot": 1,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Style is only a partial match: the palette note describes a slope/graph lesson with axes, but a stat_reveal on black with red and white text is plausible for this worked example. The caption could say 'our stock is up 30%!' so the ad quote matches the spoken phrase more closely. Otherwise no change is needed."
+    },
+    {
+      "beat": 6,
+      "shot": 2,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Palette notes describe a slope/graph scheme (red lines, orange/blue deltas), but the bar chart uses red and orange bars on black, which is acceptable. Optionally set y_max to 140 so the axis shows headroom; no other change needed."
+    },
+    {
+      "beat": 6,
+      "shot": 3,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Phrase says 'thirty over 100', so the frame could show the simplified step, e.g. tex '\\frac{30}{100} = 30\\%'. The palette/layout description is about slope graphs, so the equation template is a loose fit. Otherwise the frame is clean, with a high-contrast red highlight on 30%."
+    },
+    {
+      "beat": 6,
+      "shot": 4,
+      "avg": 4.666666666666667,
+      "min": 4,
+      "fix": "empty"
+    },
+    {
+      "beat": 6,
+      "shot": 5,
+      "avg": 3.3333333333333335,
+      "min": 2,
+      "fix": "The narration says the full year is drawn in blue and the window in green, but the frame shows a red line and an orange highlight. Recolor the line to accent3 blue and the highlight band to green, or change the narration to match the red/orange palette. The line chart's red curve follows the palette role, but the highlight should match the phrase."
+    },
+    {
+      "beat": 6,
+      "shot": 6,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Layout notes describe a different two-graph slope template, so on_style is only partial. The frame is a single full-width chart with a highlight band that matches the phrase. To fit the style better, shrink the chart to the left-graph region or add $ labels for 200 and 100 at the endpoints."
+    },
+    {
+      "beat": 6,
+      "shot": 7,
+      "avg": 3.3333333333333335,
+      "min": 2,
+      "fix": "Highlight is orange/amber, not green as spoken. The props already set highlight_color to #22c55e, but the render ignores it and uses the accent2 orange. Make the highlight box use the highlight_color green (stroke and fill), or change the narration to say 'orange box'."
+    },
+    {
+      "beat": 6,
+      "shot": 8,
+      "avg": 4.666666666666667,
+      "min": 4,
+      "fix": "empty"
+    },
+    {
+      "beat": 6,
+      "shot": 9,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Style: the palette/layout notes describe a graph-based slope scene, but this frame is a plain stat reveal. Consider a sign cue such as a down arrow, and keep the caption on the accent roles. Otherwise no prop change is needed."
+    },
+    {
+      "beat": 6,
+      "shot": 10,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "The palette/layout notes describe a slope/secant graph, which doesn't match this compare_split bar chart, so check that the correct palette is applied. The visual shows the 'Remember the zoomed panel?' callback well. To strengthen 'different axis: time', relabel the x-axis as time (e.g. 'Quarter') or add an axis label. The Q2 bar in the left panel is dark maroon and low-contrast, so highlight_index could be removed or Q2 brightened."
+    },
+    {
+      "beat": 6,
+      "shot": 11,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Add a small callout on the highlighted Mar\u2013Jun window, e.g. 'Cherry-picked window: +30%', so the careful choice of window is explicit. The palette/layout description is for a different slope graph (two graphs, triangle), so this single-chart frame only loosely follows it."
+    },
+    {
+      "beat": 6,
+      "shot": 12,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Highlight the dip at Mar (e.g., a callout or marker) to show what you only notice in the whole line; the layout description also doesn't match this single full-width chart, so adjust the layout or palette roles to fit."
+    },
+    {
+      "beat": 7,
+      "shot": 0,
+      "avg": 3.3333333333333335,
+      "min": 2,
+      "fix": "Show the Dec point (130) on the line; it's missing and only a stray red mark sits at the right edge. Brighten the x-axis labels. Drop the layout/palette notes about slope graphs, which don't fit this chart."
+    },
+    {
+      "beat": 7,
+      "shot": 1,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Frame is mid-write: line 2 is missing its '?' and line 3 hasn't appeared yet. That fits 'I'll write them now', but the full three-question list should land before the phrase ends. The palette notes describe graphs with slope labels, which don't match this whiteboard text-only shot. Keep the lines as they are and check that the write-on finishes. Consider using an accent color on the numbers or a key word for style consistency."
+    },
+    {
+      "beat": 7,
+      "shot": 2,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Frame is mid-typing: line 2 is cut off at 'What window of t' and line 3 hasn't started, so only the first question is fully shown. Hold the frame until all three lines are written, or time the write-on to finish with the narration. The palette/layout notes describe graphs that don't appear in this whiteboard_write shot, so the mismatch is minor. Consider coloring a keyword in accent red for emphasis."
+    },
+    {
+      "beat": 7,
+      "shot": 3,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Palette/layout notes describe a slope/curve graph, not a bar chart, so the style match is only partial. Bar colors (dark red and orange) roughly fit the accent colors, but the 'Before' bar looks dim. Consider using accent (#E8453C) for Before and keep the highlight on Now. The checklist title matches the phrase well, and the 50 vs 52 bars on a 0-60 axis make the 'too good or too scary' point, though the visual does not yet show the manipulation."
+    },
+    {
+      "beat": 7,
+      "shot": 4,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Frame matches the phrase well: \"Average\" is the hub linked to Mean, Median and Mode. The palette/layout notes describe a slope-graph scene, so this diagram only loosely follows them. It does use the accent colors and a black background. Possible tweaks: add a white fg label color, or tint the child nodes to accent3, to align better with the palette roles."
+    },
+    {
+      "beat": 7,
+      "shot": 5,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Chart matches the phrase well: 10 of 14 people earn $30k while the $250k outlier pulls the mean up to $50k. The palette and layout notes describe a slope/derivative graph, which doesn't fit this bar chart, so on_style is uncertain. The chart does use the dark background, orange highlight and red bars, but the red is darker than the specified accent. Consider using accent #E8453C for the non-highlighted bars and adding a visible mean marker line at $50k."
+    },
+    {
+      "beat": 7,
+      "shot": 6,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Nothing needed for the phrase, since the three tools match 'the first three tools'. For style, the palette/layout notes describe slope graphs, so this text-only slide may not match them. Optionally highlight the tool labels with accent colors, or move the list higher or left so the layout is less centered and empty."
+    }
+  ]
+}
