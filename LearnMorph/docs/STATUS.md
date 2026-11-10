@@ -31,11 +31,34 @@ and the lecturer grammar gate failed after 3 rounds (best score 3.67 kept).
 
 The blind test uses a Claude judge shown scripts written from Claude-written grammars. A 10/10 score
 shows that the two generated styles are distinguishable from each other. It does not show that either
-matches the real teacher. An honest evaluation against the real teachers is in progress.
+matches the real teacher. The recipe-free evaluation below measures this directly.
+
+## Evaluation against the real teachers (`eval/`, 2026-11-10)
+
+Judge claude-opus-5-5, writer claude-sonnet-5-5. Full tables and limitations: `eval/report.md`.
+
+- Generated text was picked as the real human 0 of 40 times (also 0 of 40 after filler words were removed
+  from the real text). The judge never mistakes the generated text for the human, and the unstyled control
+  fares no better (0 of 12).
+- An unstyled control (plain Sonnet explainer, no style information) was labelled 3b1b 20 of 20 times. So the
+  3b1b attribution result (40/40 overall, 20/20 for 3b1b scripts) carries no information: any polished LLM
+  script sounds like 3b1b to this judge.
+- The lecturer (Khan Academy style) attribution of 20 of 20 is real signal, since it holds against that pull.
+- Beat frequencies move toward the target teacher, weakly: 3 of 4 scripts are closer to their own teacher on
+  both cosine and JSD, and 7 of 8 comparisons beat the unstyled control. Transition order does not move toward
+  the target, and the metric fails to separate the real teachers either, so it is uninformative at this data size.
+- The earlier 10/10 blind test measured recipe-following, not likeness to the human.
+- Ceiling check: real held-out text from either teacher is identified 20 of 20, so the task itself is easy.
+
+Limitations: writer and judge are the same model family; LUAR check written but not run; only 3 real
+transcripts per teacher (lecturer about 3,300 words), all used to build the grammars, so there is no held-out
+real text; small n (10 trials per script, trials reuse the same 4 scripts); topic confound (demo1 is calculus,
+which both teachers teach); test 4 is a pairwise forced choice, easier than spotting a fake alone, and the
+judge may recognise real transcripts from pretraining; real text had names replaced and one lecturer file is
+raw auto-captions; beat labels come from one Sonnet segmentation per text.
 
 ## In progress
 
-- Evaluation that compares against the real teachers' material.
 - Chart templates (demo2 uses a `plot` template for bar charts; its QA notes flag truncated bars and axes).
 - Sentence-level narration (`tts_vm.py --mode sentence`, so intonation runs across shots).
 

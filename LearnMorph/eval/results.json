@@ -1,0 +1,1733 @@
+{
+ "calls": {
+  "cached": 167
+ },
+ "pool_sizes": {
+  "3b1b": 36,
+  "lecturer": 11
+ },
+ "unstyled_texts": {
+  "unstyled/demo1": {
+   "teacher": null,
+   "topic": "demo1",
+   "text": "Here's a strange fact about calculus. There is a function that, at every single point, has a slope exactly equal to its own height. When it's at height five, it's climbing at a rate of five. When it's at height a thousand, it's climbing at a rate of a thousand. That function is e to the x, and today we're going to see why this isn't a coincidence or a trick. It's the whole reason the number e exists. Let's start with what a derivative actually measures. It tells you how fast a function is changing at a given moment. Take any exponential function, say two to the x. To find its slope, we compare its value at x with its value a tiny step later, at x plus h, and divide the change by h. The change is two to the x plus h, minus two to the x. Now here's the key move. Two to the x plus h is the same as two to the x times two to the h. So we can factor out two to the x, and the slope becomes two to the x, multiplied by the quantity two to the h minus one, all over h. Look at what just happened. The slope of two to the x is two to the x itself, times a leftover piece that depends only on h, not on x. As h shrinks toward zero, that leftover piece settles down to a fixed number. For base two, it's about 0.693. So the derivative of two to the x is roughly 0.693 times two to the x. It's proportional to itself, but not equal. Try base three, and the same pattern appears. The slope is three to the x times a constant, but this time the constant is about 1.099. Every exponential function has this property: its slope is always some constant multiple of its own value. That's what makes an exponential an exponential. The bigger it gets, the faster it grows, in perfect proportion. Now the constant for base two is less than one, and for base three it's more than one. So somewhere between two and three, there must be a base where that constant is exactly one. At that base, the leftover piece disappears, and the slope equals the function itself. That special base is e, approximately 2.718. In other words, e isn't defined as a mysterious number that happens to have a nice derivative. It's defined as the base that makes the growth constant exactly one. There's another way to see this, through money. Suppose you put one dollar in a bank that pays one hundred percent interest per year. If it's compounded once, you end with two dollars. Compound twice, and you get two point two five. Compound monthly, and you get about two sixty-one. Keep compounding more and more often, and the total creeps toward a limit, and that limit is e. So e is what you get when growth feeds on itself continuously, with every bit of new growth immediately starting to grow too. We can use this to check the derivative. The function e to the x can be written as the limit of one plus x over n, all raised to the power n, as n gets huge. Take the derivative of that expression. The power rule brings down the n, and the chain rule multiplies by one over n. Those cancel, leaving one plus x over n, raised to the power n minus one. And as n grows large, that is essentially the same expression we started with. The derivative of e to the x turns back into e to the x. One more perspective, for anyone who likes patterns. e to the x can be written as an infinite sum: one, plus x, plus x squared over two, plus x cubed over six, and so on, where each term is x to a power divided by that power's factorial. Now differentiate each term. The derivative of x is one. The derivative of x squared over two is x. The derivative of x cubed over six is x squared over two. Every term turns into the one before it, so the whole sum reproduces itself, just shifted over by one place. Since the sum goes on forever, nothing is lost. The result is the same series we started with. So three different routes lead to the same place. Algebra shows that exponentials have slopes proportional to themselves, and e is the base where the proportion is one. Compound interest shows e as the limit of growth building on growth. And the infinite series shows each term feeding the next in a perfect loop. That's why e to the x shows up everywhere: in population growth, radioactive decay, cooling coffee, and electrical circuits. Whenever the rate of change of something depends on how much of it there is, e to the x is hiding in the answer. Its derivative equals itself because that is exactly what it was built to do."
+  },
+  "unstyled/demo2": {
+   "teacher": null,
+   "topic": "demo2",
+   "text": "Here's a strange fact: a chart can be completely accurate, with every number correct, and still leave you believing something false. Numbers don't lie on their own. But people can arrange them so they mislead. Today I'll show you the most common tricks, and the questions that catch them. Let's start with the classic: the truncated axis. Imagine a bar chart comparing two products. One scores 96, the other scores 98. If the vertical axis starts at 95 instead of zero, the second bar looks more than three times taller. Same data, dramatic difference. So the first thing to check is where the axis begins. For bar charts especially, bars should start at zero, because the height of the bar is supposed to represent the whole quantity. Line charts can sometimes zoom in legitimately, but even then, ask yourself whether the zoom is exaggerating something small. The second trick is the cherry-picked time window. Say a politician claims, \"Crime has fallen every month since March.\" That may be true, but if crime spiked in February and March, you're just watching a return to normal. Pick a different starting point and the same data tells the opposite story. Whenever you see a trend, ask: why does the chart start here, and what happened before? Stretch the timeline in your mind. Third, watch for percentages without a base. \"Risk doubles!\" sounds terrifying. But if a risk goes from one in ten thousand to two in ten thousand, that's a hundred percent increase, and still almost certainly nothing to worry about. Relative change feels huge when the starting number is tiny. Always ask for the absolute numbers: doubled from what, to what? Fourth, the slippery word \"average.\" If ten people are in a room and each earns fifty thousand dollars, then a billionaire walks in, the average income shoots up to nearly ninety million. Nobody in the room got richer, except one person. The mean is dragged around by extreme values; the median, the middle value, is far more representative. When someone says \"average\" about incomes, house prices, or anything lopsided, ask which average, and whether the median is available. Fifth, correlation dressed up as causation. Ice cream sales and drowning deaths rise and fall together. Does ice cream cause drowning? No. Hot weather drives both. Charts love to put two lines side by side and invite you to assume one pushes the other. Before you accept it, ask whether a third factor could explain both, whether the direction might be reversed, or whether it's just coincidence. With enough data, bizarre pairs of things line up by pure chance. Sixth, dual axes. A chart with one line measured on the left side and another on the right can be tuned so the two lines look perfectly synchronized. By changing the scale of either axis, the designer can make almost any two lines appear to move together, or diverge. If you see two different scales on one chart, be suspicious, and check what each axis actually says. Seventh, the sample. A survey says \"90 percent of customers are satisfied.\" Who was asked? If only people who finished the whole purchase were surveyed, the unhappy ones already left. If five people were asked, then 90 percent isn't even possible. Look for how many people were surveyed, how they were chosen, and who might be missing. A big, random sample is trustworthy. A self-selected online poll is not. Eighth, visual distortion. Sometimes a graphic uses icons, like a small money bag and a big money bag, to represent values. If one value is twice the other, and the designer doubles both the height and the width, the area becomes four times larger. Your eye reads area, not height, so the difference looks exaggerated. Similarly, 3D pie charts make slices at the front look bigger than they are. And if the slices of a pie chart don't add up to a hundred percent, something is wrong. Finally, there's what's left out: missing labels, no source, no units, no mention of how the data was collected. A chart that doesn't tell you where its numbers came from is asking for trust it hasn't earned. So here's a quick checklist you can run in about ten seconds. Check the axes: where do they start, and are they consistent? Check the time frame: is it fair, or conveniently chosen? Check the comparison: are these absolute numbers or just percentages? Check the measure: mean, median, or something else? Check the source and the sample: who collected this, and who was counted? And check the claim: does the chart show correlation while the headline says cause? You don't need to be a statistician. You just need a habit of asking, \"What would I need to see to be fooled, or not fooled, by this?\" Do that, and numbers go from something that persuades you to something you can actually use."
+  }
+ },
+ "t1_attribution": [
+  {
+   "text": "demo2/3b1b",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 85.0,
+   "reason": "The anonymous text has X's polished, scripted narration: direct-address prompts like 'the image you might have in mind,' measured caveats, 'let's step back and summarize,' and conceptual reframing toward a general principle, unlike Y's improvised, stream-of-consciousness worked-example style with self-corrections."
+  },
+  {
+   "text": "demo2/3b1b",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 88.0,
+   "reason": "The anonymous text is polished and scripted, with measured rhetorical questions, 'the attentive viewers among you,' 'there's nothing special about,' 'picture...', and a 'that's the next video' close, all of which match Y's crafted explanatory voice rather than X's unscripted, self-interrupting live narration."
+  },
+  {
+   "text": "demo2/3b1b",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 80.0,
+   "reason": "The anonymous text is polished and scripted, with rhetorical questions answered by \"Well,\" phrases like \"The attentive viewers among you,\" \"a high-level view,\" and \"take a moment,\" and a build-up from concrete examples to general principles, which matches Y's crafted narrative voice rather than X's improvised, self-correcting board-talk."
+  },
+  {
+   "text": "demo2/3b1b",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 88.0,
+   "reason": "The anonymous text matches X's polished, scripted narration: rhetorical questions answered with 'Well,' planned 'there's nothing special about...' generalizations, framing of goals and caveats ('the attentive viewers among you'), and previews of the next video, unlike Y's improvised, self-interrupting chalkboard talk."
+  },
+  {
+   "text": "demo2/3b1b",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 88.0,
+   "reason": "The anonymous text has X's polished, deliberately structured voice: repeated 'there's nothing special about...', a sweeping generalization from one example to a family of cases, inviting visual metaphors (the ruler test, like the winding/center-of-mass imagery), and a preview of 'the next video', none of which fit Y's improvised, step-by-step 'let's say... well...' chatter."
+  },
+  {
+   "text": "demo2/3b1b",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 88.0,
+   "reason": "The anonymous text is a polished, scripted narration built around imagined scenarios (\"Picture...\", \"Imagine...\") and rhetorical asides like \"right?\" and \"the attentive viewers among you\", with framing such as \"high-level view\" and previews of the next video, all of which match Y's crafted voice rather than X's rambling, live-drawing style with self-corrections."
+  },
+  {
+   "text": "demo2/3b1b",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 85.0,
+   "reason": "The anonymous text matches X's polished, reflective delivery: rhetorical asides to the viewer ('It's a little scary, right?', 'don't you think?'), reframing questions, generalizing 'there's nothing special about...' moves, caveats about high-level views, and forward references to later videos, rather than Y's repetitive, improvised worked-example patter."
+  },
+  {
+   "text": "demo2/3b1b",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 85.0,
+   "reason": "The anonymous text reads as a polished, scripted narration: it opens on a vivid concrete hook ('Here's a bar chart'), addresses the viewer directly ('I want you to take a moment'), and builds playfully toward a broader insight with caveats, matching Y, whereas X's delivery is rambling and improvised, full of repeated 'let's' and 'well'."
+  },
+  {
+   "text": "demo2/3b1b",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 82.0,
+   "reason": "The anonymous text matches X's polished, scripted narration: rhetorical 'right?' tags, phrases like 'there's nothing special about,' a reframing of the idea through a visual metaphor, a 'that's the next video' series framing, and an address to the 'attentive viewers among you,' rather than Y's improvised, worked-example patter full of 'well' and 'right over here.'"
+  },
+  {
+   "text": "demo2/3b1b",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 85.0,
+   "reason": "The anonymous text is polished, scripted narration with 'picture this' framing, hedged caveats ('in a sense', 'roughly'), asides to 'attentive viewers', and forward pointers to the next video, all of which match Y's crafted style rather than X's improvised, self-interrupting talk-while-drawing delivery."
+  },
+  {
+   "text": "demo1/3b1b",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 88.0,
+   "reason": "The anonymous text matches X's polished 3Blue1Brown-style narration: 'There's nothing special about...', 'Notice...', bar and rectangle visualizations, small nudges like h, and references to the next video and the series, with none of Y's self-interrupting asides about drawing or colors."
+  },
+  {
+   "text": "demo1/3b1b",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 85.0,
+   "reason": "The anonymous text has polished, scripted narration that matches Y: imperative visual prompts (\"Take a look,\" \"Picture,\" \"Imagine\"), rhetorical asides like \"Why on earth would that be?\", \"just a peek at,\" a series-continuation outro, and an invitation for the viewer to work it out themselves, rather than X's improvised, self-interrupting live-drawing chatter."
+  },
+  {
+   "text": "demo1/3b1b",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 80.0,
+   "reason": "The anonymous text uses Teacher Y's polished, puzzle-driven voice: imperative invitations to picture and sit with an idea ('take a moment', 'notice'), rhetorical wonder ('Why on earth would that be?'), and lines like 'the attentive viewers among you', unlike Teacher X's looser, self-correcting 'so let's... well...' delivery."
+  },
+  {
+   "text": "demo1/3b1b",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 85.0,
+   "reason": "The text opens with a puzzle-driven visual hook, frames a story in the second person (\"you're the one counting\"), hedges with \"maybe\" and \"I'd say,\" and closes with a teaser for the next video plus an exercise, all of which mirror Y's exploratory, invent-it-yourself narration rather than X's procedural, self-correcting chalkboard talk."
+  },
+  {
+   "text": "demo1/3b1b",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 88.0,
+   "reason": "The anonymous text matches Y's voice: it opens with a puzzle and invites the viewer to 'sit with' it, leans on recurring visual metaphors and repeats 'There's nothing special about...', uses 'tiny nudge' style approximations and talks of 'next video' in a series, all without X's rambling self-corrections like 'let me draw that' and its repetitive 'steeper steeper'."
+  },
+  {
+   "text": "demo1/3b1b",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 80.0,
+   "reason": "The anonymous text matches Y's polished, puzzle-first narration, with framings like 'nudge', 'why on earth', 'the image you might have in mind' and asides such as 'a little bit of a lie', rather than X's loose, self-correcting 'let's say this point and that point' delivery."
+  },
+  {
+   "text": "demo1/3b1b",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 82.0,
+   "reason": "The anonymous text matches X's voice: it opens on a puzzle meant to be pondered ('sit with for a moment'), uses visual reframing, says 'nothing special about' and 'the attentive viewers among you', previews the next video, and leaves a closing exercise, all in composed, polished sentences rather than Y's rambling, self-interrupting live-board narration with dashes."
+  },
+  {
+   "text": "demo1/3b1b",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 72.0,
+   "reason": "The anonymous text matches Y's polished, deliberately structured narration: it opens with a puzzle to sit with, speaks of a tiny 'nudge' h, builds an extended visual metaphor ('a picture to hold onto'), and addresses 'attentive viewers' rather than using X's improvised 'let me draw this' and 'pretty straightforward' asides."
+  },
+  {
+   "text": "demo1/3b1b",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 85.0,
+   "reason": "The anonymous text opens with a puzzle-driven hook ('Why on earth would that be?'), speaks directly to the viewer ('picture', 'maybe you're thinking'), uses polished scripted sentences, and leads with intuition and visualization, all hallmarks of Teacher Y rather than Teacher X's halting, self-correcting live narration."
+  },
+  {
+   "text": "demo1/3b1b",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 85.0,
+   "reason": "The anonymous text matches X's voice: it opens with a puzzle that invites playful exploration, uses tiny nudges like h, mixes 'you' and 'our' as a narrator guiding visual pictures, and closes by previewing the next video and posing an exercise, all in a polished, motivated style unlike Y's repetitive, self-correcting spoken explanations."
+  },
+  {
+   "text": "demo2/lecturer",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 80.0,
+   "reason": "The anonymous text narrates live sketching with on-the-fly marker-color self-corrections ('Let me pick a red-- yes, red', 'let me grab a green marker'), mirroring Teacher Y's improvisational, digressive whiteboard voice rather than Teacher X's polished, flowing exposition."
+  },
+  {
+   "text": "demo2/lecturer",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 85.0,
+   "reason": "The anonymous text mirrors Teacher X's live-sketching voice, with self-interrupting marker choices (\"let me pick a red--\", \"let me grab a green\"), rhetorical \"Right?\"/\"what if\" questions, step-by-step arithmetic, and previews of future videos, rather than Teacher Y's polished, reflective prose."
+  },
+  {
+   "text": "demo2/lecturer",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 82.0,
+   "reason": "The anonymous text has X's live-drawing narration, with mid-sentence color-picking self-corrections like \"let me pick a red-- yes,\" \"let me grab a green,\" and \"hmm, let me use blue.\" It also shares X's rhetorical \"what if\" questions, \"right?\" check-ins, and step-by-step arithmetic, which differ from Y's polished, reflective prose."
+  },
+  {
+   "text": "demo2/lecturer",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 85.0,
+   "reason": "The anonymous text matches Teacher Y's voice: live narrated drawing with mid-sentence colour switches and dashes (\"Let me pick a red-- yes\"), casual self-corrections, \"you're probably\" asides, and step-by-step spoken arithmetic, unlike Teacher X's polished, reflective prose."
+  },
+  {
+   "text": "demo2/lecturer",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 80.0,
+   "reason": "The anonymous text narrates live drawing as it happens, with self-correcting colour choices (\"let me pick a red-- yes, red\"), rhetorical \"what is...? Well,\" question-and-answer, and step-by-step arithmetic, which matches Teacher Y's improvised chalkboard style rather than Teacher X's polished, reflective prose."
+  },
+  {
+   "text": "demo2/lecturer",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 80.0,
+   "reason": "The live blackboard narration matches Teacher X: self-interrupting colour-marker choices with dashes ('let me pick a red-- yes'), step-by-step spoken arithmetic, 'let's do a worked example,' and 'in the next video' signposting, while the occasional rhetorical hooks echo Teacher Y only superficially."
+  },
+  {
+   "text": "demo2/lecturer",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 80.0,
+   "reason": "The anonymous text keeps narrating its own drawing with mid-sentence color self-corrections ('Let me pick a red-- yes, red', 'let me grab a green marker', 'hmm, let me use blue') and walks through arithmetic step by step, which mirrors Teacher Y's improvised, think-aloud chalkboard voice rather than Teacher X's polished, scripted delivery."
+  },
+  {
+   "text": "demo2/lecturer",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 82.0,
+   "reason": "The anonymous text matches Teacher Y's live-whiteboard voice: on-the-fly colour-picking with dash self-corrections ('Let me pick a red--', 'let me grab a green marker'), casual narration of its own drawing, plain step-by-step arithmetic, and 'In the next video' previews, rather than X's smooth, polished conceptual exposition."
+  },
+  {
+   "text": "demo2/lecturer",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 72.0,
+   "reason": "The text is full of live, improvised board-work habits like mid-sentence marker-color self-corrections ('red-- actually, let me grab a green'), 'let me draw/sketch' narration and step-by-step spoken arithmetic, which match Y's casual on-the-fly whiteboard voice more than X's polished scripted prose."
+  },
+  {
+   "text": "demo2/lecturer",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 80.0,
+   "reason": "The text echoes Teacher Y's live-whiteboard habits: mid-sentence marker self-corrections like \"Let me pick a red--\", narrating each step of the drawing, \"We would define...\", and casual worked arithmetic; Teacher X's polished, flowing exposition has none of this."
+  },
+  {
+   "text": "demo1/lecturer",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 85.0,
+   "reason": "The text matches X's live-drawing, conversational voice: on-the-fly color choices ('let me pick a green-- actually, no, red'), em-dash self-interruptions, repeated 'Let's say', and casual asides like 'Kind of neat, right?' and 'next video'. It lacks Y's polished, scripted prose and invitations to rediscover ideas."
+  },
+  {
+   "text": "demo1/lecturer",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 85.0,
+   "reason": "The text matches Teacher Y's live-blackboard Khan-style voice: a 'Welcome to the video' opener, constant 'let's say' framing, on-the-fly marker-colour corrections ('green-- actually, no, red'), em-dash self-interruptions, and plain step-by-step narration, rather than X's polished, reflective prose built on motivating questions."
+  },
+  {
+   "text": "demo1/lecturer",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 82.0,
+   "reason": "The anonymous text shares Teacher X's live-drawing, conversational habits: frequent \"let's say\", on-the-fly color picking and self-correction (\"Let me pick a green-- actually, no, red\"), dash-interrupted asides, and hedges like \"sort of\" and \"kind of\", unlike Teacher Y's polished, scripted, visually reflective prose."
+  },
+  {
+   "text": "demo1/lecturer",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 85.0,
+   "reason": "The text opens with 'Welcome to the video on...' and 'I think you're going to like this one,' and it narrates live drawing with dash-interrupted self-corrections ('Let me pick a green-- actually, no, red'), which matches Y's informal, real-time chalkboard voice rather than X's polished, reflective cadence."
+  },
+  {
+   "text": "demo1/lecturer",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 88.0,
+   "reason": "The anonymous text mirrors Y's style: the 'Welcome to the video on...' / 'I think you're going to' opening, repeated 'Let's say' and 'Well,' fillers, live color-picking asides set off by dashes ('Let me pick a green-- actually, no, red'), delta y over delta x framing, and naming Lagrange notation, all matching Y's improvised chalkboard narration rather than X's polished, reflective prose."
+  },
+  {
+   "text": "demo1/lecturer",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 80.0,
+   "reason": "The anonymous text has Teacher Y's live-drawing asides (\"Let me pick a green-- actually, no, red\", em-dash self-interruptions), repeated \"Let's say\" setups, and casual \"Welcome to the video\" framing, unlike Teacher X's polished, flowing exposition."
+  },
+  {
+   "text": "demo1/lecturer",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 85.0,
+   "reason": "The text opens with \"Welcome to the video on...\" and \"I think you're going to like this one,\" and it is full of improvised drawing asides like \"Let me pick a green-- actually, no, red,\" hedges such as \"sort of\" and \"kind of,\" and previews of future videos, all of which mirror X's casual, self-interrupting voice rather than Y's polished, evocative narration."
+  },
+  {
+   "text": "demo1/lecturer",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 80.0,
+   "reason": "The text's 'Welcome to the video on...' opener, live marker and color fumbling with self-corrections ('let me pick a green-- actually, no, red'), em-dash interruptions, 'delta y over delta x' framing, and talk of 'next video' and Lagrange notation match Y's casual, procedural chalkboard style rather than X's polished, narrative, intuition-first prose."
+  },
+  {
+   "text": "demo1/lecturer",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 82.0,
+   "reason": "The anonymous text shares Teacher X's live-whiteboard habits: on-the-fly color picking with self-corrections ('Let me pick a green-- actually, no, red'), heavy repetition of 'Let's say', dash-interrupted asides, and step-by-step plugging-in of numeric examples, unlike Y's polished, metaphor-driven, narratively framed exposition."
+  },
+  {
+   "text": "demo1/lecturer",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 80.0,
+   "reason": "The text uses Teacher Y's live-drawing habits: frequent \"let's say\" setups, mid-sentence dash self-corrections while picking marker colors, and on-screen references like \"right here.\" These are absent from Teacher X's polished, reflective narration."
+  }
+ ],
+ "t2_ceiling": [
+  {
+   "text": "real/3b1b/aircAruvnKk",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 93.0,
+   "reason": "The anonymous text has the polished, flowing explanatory prose of Teacher X, with whimsical coinages like 'squishification', conceptual framing ('So when we talk about learning, what that's referring to'), and personal reflective asides ('I personally find this satisfying'), whereas Teacher Y works through stepwise computations with self-interruptions and 'let's' phrasing."
+  },
+  {
+   "text": "real/3b1b/spUNpyF58BY",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 90.0,
+   "reason": "Like Y, the text is built from long, polished, flowing sentences that pair a carefully worded visual metaphor ('winding up the graph', 'rotating vector') with remarks such as 'this is awesome... super elegant' and 'let's throw a negative sign up', and it frames things as approximations that get better in the limit, whereas X is choppier and self-interrupting, with live drawing asides."
+  },
+  {
+   "text": "real/3b1b/spUNpyF58BY",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 93.0,
+   "reason": "The anonymous text matches X's polished, scripted narration: long flowing sentences, playful coinages like 'almost Fourier transform' and 'winding frequency machine' (echoing 'squishification'), and forward pointers such as 'which I'll get to in a couple minutes', with none of Y's self-interrupting dashes or on-the-fly drawing asides."
+  },
+  {
+   "text": "real/3b1b/WUvTyaaNkzM",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 90.0,
+   "reason": "The anonymous text is polished and carefully structured, with long, measured sentences, framing phrases like \"at a high level,\" \"the point now is,\" and \"in that playful spirit,\" and forward references to \"later in the series,\" all matching Y's scripted voice rather than X's improvised, self-interrupting narration about drawing and colors."
+  },
+  {
+   "text": "real/3b1b/spUNpyF58BY",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 88.0,
+   "reason": "The anonymous text has Teacher Y's polished, flowing narration: long compound sentences, aesthetic asides like 'they are very pretty', invitations such as 'imagine this graph...', and periodic synthesis lines like 'let's sum up what we have so far', all quite unlike Teacher X's halting, self-correcting improvisation ('My pen is malfunctioning', 'Something like that')."
+  },
+  {
+   "text": "real/3b1b/WUvTyaaNkzM",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 92.0,
+   "reason": "The anonymous text uses Teacher Y's polished, scripted voice, with aesthetic praise (\"very beautiful,\" \"monstrously large,\" \"absolute nightmare\"), \"think like a mathematician,\" \"take a moment to meditate,\" and long, flowing, well-structured sentences, unlike Teacher X's improvised, self-interrupting talk while drawing."
+  },
+  {
+   "text": "real/3b1b/aircAruvnKk",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 93.0,
+   "reason": "The anonymous text flows in polished, measured sentences with playful coinages like 'squishification' and 'knobs and dials', voices personal reflection ('I personally find this satisfying'), and offers alternatives with 'Maybe...' the way Teacher X does, whereas Teacher Y's narration is improvised and halting, full of deictic asides like 'this point to that point' and 'my pen is malfunctioning'."
+  },
+  {
+   "text": "real/3b1b/spUNpyF58BY",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 93.0,
+   "reason": "The anonymous text uses polished, scripted narration with framing like \"our central question,\" \"the general strategy,\" and \"the key idea is going to be,\" plus vivid analogies (\"unmixing paint colors\") and asides (\"Pretty interesting, right?\"), all of which match X's voice rather than Y's improvised, self-correcting style with pen-malfunction interruptions."
+  },
+  {
+   "text": "real/3b1b/WUvTyaaNkzM",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 88.0,
+   "reason": "The anonymous text uses polished, flowing sentences with phrases like 'tiny nudges', 'a glimpse of', 'stumbling into another big idea', series framing ('in the next video', 'as the series goes on'), and an aspirational 'you could have invented calculus yourself' close, which matches Y's composed explanatory voice. It lacks X's halting self-corrections, drawing commentary, and dashes mid-thought."
+  },
+  {
+   "text": "real/3b1b/spUNpyF58BY",
+   "true": "3b1b",
+   "picked": "3b1b",
+   "conf": 88.0,
+   "reason": "The anonymous text matches Y's voice: long, planned sentences with framing phrases such as 'this is key' and 'the real key point', a 'let's sum up what we have so far' recap, and a smooth, scripted rhythm. It lacks X's self-interrupting asides, dashes, repeated filler like 'well', and live-drawing commentary."
+  },
+  {
+   "text": "real/lecturer/rAof9Ld5sOg",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 90.0,
+   "reason": "The live, informal blackboard narration matches Teacher X: color-switching asides ('let me pick a green'), self-deprecating drawing comments, 'right over here'-style pointing, dash-interrupted restarts, and repeated 'Well,' answers to self-posed questions, unlike Y's polished, scripted, metaphor-rich prose."
+  },
+  {
+   "text": "real/lecturer/rAof9Ld5sOg",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 92.0,
+   "reason": "The anonymous text has Y's unscripted, live-drawing narration: deictic phrases like 'this point right here', double-dash self-interruptions, asides about a malfunctioning pen, and repeated 'Well, what's the change in y?' self-questioning, unlike X's polished, scripted prose."
+  },
+  {
+   "text": "real/lecturer/rAof9Ld5sOg",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 92.0,
+   "reason": "The anonymous text has Teacher X's improvised, self-interrupting speech: dashes for mid-sentence corrections, 'let me pick a green' color remarks, 'right over here'-style pointing at the drawing, and self-deprecating comments about messy drawing, all unlike Teacher Y's polished, scripted prose."
+  },
+  {
+   "text": "real/lecturer/bRZmfc1YFsQ",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 92.0,
+   "reason": "The anonymous text shares Teacher Y's loose, self-interrupting speech, with mid-sentence dashes, asides about running out of page space, repeated 'So let's...' and 'Well,' openers, and phrases like 'pretty straightforward' and 'literally,' unlike X's polished, scripted delivery."
+  },
+  {
+   "text": "real/lecturer/bRZmfc1YFsQ",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 92.0,
+   "reason": "The anonymous text has Y's rambling spoken-transcript voice: repeated 'So let's...', self-interrupting dashes ('it could be-- it does not'), asides about the page and pen, and 'in future videos' signposting, unlike X's polished, figurative prose."
+  },
+  {
+   "text": "real/lecturer/rAof9Ld5sOg",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 88.0,
+   "reason": "The anonymous text matches Teacher X's live-drawing, self-interrupting voice: em-dash asides, filler like 'let's say' and 'so', self-deprecating remarks about drawing, and repeated rhetorical questions answered with 'well', rather than Teacher Y's polished, scripted prose."
+  },
+  {
+   "text": "real/lecturer/bRZmfc1YFsQ",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 92.0,
+   "reason": "The anonymous text shares Teacher X's habits: it opens with \"You are probably already familiar with,\" answers its own questions with \"Well,\" leans on \"So let's,\" \"just,\" and \"literally,\" points ahead to \"in future videos,\" and walks through examples in loose spoken run-ons, unlike Y's more polished, reflective rhythm."
+  },
+  {
+   "text": "real/lecturer/N2PpRnFqnqY",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 88.0,
+   "reason": "The anonymous text has Teacher Y's conversational, self-answering rhythm: repeated \"Well,\" openers to its own questions, \"let's say\" and \"this point and this point\" deixis tied to live drawing, and loose, self-correcting asides. It lacks Teacher X's polished, flowing exposition."
+  },
+  {
+   "text": "real/lecturer/N2PpRnFqnqY",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 88.0,
+   "reason": "The text has Teacher X's loose, spoken whiteboard narration: deictic 'this point and that point,' 'right over here,' self-answering questions with 'Well,' and repeated self-corrections ('we would define slope, or we have defined slope'), unlike Teacher Y's polished, flowing exposition."
+  },
+  {
+   "text": "real/lecturer/bRZmfc1YFsQ",
+   "true": "lecturer",
+   "picked": "lecturer",
+   "conf": 92.0,
+   "reason": "The anonymous text matches Y's loose, conversational worked-example rhythm: self-posed questions answered with \"Well...\", dash-interrupted asides, repeated \"So...\" restarts, and spoken notation like \"f of x\", rather than X's polished, flowing exposition."
+  }
+ ],
+ "t3_unstyled": [
+  {
+   "text": "unstyled/demo1",
+   "true": null,
+   "picked": "3b1b",
+   "conf": 72.0,
+   "reason": "The anonymous text is polished and scripted, with a hook opening, rhetorical pivots like \"Now here's the key move\" and \"Look at what just happened,\" multiple framed perspectives and a punchy close, which matches Y's crafted narration rather than X's improvised, self-correcting style full of \"Well,\" and false starts."
+  },
+  {
+   "text": "unstyled/demo1",
+   "true": null,
+   "picked": "3b1b",
+   "conf": 80.0,
+   "reason": "The anonymous text is a polished, scripted narration with smooth rhetorical hooks ('Here's a strange fact', 'Look at what just happened') and several perspectives building toward intuition, which matches Y's fluent, crafted delivery rather than X's improvised, self-interrupting style with its many dashes and asides like 'let me see if I can draw'."
+  },
+  {
+   "text": "unstyled/demo1",
+   "true": null,
+   "picked": "3b1b",
+   "conf": 80.0,
+   "reason": "The anonymous text has polished, scripted narration with a hook opening ('Here's a strange fact'), conceptual framing ('the key move', 'In other words'), and multiple perspectives building intuition, which matches X's style rather than Y's halting, self-correcting, example-driven delivery with dashes and asides."
+  },
+  {
+   "text": "unstyled/demo1",
+   "true": null,
+   "picked": "3b1b",
+   "conf": 77.0,
+   "reason": "The anonymous text is polished and carefully paced, with 'here's the key move' style framing and intuition-first exposition building to a 'beautiful meaning' payoff, which matches X's scripted voice rather than Y's rambling, self-correcting improvisation full of dashes and 'well'."
+  },
+  {
+   "text": "unstyled/demo1",
+   "true": null,
+   "picked": "3b1b",
+   "conf": 72.0,
+   "reason": "The anonymous text is a polished, scripted narrative that opens with an intriguing hook and uses rhetorical framing like \"here's the key move\" and \"look at what just happened\" to walk through several perspectives, which matches Y's crafted expository voice rather than X's improvised, deictic \"this point and that point\" style with its \"in future videos\" asides."
+  },
+  {
+   "text": "unstyled/demo1",
+   "true": null,
+   "picked": "3b1b",
+   "conf": 80.0,
+   "reason": "The anonymous text is polished and conceptual, opening with a striking hook ('Here's a strange fact'), signposting with phrases like 'Now here's the key move' and 'Look at what just happened', and closing with a big-picture synthesis, which matches X's crafted narrative voice rather than Y's rambling, self-interrupting, dash-filled live-drawing commentary."
+  },
+  {
+   "text": "unstyled/demo1",
+   "true": null,
+   "picked": "3b1b",
+   "conf": 77.0,
+   "reason": "The anonymous text is a polished, scripted explanation that opens on a hook, builds intuition step by step, and favors vivid framing with no self-corrections, which matches X's crafted narration rather than Y's improvised, filler-laden 'well, let's say' style."
+  },
+  {
+   "text": "unstyled/demo1",
+   "true": null,
+   "picked": "3b1b",
+   "conf": 80.0,
+   "reason": "The anonymous text opens with an intriguing hook (\"Here's a strange fact\"), offers several conceptual routes to one idea, and speaks in polished, flowing prose with phrases like \"Look at what just happened\" and \"for anyone who likes patterns,\" all of which match X's 3Blue1Brown-style narration rather than Y's improvised, self-interrupting talk with dashes and asides about drawing."
+  },
+  {
+   "text": "unstyled/demo1",
+   "true": null,
+   "picked": "3b1b",
+   "conf": 80.0,
+   "reason": "The anonymous text has polished, scripted narration with a hook opening ('Here's a strange fact'), the reflective cue 'Look at what just happened', and a closing synthesis of 'three different routes', all of which match X's crafted, conceptual style rather than Y's improvised, self-interrupting chatter about drawing and colors."
+  },
+  {
+   "text": "unstyled/demo1",
+   "true": null,
+   "picked": "3b1b",
+   "conf": 80.0,
+   "reason": "The anonymous text is a polished, scripted narrative with a hook opening, deliberate framing lines like \"here's the key move\" and \"look at what just happened\", and a summary of multiple perspectives, which matches Y's crafted exposition rather than X's improvised, self-interrupting, dash-filled talk."
+  },
+  {
+   "text": "unstyled/demo2",
+   "true": null,
+   "picked": "3b1b",
+   "conf": 70.0,
+   "reason": "The anonymous text is polished and scripted, with framing hooks like \"Here's a strange fact\" and \"Today I'll show you,\" vivid phrasing, and direct second-person invitations, which matches Y's crafted narration rather than X's improvised working-through with \"Well,\" self-interruptions and dashes."
+  },
+  {
+   "text": "unstyled/demo2",
+   "true": null,
+   "picked": "3b1b",
+   "conf": 70.0,
+   "reason": "The anonymous text is polished and deliberately structured, with rhetorical hooks, vivid analogies and clean conversational asides, which matches X's crafted narration rather than Y's improvised, self-interrupting style full of dashes and corrections."
+  },
+  {
+   "text": "unstyled/demo2",
+   "true": null,
+   "picked": "3b1b",
+   "conf": 66.0,
+   "reason": "The anonymous text is a polished, scripted delivery with framing hooks and direct 'you' address, much closer to Y's composed narration than to X's improvised, self-correcting board talk ('let me draw it', 'my thing keeps messing up'), though its punchy checklist rhythm is terser than Y's flowing sentences."
+  },
+  {
+   "text": "unstyled/demo2",
+   "true": null,
+   "picked": "3b1b",
+   "conf": 72.0,
+   "reason": "The anonymous text is tightly scripted, with polished declarative sentences, a narrative hook and deliberately sequenced explanations, which matches X's prepared-narration voice far more than Y's improvised, self-correcting 'well, let's say' think-aloud style."
+  },
+  {
+   "text": "unstyled/demo2",
+   "true": null,
+   "picked": "3b1b",
+   "conf": 68.0,
+   "reason": "The anonymous text is polished and scripted, with a rhetorical hook opening, framed questions, and smooth second-person address ('ask yourself', 'your eye reads'), which matches Y's composed narration rather than X's improvised, self-interrupting board talk with its 'well' fillers and pen complaints."
+  },
+  {
+   "text": "unstyled/demo2",
+   "true": null,
+   "picked": "3b1b",
+   "conf": 68.0,
+   "reason": "The anonymous text is a polished, scripted narration with planned framing and smooth transitions, which fits Y's composed delivery far better than X's improvised, self-interrupting live-drawing patter full of dashes and asides."
+  },
+  {
+   "text": "unstyled/demo2",
+   "true": null,
+   "picked": "3b1b",
+   "conf": 66.0,
+   "reason": "The anonymous text is a polished, scripted narration with clean sentence structure, rhetorical framing like \"Here's a strange fact,\" and smooth signposted transitions, which is closer to Y's composed delivery than to X's rambling, self-correcting, dash-filled ad-libbing."
+  },
+  {
+   "text": "unstyled/demo2",
+   "true": null,
+   "picked": "3b1b",
+   "conf": 66.0,
+   "reason": "The anonymous text is a polished, scripted delivery: it opens on a striking hook ('Here's a strange fact'), uses punchy rhetorical framing, and addresses the viewer directly as someone to persuade. That matches Y's crafted narration ('take a moment to appreciate how crazy...') rather than X's improvised, self-correcting board talk ('right over here', 'let me see if I have space')."
+  },
+  {
+   "text": "unstyled/demo2",
+   "true": null,
+   "picked": "3b1b",
+   "conf": 68.0,
+   "reason": "The anonymous text reads as a polished, scripted narration with rhetorical hooks, imperative 'Imagine...' setups and deliberately signposted structure, which matches Y's crafted voiceover style rather than X's improvised, hesitant board-talk full of 'well,' 'right over here,' and self-corrections."
+  },
+  {
+   "text": "unstyled/demo2",
+   "true": null,
+   "picked": "3b1b",
+   "conf": 70.0,
+   "reason": "The anonymous text is a polished, scripted narration that speaks directly to 'you' and builds ideas in a deliberate, composed sequence, which matches Y's crafted voice rather than X's improvised, self-correcting, filler-heavy delivery ('let me draw', 'pretty straightforward')."
+  }
+ ],
+ "t4_pairs": [
+  {
+   "text": "demo2/3b1b",
+   "teacher": "3b1b",
+   "variant": "raw",
+   "gen_first": true,
+   "picked_generated": false,
+   "conf": 90.0,
+   "reason": "Passage B has natural spoken quirks such as \"comically trivial,\" \"unless you've been living under a rock,\" \"quote-unquote,\" and a minor slip (a number between 0 and 10 for digits), while Passage A follows a polished, formulaic setup of rhetorical question, \"not at all,\" then caveat, which is typical of AI imitation.",
+   "words": [
+    306,
+    334
+   ]
+  },
+  {
+   "text": "demo2/3b1b",
+   "teacher": "3b1b",
+   "variant": "cleaned",
+   "gen_first": false,
+   "picked_generated": false,
+   "conf": 95.0,
+   "reason": "Passage A has the loose, digressive rhythm of genuine 3Blue1Brown narration (\"unless you've been living under a rock,\" \"quote-unquote learning,\" \"many many variants\"), while Passage B reads as tightly engineered, with neat aphoristic lines like \"Different chart, different trick, same failure\" and a tidy named rule (\"the ruler test\").",
+   "words": [
+    306,
+    331
+   ]
+  },
+  {
+   "text": "demo2/3b1b",
+   "teacher": "3b1b",
+   "variant": "raw",
+   "gen_first": true,
+   "picked_generated": false,
+   "conf": 90.0,
+   "reason": "Passage B has natural spoken looseness, such as the slip 'thinner and thinner rings' where 'rectangles' fits, and forward references to the series, while Passage A reads as a polished, punchy, rhetorically staged script with tidy aphorisms typical of AI imitation.",
+   "words": [
+    310,
+    320
+   ]
+  },
+  {
+   "text": "demo2/3b1b",
+   "teacher": "3b1b",
+   "variant": "cleaned",
+   "gen_first": false,
+   "picked_generated": false,
+   "conf": 88.0,
+   "reason": "Passage A reads like natural spoken explanation, with real-speech slips such as \"thinner and thinner rings\" where rectangles was meant and \"the one whose sum,\" while Passage B is a polished run of punchy rhetorical beats (\"This is the whole trick,\" \"the louder it gets\") and a staged ruler metaphor typical of AI imitation.",
+   "words": [
+    310,
+    320
+   ]
+  },
+  {
+   "text": "demo2/3b1b",
+   "teacher": "3b1b",
+   "variant": "raw",
+   "gen_first": true,
+   "picked_generated": false,
+   "conf": 93.0,
+   "reason": "Passage B carries real conversational texture, with a Patreon thank-you, a named guest (Lisha Li), and messy run-on speech full of self-corrections, while Passage A keeps repeating the formulaic tic \"there's nothing special about...\" and reads like polished generated exposition.",
+   "words": [
+    301,
+    303
+   ]
+  },
+  {
+   "text": "demo2/3b1b",
+   "teacher": "3b1b",
+   "variant": "cleaned",
+   "gen_first": false,
+   "picked_generated": false,
+   "conf": 90.0,
+   "reason": "Passage A has the loose texture of a real conversation, with run-on interjections, a Patreon thank-you and natural back-and-forth with a guest, while B leans on a repeated scripted tic (\"there's nothing special about\" appears three times) and tidy rhetorical framing typical of AI imitation.",
+   "words": [
+    301,
+    295
+   ]
+  },
+  {
+   "text": "demo2/3b1b",
+   "teacher": "3b1b",
+   "variant": "raw",
+   "gen_first": false,
+   "picked_generated": false,
+   "conf": 90.0,
+   "reason": "Passage A reads like natural spoken explanation with digressions and hedges (it matches 3Blue1Brown's calculus series), while Passage B is tightly scripted, embeds a text table that would not occur in speech, and ends on a neatly packaged checklist and homework typical of AI imitation.",
+   "words": [
+    300,
+    332
+   ]
+  },
+  {
+   "text": "demo2/3b1b",
+   "teacher": "3b1b",
+   "variant": "cleaned",
+   "gen_first": true,
+   "picked_generated": false,
+   "conf": 93.0,
+   "reason": "Passage B reads like natural spoken lecture, with its digressive reframing, hedges like \"well, it's hard to think about, right?\", and its specific calculus progression, whereas Passage A has a scripted, tidy structure: an inline table, a \"same trick wearing a different outfit\" flourish, a neat three-question checklist, and a homework sign-off typical of AI imitation.",
+   "words": [
+    300,
+    332
+   ]
+  },
+  {
+   "text": "demo2/3b1b",
+   "teacher": "3b1b",
+   "variant": "raw",
+   "gen_first": false,
+   "picked_generated": false,
+   "conf": 92.0,
+   "reason": "Passage A has genuine transcript artifacts (\"x2\" for x squared, the garbled \"3.001 and 3.001\") and a coherent mathematical build-up, while B leans on stock 3Blue1Brown-style phrases like \"there's nothing special about\" and \"sliver\" repeated mechanically across a shallow chart-deception topic.",
+   "words": [
+    312,
+    339
+   ]
+  },
+  {
+   "text": "demo2/3b1b",
+   "teacher": "3b1b",
+   "variant": "cleaned",
+   "gen_first": true,
+   "picked_generated": false,
+   "conf": 93.0,
+   "reason": "Passage B reads like a genuine spoken calculus explanation, with natural restatements and a transcription slip ('3.001 and 3.001'), whereas A leans on the formula 'there's nothing special about' three times and stacks tidy metaphors (the ruler test, the sawed-off sliver) like a constructed imitation.",
+   "words": [
+    312,
+    339
+   ]
+  },
+  {
+   "text": "demo1/3b1b",
+   "teacher": "3b1b",
+   "variant": "raw",
+   "gen_first": true,
+   "picked_generated": false,
+   "conf": 90.0,
+   "reason": "Passage B has the loose, natural flow of a live explanation (\"by the way,\" \"sort of daunting,\" a trailing \"one quick small note\"), whereas Passage A is a tightly scripted recap with repeated \"I'd say\" hedges and an overly neat closing summary and teaser typical of imitation.",
+   "words": [
+    302,
+    304
+   ]
+  },
+  {
+   "text": "demo1/3b1b",
+   "teacher": "3b1b",
+   "variant": "cleaned",
+   "gen_first": false,
+   "picked_generated": false,
+   "conf": 92.0,
+   "reason": "Passage A has the organic, discursive flow of a genuine 3Blue1Brown transcript, with natural asides and a trailing transition, while Passage B is choppy and packed with stock phrases (\"I'd say,\" \"the attentive viewers among you,\" \"That's the loop closing\"), and it has a logical slip: it brings in (1+1/n)^n before motivating why the constant should be 1.",
+   "words": [
+    302,
+    304
+   ]
+  },
+  {
+   "text": "demo1/3b1b",
+   "teacher": "3b1b",
+   "variant": "raw",
+   "gen_first": false,
+   "picked_generated": false,
+   "conf": 90.0,
+   "reason": "Passage A follows the natural, cumulative explanatory flow of the real 3Blue1Brown calculus series, while Passage B has telltale AI patterns: a repeated 'There's nothing special about...' line, the formulaic 'Bigger X, bigger Y' parallelism, and a self-contradictory claim that the bars match exactly yet are 'shrunk to fit the page'.",
+   "words": [
+    304,
+    341
+   ]
+  },
+  {
+   "text": "demo1/3b1b",
+   "teacher": "3b1b",
+   "variant": "cleaned",
+   "gen_first": true,
+   "picked_generated": false,
+   "conf": 93.0,
+   "reason": "Passage B reads as a genuine lecture that recaps the circle-area problem with natural, specific flow, while Passage A reuses phrases like \"There's nothing special about\" and builds a contrived bar-picture metaphor that shifts awkwardly from e-values to a general base b.",
+   "words": [
+    304,
+    341
+   ]
+  },
+  {
+   "text": "demo1/3b1b",
+   "teacher": "3b1b",
+   "variant": "raw",
+   "gen_first": true,
+   "picked_generated": false,
+   "conf": 90.0,
+   "reason": "Passage B has genuine transcription artifacts (\"x2\" for x squared, the slip \"3.001 and 3.001\") and the natural, recursive restating of a live explainer, while Passage A is internally inconsistent (equal bars at 7.39, yet later \"proportional, not equal\") and uses polished, AI-style rhetorical beats.",
+   "words": [
+    302,
+    315
+   ]
+  },
+  {
+   "text": "demo1/3b1b",
+   "teacher": "3b1b",
+   "variant": "cleaned",
+   "gen_first": false,
+   "picked_generated": false,
+   "conf": 92.0,
+   "reason": "Passage A matches the genuine 3Blue1Brown integral explanation, with natural, patiently repetitive phrasing, while Passage B is choppy and self-contradictory: it labels the x = 2 bar 7.39 (e\u00b2) before asking which base to use, and it inserts stock asides like \"I'd say that's the real subtlety.\"",
+   "words": [
+    302,
+    315
+   ]
+  },
+  {
+   "text": "demo1/3b1b",
+   "teacher": "3b1b",
+   "variant": "raw",
+   "gen_first": true,
+   "picked_generated": false,
+   "conf": 90.0,
+   "reason": "Passage B reads like the actual 3Blue1Brown calculus intro, with natural, discursive narration, whereas A strings together tidy numeric checkpoints, uses recap phrases like 'the creeping number from before' and 'that's the loop closing,' and ends on a neat summary, all of which feel constructed.",
+   "words": [
+    302,
+    323
+   ]
+  },
+  {
+   "text": "demo1/3b1b",
+   "teacher": "3b1b",
+   "variant": "cleaned",
+   "gen_first": false,
+   "picked_generated": false,
+   "conf": 92.0,
+   "reason": "Passage A has the meandering, exploratory flow of a genuine spoken lecture, while Passage B reads as a choppy, over-tidied reconstruction: it drops in (1 + 1/n)^n abruptly, references 'earlier' bars without setup, and ends on a neat summary line.",
+   "words": [
+    302,
+    323
+   ]
+  },
+  {
+   "text": "demo1/3b1b",
+   "teacher": "3b1b",
+   "variant": "raw",
+   "gen_first": false,
+   "picked_generated": false,
+   "conf": 95.0,
+   "reason": "Passage A has the natural, flowing reflective narration of a real lecture (it matches 3Blue1Brown's calculus intro), while Passage B reads as choppy and stitched together, with an abrupt unmotivated jump to (1+1/n)^n and awkward phrasing like 'shorter than the tall ones.'",
+   "words": [
+    311,
+    316
+   ]
+  },
+  {
+   "text": "demo1/3b1b",
+   "teacher": "3b1b",
+   "variant": "cleaned",
+   "gen_first": true,
+   "picked_generated": false,
+   "conf": 88.0,
+   "reason": "Passage B has the natural, slightly meandering flow of a real 3Blue1Brown transcript, with its asides and connective phrasing, whereas Passage A reads like a staged imitation: it uses stock phrases ('the attentive viewers among you,' 'plain and simple'), says 'creeping number' without explaining it, and leans on a neat callback structure.",
+   "words": [
+    311,
+    316
+   ]
+  },
+  {
+   "text": "demo2/lecturer",
+   "teacher": "lecturer",
+   "variant": "raw",
+   "gen_first": false,
+   "picked_generated": false,
+   "conf": 90.0,
+   "reason": "Passage A has the genuine disfluencies of live narration: self-interrupted sentences, an apology for the badly drawn graph, and grumbling about the drawing tool, whereas B is tidily scripted, with neat arithmetic examples, staged self-corrections like \"in blue, no, let me pick green\", and a polished three-question takeaway.",
+   "words": [
+    301,
+    315
+   ]
+  },
+  {
+   "text": "demo2/lecturer",
+   "teacher": "lecturer",
+   "variant": "cleaned",
+   "gen_first": true,
+   "picked_generated": false,
+   "conf": 88.0,
+   "reason": "Passage B has genuine spontaneous traits: self-deprecating asides about bad drawing, trailing restarts, and a loose verbal flow. Passage A reads like a polished script, with neat transitions, staged color corrections, and a tidy three-question takeaway.",
+   "words": [
+    301,
+    299
+   ]
+  },
+  {
+   "text": "demo2/lecturer",
+   "teacher": "lecturer",
+   "variant": "raw",
+   "gen_first": false,
+   "picked_generated": false,
+   "conf": 88.0,
+   "reason": "Passage A has genuine spontaneous transcription artifacts (\"X X is equal,\" \"So it be the slope\") and loose, circling explanation, while B reads as scripted, with a staged self-correction, tidy definitions, and a neat cliffhanger ending.",
+   "words": [
+    303,
+    331
+   ]
+  },
+  {
+   "text": "demo2/lecturer",
+   "teacher": "lecturer",
+   "variant": "cleaned",
+   "gen_first": true,
+   "picked_generated": false,
+   "conf": 90.0,
+   "reason": "Passage B has the loose, repetitive flow of real spontaneous speech (\"this point and this point,\" self-rephrasing), while Passage A reads as scripted, with a staged pen-color correction, a tidy embedded definition, and a cliffhanger closing line.",
+   "words": [
+    303,
+    330
+   ]
+  },
+  {
+   "text": "demo2/lecturer",
+   "teacher": "lecturer",
+   "variant": "raw",
+   "gen_first": true,
+   "picked_generated": false,
+   "conf": 93.0,
+   "reason": "Passage B has authentic speech-to-text artifacts (\"X X\", \"Usin Bolt\", \"Liv Net's\") and natural spoken digressions, while Passage A reads as staged, with tidy self-corrections, scripted signposting like \"Coming up\", and neatly structured panels.",
+   "words": [
+    312,
+    315
+   ]
+  },
+  {
+   "text": "demo2/lecturer",
+   "teacher": "lecturer",
+   "variant": "cleaned",
+   "gen_first": false,
+   "picked_generated": false,
+   "conf": 90.0,
+   "reason": "Passage A has the meandering, self-referential flow of genuine Sal Khan narration (Usain Bolt callback, 'usually you would see T is time, but let's say x is time'), while Passage B has a polished hook, 'Coming up' signposting, and staged marker-color corrections that feel scripted.",
+   "words": [
+    312,
+    314
+   ]
+  },
+  {
+   "text": "demo2/lecturer",
+   "teacher": "lecturer",
+   "variant": "raw",
+   "gen_first": true,
+   "picked_generated": false,
+   "conf": 92.0,
+   "reason": "Passage B has the hallmarks of a raw speech transcript: transcription glitches like \"So it be,\" \"X X\" and \"Usin Bolt,\" looping restatements, and an offhand reference to a previous video, whereas Passage A is tidily structured with a staged \"hmm, let me use blue\" self-correction and neat cliffhanger transitions.",
+   "words": [
+    310,
+    311
+   ]
+  },
+  {
+   "text": "demo2/lecturer",
+   "teacher": "lecturer",
+   "variant": "cleaned",
+   "gen_first": false,
+   "picked_generated": false,
+   "conf": 88.0,
+   "reason": "Passage A has natural, slightly redundant spoken flow (\"well, what would it be? Well...\") and a casual callback to an earlier Usain Bolt video, while Passage B reads as scripted, with tidy definitions, a staged \"hmm, let me use blue\" self-correction, and an engineered teaser for the next segment.",
+   "words": [
+    310,
+    311
+   ]
+  },
+  {
+   "text": "demo2/lecturer",
+   "teacher": "lecturer",
+   "variant": "raw",
+   "gen_first": true,
+   "picked_generated": false,
+   "conf": 92.0,
+   "reason": "Passage B has the natural, self-correcting flow of real speech (\"we would Define slope, or we have defined slope\", \"So it be the slope\") typical of a Khan Academy transcript, while Passage A reads as scripted, with signposting like \"Coming up\", a staged hesitation (\"hmm, let me use blue\") and repeated callbacks to the delta.",
+   "words": [
+    317,
+    320
+   ]
+  },
+  {
+   "text": "demo2/lecturer",
+   "teacher": "lecturer",
+   "variant": "cleaned",
+   "gen_first": false,
+   "picked_generated": false,
+   "conf": 92.0,
+   "reason": "Passage A has the loose, self-correcting flow of a live explanation (\"we would define slope, or we have defined slope\"), while Passage B reads as staged, with scripted signposting (\"Coming up\"), repeated callbacks to \"our delta of 2,\" a performed color-switch hesitation, and an unexplained \"200% jump\" figure.",
+   "words": [
+    317,
+    316
+   ]
+  },
+  {
+   "text": "demo1/lecturer",
+   "teacher": "lecturer",
+   "variant": "raw",
+   "gen_first": true,
+   "picked_generated": false,
+   "conf": 88.0,
+   "reason": "Passage B has genuine spontaneous disfluencies (\"steeper steeper steeper,\" \"until gets pretty steep,\" \"Still pretty messy\") and builds the slope-of-a-curve idea at a natural pace, while A crams verbal tics (\"sort of,\" \"let's say,\" color-switching asides) into a dense, overly polished sequence.",
+   "words": [
+    309,
+    321
+   ]
+  },
+  {
+   "text": "demo1/lecturer",
+   "teacher": "lecturer",
+   "variant": "cleaned",
+   "gen_first": false,
+   "picked_generated": false,
+   "conf": 88.0,
+   "reason": "Passage A has authentic Khan-style rambling and self-correction (\"Still pretty messy, but I think you'll get the point,\" the repeated \"steeper, steeper\"), while B packs in dense, tidy content with planted tics (\"sort of like a tax,\" \"Lagrange's notation\") and contradicts itself by claiming 3^x shares the starting point \"at 1\" before shifting to x=0.",
+   "words": [
+    309,
+    322
+   ]
+  },
+  {
+   "text": "demo1/lecturer",
+   "teacher": "lecturer",
+   "variant": "raw",
+   "gen_first": false,
+   "picked_generated": false,
+   "conf": 90.0,
+   "reason": "Passage A has the genuine messiness of live narration, with self-corrections about crooked axes, false starts, and wandering repetition, while Passage B is tidily sequenced and engineered, with neat numeric walkthroughs and a staged 'actually, no, red' correction.",
+   "words": [
+    309,
+    313
+   ]
+  },
+  {
+   "text": "demo1/lecturer",
+   "teacher": "lecturer",
+   "variant": "cleaned",
+   "gen_first": true,
+   "picked_generated": false,
+   "conf": 92.0,
+   "reason": "Passage B reads like genuine unscripted speech: it has rambling self-corrections, comments about messy drawing, and repeated restarts. Passage A is too tidy and keeps reusing scripted catchphrases (\"Let's say\"), and its one hesitation (\"green-- actually, no, red\") feels inserted to imitate spontaneity.",
+   "words": [
+    309,
+    309
+   ]
+  },
+  {
+   "text": "demo1/lecturer",
+   "teacher": "lecturer",
+   "variant": "raw",
+   "gen_first": true,
+   "picked_generated": false,
+   "conf": 90.0,
+   "reason": "Passage B has authentic messy speech, with self-interruptions, complaints about the drawing tool, and admissions of bad drawing, while Passage A's hesitations look planted (\"green-- actually, no, red\") and its content is suspiciously tidy and dense.",
+   "words": [
+    308,
+    316
+   ]
+  },
+  {
+   "text": "demo1/lecturer",
+   "teacher": "lecturer",
+   "variant": "cleaned",
+   "gen_first": false,
+   "picked_generated": false,
+   "conf": 88.0,
+   "reason": "Passage A has genuine spontaneous rambling and self-deprecating asides about drawing ('really badly drawn graph', 'I'm really concentrating'), while Passage B packs in neat numbers, a tidy staged color correction, and a dense, overly structured progression that reads as an imitation.",
+   "words": [
+    308,
+    299
+   ]
+  },
+  {
+   "text": "demo1/lecturer",
+   "teacher": "lecturer",
+   "variant": "raw",
+   "gen_first": true,
+   "picked_generated": false,
+   "conf": 88.0,
+   "reason": "Passage B has the natural redundancy, loose restarts and transcription slip (\"So it be the slope\") of genuine speech, while Passage A's hedges (\"I think,\" \"sort of interesting\") and its staged color self-correction read like inserted imitations of spontaneity.",
+   "words": [
+    301,
+    302
+   ]
+  },
+  {
+   "text": "demo1/lecturer",
+   "teacher": "lecturer",
+   "variant": "cleaned",
+   "gen_first": false,
+   "picked_generated": false,
+   "conf": 88.0,
+   "reason": "Passage A flows naturally, with organic repetition and self-correcting phrasing like 'well, what would it be? Well,', while Passage B packs many concepts tightly together and its hesitations ('Let me pick a green-- actually, no, red', 'Sort of interesting, I think') feel staged.",
+   "words": [
+    301,
+    302
+   ]
+  },
+  {
+   "text": "demo1/lecturer",
+   "teacher": "lecturer",
+   "variant": "raw",
+   "gen_first": true,
+   "picked_generated": false,
+   "conf": 88.0,
+   "reason": "Passage B has natural speech disfluencies like \"So it be the slope\" and \"X X is equal\" along with organic, repetitive elaboration, whereas Passage A strings together tidy segments with abrupt, scripted transitions and inserted hedges like \"Sort of interesting, I think.\"",
+   "words": [
+    304,
+    324
+   ]
+  },
+  {
+   "text": "demo1/lecturer",
+   "teacher": "lecturer",
+   "variant": "cleaned",
+   "gen_first": false,
+   "picked_generated": false,
+   "conf": 88.0,
+   "reason": "Passage A unfolds one idea in a natural, repetitive spoken flow, while B jumps abruptly between topics and stacks scripted-feeling asides like the staged colour correction and the planted 'tempting thought' misconception.",
+   "words": [
+    304,
+    323
+   ]
+  }
+ ],
+ "t4_pairs_unstyled": [
+  {
+   "text": "unstyled/demo1",
+   "teacher": "3b1b",
+   "variant": "raw",
+   "gen_first": true,
+   "picked_generated": false,
+   "conf": 90.0,
+   "reason": "Passage B has natural spoken asides and self-corrections (\"so to speak,\" \"and things like that,\" \"And I don't mean this specific loop of pixels\") and concrete references to on-screen visuals, while Passage A reads as a tidy, uniformly paced summary with a neat rhetorical close.",
+   "words": [
+    302,
+    312
+   ]
+  },
+  {
+   "text": "unstyled/demo1",
+   "teacher": "3b1b",
+   "variant": "raw",
+   "gen_first": false,
+   "picked_generated": false,
+   "conf": 88.0,
+   "reason": "Passage A has 3Blue1Brown's natural, meandering spoken style, with asides like \"right? I mean, that's essentially the definition of pi\" and reflective tangents, while B is a crisp, tidy sequence of textbook perspectives with uniformly clipped sentences, which reads as an AI imitation.",
+   "words": [
+    303,
+    335
+   ]
+  },
+  {
+   "text": "unstyled/demo1",
+   "teacher": "3b1b",
+   "variant": "raw",
+   "gen_first": false,
+   "picked_generated": false,
+   "conf": 92.0,
+   "reason": "Passage A has natural spoken asides and digressions (\"by the way, one quick small note,\" \"man oh man, there is so much more to say\") that match the actual 3Blue1Brown Fourier transform transcript, while Passage B reads as a tidily scripted, evenly paced imitation.",
+   "words": [
+    302,
+    310
+   ]
+  },
+  {
+   "text": "unstyled/demo1",
+   "teacher": "lecturer",
+   "variant": "raw",
+   "gen_first": true,
+   "picked_generated": false,
+   "conf": 93.0,
+   "reason": "Passage B carries the marks of a raw speech transcript: it starts mid-sentence, has a [name] redaction, mis-transcriptions like 'y AIS' and 'xaxis', erratic capitalization, and deictic references such as 'this point to this point', while Passage A is polished, tightly structured prose with a hook opening.",
+   "words": [
+    314,
+    322
+   ]
+  },
+  {
+   "text": "unstyled/demo1",
+   "teacher": "lecturer",
+   "variant": "raw",
+   "gen_first": true,
+   "picked_generated": false,
+   "conf": 93.0,
+   "reason": "Passage B has spontaneous disfluencies, self-corrections, references to the drawing (\"this point right here\"), and complaints about a malfunctioning pen, while A is polished, tightly structured exposition with rhetorical flourishes typical of AI imitation.",
+   "words": [
+    311,
+    318
+   ]
+  },
+  {
+   "text": "unstyled/demo1",
+   "teacher": "lecturer",
+   "variant": "raw",
+   "gen_first": true,
+   "picked_generated": false,
+   "conf": 93.0,
+   "reason": "Passage B has the hallmarks of live speech, such as false starts ('let me pick a green--'), repetition ('steeper steeper steeper'), self-deprecation about the drawing, and grammatical slips, while Passage A is polished, tightly structured exposition with neat rhetorical turns.",
+   "words": [
+    301,
+    309
+   ]
+  },
+  {
+   "text": "unstyled/demo2",
+   "teacher": "3b1b",
+   "variant": "raw",
+   "gen_first": false,
+   "picked_generated": false,
+   "conf": 92.0,
+   "reason": "Passage A has the loose, spoken quality of a live explanation, with run-on asides like \"and by the way, one quick small note\" and \"man oh man, there is so much more to say,\" while Passage B is a tidy numbered checklist of stock examples (ice cream and drowning, the billionaire walking into a room) that reads like generated listicle prose.",
+   "words": [
+    303,
+    320
+   ]
+  },
+  {
+   "text": "unstyled/demo2",
+   "teacher": "3b1b",
+   "variant": "raw",
+   "gen_first": false,
+   "picked_generated": false,
+   "conf": 92.0,
+   "reason": "Passage A has the meandering, conversational flow of a real lecture, with asides to \"attentive viewers\" and the \"unmixing paint\" metaphor, while Passage B is a tidy numbered listicle of stock examples (ice cream and drowning) and contains slips: an axis starting at 95 makes 98 exactly three times taller than 96, not \"more than,\" and adding a billionaire gives an average of about 91 million, not \"nearly ninety.\"",
+   "words": [
+    309,
+    325
+   ]
+  },
+  {
+   "text": "unstyled/demo2",
+   "teacher": "3b1b",
+   "variant": "raw",
+   "gen_first": false,
+   "picked_generated": false,
+   "conf": 92.0,
+   "reason": "Passage A has the unscripted flow of a real lecture, with natural asides (\"don't worry if it's not 100% clear\", \"Well, it's hard to think about, right?\") and conceptual reframing typical of 3Blue1Brown, while Passage B reads like a tidy, formulaic numbered checklist of stock examples (ice cream and drowning, a billionaire walking in) of the kind AI tends to generate.",
+   "words": [
+    306,
+    307
+   ]
+  },
+  {
+   "text": "unstyled/demo2",
+   "teacher": "lecturer",
+   "variant": "raw",
+   "gen_first": false,
+   "picked_generated": false,
+   "conf": 95.0,
+   "reason": "Passage A has the marks of live speech: garbled auto-transcription of names (\"Liv Net,\" \"livet\"), rambling repetition (\"let's get even closer\"), and references to earlier videos, whereas Passage B is a tidy numbered list of polished, self-contained examples typical of AI writing.",
+   "words": [
+    305,
+    343
+   ]
+  },
+  {
+   "text": "unstyled/demo2",
+   "teacher": "lecturer",
+   "variant": "raw",
+   "gen_first": true,
+   "picked_generated": false,
+   "conf": 90.0,
+   "reason": "Passage B has the marks of genuine speech, with disfluencies like 'So it be the slope', a repeated 'X X', self-corrections, and pointing references like 'this point and this point', whereas A is a tidy, list-structured script with polished examples.",
+   "words": [
+    302,
+    317
+   ]
+  },
+  {
+   "text": "unstyled/demo2",
+   "teacher": "lecturer",
+   "variant": "raw",
+   "gen_first": true,
+   "picked_generated": false,
+   "conf": 90.0,
+   "reason": "Passage B has natural spoken disfluencies, like the repeated \"X X\", \"So it be\", and self-corrections, along with deictic references to a drawing, whereas Passage A is a tidy numbered checklist with polished, essay-like phrasing.",
+   "words": [
+    303,
+    317
+   ]
+  }
+ ],
+ "t5_structure": {
+  "sequences": {
+   "real": {
+    "3b1b": {
+     "WUvTyaaNkzM": [
+      "meta",
+      "hook",
+      "concrete_example",
+      "caveat",
+      "visual",
+      "generalize",
+      "meta",
+      "bridge",
+      "hook",
+      "meta",
+      "visual",
+      "generalize",
+      "generalize",
+      "reprise",
+      "meta"
+     ],
+     "aircAruvnKk": [
+      "hook",
+      "meta",
+      "meta",
+      "visual",
+      "visual",
+      "bridge",
+      "concrete_example",
+      "caveat",
+      "concrete_example",
+      "caveat",
+      "generalize",
+      "bridge",
+      "concrete_example",
+      "visual",
+      "concrete_example",
+      "concrete_example",
+      "concrete_example",
+      "generalize",
+      "meta",
+      "exercise",
+      "generalize",
+      "reprise",
+      "bridge",
+      "meta",
+      "meta",
+      "bridge",
+      "caveat"
+     ],
+     "spUNpyF58BY": [
+      "meta",
+      "concrete_example",
+      "hook",
+      "bridge",
+      "visual",
+      "visual",
+      "concrete_example",
+      "generalize",
+      "caveat",
+      "concrete_example",
+      "concrete_example",
+      "exercise",
+      "generalize",
+      "concrete_example",
+      "caveat",
+      "generalize",
+      "generalize",
+      "caveat",
+      "generalize",
+      "caveat",
+      "bridge"
+     ]
+    },
+    "lecturer": {
+     "N2PpRnFqnqY": [
+      "bridge",
+      "concrete_example",
+      "generalize",
+      "hook",
+      "visual",
+      "bridge",
+      "concrete_example",
+      "generalize",
+      "bridge",
+      "visual",
+      "generalize",
+      "bridge",
+      "caveat",
+      "reprise"
+     ],
+     "bRZmfc1YFsQ": [
+      "hook",
+      "bridge",
+      "generalize",
+      "concrete_example",
+      "concrete_example",
+      "concrete_example",
+      "concrete_example",
+      "bridge"
+     ],
+     "rAof9Ld5sOg": [
+      "hook",
+      "concrete_example",
+      "bridge",
+      "misconception",
+      "visual",
+      "bridge",
+      "visual",
+      "concrete_example",
+      "generalize",
+      "caveat",
+      "bridge"
+     ]
+    }
+   },
+   "generated": {
+    "demo2/3b1b": [
+     "hook",
+     "misconception",
+     "concrete_example",
+     "generalize",
+     "bridge",
+     "visual",
+     "bridge",
+     "concrete_example",
+     "generalize",
+     "caveat",
+     "concrete_example",
+     "generalize",
+     "reprise",
+     "generalize",
+     "caveat",
+     "exercise"
+    ],
+    "demo1/3b1b": [
+     "hook",
+     "concrete_example",
+     "generalize",
+     "visual",
+     "bridge",
+     "generalize",
+     "bridge",
+     "misconception",
+     "caveat",
+     "reprise",
+     "meta",
+     "exercise"
+    ],
+    "demo2/lecturer": [
+     "hook",
+     "misconception",
+     "concrete_example",
+     "bridge",
+     "visual",
+     "generalize",
+     "caveat",
+     "concrete_example",
+     "generalize",
+     "bridge"
+    ],
+    "demo1/lecturer": [
+     "hook",
+     "concrete_example",
+     "bridge",
+     "visual",
+     "bridge",
+     "generalize",
+     "misconception",
+     "bridge",
+     "generalize",
+     "reprise",
+     "exercise"
+    ],
+    "unstyled/demo1": [
+     "hook",
+     "bridge",
+     "concrete_example",
+     "concrete_example",
+     "generalize",
+     "bridge",
+     "concrete_example",
+     "generalize",
+     "concrete_example",
+     "concrete_example",
+     "reprise"
+    ],
+    "unstyled/demo2": [
+     "hook",
+     "bridge",
+     "concrete_example",
+     "generalize",
+     "caveat",
+     "concrete_example",
+     "generalize",
+     "concrete_example",
+     "generalize",
+     "concrete_example",
+     "generalize",
+     "concrete_example",
+     "generalize",
+     "caveat",
+     "visual",
+     "generalize",
+     "concrete_example",
+     "generalize",
+     "visual",
+     "generalize",
+     "generalize",
+     "meta",
+     "reprise"
+    ]
+   }
+  },
+  "compare": {
+   "demo2/3b1b": {
+    "freq_cos_3b1b": 0.864,
+    "freq_jsd_3b1b": 0.128,
+    "freq_cos_lecturer": 0.858,
+    "freq_jsd_lecturer": 0.088,
+    "bigram_cos_3b1b": 0.403,
+    "bigram_jsd_3b1b": 0.625,
+    "bigram_cos_lecturer": 0.549,
+    "bigram_jsd_lecturer": 0.535
+   },
+   "demo1/3b1b": {
+    "freq_cos_3b1b": 0.863,
+    "freq_jsd_3b1b": 0.093,
+    "freq_cos_lecturer": 0.829,
+    "freq_jsd_lecturer": 0.145,
+    "bigram_cos_3b1b": 0.194,
+    "bigram_jsd_3b1b": 0.781,
+    "bigram_cos_lecturer": 0.46,
+    "bigram_jsd_lecturer": 0.541
+   },
+   "demo2/lecturer": {
+    "freq_cos_3b1b": 0.841,
+    "freq_jsd_3b1b": 0.175,
+    "freq_cos_lecturer": 0.952,
+    "freq_jsd_lecturer": 0.042,
+    "bigram_cos_3b1b": 0.338,
+    "bigram_jsd_3b1b": 0.688,
+    "bigram_cos_lecturer": 0.508,
+    "bigram_jsd_lecturer": 0.528
+   },
+   "demo1/lecturer": {
+    "freq_cos_3b1b": 0.684,
+    "freq_jsd_3b1b": 0.251,
+    "freq_cos_lecturer": 0.874,
+    "freq_jsd_lecturer": 0.127,
+    "bigram_cos_3b1b": 0.133,
+    "bigram_jsd_3b1b": 0.842,
+    "bigram_cos_lecturer": 0.36,
+    "bigram_jsd_lecturer": 0.634
+   },
+   "unstyled/demo1": {
+    "freq_cos_3b1b": 0.734,
+    "freq_jsd_3b1b": 0.273,
+    "freq_cos_lecturer": 0.858,
+    "freq_jsd_lecturer": 0.149,
+    "bigram_cos_3b1b": 0.391,
+    "bigram_jsd_3b1b": 0.668,
+    "bigram_cos_lecturer": 0.693,
+    "bigram_jsd_lecturer": 0.427
+   },
+   "unstyled/demo2": {
+    "freq_cos_3b1b": 0.84,
+    "freq_jsd_3b1b": 0.093,
+    "freq_cos_lecturer": 0.733,
+    "freq_jsd_lecturer": 0.154,
+    "bigram_cos_3b1b": 0.402,
+    "bigram_jsd_3b1b": 0.557,
+    "bigram_cos_lecturer": 0.488,
+    "bigram_jsd_lecturer": 0.579
+   }
+  },
+  "loo_real": {
+   "3b1b/WUvTyaaNkzM": {
+    "freq_cos_3b1b": 0.776,
+    "freq_jsd_3b1b": 0.121,
+    "freq_cos_lecturer": 0.568,
+    "freq_jsd_lecturer": 0.246,
+    "bigram_cos_3b1b": 0.245,
+    "bigram_jsd_3b1b": 0.713,
+    "bigram_cos_lecturer": 0.104,
+    "bigram_jsd_lecturer": 0.891
+   },
+   "3b1b/aircAruvnKk": {
+    "freq_cos_3b1b": 0.914,
+    "freq_jsd_3b1b": 0.034,
+    "freq_cos_lecturer": 0.825,
+    "freq_jsd_lecturer": 0.157,
+    "bigram_cos_3b1b": 0.446,
+    "bigram_jsd_3b1b": 0.506,
+    "bigram_cos_lecturer": 0.452,
+    "bigram_jsd_lecturer": 0.611
+   },
+   "3b1b/spUNpyF58BY": {
+    "freq_cos_3b1b": 0.828,
+    "freq_jsd_3b1b": 0.097,
+    "freq_cos_lecturer": 0.82,
+    "freq_jsd_lecturer": 0.149,
+    "bigram_cos_3b1b": 0.307,
+    "bigram_jsd_3b1b": 0.638,
+    "bigram_cos_lecturer": 0.393,
+    "bigram_jsd_lecturer": 0.58
+   },
+   "lecturer/N2PpRnFqnqY": {
+    "freq_cos_3b1b": 0.802,
+    "freq_jsd_3b1b": 0.141,
+    "freq_cos_lecturer": 0.866,
+    "freq_jsd_lecturer": 0.106,
+    "bigram_cos_3b1b": 0.317,
+    "bigram_jsd_3b1b": 0.69,
+    "bigram_cos_lecturer": 0.184,
+    "bigram_jsd_lecturer": 0.776
+   },
+   "lecturer/bRZmfc1YFsQ": {
+    "freq_cos_3b1b": 0.699,
+    "freq_jsd_3b1b": 0.312,
+    "freq_cos_lecturer": 0.742,
+    "freq_jsd_lecturer": 0.232,
+    "bigram_cos_3b1b": 0.281,
+    "bigram_jsd_3b1b": 0.807,
+    "bigram_cos_lecturer": 0.046,
+    "bigram_jsd_lecturer": 0.927
+   },
+   "lecturer/rAof9Ld5sOg": {
+    "freq_cos_3b1b": 0.762,
+    "freq_jsd_3b1b": 0.202,
+    "freq_cos_lecturer": 0.904,
+    "freq_jsd_lecturer": 0.103,
+    "bigram_cos_3b1b": 0.32,
+    "bigram_jsd_3b1b": 0.685,
+    "bigram_cos_lecturer": 0.28,
+    "bigram_jsd_lecturer": 0.693
+   }
+  },
+  "stored_grammar_vs_resegmented_freq_cos": {
+   "3b1b": 0.97,
+   "lecturer": 0.889
+  }
+ },
+ "summary": {
+  "t1": {
+   "demo2/3b1b": {
+    "correct": 10,
+    "n": 10,
+    "acc": 1.0,
+    "p_one_sided": 0.001,
+    "mean_conf": 85.4
+   },
+   "demo1/3b1b": {
+    "correct": 10,
+    "n": 10,
+    "acc": 1.0,
+    "p_one_sided": 0.001,
+    "mean_conf": 83.0
+   },
+   "demo2/lecturer": {
+    "correct": 10,
+    "n": 10,
+    "acc": 1.0,
+    "p_one_sided": 0.001,
+    "mean_conf": 80.6
+   },
+   "demo1/lecturer": {
+    "correct": 10,
+    "n": 10,
+    "acc": 1.0,
+    "p_one_sided": 0.001,
+    "mean_conf": 83.2
+   }
+  },
+  "t2": {
+   "real/3b1b": {
+    "correct": 10,
+    "n": 10,
+    "acc": 1.0,
+    "p_one_sided": 0.001,
+    "mean_conf": 90.8
+   },
+   "real/lecturer": {
+    "correct": 10,
+    "n": 10,
+    "acc": 1.0,
+    "p_one_sided": 0.001,
+    "mean_conf": 90.6
+   }
+  },
+  "t3": {
+   "unstyled/demo1": {
+    "picked_3b1b": 10,
+    "n": 10,
+    "mean_conf": 77.8
+   },
+   "unstyled/demo2": {
+    "picked_3b1b": 10,
+    "n": 10,
+    "mean_conf": 68.4
+   }
+  },
+  "t4": {
+   "demo2/3b1b [raw]": {
+    "generated_picked_as_real": 0,
+    "n": 5,
+    "rate": 0.0,
+    "mean_conf": 91.0
+   },
+   "demo2/3b1b [cleaned]": {
+    "generated_picked_as_real": 0,
+    "n": 5,
+    "rate": 0.0,
+    "mean_conf": 91.8
+   },
+   "demo1/3b1b [raw]": {
+    "generated_picked_as_real": 0,
+    "n": 5,
+    "rate": 0.0,
+    "mean_conf": 91.0
+   },
+   "demo1/3b1b [cleaned]": {
+    "generated_picked_as_real": 0,
+    "n": 5,
+    "rate": 0.0,
+    "mean_conf": 91.4
+   },
+   "demo2/lecturer [raw]": {
+    "generated_picked_as_real": 0,
+    "n": 5,
+    "rate": 0.0,
+    "mean_conf": 91.0
+   },
+   "demo2/lecturer [cleaned]": {
+    "generated_picked_as_real": 0,
+    "n": 5,
+    "rate": 0.0,
+    "mean_conf": 89.6
+   },
+   "demo1/lecturer [raw]": {
+    "generated_picked_as_real": 0,
+    "n": 5,
+    "rate": 0.0,
+    "mean_conf": 88.8
+   },
+   "demo1/lecturer [cleaned]": {
+    "generated_picked_as_real": 0,
+    "n": 5,
+    "rate": 0.0,
+    "mean_conf": 88.8
+   },
+   "unstyled/demo1 [raw]": {
+    "generated_picked_as_real": 0,
+    "n": 6,
+    "rate": 0.0,
+    "mean_conf": 91.5
+   },
+   "unstyled/demo2 [raw]": {
+    "generated_picked_as_real": 0,
+    "n": 6,
+    "rate": 0.0,
+    "mean_conf": 91.8
+   }
+  }
+ },
+ "errors": {}
+}
