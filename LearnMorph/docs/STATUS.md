@@ -1,6 +1,6 @@
 # LearnMorph status
 
-Snapshot of the baseline commit. Numbers come from the committed run files.
+Numbers come from the committed run files. Last updated 2026-11-10.
 
 ## Where it stands
 
@@ -21,7 +21,8 @@ Snapshot of the baseline commit. Numbers come from the committed run files.
 | Grammar cosine similarity, 3b1b vs lecturer | 0.903 | `runs/demo1/log.md` |
 | Shots passing visual QA, demo1 3b1b, round 3 | 28 / 63 | `runs/demo1/video/3b1b_qa_r3.json` |
 | Shots passing visual QA, demo1 lecturer, round 3 | 42 / 59 | `runs/demo1/video/lecturer_qa_r3.json` |
-| Shots passing visual QA, demo2 3b1b, round 3 | 35 / 74 | `runs/demo2/video/3b1b_qa_r3.json` |
+| Shots passing visual QA, demo2 3b1b, round 3 | 55 / 78 with the chart templates (35 / 74 before them) | `runs/demo2/video/3b1b_qa_r3.json` |
+| Shots passing visual QA, demo2 lecturer, round 3 | 51 / 70 with the chart templates | `runs/demo2/video/lecturer_qa_r3.json` |
 
 Pass rule: shot average >= 3.7 and shot minimum >= 3. QA improved across rounds 1 to 3 in all three
 runs but none reached a full pass; every video run ended at "max rounds ... with remaining issues".
@@ -58,10 +59,48 @@ which both teachers teach); test 4 is a pairwise forced choice, easier than spot
 judge may recognise real transcripts from pretraining; real text had names replaced and one lecturer file is
 raw auto-captions; beat labels come from one Sonnet segmentation per text.
 
+## Writer experiment: matching measured traits (2026-11-10)
+
+Does LearnMorph sound like the real teacher? Not yet.
+
+The writer now measures each teacher's real habits in code (`style_traits.py`): sentence length, how often
+they ask questions, signposting, recaps. It gives every countable habit a budget at the teacher's real rate
+and rejects drafts whose sentence length falls outside a band around the real value. Run `demo3` is the
+misleading-charts topic written this way; `demo2` is the same topic before these changes.
+
+| 3b1b / lecturer | real transcripts | before (`demo2`) | after (`demo3`) |
+|---|---|---|---|
+| Mean sentence length, words | 25.4 / 16.7 | 10.6 / 11.6 | 22.4 / 14.9 |
+| Share of sentences over 30 words | 0.31 / 0.11 | 0.01 / 0.03 | 0.10 / 0.00 |
+| Questions per 1,000 words | 3.1 / 7.2 | 16.4 / 13.6 | 3.3 / 6.0 |
+| Habits used at more than 1.5 times the real rate | n/a | 7 / 4 | 0 / 1 |
+| Restarts per 100 words | 0.25 / 2.03 | 0 / 0.57 | 0 / 0.30 |
+| Beat-mix similarity, own teacher vs the other | n/a | 0.86 vs 0.86 ; 0.95 vs 0.84 | 0.86 vs 0.93 ; 0.83 vs 0.79 |
+| Judge picks the right teacher of the two | n/a | 10/10, 10/10 | 10/10, 10/10 |
+| Generated passage picked as the real one (lecturer) | n/a | 0 of 5 | 0 of 5 |
+
+What moved: average sentence length and habit rates now match each teacher. What did not: sentence lengths
+are too even (few long sentences, none starting with "And"), restarts stay rare, and the mix of beat types
+got worse, with the 3b1b script now closer to the lecturer's mix. Shown one real passage and one generated
+passage, the judge picked the real one every time across all variants tried. It cites lengths that are too
+even, tidy structure and staged asides. Two other variants were tried and dropped or made optional: prompt
+guidance to "write for speech" had no measurable effect, and reranking each beat with the excerpt-only judge
+(`--honest-gate`) lengthened sentences but tripled the cost.
+
+Limitations: three transcripts per teacher; small samples; writer and judge are from the same model family,
+and the writer was tuned against that judge family; the judge recognises some real videos from its training
+data, so the side-by-side test cannot be passed for a well-known teacher; the authorship-embedding check is
+written but has not been run. Raw numbers: `eval/results_D.json`.
+
+Next: enforce the spread of sentence lengths as well as the mean, enforce the beat mix in the plan, and
+retire the recipe-based rubric that scores longer sentences down.
+
 ## In progress
 
-- Chart templates: `bar_chart`, `line_chart`, `compare_split`, `stat_reveal` are added and registered; tsc passes but a real Remotion render has not been run, so the QA numbers above predate them (demo2 used `plot` for bar charts and its QA notes flag truncated bars and axes).
-- Narration: sentence-level synthesis is the default in `tts_vm.py` (`--mode phrase` for the old behaviour). It changes little, because most phrases were already whole sentences; the flat delivery comes mainly from the TTS engine. `--engine chatterbox` is added but not run.
+- Narration: the delivery is still flat. `try_voices.py` renders one passage with several engines
+  (current Kokoro, Chatterbox at two settings, Gemini TTS with two delivery directions) for a listening
+  comparison. It has not been run yet.
+- Video for `demo3` has not been made; the `demo2` videos use the earlier scripts.
 
 ## Other open items
 

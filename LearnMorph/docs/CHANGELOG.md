@@ -1,5 +1,18 @@
 # Changelog
 
+## 2026-11-10 (writer experiment and chart-template renders)
+
+- Writer (`learnmorph.py`): habit and device budgets at each teacher's measured rate, plan-stage budgets for
+  signposting, recaps and coined labels, and sentence-length enforcement in code. `--honest-gate` reranks
+  beats with a judge that sees only real excerpts (off by default). New `style_traits.py` computes the traits.
+- Run `demo3`: the misleading-charts topic written with the new writer. Results in `docs/STATUS.md` and
+  `eval/results_D.json`: sentence length and habit rates now match the teachers; the judge still never
+  mistakes the output for the real teacher.
+- `eval/eval_style.py` takes its paths from arguments.
+- `demo2` re-storyboarded with the chart templates and rendered for both teachers: 55/78 and 51/70 shots
+  pass visual QA (35/74 before, 3b1b only). First real render of the new templates.
+- `try_voices.py` / `try_voices.command`: listening comparison across TTS engines (not run yet).
+
 ## 2026-11-10 (follow-up commits)
 - Evaluation (`eval/`): recipe-free tests against real teachers. Generated text picked as human 0/40; unstyled
   control labelled 3b1b 20/20 (so the 3b1b result is uninformative); lecturer 20/20 attribution is real signal.

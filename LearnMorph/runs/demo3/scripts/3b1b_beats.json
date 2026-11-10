@@ -1,0 +1,44 @@
+[
+  {
+    "i": 1,
+    "beat": "hook",
+    "text": "Here's a bar chart you could easily catch on the evening news, titled police case clearance rate, where last year's bar is short and this year's towers over it at roughly three times the height. I want you to take a moment and just notice how that feels, because to me it feels like something big happened. The labels say 96 percent last year and 98 percent this year, on an axis that starts at 95, which is a bit less thrilling than the picture suggests. Did something dramatic just happen? I'll walk through three common tricks, squeezed axes, slippery averages, and scary percentages, though I should say up front that this is nowhere near every way numbers can mislead you.",
+    "score": 4.2
+  },
+  {
+    "i": 2,
+    "beat": "visual",
+    "text": "Try sliding the bottom of the axis yourself, letting it sink from 95 percent down to a full zero while the two bars stay exactly where the data put them. Last year's stubby bar stretches upward until it nearly reaches its neighbor, and what looked like one bar tripling over another turns into a pair of almost matching towers. I find it helpful to keep in mind that the data never moved at all, only the window we were looking through. The honest gap is two percentage points, roughly 2 percent of the old value, which is real but hardly dramatic.",
+    "score": 4.2
+  },
+  {
+    "i": 3,
+    "beat": "concrete_example",
+    "text": "Think about a single person's body temperature measured through one day, wandering between 36.4 and 37.2 degrees Celsius. Put it on an axis that runs from 0 to 100 and the line looks dead flat, which is worrying because a real fever would be almost invisible there. Change the axis to run from 36 to 38 degrees and the daily swings finally become readable, since a fraction of a degree is meaningful for a body. The same logic has an uncomfortable mirror image when you look at the global temperature anomaly, which sits at about 1.2 degrees. Draw that against 0 to 100 degrees and you get a line that seems to say nothing is happening, which is the same sleight of hand that inflated the bars earlier, only turned around to minimize a change instead of exaggerate it. In both cases the data never moved, only the window did.",
+    "score": 3.2
+  },
+  {
+    "i": 4,
+    "beat": "caveat",
+    "text": "Before you swear off every non-zero baseline, it's worth noticing that the fever chart was perfectly honest once the axis changed. Bars work by length, so a bar chopped off at 96 percent tells your eye something false about 98. A line works by slope, which means the question becomes whether the steepness you see matches the importance of the change. It depends, in a loose sense, on what a reader would otherwise miss. What I'd check is whether the axis is labeled clearly and whether the apparent drama matches the real size in the units that matter.",
+    "score": 0
+  },
+  {
+    "i": 5,
+    "beat": "concrete_example",
+    "text": "Here is a small company with ten people on the payroll, nine of whom earn $30,000 each while the owner takes $930,000 on top of that. You can check for yourself that the total comes to $1.2 million, which divided by ten gives the $120,000 that the recruiting poster proudly calls the average salary. Now sort the ten people by pay and look at the two in the middle, who both earn $30,000 and therefore define the median. Would you bet on earning $120,000 if you took a job there? Nobody in the building earns anything close to that mean, because it describes an amount of money that no actual person in the company ever receives.",
+    "score": 2.8
+  },
+  {
+    "i": 6,
+    "beat": "generalize",
+    "text": "Strip away the details and every case so far hands you the same question to ask, which is worth writing out in full: how big is this in real units, and compared to what? Take the clearance chart, where the two bars sat only 2 points apart on a truncated axis. An honest version runs the axis from 0 to 100%, labels the bars 96% and 98%, and adds a small note reading up 2 points. The salary poster gets repaired the same way, with the median placed right beside the mean so the line reads: mean $120k, median $30k. A relative change needs its absolute numbers next to it, since a dramatic percentage can still be a roughly tiny shift in real units. None of these fixes is fancy; each one just answers the question before the viewer has to ask.",
+    "score": 3.2
+  },
+  {
+    "i": 7,
+    "beat": "exercise",
+    "text": "Here are two headlines for you to try the question on, so pause the video if you like. Headline A says a new drug doubles your risk, where the risk climbs from 1 in 10,000 to 2 in 10,000. Headline B says sales are up 50%, where a small shop went from 2 sales to 3. For each one, work out the absolute change in real units before reading on, then ask what would shift if the shop had gone from 2,000 sales to 3,000. The drug example comes to one extra person per 10,000, which is 0.01 percentage points of risk. The shop example is a single extra sale, a change you could easily miss, while the 2,000 to 3,000 version is a thousand extra sales that really would deserve the headline. Now glance back at the 96% to 98% bars that opened this video, which amount to about a 2% relative rise and nothing like triple.",
+    "score": 3.4
+  }
+]

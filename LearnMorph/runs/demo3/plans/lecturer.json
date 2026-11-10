@@ -1,0 +1,53 @@
+{
+  "beats": [
+    {
+      "i": 1,
+      "beat": "hook",
+      "goal": "Address the viewer directly and show why spotting a bad chart is a useful everyday skill.",
+      "example_or_visual": "You scroll past a headline: 'Crime soars in Riverton!' with a steep red line. Ask 'but what if the line is barely moving?' and promise they'll be able to check it in under a minute.",
+      "target_words": 150
+    },
+    {
+      "i": 2,
+      "beat": "concrete_example",
+      "goal": "Show a truncated axis with a worked, numbered case.",
+      "example_or_visual": "A company reports quarterly revenue of $100.2 million in Q1 and $101.1 million in Q2. On a bar chart whose y-axis starts at $100 million, the second bar looks about five times taller. Work out the real change, under 1 percent, with the numbers named out loud.",
+      "target_words": 280
+    },
+    {
+      "i": 3,
+      "beat": "misconception",
+      "goal": "Challenge the belief that if every number on the chart is correct, the chart is honest.",
+      "example_or_visual": "Ask a rhetorical question: 'The numbers are right, so what's the problem?' Then use a town of ten people where nine earn $40,000 and one earns $4 million. The 'average income is $436,000' headline is technically true and still misleading. Contrast it with the median of $40,000.",
+      "target_words": 260
+    },
+    {
+      "i": 4,
+      "beat": "visual",
+      "goal": "Narrate drawing the honest and dishonest versions side by side so the viewer sees the effect.",
+      "example_or_visual": "Sketch the revenue bars twice, once with the axis cut at 100 and once starting at 0. Pick a green marker for the honest one, then correct yourself: 'let me pick a different color, red for the squished one.' Next to them, draw the ten salaries as dots on a number line with one dot far off the page, and mark the mean and the median.",
+      "target_words": 260
+    },
+    {
+      "i": 5,
+      "beat": "generalize",
+      "goal": "State the habit of mind in full sentences, using a single coined label.",
+      "example_or_visual": "Name it the 'zero test': whenever a bar is supposed to show size, ask where it starts. Then widen it to three plain questions in prose: compared to what, out of how many, and who got left out. Hedge with 'probably' and 'let's say'.",
+      "target_words": 240
+    },
+    {
+      "i": 6,
+      "beat": "reprise",
+      "goal": "Loop back to earlier examples and add a new trick, relative versus absolute change, so the questions get tested again.",
+      "example_or_visual": "Call back to the Riverton headline and the revenue bars. Then add 'Risk up 50%!' where the real change is 2 in 10,000 to 3 in 10,000, only 1 in 10,000 in absolute terms. Ask the viewer to run the three questions on it before you answer.",
+      "target_words": 220
+    },
+    {
+      "i": 7,
+      "beat": "meta",
+      "goal": "Close with encouragement and a short preview of the next video.",
+      "example_or_visual": "Tell them to test the next chart they see on the news or in a group chat. Next time you'll look at two lines that rise together, like ice cream sales and sunburns, and ask whether one causes the other.",
+      "target_words": 90
+    }
+  ]
+}

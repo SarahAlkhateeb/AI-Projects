@@ -1,0 +1,486 @@
+{
+ "scripts": {
+  "demo2/3b1b": "3b1b",
+  "demo2/lecturer": "lecturer",
+  "gen2-B/3b1b": "3b1b",
+  "gen2-B/lecturer": "lecturer",
+  "gen2-D/3b1b": "3b1b",
+  "gen2-D/lecturer": "lecturer"
+ },
+ "traits": {
+  "real": {
+   "3b1b": {
+    "sentence_len_mean": 25.4,
+    "sentence_len_p10_p50_p90": [
+     10,
+     24,
+     44
+    ],
+    "share_sentences_under_8_words": 0.06,
+    "share_sentences_over_30_words": 0.31,
+    "fillers_per_100w": 0.36,
+    "hedges_per_100w": 0.26,
+    "restarts_self_corrections_per_100w": 0.25,
+    "sentence_start_share": {
+     "so": 0.07,
+     "now": 0.02,
+     "and": 0.16,
+     "okay": 0.0,
+     "but": 0.07,
+     "well": 0.03
+    },
+    "comma_joined_clauses": 14.5,
+    "and_total": 27.68,
+    "rhetorical_question": 3.06,
+    "dash_self_interruption": 0.0,
+    "colour_or_pen_talk": 0.0,
+    "let_me": 0.31,
+    "lets_say": 0.41,
+    "right_tag": 0.51,
+    "nothing_special": 0.1,
+    "imagine_or_picture": 1.12,
+    "by_the_way": 0.61,
+    "remember_callback": 0.41,
+    "signpost_preview": 1.12,
+    "recap_summary": 0.1,
+    "coined_label": 0.2,
+    "enumerated_list": 0.92,
+    "band": [
+     21.4,
+     29.4
+    ]
+   },
+   "lecturer": {
+    "sentence_len_mean": 16.7,
+    "sentence_len_p10_p50_p90": [
+     4,
+     13,
+     34
+    ],
+    "share_sentences_under_8_words": 0.22,
+    "share_sentences_over_30_words": 0.11,
+    "fillers_per_100w": 0.14,
+    "hedges_per_100w": 0.82,
+    "restarts_self_corrections_per_100w": 2.03,
+    "sentence_start_share": {
+     "so": 0.18,
+     "now": 0.02,
+     "and": 0.2,
+     "okay": 0.0,
+     "but": 0.06,
+     "well": 0.08
+    },
+    "comma_joined_clauses": 14.46,
+    "and_total": 23.63,
+    "rhetorical_question": 7.23,
+    "dash_self_interruption": 14.95,
+    "colour_or_pen_talk": 1.45,
+    "let_me": 3.86,
+    "lets_say": 3.38,
+    "right_tag": 0.96,
+    "nothing_special": 0.0,
+    "imagine_or_picture": 0.0,
+    "by_the_way": 0.0,
+    "remember_callback": 0.0,
+    "signpost_preview": 1.93,
+    "recap_summary": 0.0,
+    "coined_label": 0.48,
+    "enumerated_list": 0.0,
+    "band": [
+     13.4,
+     19.8
+    ]
+   }
+  },
+  "generated": {
+   "demo2/3b1b": {
+    "words": 976,
+    "sentence_len_mean": 10.6,
+    "sentence_len_p10_p50_p90": [
+     4,
+     10,
+     18
+    ],
+    "share_sentences_under_8_words": 0.34,
+    "share_sentences_over_30_words": 0.01,
+    "fillers_per_100w": 0.0,
+    "hedges_per_100w": 0.51,
+    "restarts_self_corrections_per_100w": 0.0,
+    "sentence_start_share": {
+     "so": 0.05,
+     "now": 0.05,
+     "and": 0.03,
+     "okay": 0.0,
+     "but": 0.04,
+     "well": 0.03
+    },
+    "comma_joined_clauses": 21.52,
+    "and_total": 23.57,
+    "rhetorical_question": 16.39,
+    "dash_self_interruption": 0.0,
+    "colour_or_pen_talk": 0.0,
+    "let_me": 0.0,
+    "lets_say": 0.0,
+    "right_tag": 1.02,
+    "nothing_special": 3.07,
+    "imagine_or_picture": 6.15,
+    "by_the_way": 0.0,
+    "remember_callback": 1.02,
+    "signpost_preview": 1.02,
+    "recap_summary": 0.0,
+    "coined_label": 1.02,
+    "enumerated_list": 3.07,
+    "in_sentence_band": false,
+    "trait_distance": 0.8,
+    "habits_over_1.5x_real": {
+     "rhetorical_question": 5.4,
+     "right_tag": 2.0,
+     "nothing_special": 12.3,
+     "imagine_or_picture": 5.5,
+     "remember_callback": 2.5,
+     "coined_label": 4.1,
+     "enumerated_list": 3.3
+    }
+   },
+   "demo2/lecturer": {
+    "words": 884,
+    "sentence_len_mean": 11.6,
+    "sentence_len_p10_p50_p90": [
+     4,
+     11,
+     20
+    ],
+    "share_sentences_under_8_words": 0.3,
+    "share_sentences_over_30_words": 0.03,
+    "fillers_per_100w": 0.34,
+    "hedges_per_100w": 0.9,
+    "restarts_self_corrections_per_100w": 0.57,
+    "sentence_start_share": {
+     "so": 0.05,
+     "now": 0.04,
+     "and": 0.0,
+     "okay": 0.0,
+     "but": 0.05,
+     "well": 0.0
+    },
+    "comma_joined_clauses": 24.89,
+    "and_total": 24.89,
+    "rhetorical_question": 13.57,
+    "dash_self_interruption": 3.39,
+    "colour_or_pen_talk": 1.13,
+    "let_me": 9.05,
+    "lets_say": 1.13,
+    "right_tag": 1.13,
+    "nothing_special": 0.0,
+    "imagine_or_picture": 0.0,
+    "by_the_way": 0.0,
+    "remember_callback": 4.52,
+    "signpost_preview": 2.26,
+    "recap_summary": 0.0,
+    "coined_label": 0.0,
+    "enumerated_list": 1.13,
+    "in_sentence_band": false,
+    "trait_distance": 0.58,
+    "habits_over_1.5x_real": {
+     "rhetorical_question": 1.9,
+     "let_me": 2.3,
+     "remember_callback": 18.1,
+     "enumerated_list": 4.5
+    }
+   },
+   "gen2-B/3b1b": {
+    "words": 996,
+    "sentence_len_mean": 11.1,
+    "sentence_len_p10_p50_p90": [
+     4,
+     11,
+     21
+    ],
+    "share_sentences_under_8_words": 0.33,
+    "share_sentences_over_30_words": 0.0,
+    "fillers_per_100w": 0.0,
+    "hedges_per_100w": 0.4,
+    "restarts_self_corrections_per_100w": 0.1,
+    "sentence_start_share": {
+     "so": 0.07,
+     "now": 0.03,
+     "and": 0.0,
+     "okay": 0.0,
+     "but": 0.04,
+     "well": 0.0
+    },
+    "comma_joined_clauses": 20.08,
+    "and_total": 30.12,
+    "rhetorical_question": 5.02,
+    "dash_self_interruption": 0.0,
+    "colour_or_pen_talk": 0.0,
+    "let_me": 0.0,
+    "lets_say": 0.0,
+    "right_tag": 0.0,
+    "nothing_special": 0.0,
+    "imagine_or_picture": 1.0,
+    "by_the_way": 0.0,
+    "remember_callback": 1.0,
+    "signpost_preview": 1.0,
+    "recap_summary": 0.0,
+    "coined_label": 0.0,
+    "enumerated_list": 0.0,
+    "in_sentence_band": false,
+    "trait_distance": 0.74,
+    "habits_over_1.5x_real": {
+     "rhetorical_question": 1.6,
+     "remember_callback": 2.4
+    }
+   },
+   "gen2-B/lecturer": {
+    "words": 952,
+    "sentence_len_mean": 13.0,
+    "sentence_len_p10_p50_p90": [
+     5,
+     13,
+     22
+    ],
+    "share_sentences_under_8_words": 0.25,
+    "share_sentences_over_30_words": 0.03,
+    "fillers_per_100w": 0.21,
+    "hedges_per_100w": 1.05,
+    "restarts_self_corrections_per_100w": 0.63,
+    "sentence_start_share": {
+     "so": 0.1,
+     "now": 0.04,
+     "and": 0.0,
+     "okay": 0.0,
+     "but": 0.04,
+     "well": 0.0
+    },
+    "comma_joined_clauses": 27.31,
+    "and_total": 29.41,
+    "rhetorical_question": 8.4,
+    "dash_self_interruption": 3.15,
+    "colour_or_pen_talk": 1.05,
+    "let_me": 2.1,
+    "lets_say": 2.1,
+    "right_tag": 1.05,
+    "nothing_special": 0.0,
+    "imagine_or_picture": 0.0,
+    "by_the_way": 0.0,
+    "remember_callback": 0.0,
+    "signpost_preview": 6.3,
+    "recap_summary": 0.0,
+    "coined_label": 0.0,
+    "enumerated_list": 0.0,
+    "in_sentence_band": false,
+    "trait_distance": 0.48,
+    "habits_over_1.5x_real": {
+     "signpost_preview": 3.3
+    }
+   },
+   "gen2-D/3b1b": {
+    "words": 920,
+    "sentence_len_mean": 22.4,
+    "sentence_len_p10_p50_p90": [
+     12,
+     24,
+     30
+    ],
+    "share_sentences_under_8_words": 0.07,
+    "share_sentences_over_30_words": 0.1,
+    "fillers_per_100w": 0.0,
+    "hedges_per_100w": 0.33,
+    "restarts_self_corrections_per_100w": 0.0,
+    "sentence_start_share": {
+     "so": 0.0,
+     "now": 0.05,
+     "and": 0.0,
+     "okay": 0.0,
+     "but": 0.0,
+     "well": 0.0
+    },
+    "comma_joined_clauses": 19.57,
+    "and_total": 18.48,
+    "rhetorical_question": 3.26,
+    "dash_self_interruption": 0.0,
+    "colour_or_pen_talk": 0.0,
+    "let_me": 0.0,
+    "lets_say": 0.0,
+    "right_tag": 0.0,
+    "nothing_special": 0.0,
+    "imagine_or_picture": 1.09,
+    "by_the_way": 0.0,
+    "remember_callback": 0.0,
+    "signpost_preview": 0.0,
+    "recap_summary": 0.0,
+    "coined_label": 0.0,
+    "enumerated_list": 0.0,
+    "in_sentence_band": true,
+    "trait_distance": 0.62,
+    "habits_over_1.5x_real": {}
+   },
+   "gen2-D/lecturer": {
+    "words": 1341,
+    "sentence_len_mean": 14.9,
+    "sentence_len_p10_p50_p90": [
+     6,
+     15,
+     25
+    ],
+    "share_sentences_under_8_words": 0.18,
+    "share_sentences_over_30_words": 0.0,
+    "fillers_per_100w": 0.15,
+    "hedges_per_100w": 0.89,
+    "restarts_self_corrections_per_100w": 0.3,
+    "sentence_start_share": {
+     "so": 0.02,
+     "now": 0.06,
+     "and": 0.01,
+     "okay": 0.0,
+     "but": 0.0,
+     "well": 0.0
+    },
+    "comma_joined_clauses": 19.39,
+    "and_total": 25.35,
+    "rhetorical_question": 5.97,
+    "dash_self_interruption": 2.98,
+    "colour_or_pen_talk": 1.49,
+    "let_me": 2.24,
+    "lets_say": 2.24,
+    "right_tag": 0.0,
+    "nothing_special": 0.0,
+    "imagine_or_picture": 0.0,
+    "by_the_way": 0.0,
+    "remember_callback": 0.0,
+    "signpost_preview": 0.75,
+    "recap_summary": 0.0,
+    "coined_label": 0.75,
+    "enumerated_list": 0.0,
+    "in_sentence_band": true,
+    "trait_distance": 0.58,
+    "habits_over_1.5x_real": {
+     "coined_label": 1.6
+    }
+   }
+  }
+ },
+ "t1": {
+  "demo2/3b1b": {
+   "correct": 10,
+   "n": 10,
+   "p_one_sided": 0.001,
+   "mean_conf": 85.4
+  },
+  "demo2/lecturer": {
+   "correct": 10,
+   "n": 10,
+   "p_one_sided": 0.001,
+   "mean_conf": 80.6
+  },
+  "gen2-B/3b1b": {
+   "correct": 10,
+   "n": 10,
+   "p_one_sided": 0.001,
+   "mean_conf": 80.4
+  },
+  "gen2-B/lecturer": {
+   "correct": 10,
+   "n": 10,
+   "p_one_sided": 0.001,
+   "mean_conf": 80.7
+  },
+  "gen2-D/3b1b": {
+   "correct": 10,
+   "n": 10,
+   "p_one_sided": 0.001,
+   "mean_conf": 81.9
+  },
+  "gen2-D/lecturer": {
+   "correct": 10,
+   "n": 10,
+   "p_one_sided": 0.001,
+   "mean_conf": 85.1
+  }
+ },
+ "t3": {
+  "unstyled/demo2": {
+   "picked": {
+    "3b1b": 10
+   },
+   "n": 10,
+   "mean_conf": 68.4
+  }
+ },
+ "t4": {
+  "demo2/lecturer [raw]": {
+   "generated_picked_as_real": 0,
+   "n": 5,
+   "mean_conf": 90.2
+  },
+  "demo2/lecturer [cleaned]": {
+   "generated_picked_as_real": 0,
+   "n": 5,
+   "mean_conf": 90.8
+  },
+  "gen2-B/lecturer [raw]": {
+   "generated_picked_as_real": 0,
+   "n": 5,
+   "mean_conf": 90.4
+  },
+  "gen2-B/lecturer [cleaned]": {
+   "generated_picked_as_real": 0,
+   "n": 5,
+   "mean_conf": 89.6
+  },
+  "gen2-D/lecturer [raw]": {
+   "generated_picked_as_real": 0,
+   "n": 5,
+   "mean_conf": 91.4
+  },
+  "gen2-D/lecturer [cleaned]": {
+   "generated_picked_as_real": 0,
+   "n": 5,
+   "mean_conf": 89.2
+  }
+ },
+ "t5": {
+  "demo2/3b1b": {
+   "cos_3b1b": 0.864,
+   "jsd_3b1b": 0.128,
+   "cos_lecturer": 0.858,
+   "jsd_lecturer": 0.088
+  },
+  "demo2/lecturer": {
+   "cos_3b1b": 0.841,
+   "jsd_3b1b": 0.175,
+   "cos_lecturer": 0.952,
+   "jsd_lecturer": 0.042
+  },
+  "gen2-B/3b1b": {
+   "cos_3b1b": 0.868,
+   "jsd_3b1b": 0.108,
+   "cos_lecturer": 0.804,
+   "jsd_lecturer": 0.135
+  },
+  "gen2-B/lecturer": {
+   "cos_3b1b": 0.712,
+   "jsd_3b1b": 0.158,
+   "cos_lecturer": 0.907,
+   "jsd_lecturer": 0.082
+  },
+  "gen2-D/3b1b": {
+   "cos_3b1b": 0.863,
+   "jsd_3b1b": 0.109,
+   "cos_lecturer": 0.932,
+   "jsd_lecturer": 0.08
+  },
+  "gen2-D/lecturer": {
+   "cos_3b1b": 0.788,
+   "jsd_3b1b": 0.183,
+   "cos_lecturer": 0.825,
+   "jsd_lecturer": 0.193
+  }
+ },
+ "errors": {},
+ "calls": {
+  "cached": 92,
+  "api": 37
+ }
+}

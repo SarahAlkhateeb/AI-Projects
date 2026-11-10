@@ -1,0 +1,65 @@
+- 23:09:12 [grammar:3b1b] cached, skipping
+- 23:09:12 [grammar:lecturer] cached, skipping
+- 23:09:12 [grammar-diff] cosine(3b1b,lecturer) = 0.903
+- 23:09:12 [exemplars:3b1b] cached, skipping
+- 23:09:12 [exemplars:lecturer] cached, skipping
+- 23:09:29 [plan:3b1b] round 1: score=3.50 pass=False — beat moves never seen in the real lessons: ['concrete_example>bridge']; Specificity: every beat has its own concrete exa
+- 23:10:16 [plan:3b1b] round 2: score=4.00 pass=True — The numbers hold up. 96→98 on a 95-based axis gives bars of 1 and 3. The mean is $120k and the median $30k. 1 in 10,000 
+- 23:10:44 [plan:lecturer] round 1: score=4.00 pass=True — Specificity: Most beats have their own concrete picture, and the numbers check out. Revenue goes from $100.2M to $101.1M
+- 23:10:50 [grammar:3b1b] cached, skipping
+- 23:10:50 [grammar:lecturer] cached, skipping
+- 23:10:50 [grammar-diff] cosine(3b1b,lecturer) = 0.903
+- 23:10:50 [exemplars:3b1b] cached, skipping
+- 23:10:50 [exemplars:lecturer] cached, skipping
+- 23:10:50 [plan:3b1b] cached, skipping
+- 23:10:50 [plan:lecturer] cached, skipping
+- 23:11:08 [beat:3b1b:1] round 1: score=3.40 pass=False — The candidate has the right hook structure (concrete chart first, puzzle question), but it reads like a polished explain
+- 23:11:25 [beat:3b1b:1] round 2: score=4.20 pass=True — Only one candidate. It is strong on the hook move: a concrete example comes before any theory, it uses 'I want you to ta
+- 23:11:40 [beat:3b1b:2] round 1: score=4.20 pass=True — Only one candidate, and it is close to the teacher's voice. It could be pushed further with a rhetorical question ('So w
+- 23:11:55 [beat:3b1b:3] round 1: score=-1.17 pass=False — Rejected in code: cand 0: mean sentence length 22.6 (target 21.7-29.4); too many joined clauses comma_joined_clauses 25.
+- 23:12:19 [beat:3b1b:3] round 2: score=2.60 pass=False — The candidate stays on the concrete-example move but loses the teacher's voice. It is mostly third-person reportage ('it
+- 23:12:38 [beat:3b1b:3] round 3: score=-1.19 pass=False — Rejected in code: cand 0: mean sentence length 20.4 (target 21.7-29.4); too many joined clauses comma_joined_clauses 24.
+- 23:13:01 [beat:3b1b:3] round 4: score=3.20 pass=False — The candidate is competent but reads like a tidy explanatory essay. The teacher's concrete examples use short, casual, p
+- 23:13:01 [beat:3b1b:3] FAILED gate after 4 rounds; keeping best (score=3.20)
+- 23:13:15 [beat:3b1b:4] round 1: score=-2.08 pass=False — Rejected in code: cand 0: mean sentence length 22.2 (target 21.7-29.4); too many joined clauses comma_joined_clauses 45.
+- 23:13:30 [beat:3b1b:4] round 2: score=-1.56 pass=False — Rejected in code: cand 0: mean sentence length 23.6 (target 21.7-29.4); too many joined clauses comma_joined_clauses 33.
+- 23:13:41 [beat:3b1b:4] round 3: score=-1.10 pass=False — Rejected in code: cand 0: mean sentence length 21.6 (target 21.7-29.4); too many joined clauses comma_joined_clauses 27.
+- 23:14:01 [beat:3b1b:4] round 4: score=-1.19 pass=False — Rejected in code: cand 0: mean sentence length 26.6 (target 21.7-29.4); too many joined clauses comma_joined_clauses 30.
+- 23:14:01 [beat:3b1b:4] FAILED gate after 4 rounds; keeping best (score=-1.10)
+- 23:14:15 [beat:3b1b:5] round 1: score=-1.04 pass=False — Rejected in code: cand 0: mean sentence length 22.2 (target 21.7-29.4); too many joined clauses comma_joined_clauses 22.
+- 23:14:30 [beat:3b1b:5] round 2: score=-1.21 pass=False — Rejected in code: cand 0: mean sentence length 22.4 (target 21.7-29.4); too many joined clauses comma_joined_clauses 26.
+- 23:14:56 [beat:3b1b:5] round 3: score=2.80 pass=False — The candidate has the right structure: a small concrete case, 'you' address, and a verify-it-yourself invitation. The pr
+- 23:15:11 [beat:3b1b:5] round 4: score=-1.64 pass=False — Rejected in code: cand 0: mean sentence length 21.7 (target 21.7-29.4); too many joined clauses comma_joined_clauses 46.
+- 23:15:11 [beat:3b1b:5] FAILED gate after 4 rounds; keeping best (score=2.80)
+- 23:15:23 [beat:3b1b:6] round 1: score=-1.52 pass=False — Rejected in code: cand 0: mean sentence length 28.2 (target 21.7-29.4); too many joined clauses comma_joined_clauses 35.
+- 23:15:44 [beat:3b1b:6] round 2: score=3.20 pass=False — Both candidates generalize by summarizing in formal, report-like prose. Neither uses the teacher's 'there's nothing spec
+- 23:15:58 [beat:3b1b:6] round 3: score=-1.20 pass=False — Rejected in code: cand 0: mean sentence length 25.7 (target 21.7-29.4); too many joined clauses comma_joined_clauses 25.
+- 23:16:17 [beat:3b1b:6] round 4: score=-1.25 pass=False — Rejected in code: cand 0: mean sentence length 24.5 (target 21.7-29.4); too many joined clauses comma_joined_clauses 27.
+- 23:16:17 [beat:3b1b:6] FAILED gate after 4 rounds; keeping best (score=3.20)
+- 23:16:33 [beat:3b1b:7] round 1: score=-1.21 pass=False — Rejected in code: cand 0: mean sentence length 21.9 (target 21.7-29.4); too many joined clauses comma_joined_clauses 26.
+- 23:17:00 [beat:3b1b:7] round 2: score=3.40 pass=False — The candidate has the exercise structure (pause, two headlines, concrete numbers, callback) but lacks the teacher's conv
+- 23:17:24 [beat:3b1b:7] round 3: score=-1.32 pass=False — Rejected in code: cand 1: mean sentence length 27.3 (target 21.7-29.4); too many joined clauses comma_joined_clauses 42.
+- 23:17:46 [beat:3b1b:7] round 4: score=3.20 pass=False — The exercise beat should invite the viewer to try it and leave the answer open, in the teacher's playful register (e.g. 
+- 23:17:46 [beat:3b1b:7] FAILED gate after 4 rounds; keeping best (score=3.40)
+- 23:18:03 [beat:lecturer:1] round 1: score=4.40 pass=True — Both candidates are too clean and well organized. The teacher's openings ramble a bit and use filler ('Well let's get st
+- 23:18:20 [beat:lecturer:2] round 1: score=-1.19 pass=False — Rejected in code: cand 0: mean sentence length 11.8 (target 13.4-19.8); too many joined clauses comma_joined_clauses 35.
+- 23:18:45 [beat:lecturer:2] round 2: score=3.60 pass=False — The candidate nails the conversational worked example and the 'let's say' hedging, and it uses delta R with a verbal nam
+- 23:19:15 [beat:lecturer:2] round 3: score=4.80 pass=True — Both candidates fold the whole concrete example into one run-on block and skip the teacher's habit of breaking it into n
+- 23:19:36 [beat:lecturer:3] round 1: score=-1.11 pass=False — Rejected in code: cand 0: mean sentence length 11.9 (target 13.4-19.8); cand 1: mean sentence length 10.6 (target 13.4-1
+- 23:20:06 [beat:lecturer:3] round 2: score=3.20 pass=False — All three candidates use the same canned town-income mean-vs-median example and stay in smooth, polished explainer prose
+- 23:20:36 [beat:lecturer:3] round 3: score=3.80 pass=False — The candidate has the misconception structure right: it states the belief, asks a tag question, resolves it with numbers
+- 23:21:01 [beat:lecturer:3] round 4: score=-1.09 pass=False — Rejected in code: cand 0: mean sentence length 12.2 (target 13.4-19.8); cand 1: mean sentence length 10.5 (target 13.4-1
+- 23:21:01 [beat:lecturer:3] FAILED gate after 4 rounds; keeping best (score=3.80)
+- 23:21:26 [beat:lecturer:4] round 1: score=4.40 pass=True — Only one candidate. It is strong on live-drawing narration, the self-correction, and the callbacks. It lacks the teacher
+- 23:21:53 [beat:lecturer:5] round 1: score=4.20 pass=True — All three candidates turn the generalize beat into a tidy named framework (the 'zero test' plus three questions) with a 
+- 23:22:12 [beat:lecturer:6] round 1: score=-1.16 pass=False — Rejected in code: cand 1: mean sentence length 11.2 (target 13.4-19.8)
+- 23:22:36 [beat:lecturer:6] round 2: score=3.40 pass=False — Both candidates read as clean, scripted explanation. A reprise in this teacher's voice would ask itself a question that 
+- 23:22:55 [beat:lecturer:6] round 3: score=-10.00 pass=False — All candidates exceeded the habit budget: cand 0 over budget {'rhetorical_question': 2, 'imagine_or_picture': 1}; cand 1
+- 23:23:14 [beat:lecturer:6] round 4: score=-1.81 pass=False — Rejected in code: cand 0: mean sentence length 12.7 (target 13.4-19.8); too many joined clauses comma_joined_clauses 44.
+- 23:23:14 [beat:lecturer:6] FAILED gate after 4 rounds; keeping best (score=3.40)
+- 23:23:25 [beat:lecturer:7] round 1: score=-1.03 pass=False — Rejected in code: cand 0: mean sentence length 13.0 (target 13.4-19.8); cand 1: mean sentence length 14.7 (target 13.4-1
+- 23:23:40 [beat:lecturer:7] round 2: score=0.00 pass=False — judge returned no numeric scores; rescore
+- 23:23:54 [beat:lecturer:7] round 3: score=3.80 pass=False — The candidate nails the friendly, hedged sign-off and previews the next topic, but it is smoother and more polished than
+- 23:24:10 [beat:lecturer:7] round 4: score=4.20 pass=True — Both candidates do the meta job: a second-person recap, a callback to Riverton, a preview of the next lesson, and a warm
+- 23:24:10 [assemble:3b1b] drift (first third − last third) = 0.90
+- 23:24:23 [assemble:lecturer] drift (first third − last third) = 0.80

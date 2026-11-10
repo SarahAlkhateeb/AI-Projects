@@ -75,7 +75,8 @@ Evaluation code and the full report: [`eval/`](eval/).
 | Where does a lesson written with no style information land? | Labelled 3Blue1Brown 20 of 20 | The writer model's default voice already sits near that style, so it is a weak target for showing transfer. |
 | Is generated text mistaken for the real teacher in a side-by-side choice? | 0 of 40 | Not yet. The judge cites tidy scripting and over-used signature habits. |
 | Does the mix of beat types move toward the target teacher? | 3 of 4 scripts, 7 of 8 comparisons better than the unstyled control | A weak effect in the right direction. |
-| Shots passing visual QA after three rounds | 28 of 63, 42 of 59, 35 of 74 | Improves each round; none of the three renders reached a full pass. |
+| Do measured speech traits match the teacher after enforcing them in code? | Mean sentence length 22.4 vs a real 25.4 (was 10.6); questions per 1,000 words 3.3 vs 3.1 (was 16.4) | Averages now match. Variation does not: sentence lengths are too even, and the side-by-side result above is unchanged. |
+| Shots passing visual QA after three rounds | 55 of 78 and 51 of 70 on the latest renders (28 of 63, 42 of 59, 35 of 74 earlier) | Improved with chart templates; no render has reached a full pass. |
 
 Known limits of these measurements: the writer and the judge are from the same model family; the corpus is
 small and has no held-out transcripts; an embedding-based authorship check (`eval/luar_score.py`) is written
@@ -122,11 +123,12 @@ narration, `--no-judge` to render without QA. Environment variables read by the 
 |---|---|
 | `learnmorph.py` | Text stage: grammar, exemplars, plan, beats, script |
 | `learnmorph_video.py` | Visual profile, shot storyboard, render and QA loop |
+| `style_traits.py` | Speech traits and habit rates measured in code, used by the writer and the evaluation |
 | `tts_vm.py` | Narration and shot timing |
 | `learnmorph_avatar.py` | Optional presenter renderer using a stock avatar (written, not yet run end to end) |
 | `remotion/` | Props-driven video templates: equations, function plots, bar and line charts, comparisons, callouts |
 | `eval/` | Evaluation against real transcripts, with report and raw results |
-| `runs/demo1`, `runs/demo2` | Text artefacts of the two demo runs: profiles, plans, scripts, storyboards, QA scores, logs |
+| `runs/demo1`, `runs/demo2`, `runs/demo3` | Text artefacts of the demo runs: profiles, plans, scripts, storyboards, QA scores, logs |
 | `docs/` | [Status](docs/STATUS.md) and [changelog](docs/CHANGELOG.md) |
 | `legacy/` | First version of the pipeline (Manim based), kept for reference |
 
@@ -141,11 +143,10 @@ narration, `--no-judge` to render without QA. Environment variables read by the 
 
 ## Roadmap
 
-1. Use the real-transcript evaluation as the pass gate in the writing loop.
-2. Larger corpus per teacher with held-out transcripts, and a judge from a different model family.
-3. Write for speech and cap each signature habit at the teacher's real rate, the two faults the evaluation names.
-4. More expressive narration.
-5. Wider template library, driven by the visual QA failures.
+1. Enforce the spread of sentence lengths and the mix of beat types, not only the averages.
+2. Larger corpus per teacher with held-out transcripts, a judge from a different model family, and a test teacher the judge model has never seen.
+3. More expressive narration.
+4. Wider template library, driven by the visual QA failures.
 
 ## Responsible use
 

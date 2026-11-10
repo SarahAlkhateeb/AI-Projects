@@ -1,0 +1,53 @@
+{
+  "beats": [
+    {
+      "i": 1,
+      "beat": "hook",
+      "goal": "Show a chart that looks alarming before naming any trick, and say up front that this is about three common tricks, not every way numbers mislead.",
+      "example_or_visual": "A news-style bar chart titled 'Police case clearance rate'. Last year's bar is 96%, this year's is 98%. The y-axis starts at 95%, so this year's bar towers about three times taller than last year's. Ask the viewer: 'Did something dramatic just happen?' Then say in one line that we'll look at three tricks: squeezed axes, slippery averages, and scary percentages.",
+      "target_words": 130
+    },
+    {
+      "i": 2,
+      "beat": "visual",
+      "goal": "Make the viewer see the axis doing the lying by moving the baseline themselves.",
+      "example_or_visual": "The same two bars, with the axis animating from 95–100% down to 0–100%. The bars slide from 'one is triple the other' to 'two nearly identical towers'. Point out that the data never changed, only the frame. The real gap is 2 percentage points, about 2% of the old value.",
+      "target_words": 120
+    },
+    {
+      "i": 3,
+      "beat": "concrete_example",
+      "goal": "Show that axis choice cuts both ways, and that line charts follow different rules from bars.",
+      "example_or_visual": "First, a line chart of one person's body temperature over a day, from 36.4 °C to 37.2 °C. On a 0–100 °C axis it is a flat line and a fever would be invisible. On a 36–38 °C axis the swings are readable. Then flip it: a global temperature anomaly of about 1.2 °C squashed into a 0–100 °C axis looks like nothing happening, which is the same trick in the opposite direction.",
+      "target_words": 170
+    },
+    {
+      "i": 4,
+      "beat": "caveat",
+      "goal": "Stop the viewer from concluding that every non-zero baseline is dishonest.",
+      "example_or_visual": "Bars encode value by length, so cutting them off breaks the encoding, as in the 96% vs 98% chart. A line encodes change by slope, so zooming in is often fair. Hedge it: 'kind of, sort of, it depends on what a reader would otherwise miss.' The test is whether the axis is labeled and whether the visible size of the change matches its real size in the units that matter.",
+      "target_words": 120
+    },
+    {
+      "i": 5,
+      "beat": "concrete_example",
+      "goal": "Move from pictures to a single-number summary that misleads: the mean.",
+      "example_or_visual": "A company of 10 people. Nine earn $30k and the owner takes $930k. Total $1.2M, so the mean is $120k, and the recruiting poster says 'average salary $120k'. Sort them and the middle values are both $30k, so the median is $30k. Ask 'would you bet on earning $120k there?' Nobody in the company earns anything close to the mean.",
+      "target_words": 150
+    },
+    {
+      "i": 6,
+      "beat": "generalize",
+      "goal": "State the one question behind all of these cases, and what an honest version looks like.",
+      "example_or_visual": "Write the question out in full: 'How big is this in real units, and compared to what?' Applied to each case: the axis bars were 2 points apart, the mean needs its median beside it, and a relative change needs its absolute numbers beside it. Show a repaired version of the clearance chart, with a 0–100% axis, the labels '96%' and '98%', and a note 'up 2 points'. Then a repaired salary line: 'mean $120k, median $30k'. Hedge with 'roughly' where it fits.",
+      "target_words": 150
+    },
+    {
+      "i": 7,
+      "beat": "exercise",
+      "goal": "Have the viewer apply the question to relative-versus-absolute percentages, and loop back to the opening chart.",
+      "example_or_visual": "Pause-and-try. Headline A: 'New drug doubles your risk', where risk goes from 1 in 10,000 to 2 in 10,000. Ask what the absolute change is (1 extra person per 10,000, or 0.01 percentage points). Headline B: 'Sales up 50%', where the shop went from 2 sales to 3. Then ask what would change if it were 2,000 to 3,000. Reveal the answers, then glance back at the 96% to 98% bars: 'that's about a 2% relative rise, and nothing like triple.'",
+      "target_words": 170
+    }
+  ]
+}

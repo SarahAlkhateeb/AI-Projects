@@ -13,7 +13,8 @@ Files
 Not committed: `cache/` (every raw API response, which embeds the real transcript excerpts shown to the judge).
 
 Rerun
-- The scripts were written for a container layout: both hardcode `/home/claude/run2` as the project root
-  (`RUN2` in `eval_style.py`, the data path in `luar_score.py`). Change those to this folder's parent.
-- That root needs `learnmorph.py`, `data/<teacher>/*.txt` (local only, see the main README) and `runs/demo1`, `runs/demo2` scripts.
-- Set `ANTHROPIC_API_KEY`, then `python eval_style.py`. Without the cache, a full run makes about 166 API calls.
+- `eval_style.py` and `../style_traits.py` take every path from arguments; see the usage block at the top of `eval_style.py`.
+- Needs `data/<teacher>/*.txt` (local only, see the main README) and the scripts to test, passed with `--script NAME=TEACHER=PATH`.
+- Set `ANTHROPIC_API_KEY`. Responses are cached in `./eval_cache`, so a rerun is free. The first full run made about 166 API calls.
+- `results.json` and `report.md` are from the first evaluation (runs `demo1` and `demo2`); `results_D.json` is the writer experiment (run `demo3`).
+- `luar_score.py` still has a hardcoded data path at the top; change it before running.
