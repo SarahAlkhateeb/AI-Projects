@@ -1,0 +1,8 @@
+- 21:39:09 [render:3b1b] r1 rendered; still runs ≥4s: 9
+- 21:42:37 [render:3b1b] r1 shots pass 26/74
+- 21:48:33 [render:3b1b] r2 rendered; still runs ≥4s: 3
+- 21:51:54 [render:3b1b] r2 shots pass 33/74
+- 21:57:20 [render:3b1b] r3 rendered; still runs ≥4s: 4
+- 22:01:34 [render:3b1b] r3 shots pass 35/74
+- 22:06:08 [render:3b1b] max rounds; video at runs/demo2/video/3b1b.mp4 with remaining issues
+- 22:06:08 done → runs/demo2/video/3b1b.mp4

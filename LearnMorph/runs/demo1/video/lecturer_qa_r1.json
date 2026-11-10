@@ -1,0 +1,459 @@
+{
+  "stills": [
+    [
+      4.166667,
+      14.4
+    ],
+    [
+      38.933333,
+      6.3
+    ],
+    [
+      67.766667,
+      4.466667
+    ],
+    [
+      164.466667,
+      6.333333
+    ],
+    [
+      203.766667,
+      5.633333
+    ],
+    [
+      233.5,
+      5.166667
+    ],
+    [
+      252.8,
+      9.733333
+    ],
+    [
+      275.233333,
+      9.066667
+    ],
+    [
+      286.4,
+      8.633333
+    ],
+    [
+      324.066667,
+      6.133333
+    ]
+  ],
+  "shots": [
+    {
+      "beat": 1,
+      "shot": 0,
+      "avg": 4.666666666666667,
+      "min": 4,
+      "fix": "empty"
+    },
+    {
+      "beat": 1,
+      "shot": 1,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Optional: the palette/layout notes describe a two-graph slope layout, but this frame is a single centered equation. If the graphs are intended here, add them. Otherwise the frame is fine. The '?' highlight in red works well for the 'nicest derivative' setup."
+    },
+    {
+      "beat": 1,
+      "shot": 2,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Add the left/right graphs described in the layout, or accept the equation-only shot. The equation matches the spoken derivative, but nothing shows that the slope depends on position, such as a curve with a moving tangent."
+    },
+    {
+      "beat": 1,
+      "shot": 3,
+      "avg": 3.6666666666666665,
+      "min": 3,
+      "fix": "Move the 'slope = height?' label away from the curve's end so it no longer touches the line, e.g. place it top-left. Add a dot and tangent or height marker on the curve to show slope vs height. Use the layout's graph region instead of the full-frame plot."
+    },
+    {
+      "beat": 1,
+      "shot": 4,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "The 'slope 5.00' tangent label is clipped at the right edge, and the 'height 5, slope 5' title crowds the curve at top right. Shrink the plot's right margin or move the tangent label left or below the line, and shift the title label left so it clears the curve."
+    },
+    {
+      "beat": 1,
+      "shot": 5,
+      "avg": 4.666666666666667,
+      "min": 4,
+      "fix": "empty"
+    },
+    {
+      "beat": 1,
+      "shot": 6,
+      "avg": 3.6666666666666665,
+      "min": 3,
+      "fix": "Label overlaps the curve at the top right ('interest' touches the line). Shorten the label or move it to the upper left, e.g. a left-aligned label placed above the curve. The layout notes describe a different two-graph slope layout, so this single full-width plot does not match it."
+    },
+    {
+      "beat": 2,
+      "shot": 0,
+      "avg": 3.3333333333333335,
+      "min": 2,
+      "fix": "The text 'slope = rise / run' is clear but small and sits left-of-center in a large empty frame. Enlarge it and center it, or add the palette colors: rise in orange (accent2), run in blue (accent3), and 'slope =' in white. The layout notes describe a graph with a \u0394y/\u0394x triangle, so a faint line graph or triangle would match the style better. Possible props: lines [\"slope = rise / run\"] with colored segments for rise and run."
+    },
+    {
+      "beat": 2,
+      "shot": 1,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Recolor the \\Delta y numerator to accent2 orange (#F5A623) and the \\Delta x denominator to accent3 blue (#7FB8E0) per the palette roles. The highlight currently renders red, which is the accent reserved for curves. Also consider moving the equation to the top-left layout position if the graphs are meant to appear."
+    },
+    {
+      "beat": 2,
+      "shot": 2,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Make the point marker and 'height 1.00' label slightly larger. The plot fills the full frame instead of the layout's graph region (x 10-38% or 50-80%, y 12-60%), so shrink it to fit that region and leave the bottom and right margins empty. Use the dot color for the point and the cursor color for the dashed crosshair."
+    },
+    {
+      "beat": 2,
+      "shot": 3,
+      "avg": 3.3333333333333335,
+      "min": 3,
+      "fix": "Show the step h as well as f(0)=1: add a second point at x=0.1 with a blue \u0394x segment labeled 'h = 0.1' (or an orange \u0394y), so the small step is visible. Also add numbered axis ticks, and drop the tiny '1' label that overlaps the dot. The layout note describes a two-graph split view and the frame doesn't match it, so check that the plot template fits the intended layout."
+    },
+    {
+      "beat": 2,
+      "shot": 4,
+      "avg": 3.6666666666666665,
+      "min": 3,
+      "fix": "Move the 'height 1.00' label so it does not overlap the red '1.00' value label at the dot, and move the tiny '1' axis tick label too. Extend the y_range downward so the bars are not cut off at the frame bottom. The bar at 0.1 should be labeled 1.07 to match the 1.072 label."
+    },
+    {
+      "beat": 2,
+      "shot": 5,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Color the denominator 0.1 blue (accent3) and the numerator 0.072 orange (accent2) to match the palette roles, instead of red. The frame shows only the final fraction, not the morph from \u0394y/\u0394x, so make sure the from_tex is visible before the transition."
+    },
+    {
+      "beat": 2,
+      "shot": 6,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "The frame shows the end state of the morph, h=0.01 with slope\u22480.695 highlighted in red, which matches the phrase well. The text is large, high contrast and easy to read. It is only partly on style: the palette and layout notes describe a graph-based scene with a left line graph, a right curve and a slope label, but this frame has only centered text. If the layout is meant to apply, add the graphs or keep the equation smaller. Otherwise no change is needed."
+    },
+    {
+      "beat": 2,
+      "shot": 7,
+      "avg": 3.6666666666666665,
+      "min": 3,
+      "fix": "Make the 'height 1.00' label and the tiny '1' tick label larger and clearly separated, and keep the label from crowding the tangent line. Add a short axis or tick cue so the viewer can read the scale. The frame doesn't use the left/right graph layout in the palette notes, so confirm the single full-width plot is intended."
+    },
+    {
+      "beat": 2,
+      "shot": 8,
+      "avg": 3.6666666666666665,
+      "min": 3,
+      "fix": "Shrink or move the 'height at 0 = 1' label so it doesn't sit against the curve at the top-right. Keep the dot label and the on-graph label consistent ('height 1.00' vs 'height at 0 = 1'). Use the layout's graph region and leave the bottom 30% empty, rather than a full-frame plot."
+    },
+    {
+      "beat": 2,
+      "shot": 9,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Color the \u2717 with the accent red (#E8453C) so the emphasis is visible, and consider adding a small label like 'base 2' above the text to tie it to 'so 2 is a bit off'."
+    },
+    {
+      "beat": 3,
+      "shot": 0,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "The narration says the curve is blue, but the curve is red (accent). Either change the narration to 'red' or set the curve color to accent3 (#7FB8E0). The plot itself is correct: axes are shown and y = 2^x is drawn."
+    },
+    {
+      "beat": 3,
+      "shot": 1,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Make the 'y = 2^x' label smaller or move it left so it does not collide with the curve at the top right. Lengthen the tangent line and brighten the grid. The layout notes describe a two-graph slope-triangle design, so this single large plot only partly follows them."
+    },
+    {
+      "beat": 3,
+      "shot": 2,
+      "avg": 3.0,
+      "min": 2,
+      "fix": "The curve is red, which fits the phrase, and the label says 'red tangent', but the tangent line is drawn in orange (accent2) rather than red, so the frame contradicts the narration. Make the tangent red, or change the label to match. Also match the layout spec: it describes a left/right two-graph arrangement, while this is a single full-width plot. Reduce the tiny gridline and axis-label clutter, and move the 'height 1.00' and 'slope 0.69' labels so they don't crowd the curve."
+    },
+    {
+      "beat": 3,
+      "shot": 3,
+      "avg": 3.3333333333333335,
+      "min": 3,
+      "fix": "The phrase mentions a blue curve and a red line, but the frame shows a red curve and an orange tangent. Change the narration to 'orange line' and 'red curve', or recolor the tangent to accent and the curve to accent3. Also move the title label so it doesn't collide with the curve at the top right."
+    },
+    {
+      "beat": 3,
+      "shot": 4,
+      "avg": 4.333333333333333,
+      "min": 4,
+      "fix": "Move the 'slope \u2248 0.693' label left or lower so it doesn't touch the curve at the top right. Optionally make the tangent line longer so the gentle slope is easier to see."
+    },
+    {
+      "beat": 3,
+      "shot": 5,
+      "avg": 3.0,
+      "min": 2,
+      "fix": "Render the overlay_fn Math.pow(3,x) as a second curve in a contrasting color (accent3 blue). Right now only the 2^x curve shows, with slope 0.69 = ln 2, so the label 'y = 3^x added' is false. Make the tangent follow 3^x, with slope about 1.10 at x=0. Raise y_range to about [0,10] or clip 3^x cleanly so it is visible. Move the label left so it doesn't touch the curve."
+    },
+    {
+      "beat": 3,
+      "shot": 6,
+      "avg": 3.3333333333333335,
+      "min": 2,
+      "fix": "The overlay 3^x curve and its tangent are not drawn. The frame shows only the 2^x curve (it passes through (1,2), (2,4), (3,8)) with its 0.69 tangent, which contradicts the 1.099 label. Render overlay_fn Math.pow(3,x) as a steeper curve (y=3 at x=1) with a tangent of slope 1.099 at x=0, keeping the 2^x curve as a faint reference. Move the label away from the curve's upper end, where it touches the line."
+    },
+    {
+      "beat": 3,
+      "shot": 7,
+      "avg": 3.0,
+      "min": 2,
+      "fix": "Render the overlay_fn Math.pow(3,x) as a second red curve with its own tangent at x=0 (slope 1.099), so two red lines are visible together. Label each tangent with its slope (0.693 and 1.099). The frame currently shows only the 2^x curve and one tangent, so the 'two red lines' are missing."
+    },
+    {
+      "beat": 3,
+      "shot": 8,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Style is mostly fine: the equation is clean and the red '?' is highlighted. The layout notes describe left and right graphs, but this frame is a single centered equation with no graphs. If the graphs are meant to persist, shrink the equation and place it in the empty bottom area, or leave it as is for a focused beat."
+    },
+    {
+      "beat": 4,
+      "shot": 0,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Enlarge the tick labels and the 'height' and 'slope' labels, and move the 'slope 0.69' label off the tangent line. The layout notes describe a two-graph layout with a slope = \u0394y/\u0394x triangle, but this frame is a single full-width plot, so reduce the plot to the left-graph region if that layout is intended."
+    },
+    {
+      "beat": 4,
+      "shot": 1,
+      "avg": 3.6666666666666665,
+      "min": 3,
+      "fix": "Make the axis tick labels and the 'height'/'slope' callouts larger and brighter. Move the 'slope at x=1?' label away from the curve's top-right end. The layout notes describe left and right graphs with a crosshair and dots, but this is a single full-width plot, so reconcile the two."
+    },
+    {
+      "beat": 4,
+      "shot": 2,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Match the described layout: shrink the graph into the 10-38% / 12-60% region, or make the layout consistent with the other shots. Also move the 'f(x) = a^x' label so the curve doesn't run through it (e.g. to the top-left)."
+    },
+    {
+      "beat": 4,
+      "shot": 3,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Color the \u0394x denominator accent3 blue and the numerator accent2 orange to match the palette roles (the highlight is currently red, which is reserved for function curves)."
+    },
+    {
+      "beat": 4,
+      "shot": 4,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Frame matches the phrase: the fraction (a^(x+\u0394x) \u2212 a^x)/\u0394x is shown with the a^(x+\u0394x) term highlighted in red. On style, the palette roles put the numerator in orange and the denominator in blue, but here the numerator is white and only the first term is red. The equation is also small and sits in a lot of empty space. Consider a larger scale and recoloring the numerator and denominator to the palette roles, or keep the single red highlight if emphasis on the first term is intended."
+    },
+    {
+      "beat": 4,
+      "shot": 5,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "The ghosted \u0394x text overlaps the new expression mid-morph, which slightly hurts legibility. Hold on the finished frame, or fade the old text faster. The layout notes describe a two-graph scene, but this is a plain equation on black. That fits the equation_morph template, so keep it, and consider tinting h with accent3 to match the \u0394x role."
+    },
+    {
+      "beat": 4,
+      "shot": 6,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Highlight f'(x) more clearly, e.g. a brighter accent or a box around the prime mark, so the Lagrange notation stands out. Color the numerator accent2 and the denominator accent3 to match the palette roles. The frame is otherwise correct and legible."
+    },
+    {
+      "beat": 4,
+      "shot": 7,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Let the morph finish so the faded 'from' equation is fully gone before holding, and highlight both a^x factors. Use the palette's orange and blue for numerator and denominator. The bottom-left progress bar is fine."
+    },
+    {
+      "beat": 4,
+      "shot": 8,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Highlight the (a^h \u2212 1)/h factor, not just a^x, to match the phrase. The frame is a clean, readable equation, but it ignores the palette roles: the numerator should be orange and the denominator blue. For example, set highlight to \"\\frac{a^{h}-1}{h}\" and color the numerator with accent2 and the denominator with accent3."
+    },
+    {
+      "beat": 4,
+      "shot": 9,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Frame is legible and fits 'sort of interesting, we'll dig into it next' as a teaser equation with the key limit highlighted. The palette/layout notes describe a slope-graph scene, so a lone centered equation is a mild mismatch, though the red accent follows the palette. Optionally shift the equation up slightly or add the graph context, but no prop change is required."
+    },
+    {
+      "beat": 5,
+      "shot": 0,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Frame shows the claim struck through with a red correction, which fits the 'tempting thought' being voiced. However, the correction appears too early, since the phrase only states the misconception. Consider showing the claim unstruck, or delaying the strikethrough and correction. The palette/layout notes describe left/right graphs that are absent, so the frame feels sparse and off-style. Add a faint graph or exponential curve, or enlarge the claim text to fill the frame."
+    },
+    {
+      "beat": 5,
+      "shot": 1,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Optional: make the equation larger and center it in the safe space. The palette layout notes describe graphs, so a lone equation is a template departure, but it fits the beat. The red '?' highlight is clear and works well for 'hold on, let's check'."
+    },
+    {
+      "beat": 5,
+      "shot": 2,
+      "avg": 4.666666666666667,
+      "min": 4,
+      "fix": "empty"
+    },
+    {
+      "beat": 5,
+      "shot": 3,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Frame matches the phrase well: 1.099 is highlighted in red on the 3^x line. For style, the palette says accent red is for function lines and curves, so the highlight could use accent2 (orange) or stay as is. The small 'WAIT...' tag top-left is fine."
+    },
+    {
+      "beat": 5,
+      "shot": 4,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Color the underbraced constants with the accent palette (e.g. 0.693 and 1.099 in red or orange) so the 'tax' term stands out. The all-white equation also ignores the palette roles, and the layout notes describe graphs rather than an equation."
+    },
+    {
+      "beat": 5,
+      "shot": 5,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Frame matches the phrase well: the constants 0.693 and 1.099 are underlined in green. Style is slightly off, since green is not in the palette (the accents are red, orange and blue). Consider using accent3 blue or accent2 orange for the underline if strict palette adherence matters, or keep green because the narration explicitly says green."
+    },
+    {
+      "beat": 5,
+      "shot": 6,
+      "avg": 3.0,
+      "min": 2,
+      "fix": "The frame captures the equation morph mid-transition, so the old expression (0.693\u00b72^x, 1.099\u00b73^x) overlaps the new one (d/dx a^x = ?\u00b7a^x) and is hard to read. Hold the final frame longer, or fade the from_tex out faster so the 'd/dx a^x = ?\u00b7a^x' question is clean. Also use the accent red for the '?' highlight and make the green underline more visible."
+    },
+    {
+      "beat": 5,
+      "shot": 7,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "The 1 renders red with a green underline, which clashes with the palette (green is not in it). Use accent red or orange for the 1 and its underline instead of #5CD65C."
+    },
+    {
+      "beat": 6,
+      "shot": 0,
+      "avg": 3.6666666666666665,
+      "min": 3,
+      "fix": "Match the palette and layout notes: make the plot fill the stated region (it currently spans nearly the full frame), keep the x/y axis letters, and add a small limit expression such as (e^h - 1)/h as h to 0 so the visual states the limit being defined. Reduce the tangent line's thickness slightly."
+    },
+    {
+      "beat": 6,
+      "shot": 1,
+      "avg": 4.666666666666667,
+      "min": 4,
+      "fix": "empty"
+    },
+    {
+      "beat": 6,
+      "shot": 2,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "The third line still shows a cursor instead of '1', so the key payoff of 'just 1' isn't visible yet. Let the write-on finish so 'e \u2192 1' is complete, ideally with the '1' highlighted in the accent color. The palette/layout notes describe graphs that don't appear here; the plain whiteboard list is fine for this shot."
+    },
+    {
+      "beat": 6,
+      "shot": 3,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Mention e\u22482.718 on screen, e.g. a small note 'e \u2248 2.718' near the equation. Also color the numerator orange and the denominator blue to follow the palette roles, keeping 1.005 red as the highlight."
+    },
+    {
+      "beat": 6,
+      "shot": 4,
+      "avg": 2.3333333333333335,
+      "min": 2,
+      "fix": "The frame was captured mid-morph, so the two equations overlap and read as a smear. Hold the end state (h=0.001 ... \u22481.0005 with 1.0005 highlighted) longer, or start the morph earlier so the settled equation is on screen while the phrase is spoken. Also use a crossfade with less overlap, or stagger the swap, so the old and new terms are not drawn on top of each other."
+    },
+    {
+      "beat": 6,
+      "shot": 5,
+      "avg": 4.666666666666667,
+      "min": 4,
+      "fix": "Frame matches the phrase: d/dx e^x = e^x \u00b7 1 with '\u00b7 1' highlighted in red. The palette note describes graph layouts that don't apply to this equation shot, so on_style is only a minor concern. Optionally enlarge the equation slightly."
+    },
+    {
+      "beat": 6,
+      "shot": 6,
+      "avg": 3.0,
+      "min": 3,
+      "fix": "The frame catches the morph mid-transition: the ghosted from and to equations overlap and look messy. Hold on the final equation d/dx e^x = e^x with the right-hand e^x highlighted in red, so the phrase 'simply e to the x' lands cleanly."
+    },
+    {
+      "beat": 6,
+      "shot": 7,
+      "avg": 3.0,
+      "min": 2,
+      "fix": "Text is mid-write, so the 0.693 appears as 0.69 and the second line is incomplete; let the animation finish so both lines show in full. The phrase mentions 'green constants', but the text is all white. Color the constants 0.693 and 1.099 with an accent color, or change the narration. The palette/layout description (graphs, slope triangle) does not match this whiteboard text frame, so align the palette roles with the shot."
+    },
+    {
+      "beat": 6,
+      "shot": 8,
+      "avg": 3.6666666666666665,
+      "min": 3,
+      "fix": "The frame shows only the end state (ln 2, ln 3) and the numbers 0.693 and 1.099 are gone, so the morph is not visible. Capture the frame mid-morph or keep the numbers on screen (for example, 0.693 \u2192 ln 2 stacked) so the viewer sees the link between the value and its ln. The highlight is on the ln of 3 only, so highlight ln in both terms. The palette/layout note describes a slope-graph scene that does not match this equation slide, so ignore it."
+    },
+    {
+      "beat": 7,
+      "shot": 0,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Layout notes describe a two-graph slope layout (left line with triangle, right curve) but this frame shows a single full-width plot. If the two-graph layout is intended, resize the plot to the right graph region (x 50-80%, y 12-60%). The bright red curve being redrawn fits the phrase, so no other change is needed."
+    },
+    {
+      "beat": 7,
+      "shot": 1,
+      "avg": 4.666666666666667,
+      "min": 4,
+      "fix": "Frame matches the shot props: exp(x) in red, orange point at x=0, tangent line with slope 1.00, and the label 'tangent at x = 0'. The label reads clearly. The only style gap is that the tangent and point use accent2 orange, which the palette reserves for the \u0394y segment. No prop change needed."
+    },
+    {
+      "beat": 7,
+      "shot": 2,
+      "avg": 4.333333333333333,
+      "min": 4,
+      "fix": "Move the slope label so it does not overlap the red curve (e.g., shift left or shrink it), and keep the 'height 1.00' label clear of the curve and tangent."
+    },
+    {
+      "beat": 7,
+      "shot": 3,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Optional: the palette layout describes graphs, but this equation frame is clean and fits the phrase. Highlight only the 'ln' in both terms (currently only the second is red), e.g. set highlight to apply to every \\ln."
+    },
+    {
+      "beat": 7,
+      "shot": 4,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Shows both derivatives with 3x highlighted, which matches the phrase. The palette/layout description refers to a slope graph, so the plain equation card is only loosely on style. The phrase says 'plus', but the frame says 'and'; change the connector to '+' to match. A small 'chain rule' label could also be added."
+    },
+    {
+      "beat": 7,
+      "shot": 5,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Frame matches the spoken phrase: the difference quotient for e^{2x} is shown with the 2 highlighted in red. The palette/layout notes describe a slope-graph scene, so the equation template departs from that style. Both layout and palette are otherwise compatible (black bg, white text, red accent). The equation could sit slightly higher or be larger, but no prop change is required."
+    }
+  ]
+}

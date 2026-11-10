@@ -1,0 +1,202 @@
+- 18:00:00 [corpus:3b1b] 3 transcripts, 53k chars
+- 18:08:49 [grammar:3b1b] round 1: score=4.00 pass=True — Fixes needed: (1) transitions dict counts don't all sum consistently with beat_sequences—verify counts against actual se
+- 18:08:49 [corpus:lecturer] 3 transcripts, 16k chars
+- 18:09:33 [grammar:lecturer] round 1: score=3.67 pass=False — 1) 'visual':{'misconception':0} transition is meaningless noise—remove zero-count entries. 2) Some signature_devices lac
+- 18:11:19 [grammar:lecturer] round 2: score=3.67 pass=False — 1) Some counts derive from n=1 (misconception, reprise) yet are stated as firm rules ('bridge->misconception count=1') —
+- 18:12:13 [grammar:lecturer] round 3: score=3.67 pass=False — Fixes needed: (1) meta->reprise listed with n=0 'inferred only' yet still appears in transitions dict as a concrete coun
+- 18:12:13 [grammar:lecturer] FAILED gate after 3 rounds; keeping best (score=3.67)
+- 18:12:13 [grammar-diff] cosine(3b1b,lecturer) = 0.903
+- 21:46:38 [grammar:3b1b] cached, skipping
+- 21:46:38 [grammar:lecturer] cached, skipping
+- 21:46:38 [grammar-diff] cosine(3b1b,lecturer) = 0.903
+- 21:46:59 [exemplars:3b1b] round 1: score=3.67 pass=False — Contrast clarity: Most pairs are easy to tell apart, because the teacher is conversational, uses second person, and give
+- 21:47:25 [exemplars:3b1b] round 2: score=4.00 pass=True — Contrast clarity: Most pairs show an obvious difference in register, such as 'spits out' versus 'returns', the direct 'R
+- 21:47:50 [exemplars:lecturer] round 1: score=4.33 pass=True — Contrast is very clear: every pair sets conversational, direct-address teaching against a clipped textbook register, and
+- 21:48:09 [plan:3b1b] round 1: score=4.33 pass=True — Transitions: Most are well supported. hook→concrete_example (6), concrete_example→visual (4), visual→generalize (4), gen
+- 21:48:25 [plan:lecturer] round 1: score=4.00 pass=True — Transitions: The sequence is hook→concrete_example→visual→bridge→misconception→generalize→meta. Four of the six transiti
+- 21:48:38 [beat:3b1b:1] round 1: score=4.60 pass=True — All four use the same puzzle (height equals slope) and the same x=0 then x=2 structure, and all drift toward a polished,
+- 21:48:53 [beat:3b1b:2] round 1: score=4.80 pass=True — All four candidates drop the puzzle in favor of the bacteria example and make the callback to the curve thin or absent. 
+- 21:49:07 [beat:3b1b:3] round 1: score=4.60 pass=True — All four lean on the same bar scaffold and close with a near-formulaic 'we'll keep using this' line. They under-hedge: t
+- 21:49:21 [beat:3b1b:4] round 1: score=3.60 pass=False — All three ignore the previous beat's bars and restart with e's compound-growth limit and a symbolic derivation. A genera
+- 21:49:35 [beat:3b1b:4] round 2: score=4.60 pass=True — All four bolt the e-limit on at the end like a payoff and compress the generalization into formula-chaining. The teacher
+- 21:49:49 [beat:3b1b:5] round 1: score=4.80 pass=True — All four use the same template: objection, 2^x number, 3^x number, 'not quite the whole story', then 'That base is e.' T
+- 21:50:02 [beat:3b1b:6] round 1: score=4.80 pass=True — All four are polished and a bit too tidy. They lack the teacher's hedges (maybe, kind of, sort of, I think) and rarely u
+- 21:50:14 [beat:3b1b:7] round 1: score=4.20 pass=True — All four give the recap, preview and exercise in neat order, which reads as a template. None adds the teacher's self-dep
+- 21:50:26 [beat:lecturer:1] round 1: score=4.40 pass=True — All four are fluent but too tidy. None includes a mid-sentence self-correction or live-drawing narration ('let me pick a
+- 21:50:40 [beat:lecturer:2] round 1: score=3.80 pass=False — None of the candidates narrate visuals as if drawing live ('let me pick a different color'), and none include a mid-sent
+- 21:50:51 [beat:lecturer:2] round 2: score=4.20 pass=True — None of the candidates uses the teacher's live-drawing narration ('let me pick a different color') or a mid-sentence sel
+- 21:51:05 [beat:lecturer:3] round 1: score=4.40 pass=True — All four use the same template: the green-then-red self-correction, 2 vs 3 tangents, and a closing 'sits between'. None 
+- 21:51:19 [beat:lecturer:4] round 1: score=4.20 pass=True — All four cover the pivot, h for delta x, Lagrange's notation and a preview in a similar order, which feels templated. No
+- 21:51:34 [beat:lecturer:5] round 1: score=4.00 pass=True — All four candidates are too tidy and scripted. The teacher's misconception beats are looser and use spoken repetition ('
+- 21:51:47 [beat:lecturer:6] round 1: score=4.40 pass=True — None used a live self-correction or fresh visual narration (e.g. 'let me grab another color'), and few stated delta/prim
+- 21:51:58 [beat:lecturer:7] round 1: score=3.80 pass=False — All four candidates call back to a 'red tangent line' that the previous beat never mentions; the prior beat has green co
+- 21:52:11 [beat:lecturer:7] round 2: score=4.60 pass=True — All four open with a recap and close with a preview and an 'I'll see you' line, which feels formulaic. The teacher's sig
+- 21:52:11 [assemble:3b1b] drift (first third − last third) = 0.20
+- 21:52:20 [assemble:lecturer] drift (first third − last third) = -0.20
+- 21:53:03 [validate] accuracy=100% → PASS
+- 21:53:03 done → runs/demo1
+- 22:01:44 [grammar:3b1b] cached, skipping
+- 22:01:44 [grammar:lecturer] cached, skipping
+- 22:01:44 [grammar-diff] cosine(3b1b,lecturer) = 0.903
+- 22:01:44 [exemplars:3b1b] cached, skipping
+- 22:01:44 [exemplars:lecturer] cached, skipping
+- 22:01:44 [plan:3b1b] cached, skipping
+- 22:01:44 [plan:lecturer] cached, skipping
+- 22:01:44 [beat:3b1b:1] cached, skipping
+- 22:01:44 [beat:3b1b:2] cached, skipping
+- 22:01:44 [beat:3b1b:3] cached, skipping
+- 22:01:44 [beat:3b1b:4] cached, skipping
+- 22:01:44 [beat:3b1b:5] cached, skipping
+- 22:01:44 [beat:3b1b:6] cached, skipping
+- 22:01:44 [beat:3b1b:7] cached, skipping
+- 22:01:45 [beat:lecturer:1] cached, skipping
+- 22:01:45 [beat:lecturer:2] cached, skipping
+- 22:01:45 [beat:lecturer:3] cached, skipping
+- 22:01:45 [beat:lecturer:4] cached, skipping
+- 22:01:45 [beat:lecturer:5] cached, skipping
+- 22:01:45 [beat:lecturer:6] cached, skipping
+- 22:01:45 [beat:lecturer:7] cached, skipping
+- 22:01:45 [assemble:3b1b] drift (first third − last third) = 0.20
+- 22:02:01 [assemble:lecturer] drift (first third − last third) = -0.20
+- 22:02:55 [validate] accuracy=100% → PASS
+- 22:02:55 done → runs/demo1
+- 22:03:14 [visual:3b1b] reference video unavailable (ERROR: unable to download video data: HTTP Error 403: Forbidden); inferring profile without frames
+- 22:03:14 [visual:3b1b] 0 reference frames
+- 22:05:36 [visual:3b1b] 12 reference frames
+- 22:05:55 [visual:3b1b] r1 score=3.33 pass=False — Specificity (3): The four hex codes and the named font (Computer Modern / CMU Serif, regular weight, emphasis 
+- 22:06:30 [visual:3b1b] r2 score=3.00 pass=False — Specificity (4): Hex codes, percentages, durations and the font name are concrete, and the sigmoid-smooth rate
+- 22:07:05 [visual:3b1b] r3 score=3.33 pass=False — SPECIFICITY (4/5): Strong overall. It gives hex codes, durations (1.0/1.5/2.0s, 0.1s stagger), a concrete cubi
+- 22:07:05 [visual:3b1b] gate failed; keeping best 3.33
+- 22:07:41 [storyboard:3b1b] r1 score=3.33 pass=False — Beat 1 (plot_reveal, e^x, tangent_at 2): Good fit. The curve and tangent match the narration. Only the x=2 tan
+- 22:09:24 [visual:3b1b] 12 reference frames
+- 22:09:24 [visual:3b1b] cached
+- 22:10:01 [storyboard:3b1b] r1 score=3.67 pass=False — Beat 1 (plot_reveal): Good fit. The curve and tangent match the narration. tangent_at holds only 2, though the
+- 22:10:49 [storyboard:3b1b] r2 score=3.00 pass=False — Beat 1 (plot_reveal): Good fit, since the curve and tangent are what the narration shows. The schema allows on
+- 22:11:36 [storyboard:3b1b] r3 score=3.33 pass=False — Beat 1 (hook, plot_reveal): Mostly good. The narration slides the tangent from x=0 to x=2, but tangent_at allo
+- 22:11:36 [storyboard:3b1b] gate failed; keeping best 3.67
+- 22:12:42 [visual:3b1b] 12 reference frames
+- 22:12:42 [visual:3b1b] cached
+- 22:12:42 [storyboard:3b1b] cached
+- 22:12:42 [tts:3b1b] ElevenLabs HTTP 402 Payment Required; falling back to macOS say
+- 22:12:49 [tts:3b1b] total 339.6s
+- 22:17:12 [visual:3b1b] 12 reference frames
+- 22:17:12 [visual:3b1b] cached
+- 22:17:12 [storyboard:3b1b] cached
+- 22:17:12 [tts:3b1b] total 339.6s
+- 22:19:09 [visual:3b1b] 12 reference frames
+- 22:19:09 [visual:3b1b] cached
+- 22:19:09 [storyboard:3b1b] cached
+- 22:19:09 [tts:3b1b] total 339.6s
+- 22:20:57 [render:3b1b] r1 5/7 frames pass
+- 22:22:53 [render:3b1b] r2 5/7 frames pass
+- 22:24:50 [render:3b1b] r3 5/7 frames pass
+- 22:25:04 [render:3b1b] max rounds; video at runs/demo1/video/3b1b.mp4 with remaining frame issues
+- 22:25:04 done → runs/demo1/video/3b1b.mp4
+- 22:25:09 [visual:lecturer] 12 reference frames
+- 22:25:22 [visual:lecturer] r1 score=3.33 pass=False — Specificity (3/5): The four hex codes are concrete and usable. Several other fields stay vague or unmeasured. 
+- 22:25:59 [visual:lecturer] r2 score=3.33 pass=False — Specificity (4): Most values are concrete: hex codes, px sizes, durations, pause ranges, reveal order and colo
+- 22:26:47 [visual:lecturer] r3 score=3.67 pass=False — Specificity: Strong overall. It gives hex codes for every palette role, an alpha, percentage-based layout boxe
+- 22:26:47 [visual:lecturer] gate failed; keeping best 3.67
+- 22:27:09 [storyboard:lecturer] r1 score=3.00 pass=False — Beat 1 (callout): Reasonable fit. The text covers the height-equals-slope idea, but it leaves out the e^x reve
+- 22:28:00 [storyboard:lecturer] r2 score=3.33 pass=False — Beat 1 (hook): Fine. whiteboard_write carries the x² → 2x contrast, the height-5/slope-5 idea and the e^x reve
+- 22:28:46 [storyboard:lecturer] r3 score=2.67 pass=False — Beat 1 (hook): whiteboard_write fits the affinity (0.9). Its lines are paraphrased fragments, and 'height 5 → 
+- 22:28:46 [storyboard:lecturer] gate failed; keeping best 3.33
+- 22:28:47 [tts:lecturer] ElevenLabs HTTP 402 Payment Required; falling back to macOS say
+- 22:28:53 [tts:lecturer] total 302.6s
+- 22:30:31 [render:lecturer] r1 0/7 frames pass
+- 22:32:47 [render:lecturer] r2 0/7 frames pass
+- 22:35:16 [render:lecturer] r3 0/7 frames pass
+- 22:35:55 [render:lecturer] max rounds; video at runs/demo1/video/lecturer.mp4 with remaining frame issues
+- 22:35:55 done → runs/demo1/video/lecturer.mp4
+- 16:11:03 [grammar:3b1b] cached, skipping
+- 16:11:03 [grammar:lecturer] cached, skipping
+- 16:11:03 [grammar-diff] cosine(3b1b,lecturer) = 0.903
+- 16:11:03 [exemplars:3b1b] cached, skipping
+- 16:11:03 [exemplars:lecturer] cached, skipping
+- 16:11:03 [plan:3b1b] cached, skipping
+- 16:11:03 [plan:lecturer] cached, skipping
+- 16:11:03 [beat:3b1b:1] cached, skipping
+- 16:11:03 [beat:3b1b:2] cached, skipping
+- 16:11:03 [beat:3b1b:3] cached, skipping
+- 16:11:03 [beat:3b1b:4] cached, skipping
+- 16:11:03 [beat:3b1b:5] cached, skipping
+- 16:11:03 [beat:3b1b:6] cached, skipping
+- 16:11:03 [beat:3b1b:7] cached, skipping
+- 16:11:03 [beat:lecturer:1] cached, skipping
+- 16:11:03 [beat:lecturer:2] cached, skipping
+- 16:11:03 [beat:lecturer:3] cached, skipping
+- 16:11:03 [beat:lecturer:4] cached, skipping
+- 16:11:03 [beat:lecturer:5] cached, skipping
+- 16:11:03 [beat:lecturer:6] cached, skipping
+- 16:11:03 [beat:lecturer:7] cached, skipping
+- 16:11:03 [assemble:3b1b] drift (first third − last third) = 0.20
+- 16:11:19 [assemble:lecturer] drift (first third − last third) = -0.20
+- 16:12:11 [validate] accuracy=100% → PASS
+- 16:12:11 done → runs/demo1
+- 16:15:47 [grammar:3b1b] cached, skipping
+- 16:15:47 [grammar:lecturer] cached, skipping
+- 16:15:47 [grammar-diff] cosine(3b1b,lecturer) = 0.903
+- 16:15:47 [exemplars:3b1b] cached, skipping
+- 16:15:47 [exemplars:lecturer] cached, skipping
+- 16:15:47 [plan:3b1b] cached, skipping
+- 16:15:47 [plan:lecturer] cached, skipping
+- 16:15:47 [beat:3b1b:1] cached, skipping
+- 16:15:47 [beat:3b1b:2] cached, skipping
+- 16:15:47 [beat:3b1b:3] cached, skipping
+- 16:15:47 [beat:3b1b:4] cached, skipping
+- 16:15:47 [beat:3b1b:5] cached, skipping
+- 16:15:47 [beat:3b1b:6] cached, skipping
+- 16:15:47 [beat:3b1b:7] cached, skipping
+- 16:15:47 [beat:lecturer:1] cached, skipping
+- 16:15:47 [beat:lecturer:2] cached, skipping
+- 16:15:47 [beat:lecturer:3] cached, skipping
+- 16:15:47 [beat:lecturer:4] cached, skipping
+- 16:15:47 [beat:lecturer:5] cached, skipping
+- 16:15:47 [beat:lecturer:6] cached, skipping
+- 16:15:47 [beat:lecturer:7] cached, skipping
+- 16:15:47 [assemble:3b1b] drift (first third − last third) = 0.20
+- 16:16:02 [assemble:lecturer] drift (first third − last third) = -0.20
+- 16:16:57 [validate] accuracy=100% → PASS
+- 16:16:57 done → runs/demo1
+- 16:17:04 [visual:3b1b] cached
+- 16:17:04 [storyboard:3b1b] cached
+- 16:17:04 storyboard done → next: tts_vm.py --run demo1 --teacher 3b1b, then --render-only
+- 16:17:05 [visual:lecturer] cached
+- 16:17:05 [storyboard:lecturer] cached
+- 16:17:05 storyboard done → next: tts_vm.py --run demo1 --teacher lecturer, then --render-only
+- 17:00:15 [render:3b1b] repaired 44 JSON-stringified props
+- 17:01:36 [render:3b1b] r1 rendered; still runs ≥4s: 6
+- 17:05:10 [render:3b1b] r1 shots pass 25/63
+- 17:10:05 [render:3b1b] r2 rendered; still runs ≥4s: 6
+- 17:12:58 [render:3b1b] r2 shots pass 29/63
+- 17:17:37 [render:3b1b] r3 rendered; still runs ≥4s: 4
+- 17:20:21 [render:3b1b] r3 shots pass 32/63
+- 17:23:14 [render:3b1b] max rounds; video at runs/demo1/video/3b1b.mp4 with remaining issues
+- 17:23:14 done → runs/demo1/video/3b1b.mp4
+- 17:23:14 [render:lecturer] repaired 6 JSON-stringified props
+- 17:24:36 [render:lecturer] r1 rendered; still runs ≥4s: 10
+- 17:27:28 [render:lecturer] r1 shots pass 35/59
+- 17:30:58 [render:lecturer] r2 rendered; still runs ≥4s: 6
+- 17:33:50 [render:lecturer] r2 shots pass 37/59
+- 17:36:58 [render:lecturer] r3 rendered; still runs ≥4s: 6
+- 17:39:50 [render:lecturer] r3 shots pass 38/59
+- 17:41:39 [render:lecturer] max rounds; video at runs/demo1/video/lecturer.mp4 with remaining issues
+- 17:41:39 done → runs/demo1/video/lecturer.mp4
+- 20:42:29 [render:3b1b] repaired 44 JSON-stringified props
+- 20:44:15 [render:3b1b] r1 rendered; still runs ≥4s: 7
+- 20:47:10 [render:3b1b] r1 shots pass 21/63
+- 20:52:46 [render:3b1b] r2 rendered; still runs ≥4s: 4
+- 20:55:45 [render:3b1b] r2 shots pass 25/63
+- 21:00:59 [render:3b1b] r3 rendered; still runs ≥4s: 5
+- 21:05:24 [render:3b1b] r3 shots pass 28/63
+- 21:08:46 [render:3b1b] max rounds; video at runs/demo1/video/3b1b.mp4 with remaining issues
+- 21:08:46 done → runs/demo1/video/3b1b.mp4
+- 21:08:46 [render:lecturer] repaired 6 JSON-stringified props
+- 21:10:12 [render:lecturer] r1 rendered; still runs ≥4s: 10
+- 21:12:54 [render:lecturer] r1 shots pass 40/59
+- 21:15:56 [render:lecturer] r2 rendered; still runs ≥4s: 7
+- 21:18:41 [render:lecturer] r2 shots pass 40/59
+- 21:21:48 [render:lecturer] r3 rendered; still runs ≥4s: 5
+- 21:24:26 [render:lecturer] r3 shots pass 42/59
+- 21:26:07 [render:lecturer] max rounds; video at runs/demo1/video/lecturer.mp4 with remaining issues
+- 21:26:07 done → runs/demo1/video/lecturer.mp4

@@ -1,0 +1,1457 @@
+{
+  "teacher": "lecturer",
+  "fps": 30,
+  "theme": {
+    "palette": {
+      "bg": "#000000",
+      "fg": "#FFFFFF",
+      "accent": "#E8453C",
+      "accent2": "#F5A623",
+      "accent3": "#7FB8E0",
+      "dot": "#C8D8E8",
+      "cursor": "#D0D0D0",
+      "cursor_alpha": 0.8,
+      "roles": "fg=axes, axis letters 'x'/'y' and 'slope =' text; accent (red)=function lines/curves; accent2 (orange)=\u0394y segment, \u0394y label and numerator; accent3 (blue)=\u0394x segment, \u0394x label and denominator; dot=filled points on curves and short secant segments on the right graph; cursor=dashed crosshair pen"
+    },
+    "font": {
+      "family": "Kalam, 'Patrick Hand', 'Noto Sans', 'DejaVu Sans', 'Segoe UI Symbol', sans-serif",
+      "weight": "400 (regular handwriting; Noto Sans/DejaVu Sans fallbacks cover the Greek \u0394 glyph, which Kalam and Patrick Hand lack)",
+      "sizes": "labels ~16px tall on a 640x360 frame (48px at 1920x1080); axis letters ~14px (42px)",
+      "stroke_widths": "axes and curves ~2.5-3px (7.5-9px at 1080p); \u0394x/\u0394y segments ~2px (6px); dots radius ~3px (9px); axis arrowheads open V ~8px long (24px), no filled heads; \u0394x/\u0394y are solid lines with no arrowheads, no offset, running along the triangle legs"
+    },
+    "motion": {
+      "speed": "slow",
+      "easing": "ease",
+      "signature": "Everything is drawn stroke by stroke by a dashed-crosshair pen cursor, with ease-in-out on each stroke plus about \u00b115% speed variation and \u00b11px low-frequency wobble (\u00b13px at 1080p); nothing cuts or morphs, and the left graph stays on screen while the right one is drawn.",
+      "timing": "'slow' means about 200 px/s on a 640-wide frame (about 600 px/s at 1080p). Axes take 0.8-1.0 s each, the red line about 1.1 s, the right curve about 1.2 s, the dots pop in over 0.15 s, and labels are written over 0.6-0.9 s. Pauses between elements are 0.3-0.6 s, and about 1 s separates the left graph finishing from the right graph starting.",
+      "reveal_order": "Left graph: y-axis and x-axis with the letters, red line, two dots, blue \u0394x segment and label, orange \u0394y segment and label, then 'slope =' followed by the orange \u0394y numerator, a fraction bar and the blue \u0394x denominator. Right graph: axes, red curve, then the crosshair visits points on the curve. The dots and short light secant segments are drawn between pairs of points to show the slope changing.",
+      "cursor": "Dashed crosshair about 25px across at 640 wide (scales with the canvas, about 75px at 1080p), dashes about 1.5px thick, #D0D0D0 at 80% alpha. It trails the pen position and rests briefly at each stroke end.",
+      "shot_seconds": [
+        3,
+        8
+      ],
+      "camera": "drift"
+    },
+    "layout": "The left graph sits in x 10-38% and y 12-60% of the frame, with the 'slope = \u0394y/\u0394x' label in the empty top-left above the line (about x 10-30%, y 11-22%). The right graph sits in x 50-80%, y 12-60%. The bottom 30% and the far-right 20% are deliberately empty: treat them as safe space for later writing or narration callouts, not as an artifact. Left graph: a straight line, constant slope (about 0.83 visually, rising 145px over 175px at 640 wide), with a full \u0394x/\u0394y triangle and the slope label. Right graph: a smooth convex curve that starts nearly flat (about 0.1) and steepens (about 1.2), has no triangle or slope label, and shows only dots, light secant segments and the crosshair to suggest the slope varies.",
+    "output_format": "whiteboard",
+    "format_reason": "The behaviour is whiteboard (hand-written strokes revealed live with a pen cursor), but the canvas is a dark blackboard-style theme (#000000), not white. Render it as 'whiteboard_write' with the dark palette.",
+    "template_affinity": {
+      "whiteboard_write": 0.9,
+      "plot_reveal": 0.85,
+      "callout": 0.4,
+      "equation_morph": 0.3,
+      "diagram_nodes": 0.3,
+      "misconception": 0.15,
+      "bullet_build": 0.1,
+      "title_card": 0.1
+    },
+    "confidence": "medium",
+    "notes": "Frames were provided, so colours, layout and reveal order come from them, but hex values, pixel sizes and speeds are estimated from 640x360 screenshots. The font is a best-guess match for the handwriting, not an identified typeface. Timings are estimated from stroke lengths at the stated speed, not measured."
+  },
+  "beats": [
+    {
+      "i": 1,
+      "beat": "hook",
+      "narration": "Hi there. Today we're going to talk about spotting misleading charts, and I think you'll find it helps you more often than you'd expect. You've probably scrolled past a chart today that was quietly lying to you. Let me sketch one, kind of like you'd see on the news. The title is 'Crime Is Skyrocketing!' and there are two bars. Let me pick a red-- yes, red for the tall one. It looks about five times taller than the other bar. Scary, right? But what if I told you the two numbers are 52 and 50? Same chart, very different story. Let's figure out how that happens.",
+      "shots": [
+        {
+          "phrase": "Hi there. Today we're going to talk about spotting misleading charts,",
+          "template": "title_card",
+          "props": {
+            "title": "Spotting Misleading Charts"
+          },
+          "why": "Open with topic title card",
+          "start_s": 0.0,
+          "end_s": 4.67
+        },
+        {
+          "phrase": "and I think you'll find it helps you more often than you'd expect.",
+          "template": "plot",
+          "props": {
+            "fn": "x<2?52:50",
+            "x_range": [
+              0,
+              4
+            ],
+            "y_range": [
+              49.5,
+              52.5
+            ],
+            "draw": true
+          },
+          "why": "Empty chart axes set up the scene",
+          "start_s": 4.67,
+          "end_s": 8.94
+        },
+        {
+          "phrase": "You've probably scrolled past a chart today that was quietly lying to you.",
+          "template": "callout",
+          "props": {
+            "text": "Quietly lying",
+            "emphasis": "lying"
+          },
+          "why": "Key line as short callout",
+          "start_s": 8.94,
+          "end_s": 14.26
+        },
+        {
+          "phrase": "Let me sketch one, kind of like you'd see on the news.",
+          "template": "plot",
+          "props": {
+            "fn": "x<2?52:50",
+            "x_range": [
+              0,
+              4
+            ],
+            "y_range": [
+              49.5,
+              52.5
+            ],
+            "bars_at": [
+              1
+            ]
+          },
+          "why": "First bar sketched on same axes",
+          "start_s": 14.26,
+          "end_s": 18.27
+        },
+        {
+          "phrase": "The title is 'Crime Is Skyrocketing!' and there are two bars.",
+          "template": "plot",
+          "props": {
+            "fn": "x<2?52:50",
+            "x_range": [
+              0,
+              4
+            ],
+            "y_range": [
+              49.5,
+              52.5
+            ],
+            "label": "Crime Is Skyrocketing!",
+            "bars_at": [
+              1,
+              3
+            ]
+          },
+          "why": "Title and both bars appear",
+          "start_s": 18.27,
+          "end_s": 22.99
+        },
+        {
+          "phrase": "Let me pick a red-- yes, red for the tall one.",
+          "template": "plot",
+          "props": {
+            "fn": "x<2?52:50",
+            "x_range": [
+              0,
+              4
+            ],
+            "y_range": [
+              49.5,
+              52.5
+            ],
+            "label": "Tall bar: red",
+            "bars_at": [
+              1,
+              3
+            ],
+            "point_at": 1
+          },
+          "why": "Tall bar marked red",
+          "start_s": 22.99,
+          "end_s": 26.75
+        },
+        {
+          "phrase": "It looks about five times taller than the other bar.",
+          "template": "plot",
+          "props": {
+            "fn": "x<2?52:50",
+            "x_range": [
+              0,
+              4
+            ],
+            "y_range": [
+              49.5,
+              52.5
+            ],
+            "label": "\u2248 5\u00d7 taller",
+            "bars_at": [
+              1,
+              3
+            ],
+            "point_at": 1
+          },
+          "why": "Show the apparent height ratio",
+          "start_s": 26.75,
+          "end_s": 30.65
+        },
+        {
+          "phrase": "Scary, right? But what if I told you the two numbers are 52 and 50?",
+          "template": "plot",
+          "props": {
+            "fn": "x<2?52:50",
+            "x_range": [
+              0,
+              4
+            ],
+            "y_range": [
+              49.5,
+              52.5
+            ],
+            "label": "52 vs 50",
+            "bars_at": [
+              1,
+              3
+            ]
+          },
+          "why": "Label both bars with real values",
+          "start_s": 30.65,
+          "end_s": 36.22
+        },
+        {
+          "phrase": "Same chart, very different story. Let's figure out how that happens.",
+          "template": "plot",
+          "props": {
+            "fn": "x<2?52:50",
+            "x_range": [
+              0,
+              4
+            ],
+            "y_range": [
+              49.5,
+              52.5
+            ],
+            "label": "Axis starts at 49.5, not 0",
+            "bars_at": [
+              1,
+              3
+            ]
+          },
+          "why": "Hint at the truncated baseline",
+          "start_s": 36.22,
+          "end_s": 42.7
+        }
+      ],
+      "duration_s": 42.7,
+      "audio": "audio/demo2/lecturer/beat_1.mp3"
+    },
+    {
+      "i": 2,
+      "beat": "concrete_example",
+      "narration": "Think about the last bar chart you looked at. You probably read the bar heights first and the axis labels second, if at all. Let's use that habit against ourselves. Say bar A is 52 burglaries per 1,000 and bar B is 50 per 1,000. I'll draw the axis in a red-- actually, let me grab a green marker, and I'll start it at 49. Now A is 3 units tall, because 52 minus 49 is 3, and B is 1 unit tall. A looks 3 times as tall. Remember our crime headline from a moment ago? That's the same trick. But what happens if the axis starts at 0? Redrawn, A and B look almost the same height. To put a number on the real difference, I'd write delta equals 52 minus 50, so delta is 2. Then 2 divided by 50 is 0.04, or 4 percent. A small difference dressed up as a big one. Coming up, we'll draw both side by side.",
+      "shots": [
+        {
+          "phrase": "Think about the last bar chart you looked at.",
+          "template": "plot",
+          "props": {
+            "fn": "x<1.5?52:50",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              49,
+              53
+            ],
+            "bars_at": [
+              1,
+              2
+            ],
+            "label": "A vs B",
+            "draw": true
+          },
+          "why": "Open on the chart scene",
+          "start_s": 0.0,
+          "end_s": 3.29
+        },
+        {
+          "phrase": "You probably read the bar heights first and the axis labels second, if at all.",
+          "template": "plot",
+          "props": {
+            "fn": "x<1.5?52:50",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              49,
+              53
+            ],
+            "bars_at": [
+              1,
+              2
+            ],
+            "label": "heights \u2192 axis"
+          },
+          "why": "Same scene, label stresses reading order",
+          "start_s": 3.29,
+          "end_s": 8.97
+        },
+        {
+          "phrase": "Let's use that habit against ourselves.",
+          "template": "plot",
+          "props": {
+            "fn": "x<1.5?52:50",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              49,
+              53
+            ],
+            "bars_at": [
+              1,
+              2
+            ],
+            "label": "habit \u2192 trap"
+          },
+          "why": "Same scene, hint at the setup",
+          "start_s": 8.97,
+          "end_s": 11.89
+        },
+        {
+          "phrase": "Say bar A is 52 burglaries per 1,000 and bar B is 50 per 1,000.",
+          "template": "plot",
+          "props": {
+            "fn": "x<1.5?52:50",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              49,
+              53
+            ],
+            "bars_at": [
+              1,
+              2
+            ],
+            "label": "A = 52, B = 50 (per 1,000)"
+          },
+          "why": "Values labelled on the bars",
+          "start_s": 11.89,
+          "end_s": 18.63
+        },
+        {
+          "phrase": "I'll draw the axis in a red-- actually, let me grab a green marker, and I'll start it at 49.",
+          "template": "plot",
+          "props": {
+            "fn": "x<1.5?52:50",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              49,
+              53
+            ],
+            "bars_at": [
+              1,
+              2
+            ],
+            "label": "axis starts at 49"
+          },
+          "why": "Baseline marked at 49 on same bars",
+          "start_s": 18.63,
+          "end_s": 25.7
+        },
+        {
+          "phrase": "Now A is 3 units tall, because 52 minus 49 is 3, and B is 1 unit tall.",
+          "template": "plot",
+          "props": {
+            "fn": "x<1.5?52:50",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              49,
+              53
+            ],
+            "bars_at": [
+              1,
+              2
+            ],
+            "label": "A: 52\u221249 = 3 | B: 50\u221249 = 1"
+          },
+          "why": "Show the height arithmetic on bars",
+          "start_s": 25.7,
+          "end_s": 32.91
+        },
+        {
+          "phrase": "A looks 3 times as tall.",
+          "template": "equation",
+          "props": {
+            "tex": "\\frac{3}{1} = 3\\times",
+            "highlight": "3\\times"
+          },
+          "why": "Key claim as an equation",
+          "start_s": 32.91,
+          "end_s": 35.43
+        },
+        {
+          "phrase": "Remember our crime headline from a moment ago? That's the same trick.",
+          "template": "diagram_nodes",
+          "props": {
+            "nodes": [
+              {
+                "id": "h",
+                "label": "Crime headline chart"
+              },
+              {
+                "id": "a",
+                "label": "A vs B chart"
+              },
+              {
+                "id": "t",
+                "label": "Cut axis"
+              }
+            ],
+            "edges": [
+              {
+                "from": "h",
+                "to": "t"
+              },
+              {
+                "from": "a",
+                "to": "t"
+              }
+            ],
+            "highlight": "t"
+          },
+          "why": "Both charts link to one trick",
+          "start_s": 35.43,
+          "end_s": 40.3
+        },
+        {
+          "phrase": "But what happens if the axis starts at 0? Redrawn, A and B look almost the same height.",
+          "template": "plot",
+          "props": {
+            "fn": "x<1.5?52:50",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              0,
+              55
+            ],
+            "bars_at": [
+              1,
+              2
+            ],
+            "label": "axis from 0: 52 vs 50"
+          },
+          "why": "Baseline drops, bars nearly equal",
+          "start_s": 40.3,
+          "end_s": 46.98
+        },
+        {
+          "phrase": "To put a number on the real difference, I'd write delta equals 52 minus 50, so delta is 2.",
+          "template": "equation",
+          "props": {
+            "tex": "\\Delta = 52 - 50 = 2",
+            "highlight": "2"
+          },
+          "why": "Delta computed on screen",
+          "start_s": 46.98,
+          "end_s": 54.53
+        },
+        {
+          "phrase": "Then 2 divided by 50 is 0.04, or 4 percent.",
+          "template": "equation_morph",
+          "props": {
+            "from_tex": "\\Delta = 52 - 50 = 2",
+            "to_tex": "\\frac{2}{50} = 0.04 = 4\\%",
+            "highlight": "4\\%"
+          },
+          "why": "Delta morphs into the percent",
+          "start_s": 54.53,
+          "end_s": 60.17
+        },
+        {
+          "phrase": "A small difference dressed up as a big one.",
+          "template": "plot",
+          "props": {
+            "fn": "x<1.5?52:50",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              0,
+              55
+            ],
+            "bars_at": [
+              1,
+              2
+            ],
+            "label": "looks 3\u00d7, really 4%"
+          },
+          "why": "Return to bars with the verdict",
+          "start_s": 60.17,
+          "end_s": 63.26
+        },
+        {
+          "phrase": "Coming up, we'll draw both side by side.",
+          "template": "callout",
+          "props": {
+            "text": "Next: side by side",
+            "emphasis": "side by side"
+          },
+          "why": "Short teaser for next beat",
+          "start_s": 63.26,
+          "end_s": 67.61
+        }
+      ],
+      "duration_s": 67.61,
+      "audio": "audio/demo2/lecturer/beat_2.mp3"
+    },
+    {
+      "i": 3,
+      "beat": "visual",
+      "narration": "Let's draw this together. I'll fold the page in half, sort of, so we get two panels. In the left panel, I'll draw the axis from 49 to 53, and then bars A and B. A reaches 52, B reaches 50, and the gap looks dramatic. I'll write 'Zoomed' underneath. Over on the right, the axis goes from 0 to 60, and when I draw A and B again, they're nearly level. That panel is 'Honest.' Now, the thing I want you to notice is the baseline. I'd take this orange-- hmm, let me use blue so it stands out. I'll circle the baseline on the left, at 49, and then the one on the right, at 0. Remember our delta of 2? It's the same 2 in both panels. Only the circled spot is different.",
+      "shots": [
+        {
+          "phrase": "Let's draw this together. I'll fold the page in half, sort of, so we get two panels.",
+          "template": "plot",
+          "props": {
+            "fn": "x<0.75?0:x<1.5?0.75:x<3?0.25:x<4.75?0:x<5.5?0.87:0.83",
+            "x_range": [
+              0,
+              7
+            ],
+            "y_range": [
+              0,
+              1
+            ],
+            "label": "Left panel | Right panel",
+            "bars_at": [],
+            "draw": true
+          },
+          "why": "Open on the empty two-panel split screen",
+          "start_s": 0.0,
+          "end_s": 6.08
+        },
+        {
+          "phrase": "In the left panel, I'll draw the axis from 49 to 53, and then bars A and B.",
+          "template": "plot",
+          "props": {
+            "fn": "x<0.75?0:x<1.5?0.75:x<3?0.25:x<4.75?0:x<5.5?0.87:0.83",
+            "x_range": [
+              0,
+              7
+            ],
+            "y_range": [
+              0,
+              1
+            ],
+            "label": "Left axis: 49 to 53",
+            "bars_at": [
+              1,
+              2
+            ]
+          },
+          "why": "Left bars appear on the truncated axis",
+          "start_s": 6.08,
+          "end_s": 12.91
+        },
+        {
+          "phrase": "A reaches 52, B reaches 50, and the gap looks dramatic. I'll write 'Zoomed' underneath.",
+          "template": "plot",
+          "props": {
+            "fn": "x<0.75?0:x<1.5?0.75:x<3?0.25:x<4.75?0:x<5.5?0.87:0.83",
+            "x_range": [
+              0,
+              7
+            ],
+            "y_range": [
+              0,
+              1
+            ],
+            "label": "Zoomed: A = 52, B = 50",
+            "bars_at": [
+              1,
+              2
+            ],
+            "point_at": 1
+          },
+          "why": "Label the left bar heights and the Zoomed panel",
+          "start_s": 12.91,
+          "end_s": 19.55
+        },
+        {
+          "phrase": "Over on the right, the axis goes from 0 to 60,",
+          "template": "plot",
+          "props": {
+            "fn": "x<0.75?0:x<1.5?0.75:x<3?0.25:x<4.75?0:x<5.5?0.87:0.83",
+            "x_range": [
+              0,
+              7
+            ],
+            "y_range": [
+              0,
+              1
+            ],
+            "label": "Zoomed | right axis: 0 to 60",
+            "bars_at": [
+              1,
+              2
+            ]
+          },
+          "why": "Left panel stays while the right axis is drawn",
+          "start_s": 19.55,
+          "end_s": 23.45
+        },
+        {
+          "phrase": "and when I draw A and B again, they're nearly level. That panel is 'Honest.'",
+          "template": "plot",
+          "props": {
+            "fn": "x<0.75?0:x<1.5?0.75:x<3?0.25:x<4.75?0:x<5.5?0.87:0.83",
+            "x_range": [
+              0,
+              7
+            ],
+            "y_range": [
+              0,
+              1
+            ],
+            "label": "Zoomed | Honest: 52 vs 50",
+            "bars_at": [
+              1,
+              2,
+              5,
+              6
+            ]
+          },
+          "why": "Both panels side by side; right bars nearly level",
+          "start_s": 23.45,
+          "end_s": 28.32
+        },
+        {
+          "phrase": "Now, the thing I want you to notice is the baseline.",
+          "template": "plot",
+          "props": {
+            "fn": "x<0.75?0:x<1.5?0.75:x<3?0.25:x<4.75?0:x<5.5?0.87:0.83",
+            "x_range": [
+              0,
+              7
+            ],
+            "y_range": [
+              0,
+              1
+            ],
+            "label": "Watch the baseline",
+            "bars_at": [
+              1,
+              2,
+              5,
+              6
+            ]
+          },
+          "why": "Keep both panels, direct attention to the bottom",
+          "start_s": 28.32,
+          "end_s": 32.16
+        },
+        {
+          "phrase": "I'd take this orange-- hmm, let me use blue so it stands out.",
+          "template": "plot",
+          "props": {
+            "fn": "x<0.75?0:x<1.5?0.75:x<3?0.25:x<4.75?0:x<5.5?0.87:0.83",
+            "x_range": [
+              0,
+              7
+            ],
+            "y_range": [
+              0,
+              1
+            ],
+            "label": "Baselines: 49 | 0",
+            "bars_at": [
+              1,
+              2,
+              5,
+              6
+            ]
+          },
+          "why": "Pen switches to blue; baselines get labels",
+          "start_s": 32.16,
+          "end_s": 36.71
+        },
+        {
+          "phrase": "I'll circle the baseline on the left, at 49,",
+          "template": "plot",
+          "props": {
+            "fn": "x<0.75?0:x<1.5?0.75:x<3?0.25:x<4.75?0:x<5.5?0.87:0.83",
+            "x_range": [
+              0,
+              7
+            ],
+            "y_range": [
+              0,
+              1
+            ],
+            "label": "Zoomed baseline = 49",
+            "bars_at": [
+              1,
+              2,
+              5,
+              6
+            ],
+            "point_at": 0.5
+          },
+          "why": "Blue circle on the left baseline",
+          "start_s": 36.71,
+          "end_s": 40.34
+        },
+        {
+          "phrase": "and then the one on the right, at 0.",
+          "template": "plot",
+          "props": {
+            "fn": "x<0.75?0:x<1.5?0.75:x<3?0.25:x<4.75?0:x<5.5?0.87:0.83",
+            "x_range": [
+              0,
+              7
+            ],
+            "y_range": [
+              0,
+              1
+            ],
+            "label": "Honest baseline = 0",
+            "bars_at": [
+              1,
+              2,
+              5,
+              6
+            ],
+            "point_at": 4.5
+          },
+          "why": "Blue circle moves to the right baseline",
+          "start_s": 40.34,
+          "end_s": 43.41
+        },
+        {
+          "phrase": "Remember our delta of 2? It's the same 2 in both panels.",
+          "template": "plot",
+          "props": {
+            "fn": "x<0.75?0:x<1.5?0.75:x<3?0.25:x<4.75?0:x<5.5?0.87:0.83",
+            "x_range": [
+              0,
+              7
+            ],
+            "y_range": [
+              0,
+              1
+            ],
+            "label": "\u0394 = 2 in both panels",
+            "bars_at": [
+              1,
+              2,
+              5,
+              6
+            ]
+          },
+          "why": "Bracket the same gap across both panels",
+          "start_s": 43.41,
+          "end_s": 48.34
+        },
+        {
+          "phrase": "Only the circled spot is different.",
+          "template": "plot",
+          "props": {
+            "fn": "x<0.75?0:x<1.5?0.75:x<3?0.25:x<4.75?0:x<5.5?0.87:0.83",
+            "x_range": [
+              0,
+              7
+            ],
+            "y_range": [
+              0,
+              1
+            ],
+            "label": "Only the baseline differs: 49 vs 0",
+            "bars_at": [
+              1,
+              2,
+              5,
+              6
+            ],
+            "point_at": 4.5
+          },
+          "why": "Close on the circled baseline in the same scene",
+          "start_s": 48.34,
+          "end_s": 52.58
+        }
+      ],
+      "duration_s": 52.58,
+      "audio": "audio/demo2/lecturer/beat_3.mp3"
+    },
+    {
+      "i": 4,
+      "beat": "generalize",
+      "narration": "Here's the idea behind that blue circle, stated plainly. We would define a misleading chart as one where the visual change is bigger or smaller than the real change in the numbers. A chart's visual size should be proportional to the quantity it represents. Edward Tufte named a way to measure this, the lie factor, which is the size of the effect shown in the graphic divided by the size of the effect in the data. Let me write that under the left panel. The graphic shows a 200% jump, but the data show 4%, because our delta of 2 over 50 is 0.04. So 200 divided by 4 is 50. That's a chart stretching the truth fifty times over.",
+      "shots": [
+        {
+          "phrase": "Here's the idea behind that blue circle, stated plainly.",
+          "template": "plot",
+          "props": {
+            "fn": "(x<2)?52:50",
+            "x_range": [
+              0,
+              4
+            ],
+            "y_range": [
+              48,
+              53
+            ],
+            "label": "Zoomed panel",
+            "bars_at": [
+              1,
+              3
+            ],
+            "draw": true
+          },
+          "why": "Reopen on the zoomed panel",
+          "start_s": 0.0,
+          "end_s": 4.42
+        },
+        {
+          "phrase": "We would define a misleading chart as one where the visual change is bigger or smaller",
+          "template": "equation",
+          "props": {
+            "tex": "\\text{visual change} \\neq \\text{real change}",
+            "highlight": "visual change"
+          },
+          "why": "Definition, visual side first",
+          "start_s": 4.42,
+          "end_s": 10.52
+        },
+        {
+          "phrase": "than the real change in the numbers.",
+          "template": "equation",
+          "props": {
+            "tex": "\\text{visual change} \\neq \\text{real change}",
+            "highlight": "real change"
+          },
+          "why": "Same equation, highlight moves",
+          "start_s": 10.52,
+          "end_s": 13.15
+        },
+        {
+          "phrase": "A chart's visual size should be proportional to the quantity it represents.",
+          "template": "equation",
+          "props": {
+            "tex": "\\text{visual size} \\propto \\text{quantity}",
+            "highlight": "\\propto"
+          },
+          "why": "The rule as one relation",
+          "start_s": 13.15,
+          "end_s": 18.55
+        },
+        {
+          "phrase": "Edward Tufte named a way to measure this, the lie factor,",
+          "template": "title_card",
+          "props": {
+            "title": "The lie factor",
+            "subtitle": "Edward Tufte"
+          },
+          "why": "Name the measure and its author",
+          "start_s": 18.55,
+          "end_s": 22.52
+        },
+        {
+          "phrase": "which is the size of the effect shown in the graphic",
+          "template": "equation",
+          "props": {
+            "tex": "\\text{lie factor} = \\frac{\\text{effect in graphic}}{\\text{effect in data}}",
+            "highlight": "effect in graphic"
+          },
+          "why": "Numerator lights up",
+          "start_s": 22.52,
+          "end_s": 25.72
+        },
+        {
+          "phrase": "divided by the size of the effect in the data.",
+          "template": "equation",
+          "props": {
+            "tex": "\\text{lie factor} = \\frac{\\text{effect in graphic}}{\\text{effect in data}}",
+            "highlight": "effect in data"
+          },
+          "why": "Same formula, denominator lights up",
+          "start_s": 25.72,
+          "end_s": 29.33
+        },
+        {
+          "phrase": "Let me write that under the left panel.",
+          "template": "plot",
+          "props": {
+            "fn": "(x<2)?52:50",
+            "x_range": [
+              0,
+              4
+            ],
+            "y_range": [
+              48,
+              53
+            ],
+            "label": "lie factor = graphic effect \u00f7 data effect",
+            "bars_at": [
+              1,
+              3
+            ]
+          },
+          "why": "Formula sits beneath the zoomed panel",
+          "start_s": 29.33,
+          "end_s": 32.51
+        },
+        {
+          "phrase": "The graphic shows a 200% jump, but the data show 4%,",
+          "template": "plot",
+          "props": {
+            "fn": "(x<2)?52:50",
+            "x_range": [
+              0,
+              4
+            ],
+            "y_range": [
+              48,
+              53
+            ],
+            "label": "graphic +200% | data +4%",
+            "bars_at": [
+              1,
+              3
+            ]
+          },
+          "why": "Both effects labelled on the panel",
+          "start_s": 32.51,
+          "end_s": 37.95
+        },
+        {
+          "phrase": "because our delta of 2 over 50 is 0.04.",
+          "template": "equation",
+          "props": {
+            "tex": "\\frac{\\Delta}{50} = \\frac{2}{50} = 0.04",
+            "highlight": "0.04"
+          },
+          "why": "Show the arithmetic",
+          "start_s": 37.95,
+          "end_s": 42.99
+        },
+        {
+          "phrase": "So 200 divided by 4 is 50.",
+          "template": "equation",
+          "props": {
+            "tex": "\\frac{200}{4} = 50",
+            "highlight": "50"
+          },
+          "why": "The lie factor result",
+          "start_s": 42.99,
+          "end_s": 46.79
+        },
+        {
+          "phrase": "That's a chart stretching the truth fifty times over.",
+          "template": "plot",
+          "props": {
+            "fn": "(x<2)?52:50",
+            "x_range": [
+              0,
+              4
+            ],
+            "y_range": [
+              48,
+              53
+            ],
+            "label": "lie factor = 50",
+            "bars_at": [
+              1,
+              3
+            ]
+          },
+          "why": "Return to the panel with the verdict",
+          "start_s": 46.79,
+          "end_s": 51.94
+        }
+      ],
+      "duration_s": 51.94,
+      "audio": "audio/demo2/lecturer/beat_4.mp3"
+    },
+    {
+      "i": 5,
+      "beat": "bridge",
+      "narration": "So we've handled bars, and you probably feel pretty good about spotting a stretched axis. But what if the axis is perfectly honest and the chart still misleads you? Let me sketch a line, a town's monthly unemployment rate, 5.1% down to 4.9% across 3 months. Nothing is stretched here. Now I'll draw the same data over 10 years, sort of zoomed way out. Same numbers, different impression. That's the puzzle we're going to untangle next, and I think you'll enjoy it.",
+      "shots": [
+        {
+          "phrase": "So we've handled bars, and you probably feel pretty good about spotting a stretched axis.",
+          "template": "callout",
+          "props": {
+            "text": "Stretched axes: spotted",
+            "emphasis": "spotted"
+          },
+          "why": "Recap of the previous skill, in keywords",
+          "start_s": 0.0,
+          "end_s": 6.13
+        },
+        {
+          "phrase": "But what if the axis is perfectly honest and the chart still misleads you?",
+          "template": "callout",
+          "props": {
+            "text": "Honest axis, still misleading?",
+            "emphasis": "still misleading"
+          },
+          "why": "Poses the puzzle as a short question",
+          "start_s": 6.13,
+          "end_s": 11.33
+        },
+        {
+          "phrase": "Let me sketch a line, a town's monthly unemployment rate,",
+          "template": "plot",
+          "props": {
+            "fn": "5.1-0.1*(x-1)",
+            "x_range": [
+              1,
+              3
+            ],
+            "y_range": [
+              4.5,
+              5.5
+            ],
+            "label": "Unemployment rate (%), 3 months",
+            "point_at": 1,
+            "draw": true
+          },
+          "why": "Line starts drawing at 5.1%",
+          "start_s": 11.33,
+          "end_s": 15.49
+        },
+        {
+          "phrase": "5.1% down to 4.9% across 3 months. Nothing is stretched here.",
+          "template": "plot",
+          "props": {
+            "fn": "5.1-0.1*(x-1)",
+            "x_range": [
+              1,
+              3
+            ],
+            "y_range": [
+              4.5,
+              5.5
+            ],
+            "label": "5.1% \u2192 4.9%",
+            "point_at": 3
+          },
+          "why": "Same scene, dot slides to the 4.9% end",
+          "start_s": 15.49,
+          "end_s": 22.24
+        },
+        {
+          "phrase": "Now I'll draw the same data over 10 years, sort of zoomed way out. Same numbers, different impression.",
+          "template": "plot",
+          "props": {
+            "fn": "5-1.5*Math.sin((x-120)/22)",
+            "x_range": [
+              0,
+              120
+            ],
+            "y_range": [
+              3,
+              7
+            ],
+            "label": "Same town, 10 years: last 3 months are a blip",
+            "point_at": 120,
+            "draw": true
+          },
+          "why": "Zoomed-out swings make the dip a small blip",
+          "start_s": 22.24,
+          "end_s": 29.35
+        },
+        {
+          "phrase": "That's the puzzle we're going to untangle next, and I think you'll enjoy it.",
+          "template": "whiteboard_write",
+          "props": {
+            "lines": [
+              "Same data",
+              "different impression?"
+            ]
+          },
+          "why": "Closes on the puzzle, written on board",
+          "start_s": 29.35,
+          "end_s": 35.55
+        }
+      ],
+      "duration_s": 35.55,
+      "audio": "audio/demo2/lecturer/beat_5.mp3"
+    },
+    {
+      "i": 6,
+      "beat": "concrete_example",
+      "narration": "Let's try a worked example, and I'd encourage you to do the arithmetic along with me. Say a company ad shouts, our stock is up 30%! Here's the claim: on March 1 the price was $100, and on June 1 it was $130. Thirty over 100 is 30%, so the math checks out. But what if we asked, up compared to when? Let me draw the full year, in blue, no, let me pick green for the window. In January the stock sat at $200, then it fell to $100 by March. That's the drop the ad skips. Now I'll draw a small green box around March through June, just a sliver of the curve. To get the full-year change, we do 130 minus 200, which is negative 70, divided by 200, giving us negative 35%. Down 35%, not up 30%! Remember the zoomed panel? Same trick, different axis: time. The numbers were honest, but the window was chosen very carefully, and you'd probably never notice unless you asked to see the whole line.",
+      "shots": [
+        {
+          "phrase": "Let's try a worked example, and I'd encourage you to do the arithmetic along with me.",
+          "template": "title_card",
+          "props": {
+            "title": "Worked example",
+            "subtitle": "Pencil ready"
+          },
+          "why": "Open the beat and invite participation",
+          "start_s": 0.0,
+          "end_s": 5.78
+        },
+        {
+          "phrase": "Say a company ad shouts, our stock is up 30%!",
+          "template": "callout",
+          "props": {
+            "text": "\"Our stock is up 30%!\"",
+            "emphasis": "30%"
+          },
+          "why": "The ad's headline claim",
+          "start_s": 5.78,
+          "end_s": 10.07
+        },
+        {
+          "phrase": "Here's the claim: on March 1 the price was $100, and on June 1 it was $130.",
+          "template": "number_line",
+          "props": {
+            "values": [
+              100,
+              130
+            ],
+            "labels": [
+              "Mar 1: $100",
+              "Jun 1: $130"
+            ],
+            "highlight_index": 1
+          },
+          "why": "Both claimed prices appear on screen",
+          "start_s": 10.07,
+          "end_s": 17.97
+        },
+        {
+          "phrase": "Thirty over 100 is 30%, so the math checks out.",
+          "template": "equation",
+          "props": {
+            "tex": "\\frac{130-100}{100} = 30\\%",
+            "highlight": "30\\%"
+          },
+          "why": "The arithmetic, shown",
+          "start_s": 17.97,
+          "end_s": 22.77
+        },
+        {
+          "phrase": "But what if we asked, up compared to when?",
+          "template": "callout",
+          "props": {
+            "text": "Up compared to when?",
+            "emphasis": "when"
+          },
+          "why": "Pivot question",
+          "start_s": 22.77,
+          "end_s": 25.95
+        },
+        {
+          "phrase": "Let me draw the full year, in blue, no, let me pick green for the window.",
+          "template": "plot",
+          "props": {
+            "fn": "x<=3 ? 200-50*(x-1) : x<=6 ? 100+10*(x-3) : 130",
+            "x_range": [
+              1,
+              12
+            ],
+            "y_range": [
+              0,
+              240
+            ],
+            "label": "Stock price, Jan to Dec ($)",
+            "draw": true
+          },
+          "why": "Full-year curve is the shared scene",
+          "start_s": 25.95,
+          "end_s": 30.91
+        },
+        {
+          "phrase": "In January the stock sat at $200, then it fell to $100 by March.",
+          "template": "plot",
+          "props": {
+            "fn": "x<=3 ? 200-50*(x-1) : x<=6 ? 100+10*(x-3) : 130",
+            "x_range": [
+              1,
+              12
+            ],
+            "y_range": [
+              0,
+              240
+            ],
+            "label": "Jan $200 \u2192 Mar $100",
+            "point_at": 3
+          },
+          "why": "Dot lands on the March low",
+          "start_s": 30.91,
+          "end_s": 37.93
+        },
+        {
+          "phrase": "That's the drop the ad skips.",
+          "template": "plot",
+          "props": {
+            "fn": "x<=3 ? 200-50*(x-1) : x<=6 ? 100+10*(x-3) : 130",
+            "x_range": [
+              1,
+              12
+            ],
+            "y_range": [
+              0,
+              240
+            ],
+            "label": "Hidden drop: \u2212$100",
+            "point_at": 2
+          },
+          "why": "Dot rests on the skipped decline",
+          "start_s": 37.93,
+          "end_s": 40.32
+        },
+        {
+          "phrase": "Now I'll draw a small green box around March through June, just a sliver of the curve.",
+          "template": "plot",
+          "props": {
+            "fn": "x<=3 ? 200-50*(x-1) : x<=6 ? 100+10*(x-3) : 130",
+            "x_range": [
+              1,
+              12
+            ],
+            "y_range": [
+              0,
+              240
+            ],
+            "label": "Green window: Mar\u2013Jun",
+            "point_at": 6
+          },
+          "why": "Window is a sliver of the same curve",
+          "start_s": 40.32,
+          "end_s": 46.57
+        },
+        {
+          "phrase": "To get the full-year change, we do 130 minus 200, which is negative 70,",
+          "template": "equation",
+          "props": {
+            "tex": "130 - 200 = -70",
+            "highlight": "-70"
+          },
+          "why": "Key arithmetic on screen",
+          "start_s": 46.57,
+          "end_s": 53.06
+        },
+        {
+          "phrase": "divided by 200, giving us negative 35%. Down 35%, not up 30%!",
+          "template": "equation_morph",
+          "props": {
+            "from_tex": "\\frac{-70}{200}",
+            "to_tex": "-35\\% \\neq +30\\%",
+            "highlight": "-35\\%"
+          },
+          "why": "Result contradicts the ad",
+          "start_s": 53.06,
+          "end_s": 61.25
+        },
+        {
+          "phrase": "Remember the zoomed panel? Same trick, different axis: time.",
+          "template": "diagram_nodes",
+          "props": {
+            "nodes": [
+              {
+                "id": "a",
+                "label": "Zoomed panel: chosen y-range"
+              },
+              {
+                "id": "b",
+                "label": "Stock ad: chosen time window"
+              }
+            ],
+            "edges": [
+              {
+                "from": "a",
+                "to": "b",
+                "label": "same trick"
+              }
+            ],
+            "highlight": "b"
+          },
+          "why": "Callback pairing both truncations",
+          "start_s": 61.25,
+          "end_s": 65.8
+        },
+        {
+          "phrase": "The numbers were honest, but the window was chosen very carefully,",
+          "template": "plot",
+          "props": {
+            "fn": "x<=3 ? 200-50*(x-1) : x<=6 ? 100+10*(x-3) : 130",
+            "x_range": [
+              1,
+              12
+            ],
+            "y_range": [
+              0,
+              240
+            ],
+            "label": "Honest numbers, chosen window",
+            "point_at": 6
+          },
+          "why": "Return to the scene, window in focus",
+          "start_s": 65.8,
+          "end_s": 70.07
+        },
+        {
+          "phrase": "and you'd probably never notice unless you asked to see the whole line.",
+          "template": "plot",
+          "props": {
+            "fn": "x<=3 ? 200-50*(x-1) : x<=6 ? 100+10*(x-3) : 130",
+            "x_range": [
+              1,
+              12
+            ],
+            "y_range": [
+              0,
+              240
+            ],
+            "label": "Ask for the whole line"
+          },
+          "why": "Whole curve, no spotlight",
+          "start_s": 70.07,
+          "end_s": 76.16
+        }
+      ],
+      "duration_s": 76.16,
+      "audio": "audio/demo2/lecturer/beat_6.mp3"
+    },
+    {
+      "i": 7,
+      "beat": "meta",
+      "narration": "So what do you take away from the stock ad? Let's say you just remember three questions, and I'll write them on the board now. Where does the axis start? What window of time? Compared to what? Ask those whenever a chart looks too good, or too scary. In the next video, we'll look at how the word \"average\" can mean mean, median, or mode, and why a company with a $50,000 \"average\" salary might pay most people $30,000. I think you'll enjoy it. You've already got the first three tools, so you'll be ready.",
+      "shots": [
+        {
+          "phrase": "So what do you take away from the stock ad?",
+          "template": "whiteboard_write",
+          "props": {
+            "lines": [
+              "Stock ad takeaways?"
+            ]
+          },
+          "why": "Open on the board",
+          "start_s": 0.0,
+          "end_s": 3.16
+        },
+        {
+          "phrase": "Let's say you just remember three questions, and I'll write them on the board now.",
+          "template": "whiteboard_write",
+          "props": {
+            "lines": [
+              "Stock ad takeaways?",
+              "3 questions"
+            ]
+          },
+          "why": "Append to same board",
+          "start_s": 3.16,
+          "end_s": 8.82
+        },
+        {
+          "phrase": "Where does the axis start? What window of time? Compared to what?",
+          "template": "whiteboard_write",
+          "props": {
+            "lines": [
+              "1. Axis start?",
+              "2. Time window?",
+              "3. Compared to what?"
+            ]
+          },
+          "why": "Write the three questions",
+          "start_s": 8.82,
+          "end_s": 13.53
+        },
+        {
+          "phrase": "Ask those whenever a chart looks too good, or too scary.",
+          "template": "callout",
+          "props": {
+            "text": "Too good? Too scary? Ask.",
+            "emphasis": "Ask"
+          },
+          "why": "Key habit, keywords only",
+          "start_s": 13.53,
+          "end_s": 17.91
+        },
+        {
+          "phrase": "In the next video, we'll look at how the word \"average\" can mean mean, median, or mode,",
+          "template": "diagram_nodes",
+          "props": {
+            "nodes": [
+              {
+                "id": "avg",
+                "label": "\"average\""
+              },
+              {
+                "id": "mean",
+                "label": "mean"
+              },
+              {
+                "id": "median",
+                "label": "median"
+              },
+              {
+                "id": "mode",
+                "label": "mode"
+              }
+            ],
+            "edges": [
+              {
+                "from": "avg",
+                "to": "mean"
+              },
+              {
+                "from": "avg",
+                "to": "median"
+              },
+              {
+                "from": "avg",
+                "to": "mode"
+              }
+            ],
+            "highlight": "avg"
+          },
+          "why": "One word, three meanings",
+          "start_s": 17.91,
+          "end_s": 24.08
+        },
+        {
+          "phrase": "and why a company with a $50,000 \"average\" salary might pay most people $30,000.",
+          "template": "number_line",
+          "props": {
+            "values": [
+              30000,
+              50000
+            ],
+            "labels": [
+              "Most people $30k",
+              "\"Average\" $50k"
+            ],
+            "highlight_index": 0
+          },
+          "why": "Show the salary gap",
+          "start_s": 24.08,
+          "end_s": 32.23
+        },
+        {
+          "phrase": "I think you'll enjoy it. You've already got the first three tools, so you'll be ready.",
+          "template": "callout",
+          "props": {
+            "text": "Axis \u00b7 Window \u00b7 Baseline: ready",
+            "emphasis": "ready"
+          },
+          "why": "Close on the three tools",
+          "start_s": 32.23,
+          "end_s": 39.03
+        }
+      ],
+      "duration_s": 39.03,
+      "audio": "audio/demo2/lecturer/beat_7.mp3"
+    }
+  ]
+}

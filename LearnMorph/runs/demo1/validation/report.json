@@ -1,0 +1,136 @@
+{
+  "accuracy": 1.0,
+  "verdict": "PASS",
+  "trials": [
+    {
+      "order": [
+        "lecturer",
+        "3b1b"
+      ],
+      "verdict": {
+        "script1": "Y",
+        "script2": "X",
+        "confidence": 0.9,
+        "most_telling_beat": "Script 1 opens with a direct address naming the topic and its usefulness, then narrates live drawing with a self-correction ('Let me pick a green-- actually, no, red'), uses Lagrange notation and delta y over delta x, and closes by previewing the next video. All of this matches Y's recipe. Script 2 opens with a striking visual puzzle, builds from one small numeric example (the bacteria colony), uses 'there's nothing special about...' generalizations, a running bar metaphor with callbacks, 'the attentive viewers among you', and a reprise answering the hook ('That's the loop closing'). All of this matches X's recipe."
+      },
+      "correct": true
+    },
+    {
+      "order": [
+        "lecturer",
+        "3b1b"
+      ],
+      "verdict": {
+        "script1": "Y",
+        "script2": "X",
+        "confidence": 0.9,
+        "most_telling_beat": "Script 2 opens with a striking visual puzzle (height equals slope) before naming any theory. It builds on a bacteria example, then adds 'there's nothing special about...' generalizations, a 'that's not quite right' caveat, 'the attentive viewers among you' and a closing reprise that answers the hook. All of these match X. Script 1 opens with a direct address naming the topic, anchors on what the viewer 'already knows', and uses named variables with delta notation. It also has the live-drawing self-correction ('let me pick a green-- actually, no, red') and a 'let's say' hedge, all of which match Y."
+      },
+      "correct": true
+    },
+    {
+      "order": [
+        "3b1b",
+        "lecturer"
+      ],
+      "verdict": {
+        "script1": "X",
+        "script2": "Y",
+        "confidence": 0.9,
+        "most_telling_beat": "Script 1 opens with a puzzle (a curve where height equals slope) before naming any theory. It builds from one small numeric example (100 bacteria), follows with 'There's nothing special about...' generalizations, uses a running bar-picture metaphor with callbacks, and says 'the attentive viewers among you might notice'. Script 2 opens with a welcome and an appeal to what the viewer already knows. It narrates drawing live with colour self-corrections ('Let me pick a green-- actually, no, red'), names Lagrange's notation, and uses 'let's say' hedging, all of which match Y."
+      },
+      "correct": true
+    },
+    {
+      "order": [
+        "3b1b",
+        "lecturer"
+      ],
+      "verdict": {
+        "script1": "X",
+        "script2": "Y",
+        "confidence": 0.9,
+        "most_telling_beat": "Script 1 opens with a striking puzzle (the curve's height equals its slope) before any theory, and builds from a small concrete numeric example (100 bacteria). It then says 'There's nothing special about...' to generalize, adds the caveat 'that's not quite right', and invites the attentive viewers to check a claim. Script 2 instead opens with a welcome and an anchor in what the viewer already knows, narrates live drawing with self-corrections ('let me pick a green-- actually, no, red'), names Lagrange's notation, and ends with 'You've got this!'"
+      },
+      "correct": true
+    },
+    {
+      "order": [
+        "3b1b",
+        "lecturer"
+      ],
+      "verdict": {
+        "script1": "X",
+        "script2": "Y",
+        "confidence": 0.9,
+        "most_telling_beat": "Script 1 opens with a striking puzzle (the curve where height equals slope) before any theory. It builds up from one concrete numeric example (the bacteria colony), then generalizes with 'There's nothing special about...', and adds a 'that's not quite right' caveat. It also invites viewers to verify a claim ('the attentive viewers among you'). Script 2 instead has a welcome-style opening, live-drawing self-corrections ('Let me pick a green-- actually, no, red'), Lagrange notation, and a closing 'You've got this!'."
+      },
+      "correct": true
+    },
+    {
+      "order": [
+        "3b1b",
+        "lecturer"
+      ],
+      "verdict": {
+        "script1": "X",
+        "script2": "Y",
+        "confidence": 0.9,
+        "most_telling_beat": "Script 1 opens with a striking puzzle (a curve where height equals slope) before naming any theory. It builds from a concrete bacteria example, then says 'There's nothing special about bacteria or 1%', adds a 'that's not quite right' caveat, uses the 'attentive viewers among you' mini-exercise, and closes with a reprise ('the loop closing'). All of these match X's recipe. Script 2 has a welcoming opener, a 'you already know' anchor, live-drawing self-corrections ('let me pick a green-- actually, no, red'), Lagrange notation named aloud, 'let's say' hedging, and an encouraging sign-off. These match Y."
+      },
+      "correct": true
+    },
+    {
+      "order": [
+        "3b1b",
+        "lecturer"
+      ],
+      "verdict": {
+        "script1": "X",
+        "script2": "Y",
+        "confidence": 0.9,
+        "most_telling_beat": "Script 1 opens with a striking puzzle (the curve where height equals slope) before any theory. It builds from a concrete example (the bacteria colony), then says 'There's nothing special about...' to generalize. It adds a caveat ('that's not quite right'), invites 'the attentive viewers among you' to check a claim, and gives a callback reprise ('That's the loop closing'). All of these match X's recipe. Script 2 opens with a welcome and a topic statement, narrates live drawing with self-corrections ('Let me pick a green-- actually, no, red'), uses named variables and Lagrange notation, hedges with 'let's say' and 'probably', and ends with a next-video preview and encouragement ('You've got this!'). All of these match Y's recipe."
+      },
+      "correct": true
+    },
+    {
+      "order": [
+        "3b1b",
+        "lecturer"
+      ],
+      "verdict": {
+        "script1": "X",
+        "script2": "Y",
+        "confidence": 0.9,
+        "most_telling_beat": "Script 1 opens with a striking puzzle (the curve with height equal to slope) before naming any theory, then builds from a small numeric example (100 bacteria) and generalizes with 'There's nothing special about bacteria or 1%'. It also uses the caveat 'that's not quite right' and invites 'the attentive viewers among you' to check a claim. Script 2 matches Y with its 'Welcome to the video' opener, 'let me pick a green-- actually, no, red' live-drawing self-corrections, named variables and Lagrange notation, and a closing preview of the next video with 'You've got this!'."
+      },
+      "correct": true
+    },
+    {
+      "order": [
+        "lecturer",
+        "3b1b"
+      ],
+      "verdict": {
+        "script1": "Y",
+        "script2": "X",
+        "confidence": 0.9,
+        "most_telling_beat": "Script 1 opens by welcoming the viewer, naming the topic and its usefulness, and anchoring on what they already know. It then uses delta y over delta x with named variables, narrates live drawing with self-correction ('Let me pick a green-- actually, no, red'), names Lagrange's notation, and closes by previewing the next video. All of this matches Y's recipe. Script 2 opens with a striking puzzle and builds from a small numeric example (the bacteria colony). It uses the bars as a running visual metaphor with callbacks, says 'there's nothing special about...', invites the attentive viewer to verify a claim, and ends with a reprise ('That's the loop closing'). This matches X."
+      },
+      "correct": true
+    },
+    {
+      "order": [
+        "lecturer",
+        "3b1b"
+      ],
+      "verdict": {
+        "script1": "Y",
+        "script2": "X",
+        "confidence": 0.9,
+        "most_telling_beat": "Script 1 opens with 'Welcome to the video on...', anchors on what the viewer already knows (slope as rise over run), uses named variables and delta/prime notation, narrates live drawing with a color self-correction ('Let me pick a green-- actually, no, red'), and ends by previewing the next video with encouragement. All of this matches Y's recipe. Script 2 opens with a striking puzzle (height equals slope) before any theory, builds from one concrete numeric bacteria example, says 'There's nothing special about...' to generalize, adds a caveat aside ('that's not quite right'), uses a running bar metaphor with callbacks, and closes by answering the hook, with 'the attentive viewers among you'. All of this matches X's recipe."
+      },
+      "correct": true
+    }
+  ]
+}

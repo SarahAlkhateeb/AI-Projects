@@ -1,0 +1,31 @@
+{
+  "palette": {
+    "bg": "#000000",
+    "fg": "#FFFFFF",
+    "accent": "#5CD0E6",
+    "accent2": "#FFFF00"
+  },
+  "font": {
+    "family": "Computer Modern (LaTeX serif, CMU Serif) for all text and math; no sans-serif body text",
+    "weight": "regular (400); emphasis comes from colour, not bold"
+  },
+  "motion": {
+    "speed": "slow",
+    "easing": "ease",
+    "signature": "Shapes are drawn on and morph into one another instead of cutting. Concentric rings unroll into a triangle, a cube splits into slabs, and a pi creature reacts with blinks and eye movements. Colour gradients from cyan to green carry the meaning, and key terms are tinted in the quote or caption."
+  },
+  "layout": "Pure black canvas with generous empty space. The visual sits off-centre or top-left, with braces and labels (3, R, dx) attached to it and the formula or caption placed beside or beneath. Titles are centred at the top in light cyan. A thin white rectangle frames the 3D geometry scenes, and a row of rounded cyan chapter icons sits above the 'Essence of calculus' headings.",
+  "output_format": "animation",
+  "format_reason": "The content is geometric and algebraic and teaches by continuous transformation of shapes and equations, which programmatic animation (Manim-style) does well. A whiteboard or avatar would lose that.",
+  "template_affinity": {
+    "title_card": 0.6,
+    "equation_morph": 1.0,
+    "plot_reveal": 0.8,
+    "callout": 0.7,
+    "bullet_build": 0.2,
+    "misconception": 0.4,
+    "diagram_nodes": 0.7,
+    "whiteboard_write": 0.3
+  },
+  "confidence": "high"
+}

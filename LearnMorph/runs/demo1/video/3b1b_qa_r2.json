@@ -1,0 +1,463 @@
+{
+  "stills": [
+    [
+      163.4,
+      6.7
+    ],
+    [
+      200.233333,
+      7.766667
+    ],
+    [
+      241.1,
+      5.666667
+    ],
+    [
+      250.233333,
+      5.7
+    ]
+  ],
+  "shots": [
+    {
+      "beat": 1,
+      "shot": 0,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Titles should be centred at the top in light cyan, but 'THE PUZZLE' is small and left-aligned. Move the title to the top centre and enlarge it. Make the axis tick labels and the 'y = ?' label slightly larger and brighter."
+    },
+    {
+      "beat": 1,
+      "shot": 1,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Center the 'THE PUZZLE' title at the top in light cyan to match the style. Make the axis tick labels larger. Optionally move the 'x = 0: height = 1' label beside the point instead of the top-right corner."
+    },
+    {
+      "beat": 1,
+      "shot": 2,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Titles should be centred at the top in light cyan, but 'THE PUZZLE' sits small at the top-left. Increase the label and axis tick font sizes, and move the 'slope = 1' label away from the plot edge."
+    },
+    {
+      "beat": 1,
+      "shot": 3,
+      "avg": 4.333333333333333,
+      "min": 4,
+      "fix": "Optionally move the 'maybe a coincidence?' label away from the curve, since the cyan line crosses near its right edge. The 'THE PUZZLE' header is small and left-aligned, whereas the style calls for a centred title."
+    },
+    {
+      "beat": 1,
+      "shot": 4,
+      "avg": 3.6666666666666665,
+      "min": 3,
+      "fix": "The 'slope' label at top right is cut off at the frame edge, so move it inward or shrink it. The label 'x = 2: height \u2248 7.39' sits close to the curve, so shift it left or lower. The tangent line is not needed for this phrase and could be removed (tangent_at: null) to keep the focus on height. The title 'THE PUZZLE' is left-aligned rather than centred, so centre it to match the style."
+    },
+    {
+      "beat": 1,
+      "shot": 5,
+      "avg": 3.6666666666666665,
+      "min": 3,
+      "fix": "The 'slope' label at the top right is cut off by the frame edge, so shorten it or shift the tangent label left. The main label also overlaps the curve near its top. Move it to the upper left, where there is empty space, to match the off-centre layout. The title is also left-aligned, not centred in light cyan."
+    },
+    {
+      "beat": 1,
+      "shot": 6,
+      "avg": 3.3333333333333335,
+      "min": 3,
+      "fix": "Fix the overlapping axis labels (x\u2070/0, x\u00b9/1, x\u00b2/2 are drawn on top of each other) and the '7.39' bar label, which collides with the point and the 'height 7.39' text. Move the bar value labels above the bars, drop the duplicate superscript tick labels, and keep the title text clear of the curve. Optionally add tangent lines at x=0 and x=1 so the 'every single point' idea is visible, e.g. tangent_at: [0,1,2]."
+    },
+    {
+      "beat": 1,
+      "shot": 7,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Titles should be centred at the top in light cyan, but 'THE PUZZLE' sits small at top-left. Move the label so it does not overlap the curve at the upper right. Enlarge the axis tick labels and the 'height 0.61' / 'slope 0.61' labels slightly."
+    },
+    {
+      "beat": 1,
+      "shot": 8,
+      "avg": 4.333333333333333,
+      "min": 4,
+      "fix": "Move the 'height = slope. Why?' label left or lower so it no longer overlaps the curve at the top right. Titles are supposed to be centered at the top, so a minor layout adjustment would help."
+    },
+    {
+      "beat": 2,
+      "shot": 0,
+      "avg": 3.3333333333333335,
+      "min": 3,
+      "fix": "Make the zoomed-in segment of e^x clearly stand out (e.g. a highlighted small interval with a dx brace) so it reads as 'smaller than a curve'. Also move the e^x label next to the curve and add x-axis tick labels. The point label is fine, but the near-black background is not pure #000000 and there is an unexplained bar at the bottom left."
+    },
+    {
+      "beat": 2,
+      "shot": 1,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Text is clear and matches the phrase. To fit the style better, set the background to pure black (#000000) rather than a dark teal vignette. Move the callout off-centre or top-left, and add a small visual such as a bacteria dot cluster beside it."
+    },
+    {
+      "beat": 2,
+      "shot": 2,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Make the labels larger and move the number line to the top-left or off-centre. Add a title at the top centre in light cyan instead of the small left-aligned 'WORKED EXAMPLE' tag. Also fill some of the empty space, for example with a caption or formula beside the line."
+    },
+    {
+      "beat": 2,
+      "shot": 3,
+      "avg": 3.6666666666666665,
+      "min": 3,
+      "fix": "Place the number line off-centre or top-left with a larger label font. Add a brace for the +1 step. Space the points proportionally to the values, so 101 sits much closer to 100 than 102.01. Add a short caption beside or beneath the line."
+    },
+    {
+      "beat": 2,
+      "shot": 4,
+      "avg": 3.0,
+      "min": 2,
+      "fix": "Shorten the last label (e.g. 'another +1? \u2192 102?') or shift the final point left so the text isn't clipped at the right edge ('102' is cut off). Space the values so they sit inside the frame, and consider placing the visual off-centre or top-left to match the layout."
+    },
+    {
+      "beat": 2,
+      "shot": 5,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Layout drifts from the style spec: the equation is centred, but the style puts visuals off-centre or top-left. Move the equation up and left and add a brace or label such as 'new bacteria' under 1.01. The 'WORKED EXAMPLE' tag is fine. The thin bottom progress bar is unnecessary."
+    },
+    {
+      "beat": 2,
+      "shot": 6,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Mostly good. To match the palette/layout, move the equation off-centre or top-left and add a label or brace (e.g. 'changes each step') under the highlighted +1.01. Keep the cyan highlight."
+    },
+    {
+      "beat": 2,
+      "shot": 7,
+      "avg": 3.3333333333333335,
+      "min": 3,
+      "fix": "Fix the overlapping x-axis tick labels (e.g. 'x\u00b91' and 'x\u00b22' look garbled) by giving them clean labels like 1, 2, 3. Move the label so it does not crowd the curve at top right. Optionally set the title to centred light cyan to match the style notes."
+    },
+    {
+      "beat": 2,
+      "shot": 8,
+      "avg": 3.3333333333333335,
+      "min": 3,
+      "fix": "Show the edge labels (1%, 5%, any %) in the diagram, since they are in the props but missing from the frame. The phrase is about 1% not being special, so they are needed. Also highlight the bacteria node, or the 1% edge, to match the spoken words. For style, move the diagram off-centre and use a centred cyan title rather than the small top-left tag."
+    },
+    {
+      "beat": 2,
+      "shot": 9,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Edge labels (1%, 5%, any %) are in the spec but not rendered, so add them to the lines. Also move the diagram off-centre or top-left with the caption beside it, and use a centred light-cyan title at the top instead of the small left-aligned 'WORKED EXAMPLE' tag."
+    },
+    {
+      "beat": 2,
+      "shot": 10,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Move the equation off-centre or to the top-left and add a small curve or graph with a brace labeled height and slope, so it matches the layout and shows steepness visually."
+    },
+    {
+      "beat": 3,
+      "shot": 0,
+      "avg": 3.6666666666666665,
+      "min": 3,
+      "fix": "Center the 'PICTURE IT' title at the top in light cyan to match the style. Move the plot off-center or top-left with more empty space. Make the axis tick labels and the e^x label larger and brighter."
+    },
+    {
+      "beat": 3,
+      "shot": 1,
+      "avg": 3.6666666666666665,
+      "min": 3,
+      "fix": "Fix the overlapping x-axis labels (e.g. 'x\u20700' and 'x\u00b91' render as garbled double text) so they read plainly as 0, 1, 2, 3. Pass bar_labels as 1.00, 2.72, 7.39, 20.1 so the top label matches the phrase and doesn't collide with the curve. Move the 'PICTURE IT' tag to a centred light-cyan title to match the layout, and make the bars brighter or wider so they stand out against the black background."
+    },
+    {
+      "beat": 3,
+      "shot": 2,
+      "avg": 2.3333333333333335,
+      "min": 1,
+      "fix": "The shot specifies slope_bars at 0, 1, 2, 3 in green (#4ade80), offset 0.15, but no green bars render. Only the cyan value bars appear. Make the slope bars draw and show up in green beside each cyan bar, with labels on the right. Also fix the x tick labels, which show overlapping 'x\u20700', 'x\u00b91' and so on. Use x_tick_format plain so they read 0, 1, 2, 3."
+    },
+    {
+      "beat": 3,
+      "shot": 3,
+      "avg": 2.6666666666666665,
+      "min": 1,
+      "fix": "Add the green slope bars adjacent to the right of each cyan bar (slope_bars with slope_bar_color green), plus the legend and the 'green vs. tall: compare each pair' overlay at top center. The frame shows only the cyan bars, so the phrase about green bars is not visible. Also hide the x tick labels (hide_x_tick_labels: true); the overlapping 'x\u20700' labels are garbled."
+    },
+    {
+      "beat": 3,
+      "shot": 4,
+      "avg": 3.0,
+      "min": 2,
+      "fix": "Add the green slope bars beside the 2.72 and 7.39 bars with their own labels (slope_bars at x=1 and x=2, color green). Show the overlay text '2.72 \u2192 2.72     7.39 \u2192 7.39'. Fix the overlapping x-axis labels ('x=1' and 'x=2' are garbled by tick marks). Keep the cyan accent for the curve."
+    },
+    {
+      "beat": 3,
+      "shot": 5,
+      "avg": 2.6666666666666665,
+      "min": 2,
+      "fix": "Fix the x tick labels, which overlap and show garbled text like 'x^0' over '0'; use plain '0','1','2','3' with a larger x_tick_label_offset. Make the green slope bars visible: they are missing, so set slope_bar_color to #22c55e with ghost outlines and a larger slope_bar_offset so they sit beside the cyan bars and show the proportional scaling. Move the 20.09 label away from the curve and use the specified bar_label_pos. Add the centered top title in light cyan."
+    },
+    {
+      "beat": 3,
+      "shot": 6,
+      "avg": 3.0,
+      "min": 3,
+      "fix": "Make the slope bars accent2 and clearly visible (they show as teal, not green or yellow). Move the point off x=0 so the sweep reads, and fix the overlapping 'height 1.00' and '1.00' labels near the origin. Clean up the x tick labels, which show overlapping 'x\u20700' glyphs; use plain 0, 1, 2, 3 with the offset. Mark the four bar positions so the 'nothing special' idea reads."
+    },
+    {
+      "beat": 3,
+      "shot": 7,
+      "avg": 2.6666666666666665,
+      "min": 2,
+      "fix": "Slope bars (accent2 yellow) are not visible, so the 'bigger green bar' half of the phrase is missing. Render slope_bars with slope_bar_offset so they sit beside each cyan bar. The title 'Bigger bar, bigger green bar' and the overlay 'growth rate \u221d colony size' are also missing. Add both, with the title centered at the top in cyan. The x tick labels are garbled ('x\u20700' overlaps), so set x_tick_labels to plain '0','1','2','3'. The 20.09 label collides with the curve, so move bar_label_position clear of the line. Widen the bars so they are readable."
+    },
+    {
+      "beat": 4,
+      "shot": 0,
+      "avg": 2.6666666666666665,
+      "min": 2,
+      "fix": "The phrase refers to green (accent2 yellow) slope bars matching the tall bars, but only one cyan set of bars is visible. Make slope_bars render in accent2 yellow at each x with heights equal to the curve value, so they sit visibly next to the cyan bars. Fix the overlapping x-axis tick labels (x\u20700, x\u00b91 etc.) and the bar labels that collide with the curve. Also move the plot off-centre or top-left as the layout asks, leaving more empty space."
+    },
+    {
+      "beat": 4,
+      "shot": 1,
+      "avg": 3.6666666666666665,
+      "min": 3,
+      "fix": "The x-axis labels 'x=2' and 'x=2.1' overlap into an unreadable smear below the bars. Move or offset the bar labels, for example put them on separate lines or stagger them. The 7.39 and 8.17 value labels also crowd each other, so spread them apart."
+    },
+    {
+      "beat": 4,
+      "shot": 2,
+      "avg": 2.6666666666666665,
+      "min": 2,
+      "fix": "Fix the overlapping labels at the bottom: 'x=2' collides with the dashed line and the '7.39' label, and the 'x=2.2' label sits too close to it. Move the bar value labels higher or offset them. Add the missing h brace (offset_y about -1.5) between x=2 and x=2.2, and the 'b^(2+h)' label on the second bar, which currently reads 9.03. Make h visibly smaller, e.g. to 2.1, so it reads as a tiny step. Shift the 'height 7.39' label left so it does not crowd the point and the bar label."
+    },
+    {
+      "beat": 4,
+      "shot": 3,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Content matches the phrase and b^h is highlighted. To fit the style better, move the equation off-centre or top-left and add a label or brace, e.g. 'new bar' under b^{x+h}."
+    },
+    {
+      "beat": 4,
+      "shot": 4,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Layout drifts from the style guide: the equation is dead-centre and the title label is small and top-left rather than a centred cyan title. Move the formula off-centre and add a brace or label such as 'old height' under b^x and 'fixed factor' under the cyan fraction."
+    },
+    {
+      "beat": 4,
+      "shot": 5,
+      "avg": 3.0,
+      "min": 3,
+      "fix": "Fix the x-axis tick labels at 1 and 2, which overlap with stray 'x=1' / 'x=2' text and look garbled. The bar labels should read '2.72 \u00d7 c' and '7.39 \u00d7 c' as specified, not just the bare numbers. Add the overlay 'c = (b^h \u2212 1)/h does not depend on x', which is missing. Highlight the x=2 bar so it reads as 'nothing special'. Move the title to the top centre in light cyan to match the style."
+    },
+    {
+      "beat": 4,
+      "shot": 6,
+      "avg": 3.0,
+      "min": 3,
+      "fix": "Fix the overlapping x-axis labels at 0 and 3 (\"x=0\" collides with the tick \"0\", and \"x=3\" with \"3\"). Replace the bar labels with the specified \"1 \u00d7 c\" and \"20.09 \u00d7 c\", since the frame shows only \"1.00\" and \"20.09\". Add the \"(b^h \u2212 1)/h\" overlay so the shared constant is visible. Make the bars wider and taller so the two heights are easier to compare. The bar at x=0 is tiny."
+    },
+    {
+      "beat": 4,
+      "shot": 7,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Move the equation off-centre or top-left and add a brace or label on 'height' to match the layout notes. Optionally add a short caption beneath, such as 'proportional'. The highlight on the constant factor already works well."
+    },
+    {
+      "beat": 4,
+      "shot": 8,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Shift the formula off-centre or to the top-left as the layout specifies. Show the starting equation (b^h-1)/h = 1 morphing into the result, or keep it as a faint label. The highlight on (1+1/n)^n is already good."
+    },
+    {
+      "beat": 4,
+      "shot": 9,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Center the 'THE RULE' title at the top, and enlarge the n=1 label so it matches the highlighted n=10 label. Place the dots by the stated range [1.5, 3] so 2 sits about a third of the way along instead of at the far left."
+    },
+    {
+      "beat": 4,
+      "shot": 10,
+      "avg": 3.3333333333333335,
+      "min": 3,
+      "fix": "Use proportional spacing so the points sit at their true values (n=1000 and e nearly overlap), and add the centered cyan title 'Creeping toward e', which is missing. Move the labels apart from the line so they don't crowd it, and make sure the title shows instead of the small 'THE RULE' tag."
+    },
+    {
+      "beat": 5,
+      "shot": 0,
+      "avg": 3.3333333333333335,
+      "min": 3,
+      "fix": "Fix the overlapping x-axis labels (they read 'x\u20700', 'x\u00b91', etc., with the exponent colliding with the number) by using plain tick labels such as 0, 1, 2, 3. Center the title at the top in light cyan per the layout, and consider labeling the curve '2^x'."
+    },
+    {
+      "beat": 5,
+      "shot": 1,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Shift the equation off-centre or toward the top-left, as the layout describes, and move the 'ONE SUBTLETY' label to a centred cyan title at the top. Optionally add a brace or label next to 0.693."
+    },
+    {
+      "beat": 5,
+      "shot": 2,
+      "avg": 3.6666666666666665,
+      "min": 3,
+      "fix": "Fix the overlapping axis labels: the x tick numbers (0, 1, 2, 3) collide with the 'x=' labels. Also the 5.54 bar label is clipped by the curve, and the 0.69 label overlaps the y-axis '1' tick. Drop the duplicate tick labels, and offset the bar value labels above the curve."
+    },
+    {
+      "beat": 5,
+      "shot": 3,
+      "avg": 3.0,
+      "min": 2,
+      "fix": "The shot is meant to show green slope bars shorter than the tall height bars, but only the cyan height bars appear. Either slope_bars aren't rendering or they have no distinct green color. Render the slope bars (values 2, 3.5, 5.5 etc.) in a visible green/accent2 color beside each height bar so the shorter-vs-taller contrast shows. Also, the label 'green shorter' refers to bars that don't exist, so fix the overlapping x-tick labels (x=1 is struck through) and keep the label off the curve."
+    },
+    {
+      "beat": 5,
+      "shot": 4,
+      "avg": 3.6666666666666665,
+      "min": 3,
+      "fix": "Fix the overlapping x-axis tick labels (the superscript collides with the number, e.g. 'x^0' over '0'). Use clean labels such as 0, 1, 2, 3. Move the '27.00' bar label so the curve doesn't run through it."
+    },
+    {
+      "beat": 5,
+      "shot": 5,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Mostly on-style (black canvas, cyan accent). The layout notes describe a visual placed off-centre with braces and labels, so the text-only callout is a bit sparse. Could add a small visual, such as two proportional bars of unequal length, beside or beneath the text."
+    },
+    {
+      "beat": 5,
+      "shot": 6,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Move the equation off-centre or top-left, and add a brace or label to the constant. Center the 'ONE SUBTLETY' title at the top in light cyan to match the layout notes."
+    },
+    {
+      "beat": 5,
+      "shot": 7,
+      "avg": 3.6666666666666665,
+      "min": 3,
+      "fix": "Place e at its true proportional position (about 72% along from 2 to 3) instead of the midpoint. Make the labels larger and move the number line off-centre with the caption beside or beneath it, as the layout calls for."
+    },
+    {
+      "beat": 5,
+      "shot": 8,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Title is tiny and left-aligned, not centred at the top in light cyan as the style specifies. Enlarge the labels slightly and shift the line off-centre or add a caption beside it. Otherwise the number line with the highlighted e \u2248 2.718 matches the phrase well."
+    },
+    {
+      "beat": 6,
+      "shot": 0,
+      "avg": 3.3333333333333335,
+      "min": 3,
+      "fix": "Fix the overlapping x-axis labels: the tick numbers (0, 1, 2, 3) collide with the 'x=0', 'x=1', 'x=2', 'x=3' bar labels. Drop the tick labels or move the bar labels lower. Also enlarge the small label text and bar values, and consider a title or caption in light cyan."
+    },
+    {
+      "beat": 6,
+      "shot": 1,
+      "avg": 2.6666666666666665,
+      "min": 2,
+      "fix": "Slope bars are missing: only the blue height bars show, with no green slope bars beside them. Render slope_bars at 0, 1, 2, 3 in a contrasting color (green or the accent2 yellow) next to each height bar, with a visible width and offset. Fix the overlapping x-axis tick labels (e.g. 'x\u20700'), which are garbled. Bar value labels (1.00, 2.00, ...) are showing even though bar_labels is false."
+    },
+    {
+      "beat": 6,
+      "shot": 2,
+      "avg": 2.6666666666666665,
+      "min": 2,
+      "fix": "Show the 3^x state, with bars reaching 1, 3, 9, 27, to contrast with the stubby 2^x bars. Set bar_color to a real green, since the bars render cyan. Fix the overlapping x-axis labels (x=0 shows as 'x\u20700') and give the labels more room. The curve is mid-morph, so it should settle on one function."
+    },
+    {
+      "beat": 6,
+      "shot": 3,
+      "avg": 3.3333333333333335,
+      "min": 3,
+      "fix": "Fix the garbled x-axis tick labels, where 'x' overlaps the numbers (e.g. 'x\u20700'); use plain 0, 1, 2, 3. Move the value labels so they don't collide with the curve (20.09, 1.00). Consider a title or caption such as 'e^x' to show the switch. Shift the plot to the top-left with more empty space to match the style."
+    },
+    {
+      "beat": 6,
+      "shot": 4,
+      "avg": 3.0,
+      "min": 2,
+      "fix": "Slope bars (green) are not visible. Only blue bars appear, so the frame can't show green bars matching blue partners. Render slope_bars with green color, offset slightly beside each blue bar, and make sure the labels don't overlap (e.g. 1.00 sits on top of the bar). Also fix the garbled tick labels (x^0 shown as overlapping 'x\u20700'), using plain 0,1,2,3 labels."
+    },
+    {
+      "beat": 6,
+      "shot": 5,
+      "avg": 2.6666666666666665,
+      "min": 2,
+      "fix": "Show two distinct bars at x=2, one blue (function value) and one green (slope), each with its own 7.39 label. Right now only one teal bar appears and the green slope bar is missing. Fix the overlapping '7.39' and 'height 7.39' labels and the garbled 'x=2' axis label, which has a strikethrough look. Set bar_labels true, or offset the labels. Make slope_bars render in a green accent2 color, with the two bars side by side."
+    },
+    {
+      "beat": 6,
+      "shot": 6,
+      "avg": 3.6666666666666665,
+      "min": 3,
+      "fix": "Fix the garbled x-axis tick labels, where 'x' overlaps the numbers (x\u00b9, x\u00b2, x\u00b3). Add a visible second point or a prompt to try another x, such as a moving point or an 'try any x' label, so the frame matches 'try any other x'. Make the 'height 4.48' label slightly larger."
+    },
+    {
+      "beat": 6,
+      "shot": 7,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Show the morph's end state, but the layout is more centered than the style calls for. Move the equation off-centre or top-left and add a label or brace, e.g. to tie the 'constant is 1' idea to 'height = slope'."
+    },
+    {
+      "beat": 7,
+      "shot": 0,
+      "avg": 3.3333333333333335,
+      "min": 3,
+      "fix": "Fix the overlapping x-axis labels, where the superscripts collide with the tick numbers (x^0 0 and so on). The label also overlaps the curve at the top right. Move the label to the top-left, and consider a centred cyan title to match the palette layout."
+    },
+    {
+      "beat": 7,
+      "shot": 1,
+      "avg": 4.0,
+      "min": 3,
+      "fix": "Keep the equation, but move it off-centre or top-left per the layout. Add a small graph or label beside it showing slope matching height for e^x. Optionally add a 'base e' caption so the phrase's 'e as the base' is shown."
+    },
+    {
+      "beat": 7,
+      "shot": 2,
+      "avg": 3.0,
+      "min": 3,
+      "fix": "Fix the overlapping x-axis tick labels (x=1 collides with the '1' tick, and likewise for 2, 3 and 4) by dropping the duplicate labels. Clamp the bar heights so they stay inside y_range. Add a dashed y=x diagonal to the plot so the 'flip across the diagonal' is visible. The 'e^x \u2192 ln x' label is a good hint, but the diagonal is missing."
+    },
+    {
+      "beat": 7,
+      "shot": 3,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Move the equation off-centre or top-left and add a brace or label to match the layout description. The accent highlight on 1/x is already right."
+    },
+    {
+      "beat": 7,
+      "shot": 4,
+      "avg": 4.333333333333333,
+      "min": 3,
+      "fix": "Mostly on style (black canvas, cyan accent). The callout is centred and fills the frame with no visual element. To match the layout, move the text off-centre or top-left and add a simple visual element, or put a small prompt or problem beside it."
+    },
+    {
+      "beat": 7,
+      "shot": 5,
+      "avg": 3.3333333333333335,
+      "min": 3,
+      "fix": "Fix the overlapping x-tick labels (x=0 and x=1 collide with a stray tick mark) by adjusting x_tick_offset. Also fix the bar value labels that touch the curve (1.00). The curve ends at x=1 while the bar at 1.5 floats with no curve, so the curve should extend through x=1.5. That would need a y_range up to about 24 and the x_range clipped correctly. The label could also be placed top-left as specified, since it is currently at the right."
+    },
+    {
+      "beat": 7,
+      "shot": 6,
+      "avg": 3.0,
+      "min": 2,
+      "fix": "Render the slope bars in green at twice the height of the cyan value bars (slope_factor 2, slope_color green) so the 2x relationship is visible. Currently only teal bars appear, with no green ones. Also fix the x-axis label collision at x=1 and the overlap of the 20.09 label with the curve."
+    }
+  ]
+}

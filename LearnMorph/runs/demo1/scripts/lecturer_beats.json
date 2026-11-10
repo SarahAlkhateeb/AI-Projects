@@ -1,0 +1,44 @@
+[
+  {
+    "i": 1,
+    "beat": "hook",
+    "text": "Welcome to the video on the derivative of e to the x. I think you're going to like this one, because it might be the nicest derivative you'll ever take. You've probably seen that the derivative of x squared is 2x, so the slope depends on where you are. But what if we wanted a function whose slope at every point was just its height? Let's say you're at a point on the curve, height 5, and the slope there is also 5. That function is e to the x. It models population growth and compound interest, so it's really useful.",
+    "score": 4.4
+  },
+  {
+    "i": 2,
+    "beat": "concrete_example",
+    "text": "Let's anchor this in something you already know, which is that slope is just rise over run, or delta y over delta x. Let's say f of x is 2 to the x, and we want the slope at x equals 0. Well, f of 0 is 1, so we take a small step h of 0.1 and get 2 to the 0.1, which is about 1.072. So delta y over delta x is 0.072 over 0.1, roughly 0.718. Now shrink h to 0.01, and I think you'll get about 0.695. Let's say this settles near 0.693. Remember our height 5, slope 5 idea? Here the height at 0 is 1, but the slope isn't 1, so 2 is a bit off. What base would work?",
+    "score": 4.2
+  },
+  {
+    "i": 3,
+    "beat": "visual",
+    "text": "Let's picture it. Axes first, and I'll draw y equals 2 to the x in blue, crossing the y-axis at 1, right here. Now the tangent line at x equals 0. Let me pick a green-- actually, no, red, that'll show up better. See how the red line just kisses the blue curve at this point? Its slope is about 0.693, so it's pretty gentle. Now let's say we swap in 3 to the x. Same starting point at 1, but this curve bends upward faster, so the tangent is steeper, slope roughly 1.099. Look at the two red lines together. A slope of exactly 1 would probably sit between them, so the right base is somewhere between 2 and 3.",
+    "score": 4.4
+  },
+  {
+    "i": 4,
+    "beat": "bridge",
+    "text": "You've seen the slope at one point. But what if we wanted the slope at any x, not just 0? Let's say f of x is a to the x again. I'd write the difference quotient as f of x plus delta x minus f of x, over delta x, which here is a to the x plus delta x minus a to the x, over delta x. I'll swap delta x for h, kind of a shorthand. The limit of that as h approaches 0 is f prime of x, and that prime mark is Lagrange's notation. Now factor out a to the x, since both terms have it. You get a to the x times the quantity a to the h minus 1, all over h. Sort of interesting, I think. We'll dig into it next.",
+    "score": 4.2
+  },
+  {
+    "i": 5,
+    "beat": "misconception",
+    "text": "Here's a tempting thought, and I think you've probably had it: every exponential equals its own derivative. It's so tidy. But hold on, let's check it against what we've already done. For 2 to the x, the derivative was 0.693 times 2 to the x. For 3 to the x, it was 1.099 times 3 to the x. So each base drags along its own constant, sort of like a tax. I'll underline those in a different color-- let's say green. And that leaves us with a pretty interesting question. Could there be a base where that constant is exactly 1, so the tax disappears?",
+    "score": 4.0
+  },
+  {
+    "i": 6,
+    "beat": "generalize",
+    "text": "So let's answer that question. We would define e as the base where the limit, as h approaches 0, of e to the h minus 1 over h, equals exactly 1. Not 0.693, not 1.099, just 1. Does that sound too convenient? Let's test it. With e about 2.718 and h equal to 0.01, I get roughly 1.005. Shrink h and it sneaks closer to 1. That means the derivative of e to the x is e to the x times 1, so it's simply e to the x. And those green constants? They have names. 0.693 is ln of 2, and 1.099 is ln of 3.",
+    "score": 4.4
+  },
+  {
+    "i": 7,
+    "beat": "meta",
+    "text": "Let me draw that one more time, and I'll grab a red marker-- no, a brighter red-- for the tangent at x equals 0. For e to the x, that slope is exactly 1, not 0.693, not 1.099. Kind of neat, right? Next video, since ln 2 and ln 3 now have names, we'll look at the derivative of ln x, plus e to the 3x using the chain rule. Before then, maybe try e to the 2x with the same difference quotient. You've got this!",
+    "score": 4.6
+  }
+]

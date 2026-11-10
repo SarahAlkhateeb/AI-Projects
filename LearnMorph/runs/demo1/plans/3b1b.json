@@ -1,0 +1,53 @@
+{
+  "beats": [
+    {
+      "i": 1,
+      "beat": "hook",
+      "goal": "Pose the puzzle: a function whose slope at every point equals its height, before naming any theory.",
+      "example_or_visual": "Show the curve y = e^x on a graph. At x = 0 the height is 1 and the tangent slope is 1. At x = 2 the height is about 7.39 and the slope is also about 7.39. Ask: why would height and steepness always match?",
+      "target_words": 110
+    },
+    {
+      "i": 2,
+      "beat": "concrete_example",
+      "goal": "Build the idea from one small numeric case: how fast does a growing quantity grow when its growth is proportional to its size?",
+      "example_or_visual": "A colony of 100 bacteria grows 1% per hour. Hour by hour: 100, 101, 102.01. The amount added each step is 1% of the current size. Say 'you' are counting the added bacteria each step.",
+      "target_words": 150
+    },
+    {
+      "i": 3,
+      "beat": "visual",
+      "goal": "Make 'rate proportional to size' visible, with a running metaphor of stacked bars.",
+      "example_or_visual": "Picture a row of bars at x = 0, 1, 2, 3 with heights 1, 2.72, 7.39, 20.1. Beside each bar, draw a short green bar for its slope. The green bars are scaled copies of the tall bars. Reuse this bar picture as the running metaphor.",
+      "target_words": 140
+    },
+    {
+      "i": 4,
+      "beat": "generalize",
+      "goal": "Move from the discrete example to the definition of e as the limit of repeated small compounding, and show where the derivative comes from.",
+      "example_or_visual": "Compare (1 + 1/n)^n for n = 1, 10, 1000: 2, 2.594, 2.717. Then show the derivative of b^x as b^x · (b^h − 1)/h. The leftover factor (b^h − 1)/h is a constant that does not depend on x. 'There's nothing special about x = 2.'",
+      "target_words": 180
+    },
+    {
+      "i": 5,
+      "beat": "caveat",
+      "goal": "Preempt the objection that every exponential has a derivative proportional to itself, so why e specifically?",
+      "example_or_visual": "Check 2^x: the constant (2^h − 1)/h tends to about 0.693, so the derivative is 0.693·2^x, not 2^x. For 3^x it is about 1.0986. 'But that's not quite the whole story: only one base makes the constant exactly 1.' Then e is the base where the constant is 1.",
+      "target_words": 150
+    },
+    {
+      "i": 6,
+      "beat": "reprise",
+      "goal": "Answer the opening hook by returning to the bar picture.",
+      "example_or_visual": "Return to the bars at x = 0, 1, 2, 3. For base e, each green slope bar is exactly as tall as its blue height bar. Height equals slope everywhere because e is the base whose constant is 1. Close the loop on the 7.39 at x = 2.",
+      "target_words": 120
+    },
+    {
+      "i": 7,
+      "beat": "meta",
+      "goal": "Wrap up the scope of the lesson and preview the next topic.",
+      "example_or_visual": "Recap: the idea is growth proportional to size, and e is the base that makes the constant 1. Preview: next, why the natural log has derivative 1/x, using the same bar picture flipped across the diagonal. Invite viewers to verify that the derivative of e^(2x) is 2e^(2x).",
+      "target_words": 90
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "beats": [
+    {
+      "i": 1,
+      "beat": "hook",
+      "goal": "Address the viewer directly and pose the puzzle: one function whose slope at every point equals its own height, and why that is useful.",
+      "example_or_visual": "You've probably seen d/dx of x^2 is 2x. Ask: what if a function's slope at each point was just its height? Name e^x as that function, and mention it models population growth and compound interest.",
+      "target_words": 110
+    },
+    {
+      "i": 2,
+      "beat": "concrete_example",
+      "goal": "Anchor in something the viewer already knows, and use named variables to compute a slope numerically.",
+      "example_or_visual": "Take f(x)=2^x. Compute the slope between x=0 and x=h with h=0.1: (2^0.1 - 1)/0.1 ≈ 0.718. Then h=0.01 gives ≈ 0.695. Say 'let's say' this settles near 0.693, and that slope at x=0 isn't 1, which is a bit off.",
+      "target_words": 150
+    },
+    {
+      "i": 3,
+      "beat": "visual",
+      "goal": "Narrate a live drawing of the tangent lines, including a self-correction on color.",
+      "example_or_visual": "Draw axes and the curve y=2^x in blue, 'let me pick a green—no, red' for the tangent at x=0. Then redraw with y=3^x: its tangent at 0 is steeper, slope about 1.099. Say the true tangent slope at 0 sits between the 2 and 3 cases.",
+      "target_words": 140
+    },
+    {
+      "i": 4,
+      "beat": "bridge",
+      "goal": "Use a rhetorical question to pivot from specific bases to the general derivative, naming the notation.",
+      "example_or_visual": "Ask: 'but what if we wanted the slope at any x, not just 0?' Write the difference quotient (a^(x+h) - a^x)/h using Delta-x notation, and name f prime as Lagrange-style prime notation. Factor out a^x to get a^x * (a^h - 1)/h.",
+      "target_words": 130
+    },
+    {
+      "i": 5,
+      "beat": "misconception",
+      "goal": "Raise the puzzle that the derivative of a^x seems to be a^x times some annoying constant, so why should e^x be special?",
+      "example_or_visual": "Learners may think 'every exponential is its own derivative.' Callback to the 2^x example: its derivative is 0.693 times 2^x, and 3^x gives 1.099 times 3^x. Pose: is there a base where that constant is exactly 1?",
+      "target_words": 130
+    },
+    {
+      "i": 6,
+      "beat": "generalize",
+      "goal": "Define e through the constant and state the result in full sentences.",
+      "example_or_visual": "We would define e as the base where the limit of (e^h - 1)/h as h→0 equals 1. Numerically, e≈2.718 gives (e^0.01 - 1)/0.01 ≈ 1.005. So d/dx e^x = e^x * 1 = e^x. Note the constant 0.693 is ln 2 and 1.099 is ln 3.",
+      "target_words": 160
+    },
+    {
+      "i": 7,
+      "beat": "meta",
+      "goal": "Close with a callback and a preview, ending on encouragement.",
+      "example_or_visual": "Callback to the red tangent at x=0 now having slope exactly 1 for e^x. Preview the next video: derivative of ln x and the chain rule with e^(3x). Encourage the viewer to try e^(2x) with the same difference quotient.",
+      "target_words": 90
+    }
+  ]
+}

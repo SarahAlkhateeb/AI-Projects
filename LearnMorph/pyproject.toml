@@ -1,0 +1,68 @@
+# Source of truth for LearnMorph's Python dependencies and tool config.
+# Managed with uv — see README for commands.
+
+[project]
+name = "learnmorph"
+version = "0.1.0"
+description = "Multimodal pedagogical style transfer for educational videos"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Sarah Alkhateeb" }]
+
+# Runtime dependencies — start small, grow one step at a time so you
+# understand what each library does and why.
+dependencies = [
+    # Step 1 — download YouTube videos. Actively maintained successor to youtube-dl.
+    "yt-dlp>=2025.1.0",
+    # Loads .env into os.environ so we never hard-code API keys.
+    "python-dotenv>=1.0.0",
+    "manim>=0.20.1",
+    "anthropic>=0.107.0",
+    "scenedetect>=0.7",
+    "google-generativeai>=0.8.6",
+    "faster-whisper>=1.2.1",
+    "onnxruntime<1.21",
+    "google-genai>=2.10.0",
+]
+
+# Optional extras — installed with `uv sync --extra <name>`.
+[project.optional-dependencies]
+# Premium narration. The narrator auto-detects ElevenLabs (key + SDK) and falls
+# back to free macOS `say` otherwise, so this is opt-in: `uv sync --extra tts`.
+# Kept optional to keep the base env lean (the SDK is not needed for `say`).
+tts = ["elevenlabs>=1.0.0"]
+
+dev = [
+    # Jupyter for the Week 1 exploration notebook.
+    "jupyter>=1.0.0",
+    "ipykernel>=6.0.0",
+
+    # Modern, fast linter + formatter (replaces black + flake8 + isort).
+    "ruff>=0.6.0",
+
+    # Tests — we'll start using this in Week 2.
+    "pytest>=8.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# Make sure hatch finds our package even though there's no src/ layout.
+[tool.hatch.build.targets.wheel]
+packages = ["learnmorph"]
+
+# Ruff config — 100-char lines, sensible rule set.
+# Run with: `uv run ruff check .` and `uv run ruff format .`
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+# E,F = pycodestyle + pyflakes (the basics)
+# I    = isort (import sorting)
+# B    = bugbear (catches likely bugs)
+# UP   = pyupgrade (suggests modern Python syntax)
+# RUF  = ruff-specific rules
+select = ["E", "F", "I", "B", "UP", "RUF"]
+ignore = ["E501"]  # line length — ruff format handles this

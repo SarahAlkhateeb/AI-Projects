@@ -1,0 +1,44 @@
+[
+  {
+    "i": 1,
+    "beat": "hook",
+    "text": "Take a look at this curve. Pick a point on it, say x = 0, where the height is exactly 1. Now picture a line just touching the curve there, and notice that its slope is also exactly 1. Okay, maybe a coincidence. So slide over to x = 2. The curve has climbed to a height of about 7.39, and the tangent line there is much steeper, with a slope of, well, about 7.39. Same number. And it keeps happening at every single point you try. Height and steepness, locked together. Why on earth would that be? That's the puzzle I want you to sit with for a moment.",
+    "score": 4.6
+  },
+  {
+    "i": 2,
+    "beat": "concrete_example",
+    "text": "Let's make this concrete with something smaller than a curve. Say you have a colony of 100 bacteria, and it grows by 1% every hour. You're the one counting. At hour zero, there are 100. One hour later, you count 1 new bacterium, so the colony is at 101. Now the next hour. You might expect another 1 to show up, but that's not quite right. One percent of 101 is 1.01, so you count 1.01 new bacteria, and the colony reaches 102.01. Notice what's happening. The amount you add each step isn't fixed. It's 1% of whatever the size is right now. Bigger colony, bigger additions. There's nothing special about bacteria or 1% here. Anything that grows in proportion to its own size behaves this way, and that's the link between height and steepness in our curve.",
+    "score": 4.8
+  },
+  {
+    "i": 3,
+    "beat": "visual",
+    "text": "Let me give you a picture to hold onto. Imagine four bars in a row, at x = 0, 1, 2, 3, with heights 1, 2.72, 7.39, and 20.1. Now beside each one, draw a short green bar for the slope there. And look at how the green bars compare. Beside the bar of height 2.72, the green bar is 2.72 tall too. Beside 7.39, you get 7.39. It's a scaled copy every time, maybe shrunk to fit the page, but always matching its neighbor's proportions. There's nothing special about these four spots. Slide anywhere along the curve and the green bar tracks the tall bar. Bigger bar, bigger green bar. That's our bacteria story, drawn as bars.",
+    "score": 4.6
+  },
+  {
+    "i": 4,
+    "beat": "generalize",
+    "text": "So why do the green bars match the tall bars so neatly? Let's go back to the bars and nudge one of them. Take the bar at x = 2, height 7.39, and step to the right by a tiny amount h. The new bar is b^(x+h), which is b^x times b^h. So the growth you see is the old height times a fixed factor, (b^h − 1)/h, once you divide by h. And that factor never asks where you are. There's nothing special about x = 2. Stand at x = 0 or x = 3 and you get the same leftover constant, just multiplying a different bar. Slope is proportional to height, plain and simple. Now, which b makes that constant exactly 1? Try (1 + 1/n)^n. For n = 1 you get 2. For n = 10, 2.594. For n = 1000, 2.717. That creeping number is e.",
+    "score": 4.6
+  },
+  {
+    "i": 5,
+    "beat": "caveat",
+    "text": "Maybe you're thinking: hold on, if any b gives slope proportional to height, why e? Let's test 2^x. The constant (2^h − 1)/h tends to about 0.693 as h gets tiny, so the derivative is 0.693 times 2^x. The green bars come out shorter than the tall ones. With 3^x the constant is about 1.0986, and they come out taller. So proportional, yes, but equal, no. I'd say that's the real subtlety. Only one base makes the constant exactly 1, and the attentive viewers among you might notice it has to sit between 2 and 3. Which is where our creeping number from before lives. That base is e.",
+    "score": 4.8
+  },
+  {
+    "i": 6,
+    "beat": "reprise",
+    "text": "Back to the bars, then. Picture x = 0, 1, 2, 3 again, blue height bars with green slope bars right next to them. Earlier, the green ones were stubby for 2^x and towering for 3^x. Now switch to e^x and watch them line up. Each green bar is exactly as tall as its blue partner. At x = 2, the blue bar sits at 7.39, and the green bar stops at 7.39 too. That's the loop closing. And if you want to check it yourself, try any other x. You'll find the same thing, since e is the base whose constant is 1. Height equals slope, everywhere.",
+    "score": 4.8
+  },
+  {
+    "i": 7,
+    "beat": "meta",
+    "text": "That's just a peek at why e matters, and I'd say the core idea fits in one line: growth proportional to size, with e as the base making the constant 1. Next video, we'll flip the same bar picture across the diagonal and ask why the natural log has derivative 1/x. Until then, here's one to try yourself. Take e^(2x) and picture its bars. Can you see why the green ones should be twice as tall, giving 2e^(2x)?",
+    "score": 4.2
+  }
+]

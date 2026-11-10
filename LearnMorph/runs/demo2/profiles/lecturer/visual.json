@@ -1,0 +1,42 @@
+{
+  "palette": {
+    "bg": "#000000",
+    "fg": "#FFFFFF",
+    "accent": "#E8453C",
+    "accent2": "#F5A623",
+    "accent3": "#7FB8E0",
+    "dot": "#C8D8E8",
+    "cursor": "#D0D0D0",
+    "cursor_alpha": 0.8,
+    "roles": "fg=axes, axis letters 'x'/'y' and 'slope =' text; accent (red)=function lines/curves; accent2 (orange)=\u0394y segment, \u0394y label and numerator; accent3 (blue)=\u0394x segment, \u0394x label and denominator; dot=filled points on curves and short secant segments on the right graph; cursor=dashed crosshair pen"
+  },
+  "font": {
+    "family": "Kalam, 'Patrick Hand', 'Noto Sans', 'DejaVu Sans', 'Segoe UI Symbol', sans-serif",
+    "weight": "400 (regular handwriting; Noto Sans/DejaVu Sans fallbacks cover the Greek \u0394 glyph, which Kalam and Patrick Hand lack)",
+    "sizes": "labels ~16px tall on a 640x360 frame (48px at 1920x1080); axis letters ~14px (42px)",
+    "stroke_widths": "axes and curves ~2.5-3px (7.5-9px at 1080p); \u0394x/\u0394y segments ~2px (6px); dots radius ~3px (9px); axis arrowheads open V ~8px long (24px), no filled heads; \u0394x/\u0394y are solid lines with no arrowheads, no offset, running along the triangle legs"
+  },
+  "motion": {
+    "speed": "slow",
+    "easing": "ease",
+    "signature": "Everything is drawn stroke by stroke by a dashed-crosshair pen cursor, with ease-in-out on each stroke plus about \u00b115% speed variation and \u00b11px low-frequency wobble (\u00b13px at 1080p); nothing cuts or morphs, and the left graph stays on screen while the right one is drawn.",
+    "timing": "'slow' means about 200 px/s on a 640-wide frame (about 600 px/s at 1080p). Axes take 0.8-1.0 s each, the red line about 1.1 s, the right curve about 1.2 s, the dots pop in over 0.15 s, and labels are written over 0.6-0.9 s. Pauses between elements are 0.3-0.6 s, and about 1 s separates the left graph finishing from the right graph starting.",
+    "reveal_order": "Left graph: y-axis and x-axis with the letters, red line, two dots, blue \u0394x segment and label, orange \u0394y segment and label, then 'slope =' followed by the orange \u0394y numerator, a fraction bar and the blue \u0394x denominator. Right graph: axes, red curve, then the crosshair visits points on the curve. The dots and short light secant segments are drawn between pairs of points to show the slope changing.",
+    "cursor": "Dashed crosshair about 25px across at 640 wide (scales with the canvas, about 75px at 1080p), dashes about 1.5px thick, #D0D0D0 at 80% alpha. It trails the pen position and rests briefly at each stroke end."
+  },
+  "layout": "The left graph sits in x 10-38% and y 12-60% of the frame, with the 'slope = \u0394y/\u0394x' label in the empty top-left above the line (about x 10-30%, y 11-22%). The right graph sits in x 50-80%, y 12-60%. The bottom 30% and the far-right 20% are deliberately empty: treat them as safe space for later writing or narration callouts, not as an artifact. Left graph: a straight line, constant slope (about 0.83 visually, rising 145px over 175px at 640 wide), with a full \u0394x/\u0394y triangle and the slope label. Right graph: a smooth convex curve that starts nearly flat (about 0.1) and steepens (about 1.2), has no triangle or slope label, and shows only dots, light secant segments and the crosshair to suggest the slope varies.",
+  "output_format": "whiteboard",
+  "format_reason": "The behaviour is whiteboard (hand-written strokes revealed live with a pen cursor), but the canvas is a dark blackboard-style theme (#000000), not white. Render it as 'whiteboard_write' with the dark palette.",
+  "template_affinity": {
+    "whiteboard_write": 0.9,
+    "plot_reveal": 0.85,
+    "callout": 0.4,
+    "equation_morph": 0.3,
+    "diagram_nodes": 0.3,
+    "misconception": 0.15,
+    "bullet_build": 0.1,
+    "title_card": 0.1
+  },
+  "confidence": "medium",
+  "notes": "Frames were provided, so colours, layout and reveal order come from them, but hex values, pixel sizes and speeds are estimated from 640x360 screenshots. The font is a best-guess match for the handwriting, not an identified typeface. Timings are estimated from stroke lengths at the stated speed, not measured."
+}

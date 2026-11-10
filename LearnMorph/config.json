@@ -1,0 +1,10 @@
+{
+  "teachers": {
+    "3b1b":     {"sources": ["data/3b1b/*.txt"]},
+    "lecturer": {"sources": ["data/lecturer/*.txt"]}
+  },
+  "topic": "Why does the derivative of e^x equal itself?",
+  "target_beats": 7,
+  "n_candidates": 4,
+  "max_rounds": 3
+}

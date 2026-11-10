@@ -1,0 +1,1408 @@
+{
+  "teacher": "3b1b",
+  "beats": [
+    {
+      "i": 1,
+      "beat": "hook",
+      "narration": "Here's a bar chart, the kind you'd glance at over breakfast. 'Crime Is Skyrocketing!' it says. Two bars: 'Last year' is tall, and 'This year' is towering. It's a little scary, right? Now I want you to do something most people skip. Look at the numbers on the side. The y-axis starts at 98.2 and ends at 98.6. The real values are 98.3 and 98.5, so the actual change is two tenths. Does that look like a disaster to you? The bars didn't move at all. Your sense of the story did, and it moved because of one quiet choice about where the axis begins.",
+      "shots": [
+        {
+          "phrase": "Here's a bar chart, the kind you'd glance at over breakfast. 'Crime Is Skyrocketing!' it says.",
+          "template": "plot",
+          "props": {
+            "fn": "98.3+0.2*(x-1)",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              98.2,
+              98.6
+            ],
+            "label": "Crime Is Skyrocketing!",
+            "bars_at": [
+              1,
+              2
+            ],
+            "draw": true
+          },
+          "why": "Open on the headline chart"
+        },
+        {
+          "phrase": "Two bars: 'Last year' is tall, and 'This year' is towering. It's a little scary, right?",
+          "template": "plot",
+          "props": {
+            "fn": "98.3+0.2*(x-1)",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              98.2,
+              98.6
+            ],
+            "label": "Last year | This year",
+            "bars_at": [
+              1,
+              2
+            ],
+            "point_at": 2
+          },
+          "why": "Same chart, tall vs towering"
+        },
+        {
+          "phrase": "Now I want you to do something most people skip.",
+          "template": "callout",
+          "props": {
+            "text": "Check the axis",
+            "emphasis": "axis"
+          },
+          "why": "Key instruction as a short callout"
+        },
+        {
+          "phrase": "Look at the numbers on the side.",
+          "template": "plot",
+          "props": {
+            "fn": "98.3+0.2*(x-1)",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              98.2,
+              98.6
+            ],
+            "label": "98.2 and 98.6",
+            "bars_at": [
+              1,
+              2
+            ]
+          },
+          "why": "Back to chart, highlight axis ticks"
+        },
+        {
+          "phrase": "The y-axis starts at 98.2 and ends at 98.6.",
+          "template": "plot",
+          "props": {
+            "fn": "98.3+0.2*(x-1)",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              98.2,
+              98.6
+            ],
+            "label": "start 98.2, end 98.6",
+            "bars_at": [
+              1,
+              2
+            ],
+            "point_at": 1
+          },
+          "why": "Axis floor and ceiling marked"
+        },
+        {
+          "phrase": "The real values are 98.3 and 98.5, so the actual change is two tenths.",
+          "template": "plot",
+          "props": {
+            "fn": "98.3+0.2*(x-1)",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              98.2,
+              98.6
+            ],
+            "label": "98.3 \u2192 98.5",
+            "bars_at": [
+              1,
+              2
+            ],
+            "point_at": 2
+          },
+          "why": "Label each bar's true value"
+        },
+        {
+          "phrase": "Does that look like a disaster to you?",
+          "template": "plot",
+          "props": {
+            "fn": "98.3+0.2*(x-1)",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              98.2,
+              98.6
+            ],
+            "label": "gap = 0.2",
+            "bars_at": [
+              1,
+              2
+            ],
+            "point_at": 2
+          },
+          "why": "Ghost the small 0.2 gap"
+        },
+        {
+          "phrase": "The bars didn't move at all.",
+          "template": "plot",
+          "props": {
+            "fn": "98.3+0.2*(x-1)",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              98.2,
+              98.6
+            ],
+            "label": "same bars, 0.2 apart",
+            "bars_at": [
+              1,
+              2
+            ]
+          },
+          "why": "Values unchanged, gap stays tiny"
+        },
+        {
+          "phrase": "Your sense of the story did, and it moved because of one quiet choice about where the axis begins.",
+          "template": "callout",
+          "props": {
+            "text": "Where does the axis begin?",
+            "emphasis": "axis"
+          },
+          "why": "Name the hidden choice"
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "beat": "concrete_example",
+      "narration": "Redraw it honestly: 98.3 and 98.5, axis starting at 0. The two bars stand nearly side by side, and you'd have to squint to see which is taller. The difference is 0.2 points on a base of roughly 98. Maybe you start by imagining the bar as a physical object: the chart is saying one bar is three times taller, but the value is only 0.2% larger. So how did the first chart manage three times? Well, it only drew the part above 98.2. That leaves 0.1 for one bar and 0.3 for the other. Three to one, but that's a ratio of leftovers, not of the real quantities. And there's nothing special about 98.2. Any starting point near your data will exaggerate a small change, and the closer you cut, the louder it gets. This is the whole trick. Keep the numbers, shrink the base, and a two-tenths wobble looks like a skyrocket.",
+      "shots": [
+        {
+          "phrase": "Redraw it honestly: 98.3 and 98.5, axis starting at 0.",
+          "template": "plot",
+          "props": {
+            "fn": "98.4",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              0,
+              110
+            ],
+            "bars_at": [
+              98.3,
+              98.5
+            ],
+            "label": "Axis from 0",
+            "draw": true
+          },
+          "why": "Honest chart opens the scene"
+        },
+        {
+          "phrase": "The two bars stand nearly side by side, and you'd have to squint to see which is taller.",
+          "template": "plot",
+          "props": {
+            "fn": "98.4",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              0,
+              110
+            ],
+            "bars_at": [
+              98.3,
+              98.5
+            ],
+            "label": "Which is taller?"
+          },
+          "why": "Same bars, nearly indistinguishable"
+        },
+        {
+          "phrase": "The difference is 0.2 points on a base of roughly 98.",
+          "template": "equation",
+          "props": {
+            "tex": "98.5 - 98.3 = 0.2 \\quad \\text{on a base of} \\; \\approx 98",
+            "highlight": "0.2"
+          },
+          "why": "Key numbers as equation"
+        },
+        {
+          "phrase": "Maybe you start by imagining the bar as a physical object:",
+          "template": "plot",
+          "props": {
+            "fn": "98.4",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              98.2,
+              98.6
+            ],
+            "bars_at": [
+              98.3,
+              98.5
+            ],
+            "label": "Cut-off bars"
+          },
+          "why": "Bring back truncated chart to compare"
+        },
+        {
+          "phrase": "the chart is saying one bar is three times taller, but the value is only 0.2% larger.",
+          "template": "misconception",
+          "props": {
+            "claim": "Chart: one bar is 3\u00d7 taller",
+            "correction": "Value: only 0.2% larger"
+          },
+          "why": "Visual claim vs true value"
+        },
+        {
+          "phrase": "So how did the first chart manage three times?",
+          "template": "callout",
+          "props": {
+            "text": "How did it get 3\u00d7?",
+            "emphasis": "3\u00d7"
+          },
+          "why": "Pose the question"
+        },
+        {
+          "phrase": "Well, it only drew the part above 98.2.",
+          "template": "plot",
+          "props": {
+            "fn": "98.4",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              98.2,
+              98.6
+            ],
+            "bars_at": [
+              98.3,
+              98.5
+            ],
+            "label": "Floor: 98.2"
+          },
+          "why": "Show the floor that was cut"
+        },
+        {
+          "phrase": "That leaves 0.1 for one bar and 0.3 for the other.",
+          "template": "plot",
+          "props": {
+            "fn": "98.4",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              98.2,
+              98.6
+            ],
+            "bars_at": [
+              98.3,
+              98.5
+            ],
+            "label": "Leftovers: 0.1 and 0.3"
+          },
+          "why": "Both visible slivers named"
+        },
+        {
+          "phrase": "Three to one, but that's a ratio of leftovers, not of the real quantities.",
+          "template": "equation_morph",
+          "props": {
+            "from_tex": "\\frac{0.3}{0.1} = 3",
+            "to_tex": "\\frac{98.5}{98.3} \\approx 1.002",
+            "highlight": "3"
+          },
+          "why": "Leftover ratio morphs to real ratio"
+        },
+        {
+          "phrase": "And there's nothing special about 98.2.",
+          "template": "plot",
+          "props": {
+            "fn": "98.4",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              97.8,
+              98.6
+            ],
+            "bars_at": [
+              98.3,
+              98.5
+            ],
+            "label": "Floor: 97.8"
+          },
+          "why": "Floor slides; ratio changes"
+        },
+        {
+          "phrase": "Any starting point near your data will exaggerate a small change, and the closer you cut, the louder it gets.",
+          "template": "plot",
+          "props": {
+            "fn": "98.4",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              98.28,
+              98.52
+            ],
+            "bars_at": [
+              98.3,
+              98.5
+            ],
+            "label": "Tighter floor"
+          },
+          "why": "Tighter range looks louder"
+        },
+        {
+          "phrase": "This is the whole trick. Keep the numbers, shrink the base, and a two-tenths wobble looks like a skyrocket.",
+          "template": "equation_morph",
+          "props": {
+            "from_tex": "0.2 \\; \\text{wobble}",
+            "to_tex": "\\text{skyrocket}",
+            "highlight": "skyrocket"
+          },
+          "why": "Payoff: wobble becomes skyrocket"
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "beat": "visual",
+      "narration": "Here's a way to catch this without redoing any arithmetic. Picture a wooden ruler laid against the y-axis. Mark where zero sits, and let the bar's length mean its value. On the honest chart, the ruler's end sits right at the base of the bars, and nothing is hidden. Now slide it up. The bottom edge climbs past the foot of each bar, and a chunk is sawed off. How big a chunk? Well, the ruler shows you: here it's about 98 units of a roughly 98.3-unit bar, nearly all of it. The bar you see is a sliver of the bar that exists. And there's nothing special about this chart; slide the ruler on any bar chart and you can measure what was cut. If you want a name for it, call this the ruler test. Does the bar's length still equal its value?",
+      "shots": [
+        {
+          "phrase": "Here's a way to catch this without redoing any arithmetic.",
+          "template": "plot",
+          "props": {
+            "fn": "98.3",
+            "x_range": [
+              0,
+              4
+            ],
+            "y_range": [
+              0,
+              110
+            ],
+            "bars_at": [
+              98.3,
+              98.3,
+              98.3
+            ],
+            "label": "Three bars",
+            "draw": true
+          },
+          "why": "Open on the chart we'll test"
+        },
+        {
+          "phrase": "Picture a wooden ruler laid against the y-axis.",
+          "template": "plot",
+          "props": {
+            "fn": "98.3",
+            "x_range": [
+              0,
+              4
+            ],
+            "y_range": [
+              0,
+              110
+            ],
+            "bars_at": [
+              98.3,
+              98.3,
+              98.3
+            ],
+            "label": "Ruler on y-axis",
+            "point_at": 0
+          },
+          "why": "Marker at x=0 stands in for the ruler"
+        },
+        {
+          "phrase": "Mark where zero sits, and let the bar's length mean its value.",
+          "template": "plot",
+          "props": {
+            "fn": "98.3",
+            "x_range": [
+              0,
+              4
+            ],
+            "y_range": [
+              0,
+              110
+            ],
+            "bars_at": [
+              98.3,
+              98.3,
+              98.3
+            ],
+            "label": "length = value",
+            "point_at": 0
+          },
+          "why": "Annotate the rule on the chart itself"
+        },
+        {
+          "phrase": "On the honest chart, the ruler's end sits right at the base of the bars, and nothing is hidden.",
+          "template": "plot",
+          "props": {
+            "fn": "98.3",
+            "x_range": [
+              0,
+              4
+            ],
+            "y_range": [
+              0,
+              110
+            ],
+            "bars_at": [
+              98.3,
+              98.3,
+              98.3
+            ],
+            "label": "Zero at base",
+            "point_at": 0
+          },
+          "why": "Ruler end meets bar feet"
+        },
+        {
+          "phrase": "Now slide it up. The bottom edge climbs past the foot of each bar, and a chunk is sawed off.",
+          "template": "plot",
+          "props": {
+            "fn": "98.3",
+            "x_range": [
+              0,
+              4
+            ],
+            "y_range": [
+              98,
+              98.6
+            ],
+            "bars_at": [
+              98.3,
+              98.3,
+              98.3
+            ],
+            "label": "Chunk sawed off"
+          },
+          "why": "y_range animates: the ruler slides up"
+        },
+        {
+          "phrase": "How big a chunk? Well, the ruler shows you:",
+          "template": "plot",
+          "props": {
+            "fn": "98.3",
+            "x_range": [
+              0,
+              4
+            ],
+            "y_range": [
+              0,
+              110
+            ],
+            "bars_at": [
+              98.3,
+              98.3,
+              98.3
+            ],
+            "label": "Cut: 0 to 98"
+          },
+          "why": "Zoom back out to see what was cut"
+        },
+        {
+          "phrase": "here it's about 98 units of a roughly 98.3-unit bar, nearly all of it.",
+          "template": "equation",
+          "props": {
+            "tex": "\\text{cut} \\approx 98 \\text{ of } 98.3",
+            "highlight": "98"
+          },
+          "why": "Key numbers get their own beat"
+        },
+        {
+          "phrase": "The bar you see is a sliver of the bar that exists.",
+          "template": "plot",
+          "props": {
+            "fn": "98.3",
+            "x_range": [
+              0,
+              4
+            ],
+            "y_range": [
+              90,
+              100
+            ],
+            "bars_at": [
+              98.3,
+              98.3,
+              98.3
+            ],
+            "label": "Sliver vs full bar"
+          },
+          "why": "Tiny visible tip against the full bar"
+        },
+        {
+          "phrase": "And there's nothing special about this chart;",
+          "template": "plot",
+          "props": {
+            "fn": "60",
+            "x_range": [
+              0,
+              4
+            ],
+            "y_range": [
+              0,
+              100
+            ],
+            "bars_at": [
+              40,
+              72,
+              95
+            ],
+            "label": "A different chart"
+          },
+          "why": "Switch to new bar heights"
+        },
+        {
+          "phrase": "slide the ruler on any bar chart and you can measure what was cut.",
+          "template": "plot",
+          "props": {
+            "fn": "60",
+            "x_range": [
+              0,
+              4
+            ],
+            "y_range": [
+              60,
+              100
+            ],
+            "bars_at": [
+              40,
+              72,
+              95
+            ],
+            "label": "Slide, then measure"
+          },
+          "why": "Same trick works on other bars"
+        },
+        {
+          "phrase": "If you want a name for it, call this the ruler test.",
+          "template": "title_card",
+          "props": {
+            "title": "The Ruler Test"
+          },
+          "why": "Name the method"
+        },
+        {
+          "phrase": "Does the bar's length still equal its value?",
+          "template": "equation",
+          "props": {
+            "tex": "\\text{length} \\stackrel{?}{=} \\text{value}",
+            "highlight": "length"
+          },
+          "why": "Closing question as the test itself"
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "beat": "generalize",
+      "narration": "So is this just a crime-chart problem? Not at all. There's nothing special about crime or about bars. Picture a line chart of a stock, zoomed in on two weeks. It looks dramatic, a sharp climb. But zoom out and the same stock has gone sideways for ten years. The two weeks are real, but they're a sliver, like the sliver of bar we sawed off. Now picture a pie chart rendered in 3D. The front slice sits closer to you, so it looks bigger than a slice of the same size at the back. Different chart, different trick, same failure. What your eye reads as size isn't the size of the number. That's the family, and truncation is one member. Which gives you a rule that works anywhere: always ask what the visual size is proportional to. Length? Area? Distance from the camera? Then check whether that matches the value.",
+      "shots": [
+        {
+          "phrase": "So is this just a crime-chart problem? Not at all. There's nothing special about crime or about bars.",
+          "template": "callout",
+          "props": {
+            "text": "Not just crime. Not just bars.",
+            "emphasis": "Not just"
+          },
+          "why": "Opens the generalization with one merged callout"
+        },
+        {
+          "phrase": "Picture a line chart of a stock, zoomed in on two weeks. It looks dramatic, a sharp climb.",
+          "template": "plot",
+          "props": {
+            "fn": "100 + 3*Math.sin(x/30) + 0.5*Math.max(0, x-514)",
+            "x_range": [
+              508,
+              520
+            ],
+            "y_range": [
+              98,
+              104
+            ],
+            "label": "Two weeks",
+            "draw": true
+          },
+          "why": "Zoomed window shows the dramatic climb"
+        },
+        {
+          "phrase": "But zoom out and the same stock has gone sideways for ten years.",
+          "template": "plot",
+          "props": {
+            "fn": "100 + 3*Math.sin(x/30) + 0.5*Math.max(0, x-514)",
+            "x_range": [
+              0,
+              520
+            ],
+            "y_range": [
+              90,
+              110
+            ],
+            "label": "Ten years"
+          },
+          "why": "Same fn, x_range animates out to full history"
+        },
+        {
+          "phrase": "The two weeks are real, but they're a sliver, like the sliver of bar we sawed off.",
+          "template": "plot",
+          "props": {
+            "fn": "100 + 3*Math.sin(x/30) + 0.5*Math.max(0, x-514)",
+            "x_range": [
+              0,
+              520
+            ],
+            "y_range": [
+              90,
+              110
+            ],
+            "label": "A sliver",
+            "point_at": 516
+          },
+          "why": "Marks the two-week sliver on the long curve"
+        },
+        {
+          "phrase": "Now picture a pie chart rendered in 3D. The front slice sits closer to you,",
+          "template": "plot",
+          "props": {
+            "fn": "-0.5*Math.sqrt(1-x*x)",
+            "x_range": [
+              -1.2,
+              1.2
+            ],
+            "y_range": [
+              -1,
+              1
+            ],
+            "label": "Tilted 3D pie",
+            "draw": true
+          },
+          "why": "Draws the tilted pie's near edge"
+        },
+        {
+          "phrase": "so it looks bigger than a slice of the same size at the back.",
+          "template": "plot",
+          "props": {
+            "fn": "-0.5*Math.sqrt(1-x*x)",
+            "x_range": [
+              -1.2,
+              1.2
+            ],
+            "y_range": [
+              -1,
+              1
+            ],
+            "label": "Front looks bigger",
+            "point_at": 0.3
+          },
+          "why": "Highlights the near slice looking larger"
+        },
+        {
+          "phrase": "Different chart, different trick, same failure. What your eye reads as size isn't the size of the number.",
+          "template": "misconception",
+          "props": {
+            "claim": "Visual size = the number",
+            "correction": "Visual size \u2260 value"
+          },
+          "why": "Core claim corrected concisely"
+        },
+        {
+          "phrase": "That's the family, and truncation is one member.",
+          "template": "diagram_nodes",
+          "props": {
+            "nodes": [
+              {
+                "id": "fam",
+                "label": "Misleading size"
+              },
+              {
+                "id": "trunc",
+                "label": "Truncated axis"
+              },
+              {
+                "id": "zoom",
+                "label": "Zoomed window"
+              },
+              {
+                "id": "pie",
+                "label": "3D pie"
+              }
+            ],
+            "edges": [
+              {
+                "from": "fam",
+                "to": "trunc"
+              },
+              {
+                "from": "fam",
+                "to": "zoom"
+              },
+              {
+                "from": "fam",
+                "to": "pie"
+              }
+            ],
+            "highlight": "trunc"
+          }
+        },
+        {
+          "phrase": "Which gives you a rule that works anywhere: always ask what the visual size is proportional to.",
+          "template": "callout",
+          "props": {
+            "text": "What is visual size proportional to?",
+            "emphasis": "proportional"
+          },
+          "why": "States the portable rule"
+        },
+        {
+          "phrase": "Length? Area? Distance from the camera? Then check whether that matches the value.",
+          "template": "bullet_build",
+          "props": {
+            "items": [
+              "Length?",
+              "Area?",
+              "Distance from camera?",
+              "Does it match the value?"
+            ]
+          },
+          "why": "Builds the checklist question by question"
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "beat": "caveat",
+      "narration": "Before you take this too far, though, I should add a caveat. It might sound like I'm saying any axis that doesn't start at zero is lying. But that's not quite right. Imagine charting your body temperature over a week, with the axis running from 97 to 101\u00b0F. Should it start at 0? Well, no. 0\u00b0F is meaningless for a human body, and a single degree can mean you're sick. Start at zero and the interesting part gets squashed into a flat line. So what's the difference from the bars? Bars encode length, so a cut-off baseline breaks the ruler. Lines, in a sense, encode trend, and trend survives zooming. It's roughly a rule of thumb: zero is essential for bars, much less so for lines. The real rule is still the one from before. Ask what the size is proportional to.",
+      "shots": [
+        {
+          "phrase": "Before you take this too far, though, I should add a caveat.",
+          "template": "title_card",
+          "props": {
+            "title": "A caveat",
+            "subtitle": "Zero isn't always required"
+          },
+          "why": "Opens the beat with the caveat"
+        },
+        {
+          "phrase": "It might sound like I'm saying any axis that doesn't start at zero is lying. But that's not quite right.",
+          "template": "misconception",
+          "props": {
+            "claim": "Non-zero axis = lying",
+            "correction": "Depends on the chart type"
+          },
+          "why": "Claim, then the corrected version"
+        },
+        {
+          "phrase": "Imagine charting your body temperature over a week, with the axis running from 97 to 101\u00b0F.",
+          "template": "plot",
+          "props": {
+            "fn": "98.6 + 0.8*Math.sin(2*x) + 0.1*x",
+            "x_range": [
+              0,
+              7
+            ],
+            "y_range": [
+              97,
+              101
+            ],
+            "label": "Body temp, 97\u2013101\u00b0F",
+            "draw": true
+          },
+          "why": "Temperature line scene opens"
+        },
+        {
+          "phrase": "Should it start at 0? Well, no. 0\u00b0F is meaningless for a human body,",
+          "template": "callout",
+          "props": {
+            "text": "0\u00b0F means nothing for a body",
+            "emphasis": "0\u00b0F"
+          },
+          "why": "Key line gets a callout"
+        },
+        {
+          "phrase": "and a single degree can mean you're sick.",
+          "template": "plot",
+          "props": {
+            "fn": "98.6 + 0.8*Math.sin(2*x) + 0.1*x",
+            "x_range": [
+              0,
+              7
+            ],
+            "y_range": [
+              97,
+              101
+            ],
+            "label": "99.6 vs 100.6\u00b0F: fever",
+            "point_at": 3
+          },
+          "why": "Marks the one-degree fever gap"
+        },
+        {
+          "phrase": "Start at zero and the interesting part gets squashed into a flat line.",
+          "template": "plot",
+          "props": {
+            "fn": "98.6 + 0.8*Math.sin(2*x) + 0.1*x",
+            "x_range": [
+              0,
+              7
+            ],
+            "y_range": [
+              0,
+              101
+            ],
+            "label": "Axis from 0: flat"
+          },
+          "why": "Same line, axis drops to zero"
+        },
+        {
+          "phrase": "So what's the difference from the bars? Bars encode length, so a cut-off baseline breaks the ruler.",
+          "template": "plot",
+          "props": {
+            "fn": "98.4",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              98.2,
+              98.6
+            ],
+            "label": "Bars: length = value",
+            "bars_at": [
+              1,
+              2
+            ]
+          },
+          "why": "Return to truncated bars from earlier"
+        },
+        {
+          "phrase": "Lines, in a sense, encode trend, and trend survives zooming.",
+          "template": "plot",
+          "props": {
+            "fn": "98.6 + 0.8*Math.sin(2*x) + 0.1*x",
+            "x_range": [
+              0,
+              7
+            ],
+            "y_range": [
+              97,
+              101
+            ],
+            "label": "Trend survives zoom"
+          },
+          "why": "Zoomed temperature line returns"
+        },
+        {
+          "phrase": "It's roughly a rule of thumb: zero is essential for bars, much less so for lines.",
+          "template": "bullet_build",
+          "props": {
+            "items": [
+              "Bars: zero essential",
+              "Lines: zero optional"
+            ]
+          },
+          "why": "States the rule of thumb"
+        },
+        {
+          "phrase": "The real rule is still the one from before. Ask what the size is proportional to.",
+          "template": "equation",
+          "props": {
+            "tex": "\\text{size} \\propto \\ ?",
+            "highlight": "?"
+          },
+          "why": "Closing rule as a question"
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "beat": "concrete_example",
+      "narration": "Let's test the ruler idea on something with no axis whatsoever. A toothpaste ad announces, 'Cavities down 50%!' Picture the actual numbers: 2 cavities per 10,000 people before, 1 per 10,000 after. Half, yes. But fifty percent of what? Of 2. That's an absolute change of 0.01 percentage points, which you'd never notice in a real mouth. Now imagine a different town where cavities fall from 40 per 100 to 20 per 100. Same 50%, but now 20 percentage points of people are better off.\n\nRelative | Absolute\n50% (2 to 1 in 10,000) | 0.01 points\n50% (40 to 20 in 100) | 20 points\n\nThe attentive viewers among you may notice this is the cut-off bar again, just in disguise. Hiding the baseline breaks the ruler, and hiding the denominator does the same thing.",
+      "shots": [
+        {
+          "phrase": "Let's test the ruler idea on something with no axis whatsoever.",
+          "template": "plot",
+          "props": {
+            "fn": "0",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              0,
+              10000
+            ],
+            "label": "Per 10,000 people",
+            "draw": true
+          },
+          "why": "Open on empty 0\u201310,000 scale"
+        },
+        {
+          "phrase": "A toothpaste ad announces, 'Cavities down 50%!'",
+          "template": "callout",
+          "props": {
+            "text": "Cavities down 50%!",
+            "emphasis": "50%"
+          },
+          "why": "The ad's headline claim"
+        },
+        {
+          "phrase": "Picture the actual numbers: 2 cavities per 10,000 people before, 1 per 10,000 after.",
+          "template": "plot",
+          "props": {
+            "fn": "0",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              0,
+              10000
+            ],
+            "bars_at": [
+              2,
+              1
+            ],
+            "label": "2 \u2192 1"
+          },
+          "why": "Two near-invisible bars on full scale"
+        },
+        {
+          "phrase": "Half, yes. But fifty percent of what? Of 2.",
+          "template": "callout",
+          "props": {
+            "text": "50% of what? Of 2.",
+            "emphasis": "2"
+          },
+          "why": "Key question, denominator emphasized"
+        },
+        {
+          "phrase": "That's an absolute change of 0.01 percentage points, which you'd never notice in a real mouth.",
+          "template": "equation",
+          "props": {
+            "tex": "\\text{relative: } 50\\% \\quad|\\quad \\text{absolute: } 0.01\\text{ pp}",
+            "highlight": "0.01"
+          },
+          "why": "Side by side, not equal"
+        },
+        {
+          "phrase": "Now imagine a different town where cavities fall from 40 per 100 to 20 per 100.",
+          "template": "plot",
+          "props": {
+            "fn": "0",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              0,
+              100
+            ],
+            "bars_at": [
+              40,
+              20
+            ],
+            "label": "40 \u2192 20 per 100"
+          },
+          "why": "Big visible drop on a 0\u2013100 scale"
+        },
+        {
+          "phrase": "Same 50%, but now 20 percentage points of people are better off.",
+          "template": "equation",
+          "props": {
+            "tex": "\\text{relative: } 50\\% \\quad|\\quad \\text{absolute: } 20\\text{ pp}",
+            "highlight": "20"
+          },
+          "why": "Same relative, large absolute"
+        },
+        {
+          "phrase": "Relative | Absolute 50% (2 to 1 in 10,000) | 0.01 points",
+          "template": "diagram_nodes",
+          "props": {
+            "nodes": [
+              {
+                "id": "hr",
+                "label": "Relative"
+              },
+              {
+                "id": "ha",
+                "label": "Absolute"
+              },
+              {
+                "id": "r1",
+                "label": "50%: 2 to 1 in 10,000"
+              },
+              {
+                "id": "a1",
+                "label": "0.01 points"
+              },
+              {
+                "id": "r2",
+                "label": "50%: 40 to 20 in 100"
+              },
+              {
+                "id": "a2",
+                "label": "20 points"
+              }
+            ],
+            "edges": [
+              {
+                "from": "hr",
+                "to": "ha"
+              },
+              {
+                "from": "r1",
+                "to": "a1"
+              },
+              {
+                "from": "r2",
+                "to": "a2"
+              }
+            ],
+            "highlight": "a1"
+          },
+          "why": "Two-column table, tiny row lit"
+        },
+        {
+          "phrase": "50% (40 to 20 in 100) | 20 points",
+          "template": "diagram_nodes",
+          "props": {
+            "nodes": [
+              {
+                "id": "hr",
+                "label": "Relative"
+              },
+              {
+                "id": "ha",
+                "label": "Absolute"
+              },
+              {
+                "id": "r1",
+                "label": "50%: 2 to 1 in 10,000"
+              },
+              {
+                "id": "a1",
+                "label": "0.01 points"
+              },
+              {
+                "id": "r2",
+                "label": "50%: 40 to 20 in 100"
+              },
+              {
+                "id": "a2",
+                "label": "20 points"
+              }
+            ],
+            "edges": [
+              {
+                "from": "hr",
+                "to": "ha"
+              },
+              {
+                "from": "r1",
+                "to": "a1"
+              },
+              {
+                "from": "r2",
+                "to": "a2"
+              }
+            ],
+            "highlight": "a2"
+          },
+          "why": "Same table, large row lit"
+        },
+        {
+          "phrase": "The attentive viewers among you may notice this is the cut-off bar again, just in disguise.",
+          "template": "plot",
+          "props": {
+            "fn": "0",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              98.2,
+              98.6
+            ],
+            "bars_at": [
+              98.3,
+              98.5
+            ],
+            "label": "Cut-off bar again"
+          },
+          "why": "Flash beat-1 truncated chart"
+        },
+        {
+          "phrase": "Hiding the baseline breaks the ruler, and hiding the denominator does the same thing.",
+          "template": "diagram_nodes",
+          "props": {
+            "nodes": [
+              {
+                "id": "b",
+                "label": "Hidden baseline"
+              },
+              {
+                "id": "d",
+                "label": "Hidden denominator"
+              },
+              {
+                "id": "r",
+                "label": "Broken ruler"
+              }
+            ],
+            "edges": [
+              {
+                "from": "b",
+                "to": "r"
+              },
+              {
+                "from": "d",
+                "to": "r"
+              }
+            ],
+            "highlight": "r"
+          },
+          "why": "Two causes, one broken ruler"
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "beat": "meta",
+      "narration": "Remember that crime chart? The axis starting at 98.2 was the whole trick. Once you saw where the ruler began, the dramatic cliff shrank back into a small wobble. And the toothpaste ad was the same trick wearing a different outfit.\n\nSo here's a little checklist you can carry around. First: what does the axis start at? Second: percent of what? Third: compared to what? Three questions, and they'll catch a surprising number of bad charts.\n\nBut all of this is only a high-level view, just a peek at how numbers get bent. I haven't touched cherry-picked dates, or the whole mess of correlation versus causation. That's the next video.\n\nUntil then, here's a small exercise. This week, find one misleading chart in your feed. Ask the three questions. I think you'll be a little annoyed at how quickly you spot it.",
+      "shots": [
+        {
+          "phrase": "Remember that crime chart? The axis starting at 98.2 was the whole trick.",
+          "template": "plot",
+          "props": {
+            "fn": "98.4",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              98.2,
+              98.6
+            ],
+            "bars_at": [
+              98.3,
+              98.5
+            ],
+            "label": "Axis starts at 98.2",
+            "draw": true
+          },
+          "why": "Reuse the beat-1 chart exactly"
+        },
+        {
+          "phrase": "Once you saw where the ruler began, the dramatic cliff shrank back into a small wobble.",
+          "template": "plot",
+          "props": {
+            "fn": "98.4",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              0,
+              100
+            ],
+            "bars_at": [
+              98.3,
+              98.5
+            ],
+            "label": "Axis from 0"
+          },
+          "why": "Animate y_range to zero; cliff shrinks"
+        },
+        {
+          "phrase": "And the toothpaste ad was the same trick wearing a different outfit.",
+          "template": "plot",
+          "props": {
+            "fn": "0",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              0,
+              10000
+            ],
+            "bars_at": [
+              1,
+              2
+            ],
+            "label": "Toothpaste ad"
+          },
+          "why": "Reprise the beat-6 tiny-bars visual"
+        },
+        {
+          "phrase": "So here's a little checklist you can carry around.",
+          "template": "title_card",
+          "props": {
+            "title": "The checklist",
+            "subtitle": "Three questions"
+          },
+          "why": "Mark the shift to takeaways"
+        },
+        {
+          "phrase": "First: what does the axis start at? Second: percent of what? Third: compared to what?",
+          "template": "bullet_build",
+          "props": {
+            "items": [
+              "Where does the axis start?",
+              "Percent of what?",
+              "Compared to what?"
+            ]
+          },
+          "why": "Questions appear as they're spoken"
+        },
+        {
+          "phrase": "Three questions, and they'll catch a surprising number of bad charts.",
+          "template": "diagram_nodes",
+          "props": {
+            "nodes": [
+              {
+                "id": "q1",
+                "label": "Axis?"
+              },
+              {
+                "id": "q2",
+                "label": "Percent of what?"
+              },
+              {
+                "id": "q3",
+                "label": "Compared to what?"
+              },
+              {
+                "id": "bad",
+                "label": "Bad chart caught"
+              }
+            ],
+            "edges": [
+              {
+                "from": "q1",
+                "to": "bad"
+              },
+              {
+                "from": "q2",
+                "to": "bad"
+              },
+              {
+                "from": "q3",
+                "to": "bad"
+              }
+            ],
+            "highlight": "bad"
+          },
+          "why": "Show questions converging on a catch"
+        },
+        {
+          "phrase": "But all of this is only a high-level view, just a peek at how numbers get bent.",
+          "template": "diagram_nodes",
+          "props": {
+            "nodes": [
+              {
+                "id": "all",
+                "label": "How numbers get bent"
+              },
+              {
+                "id": "today",
+                "label": "This video"
+              }
+            ],
+            "edges": [
+              {
+                "from": "today",
+                "to": "all",
+                "label": "small part"
+              }
+            ],
+            "highlight": "today"
+          },
+          "why": "Scope: this video is a slice"
+        },
+        {
+          "phrase": "I haven't touched cherry-picked dates, or the whole mess of correlation versus causation. That's the next video.",
+          "template": "title_card",
+          "props": {
+            "title": "Cherry-picked dates",
+            "subtitle": "Correlation vs. causation: next video"
+          },
+          "why": "Tease topics; next video as subtitle"
+        },
+        {
+          "phrase": "Until then, here's a small exercise. This week, find one misleading chart in your feed.",
+          "template": "whiteboard_write",
+          "props": {
+            "lines": [
+              "Exercise:",
+              "find one misleading chart"
+            ]
+          },
+          "why": "Assignment written out"
+        },
+        {
+          "phrase": "Ask the three questions. I think you'll be a little annoyed at how quickly you spot it.",
+          "template": "diagram_nodes",
+          "props": {
+            "nodes": [
+              {
+                "id": "feed",
+                "label": "Your feed"
+              },
+              {
+                "id": "chart",
+                "label": "Misleading chart"
+              },
+              {
+                "id": "qs",
+                "label": "3 questions"
+              },
+              {
+                "id": "spot",
+                "label": "Spotted"
+              }
+            ],
+            "edges": [
+              {
+                "from": "feed",
+                "to": "chart"
+              },
+              {
+                "from": "chart",
+                "to": "qs"
+              },
+              {
+                "from": "qs",
+                "to": "spot"
+              }
+            ],
+            "highlight": "spot"
+          },
+          "why": "Workflow ends in quick spotting"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "beat_sequences": [
+    [
+      "hook",
+      "concrete_example",
+      "visual",
+      "generalize",
+      "bridge",
+      "concrete_example",
+      "misconception",
+      "visual",
+      "reprise",
+      "generalize",
+      "visual",
+      "visual",
+      "generalize",
+      "bridge",
+      "meta"
+    ],
+    [
+      "hook",
+      "bridge",
+      "generalize",
+      "meta",
+      "concrete_example",
+      "concrete_example",
+      "caveat",
+      "concrete_example",
+      "concrete_example",
+      "reprise"
+    ],
+    [
+      "hook",
+      "concrete_example",
+      "visual",
+      "bridge",
+      "misconception",
+      "concrete_example",
+      "visual",
+      "bridge",
+      "concrete_example",
+      "visual",
+      "generalize",
+      "concrete_example",
+      "generalize",
+      "reprise",
+      "meta"
+    ]
+  ],
+  "beat_frequency": {
+    "hook": 0.075,
+    "concrete_example": 0.225,
+    "visual": 0.2,
+    "generalize": 0.125,
+    "bridge": 0.125,
+    "misconception": 0.05,
+    "reprise": 0.075,
+    "meta": 0.075,
+    "caveat": 0.025
+  },
+  "typical_position": {
+    "hook": "opening",
+    "concrete_example": "middle",
+    "visual": "middle",
+    "generalize": "middle",
+    "bridge": "early-middle",
+    "misconception": "middle",
+    "caveat": "middle-late",
+    "reprise": "late",
+    "meta": "closing"
+  },
+  "transitions": {
+    "hook": {
+      "concrete_example": 2,
+      "bridge": 1
+    },
+    "concrete_example": {
+      "visual": 3,
+      "misconception": 1,
+      "caveat": 1,
+      "concrete_example": 3,
+      "reprise": 1
+    },
+    "visual": {
+      "generalize": 3,
+      "bridge": 2,
+      "reprise": 1,
+      "misconception": 0
+    },
+    "generalize": {
+      "bridge": 2,
+      "visual": 2,
+      "meta": 1,
+      "reprise": 1
+    },
+    "bridge": {
+      "concrete_example": 3,
+      "misconception": 1,
+      "generalize": 1
+    },
+    "misconception": {
+      "visual": 2,
+      "concrete_example": 1
+    },
+    "caveat": {
+      "concrete_example": 1
+    },
+    "reprise": {
+      "generalize": 1,
+      "meta": 1
+    },
+    "meta": {}
+  },
+  "signature_devices": [
+    {
+      "device": "second person direct address",
+      "count": 9,
+      "example": "you are likely already familiar with the idea"
+    },
+    {
+      "device": "rhetorical question",
+      "count": 6,
+      "example": "but what if we wanted to ask"
+    },
+    {
+      "device": "self-correction mid-sentence",
+      "count": 4,
+      "example": "We'd pick a different color-- I'd take this"
+    },
+    {
+      "device": "callback to earlier example",
+      "count": 3,
+      "example": "why do I say instantaneous rate of"
+    },
+    {
+      "device": "visual drawing narration",
+      "count": 6,
+      "example": "let me pick a green-- the"
+    },
+    {
+      "device": "named historical/notation figure",
+      "count": 2,
+      "example": "Now there's other notations"
+    }
+  ],
+  "sentence_traits": {
+    "avg_len": 18,
+    "person": "second person, occasional first-person plural (we)",
+    "hedging_words": [
+      "probably",
+      "kind of",
+      "sort of",
+      "let's say",
+      "I think"
+    ],
+    "jargon_density": "med"
+  },
+  "recipe": "1. Open with a direct address to the viewer naming the topic and its usefulness. 2. Reference something the viewer 'already knows' to anchor new material. 3. Move immediately into a concrete worked example using named variables (x, y, a, h). 4. Narrate visuals aloud as if drawing live, including self-corrections ('let me pick a different color'). 5. Use Delta or prime notation explicitly and name it verbally. 6. Insert a rhetorical question to pivot from lines/simple cases to curves/general cases. 7. Raise a misconception or puzzle ('what if we wanted...') before resolving it. 8. Resolve with a generalized definition stated in full sentences ('we would define X as...'). 9. Follow generalization with 2-4 additional worked examples of increasing difficulty (integer, negative, decimal exponents). 10. Use callbacks to earlier named examples (e.g., sprinter, tangent line) to reinforce continuity. 11. Add a caveat example showing the rule extends beyond the obvious case. 12. Close each section with a meta comment previewing the next video's content. 13. Keep sentences mid-length (~18 words), plain jargon, hedged with 'let's say' and 'probably'. 14. Maintain second-person address throughout, rarely switching to passive voice. 15. End with encouragement or excitement about what's coming next."
+}

@@ -1,0 +1,1802 @@
+{
+  "teacher": "3b1b",
+  "beats": [
+    {
+      "i": 1,
+      "beat": "hook",
+      "narration": "Take a look at this curve. Pick a point on it, say x = 0, where the height is exactly 1. Now picture a line just touching the curve there, and notice that its slope is also exactly 1. Okay, maybe a coincidence. So slide over to x = 2. The curve has climbed to a height of about 7.39, and the tangent line there is much steeper, with a slope of, well, about 7.39. Same number. And it keeps happening at every single point you try. Height and steepness, locked together. Why on earth would that be? That's the puzzle I want you to sit with for a moment.",
+      "shots": [
+        {
+          "phrase": "Take a look at this curve.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -1,
+              2.7
+            ],
+            "y_range": [
+              0,
+              14
+            ],
+            "label": "y = ?",
+            "draw": true
+          },
+          "why": "Open on the curve, drawn on",
+          "start_s": 0.0,
+          "end_s": 2.03
+        },
+        {
+          "phrase": "Pick a point on it, say x = 0, where the height is exactly 1.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -1,
+              2.7
+            ],
+            "y_range": [
+              0,
+              30
+            ],
+            "label": "x = 0: height = 1",
+            "point_at": 0
+          },
+          "why": "Dot lands at x=0 with height readout",
+          "start_s": 2.03,
+          "end_s": 6.94
+        },
+        {
+          "phrase": "Now picture a line just touching the curve there, and notice that its slope is also exactly 1.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -1.2,
+              2.7
+            ],
+            "y_range": [
+              0,
+              16
+            ],
+            "label": "slope = 1",
+            "point_at": 0,
+            "tangent_at": 0
+          },
+          "why": "Tangent appears with slope readout",
+          "start_s": 6.94,
+          "end_s": 13.26
+        },
+        {
+          "phrase": "Okay, maybe a coincidence. So slide over to x = 2.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -1,
+              3.5
+            ],
+            "y_range": [
+              0,
+              20
+            ],
+            "label": "maybe a coincidence?",
+            "point_at": 2,
+            "tangent_at": 2
+          },
+          "why": "Dot and tangent slide 0\u21922, doubt overlaid",
+          "start_s": 13.26,
+          "end_s": 17.97
+        },
+        {
+          "phrase": "The curve has climbed to a height of about 7.39,",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -1,
+              3
+            ],
+            "y_range": [
+              0,
+              14
+            ],
+            "label": "height \u2248 7.39",
+            "point_at": 2,
+            "tangent_at": null
+          },
+          "why": "Height readout at x=2",
+          "start_s": 17.97,
+          "end_s": 21.62
+        },
+        {
+          "phrase": "and the tangent line there is much steeper, with a slope of, well, about 7.39.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -1,
+              3.2
+            ],
+            "y_range": [
+              0,
+              16
+            ],
+            "label": "Tangent to e\u02e3 at x = 2",
+            "point_at": 2,
+            "tangent_at": 2
+          },
+          "why": "Slope readout joins height readout",
+          "start_s": 21.62,
+          "end_s": 27.75
+        },
+        {
+          "phrase": "Same number. And it keeps happening at every single point you try.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -1,
+              3
+            ],
+            "y_range": [
+              0,
+              18
+            ],
+            "label": "height = slope at every x",
+            "point_at": 1.5,
+            "tangent_at": 1.5,
+            "bars_at": [
+              0.5,
+              1.5,
+              2.5
+            ]
+          },
+          "why": "Dot moves on; readouts still match",
+          "start_s": 27.75,
+          "end_s": 32.19
+        },
+        {
+          "phrase": "Height and steepness, locked together. Why on earth would that be?",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -1,
+              2.7
+            ],
+            "y_range": [
+              0,
+              14
+            ],
+            "label": "height = slope everywhere. Why?",
+            "point_at": -0.5,
+            "tangent_at": -0.5
+          },
+          "why": "Dot sweeps on, readouts stay locked",
+          "start_s": 32.19,
+          "end_s": 36.44
+        },
+        {
+          "phrase": "That's the puzzle I want you to sit with for a moment.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -1,
+              2.7
+            ],
+            "y_range": [
+              0,
+              14
+            ],
+            "label": "height = slope. Why?",
+            "point_at": 1.5,
+            "tangent_at": 1.5
+          },
+          "why": "Hold on the puzzle, answer unspoiled",
+          "start_s": 36.44,
+          "end_s": 40.87
+        }
+      ],
+      "duration_s": 40.87,
+      "audio": "audio/3b1b/beat_1.mp3"
+    },
+    {
+      "i": 2,
+      "beat": "concrete_example",
+      "narration": "Let's make this concrete with something smaller than a curve. Say you have a colony of 100 bacteria, and it grows by 1% every hour. You're the one counting. At hour zero, there are 100. One hour later, you count 1 new bacterium, so the colony is at 101. Now the next hour. You might expect another 1 to show up, but that's not quite right. One percent of 101 is 1.01, so you count 1.01 new bacteria, and the colony reaches 102.01. Notice what's happening. The amount you add each step isn't fixed. It's 1% of whatever the size is right now. Bigger colony, bigger additions. There's nothing special about bacteria or 1% here. Anything that grows in proportion to its own size behaves this way, and that's the link between height and steepness in our curve.",
+      "shots": [
+        {
+          "phrase": "Let's make this concrete with something smaller than a curve.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              0,
+              2.5
+            ],
+            "y_range": [
+              0,
+              9
+            ],
+            "label": "e^x",
+            "bars_at": [
+              1,
+              1.5
+            ],
+            "draw": true
+          },
+          "why": "Open on the curve, then shrink focus",
+          "start_s": 0.0,
+          "end_s": 3.67
+        },
+        {
+          "phrase": "Say you have a colony of 100 bacteria, and it grows by 1% every hour.",
+          "template": "callout",
+          "props": {
+            "text": "100 bacteria, growing 1% every hour",
+            "emphasis": "1%"
+          },
+          "why": "State the setup",
+          "start_s": 3.67,
+          "end_s": 9.52
+        },
+        {
+          "phrase": "You're the one counting. At hour zero, there are 100.",
+          "template": "number_line",
+          "props": {
+            "values": [
+              100,
+              101,
+              102.01
+            ],
+            "labels": [
+              "hour 0: 100",
+              "hour 1: 101",
+              "hour 2: 102.01"
+            ],
+            "highlight_index": 0
+          },
+          "why": "Axis fitted to 100\u2013102 so gaps are visible",
+          "start_s": 9.52,
+          "end_s": 13.34
+        },
+        {
+          "phrase": "One hour later, you count 1 new bacterium, so the colony is at 101.",
+          "template": "number_line",
+          "props": {
+            "values": [
+              100,
+              101,
+              105
+            ],
+            "labels": [
+              "100  +1 \u2192",
+              "101",
+              "105"
+            ],
+            "highlight_index": 1
+          },
+          "why": "Jump of +1 on the same axis",
+          "start_s": 13.34,
+          "end_s": 18.91
+        },
+        {
+          "phrase": "Now the next hour. You might expect another 1 to show up, but that's not quite right.",
+          "template": "number_line",
+          "props": {
+            "values": [
+              100,
+              101,
+              102
+            ],
+            "labels": [
+              "100",
+              "101",
+              "{ 102? }"
+            ],
+            "highlight_index": 2
+          },
+          "why": "Expected 102 gets questioned",
+          "start_s": 18.91,
+          "end_s": 24.27
+        },
+        {
+          "phrase": "One percent of 101 is 1.01, so you count 1.01 new bacteria, and the colony reaches 102.01.",
+          "template": "equation",
+          "props": {
+            "tex": "1\\% \\times 101 = 1.01 \\;\\Rightarrow\\; 101 + 1.01 = 102.01",
+            "highlight": "1.01"
+          },
+          "why": "Show the arithmetic of the step",
+          "start_s": 24.27,
+          "end_s": 34.87
+        },
+        {
+          "phrase": "Notice what's happening. The amount you add each step isn't fixed.",
+          "template": "equation",
+          "props": {
+            "tex": "+1 \\;\\to\\; +1.01 \\;\\to\\; +1.0201 \\;\\to\\; \\cdots",
+            "highlight": "+1.01"
+          },
+          "why": "Increments themselves keep growing",
+          "start_s": 34.87,
+          "end_s": 39.14
+        },
+        {
+          "phrase": "It's 1% of whatever the size is right now. Bigger colony, bigger additions.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              0,
+              4
+            ],
+            "y_range": [
+              0,
+              40
+            ],
+            "label": "bigger size, bigger step",
+            "bars_at": [
+              1,
+              2,
+              3
+            ],
+            "draw": true
+          },
+          "why": "Taller bars stand for bigger additions",
+          "start_s": 39.14,
+          "end_s": 44.78
+        },
+        {
+          "phrase": "There's nothing special about bacteria or 1% here.",
+          "template": "diagram_nodes",
+          "props": {
+            "nodes": [
+              {
+                "id": "g",
+                "label": "rate \u221d size"
+              },
+              {
+                "id": "b",
+                "label": "bacteria \u00b7 1%"
+              },
+              {
+                "id": "m",
+                "label": "savings \u00b7 5%"
+              },
+              {
+                "id": "r",
+                "label": "rumours \u00b7 any %"
+              }
+            ],
+            "edges": [
+              {
+                "from": "b",
+                "to": "g",
+                "label": "1%"
+              },
+              {
+                "from": "m",
+                "to": "g",
+                "label": "5%"
+              },
+              {
+                "from": "r",
+                "to": "g",
+                "label": "any %"
+              }
+            ],
+            "highlight": "b"
+          },
+          "why": "Many examples, any rate, same rule",
+          "start_s": 44.78,
+          "end_s": 48.58
+        },
+        {
+          "phrase": "Anything that grows in proportion to its own size behaves this way,",
+          "template": "diagram_nodes",
+          "props": {
+            "nodes": [
+              {
+                "id": "b",
+                "label": "bacteria"
+              },
+              {
+                "id": "m",
+                "label": "savings"
+              },
+              {
+                "id": "r",
+                "label": "rumours"
+              },
+              {
+                "id": "g",
+                "label": "growth \u221d size"
+              }
+            ],
+            "edges": [
+              {
+                "from": "b",
+                "to": "g",
+                "label": "1%"
+              },
+              {
+                "from": "m",
+                "to": "g",
+                "label": "5%"
+              },
+              {
+                "from": "r",
+                "to": "g",
+                "label": "any %"
+              }
+            ],
+            "highlight": "g"
+          },
+          "why": "Same scene, spotlight the shared rule",
+          "start_s": 48.58,
+          "end_s": 52.89
+        },
+        {
+          "phrase": "and that's the link between height and steepness in our curve.",
+          "template": "equation",
+          "props": {
+            "tex": "\\text{rate} \\propto \\text{size} \\iff \\text{slope} \\propto \\text{height}",
+            "highlight": "\\text{slope} \\propto \\text{height}"
+          },
+          "why": "Key line, trimmed to one relation",
+          "start_s": 52.89,
+          "end_s": 57.64
+        }
+      ],
+      "duration_s": 57.64,
+      "audio": "audio/3b1b/beat_2.mp3"
+    },
+    {
+      "i": 3,
+      "beat": "visual",
+      "narration": "Let me give you a picture to hold onto. Imagine four bars in a row, at x = 0, 1, 2, 3, with heights 1, 2.72, 7.39, and 20.1. Now beside each one, draw a short green bar for the slope there. And look at how the green bars compare. Beside the bar of height 2.72, the green bar is 2.72 tall too. Beside 7.39, you get 7.39. It's a scaled copy every time, maybe shrunk to fit the page, but always matching its neighbor's proportions. There's nothing special about these four spots. Slide anywhere along the curve and the green bar tracks the tall bar. Bigger bar, bigger green bar. That's our bacteria story, drawn as bars.",
+      "shots": [
+        {
+          "phrase": "Let me give you a picture to hold onto.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -0.5,
+              5
+            ],
+            "y_range": [
+              0,
+              30
+            ],
+            "label": "e^x",
+            "draw": false,
+            "title_align": "center",
+            "tick_font_size": 22,
+            "label_font_size": 32,
+            "plot_offset": {
+              "x": 0.12,
+              "y": 0
+            },
+            "caption": "Growth that feeds on itself"
+          },
+          "why": "Open on the curve scene",
+          "start_s": 0.0,
+          "end_s": 2.58
+        },
+        {
+          "phrase": "Imagine four bars in a row, at x = 0, 1, 2, 3, with heights 1, 2.72, 7.39, and 20.1.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -0.5,
+              3.5
+            ],
+            "y_range": [
+              0,
+              28
+            ],
+            "label": "e^x",
+            "bars_at": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "bar_labels": [
+              "1.00",
+              "2.72",
+              "7.39",
+              "20.1"
+            ],
+            "x_tick_labels": [
+              "0",
+              "1",
+              "2",
+              "3"
+            ],
+            "label_font_size": 28,
+            "bar_label_font_size": 26,
+            "title": "Exponential growth: e^x at x = 0, 1, 2, 3",
+            "title_color": "lightcyan",
+            "title_align": "center"
+          },
+          "why": "Four labelled height bars appear",
+          "start_s": 2.58,
+          "end_s": 12.44
+        },
+        {
+          "phrase": "Now beside each one, draw a short green bar for the slope there.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -0.5,
+              3.5
+            ],
+            "y_range": [
+              0,
+              24
+            ],
+            "label": "e^x",
+            "bars_at": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "bar_labels": [
+              "1",
+              "2.72",
+              "7.39",
+              "20.09"
+            ],
+            "bar_color": "#22d3ee",
+            "bar_label_position": "left",
+            "show_slope_bars": true,
+            "slope_bars_at": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "slope_bar_labels": [
+              "1",
+              "2.72",
+              "7.39",
+              "20.09"
+            ],
+            "slope_bar_color": "#4ade80",
+            "slope_bar_offset": 0.15,
+            "slope_bar_label_position": "right",
+            "x_ticks": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "x_tick_format": "plain",
+            "accent2": "#4ade80"
+          },
+          "why": "Green slope bars drawn beside each",
+          "start_s": 12.44,
+          "end_s": 16.71
+        },
+        {
+          "phrase": "And look at how the green bars compare.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -0.5,
+              3.8
+            ],
+            "y_range": [
+              0,
+              26
+            ],
+            "label": "e^x",
+            "bars_at": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "bar_color": "cyan",
+            "bar_labels": [
+              "1",
+              "2.72",
+              "7.39",
+              "20.1"
+            ],
+            "bar_label_position": "above_bar_offset_left",
+            "slope_bars": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "slope_bar_labels": [
+              "1",
+              "2.72",
+              "7.39",
+              "20.1"
+            ],
+            "slope_bar_label_position": "above_bar_offset_right",
+            "slope_bar_color": "green",
+            "slope_bar_placement": "adjacent_right_of_each_bar",
+            "legend": [
+              {
+                "color": "cyan",
+                "text": "e^x height"
+              },
+              {
+                "color": "green",
+                "text": "slope of e^x"
+              }
+            ],
+            "legend_visible": true,
+            "hide_x_tick_labels": true,
+            "overlay": "green vs. tall: compare each pair",
+            "overlay_visible": true,
+            "overlay_position": "top_center"
+          },
+          "why": "Pairs highlighted for comparison",
+          "start_s": 16.71,
+          "end_s": 19.42
+        },
+        {
+          "phrase": "Beside the bar of height 2.72, the green bar is 2.72 tall too. Beside 7.39, you get 7.39.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              0,
+              3
+            ],
+            "y_range": [
+              0,
+              12
+            ],
+            "label": "e^x",
+            "bars_at": [
+              1,
+              2
+            ],
+            "bar_labels": [
+              "2.72",
+              "7.39"
+            ],
+            "slope_bars": [
+              1.1,
+              2.1
+            ],
+            "slope_bar_labels": [
+              "2.72",
+              "7.39"
+            ],
+            "slope_bar_color": "green",
+            "sweep": [
+              1,
+              2
+            ],
+            "overlay": "2.72 \u2192 2.72   7.39 \u2192 7.39",
+            "curve_color": "cyan",
+            "x_ticks": [
+              0,
+              3
+            ],
+            "x_axis_labels": [
+              "x=1",
+              "x=2"
+            ],
+            "x_label_offset": 36
+          },
+          "why": "Matching pairs highlighted at x=1, then x=2",
+          "start_s": 19.42,
+          "end_s": 29.62
+        },
+        {
+          "phrase": "It's a scaled copy every time, maybe shrunk to fit the page, but always matching its neighbor's proportions.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -0.5,
+              3.5
+            ],
+            "y_range": [
+              0,
+              24
+            ],
+            "label": "e^x",
+            "title": "e^x",
+            "title_pos": "top-center",
+            "title_color": "#a5f3fc",
+            "bars_at": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "bar_labels": [
+              "1",
+              "2.72",
+              "7.39",
+              "20.09"
+            ],
+            "bar_label_pos": "above_bar_left",
+            "bar_label_offset": [
+              -0.5,
+              1.3
+            ],
+            "bar_label_offsets": [
+              [
+                -0.5,
+                1.3
+              ],
+              [
+                -0.5,
+                1.3
+              ],
+              [
+                -0.5,
+                1.3
+              ],
+              [
+                -1.1,
+                1.3
+              ]
+            ],
+            "x_tick_labels": [
+              "0",
+              "1",
+              "2",
+              "3"
+            ],
+            "x_tick_label_plain": true,
+            "x_tick_label_offset": 2.3,
+            "slope_bars": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "slope_bar_labels": [
+              "1",
+              "2.72",
+              "7.39",
+              "20.09"
+            ],
+            "slope_bar_color": "#22c55e",
+            "slope_bar_offset": 0.32,
+            "slope_bar_scale": "proportional",
+            "slope_bar_visible": true,
+            "slope_bar_ghost_outline": true,
+            "slope_bar_ghost_color": "#22c55e",
+            "overlay": "green bar \u221d tall bar, same proportions",
+            "overlay_pos": "bottom-center",
+            "overlay_visible": true
+          },
+          "why": "Overlay on same scene, no cut",
+          "start_s": 29.62,
+          "end_s": 36.77
+        },
+        {
+          "phrase": "There's nothing special about these four spots. Slide anywhere along the curve and the green bar tracks the tall bar.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -0.5,
+              3.5
+            ],
+            "y_range": [
+              0,
+              22
+            ],
+            "label": "e^x",
+            "label_pos": "top-left",
+            "bars_at": [
+              0.5,
+              1,
+              1.5,
+              2,
+              3
+            ],
+            "slope_bars": [
+              0.5,
+              1,
+              1.5,
+              2,
+              3
+            ],
+            "slope_bar_color": "#FFD400",
+            "slope_bar_opacity": 1,
+            "slope_bar_width": 10,
+            "mark_bars": false,
+            "sweep": [
+              0.5,
+              3
+            ],
+            "point_at": 1.5,
+            "live_readout": true,
+            "live_readout_mode": "height_and_slope",
+            "x_ticks": [
+              0,
+              0.5,
+              1,
+              2,
+              3
+            ],
+            "x_tick_labels": [
+              "0",
+              "0.5",
+              "1",
+              "2",
+              "3"
+            ],
+            "x_tick_labels_offset": 16
+          },
+          "why": "Continuous sweep with live bar readouts",
+          "start_s": 36.77,
+          "end_s": 44.24
+        },
+        {
+          "phrase": "Bigger bar, bigger green bar. That's our bacteria story, drawn as bars.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -0.5,
+              3.8
+            ],
+            "y_range": [
+              0,
+              28
+            ],
+            "label": "e^x",
+            "bars_at": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "bar_labels": [
+              "1",
+              "2.72",
+              "7.39",
+              "20.09"
+            ],
+            "bar_color": "accent",
+            "bar_width": 0.28,
+            "bar_label_position": "above_bar_left",
+            "slope_bars": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "slope_bar_labels": [
+              "1",
+              "2.72",
+              "7.39",
+              "20.09"
+            ],
+            "slope_bar_color": "accent2",
+            "slope_bar_width": 0.28,
+            "slope_bar_offset": 0.32,
+            "slope_bar_label_position": "above_bar_right",
+            "x_ticks": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "x_tick_labels": [
+              "0",
+              "1",
+              "2",
+              "3"
+            ],
+            "overlay": "growth rate \u221d colony size",
+            "title": "Bigger bar, bigger green bar",
+            "title_align": "center",
+            "title_position": "top",
+            "title_color": "cyan"
+          },
+          "why": "Tie bars back to bacteria",
+          "start_s": 44.24,
+          "end_s": 50.72
+        }
+      ],
+      "duration_s": 50.72,
+      "audio": "audio/3b1b/beat_3.mp3"
+    },
+    {
+      "i": 4,
+      "beat": "generalize",
+      "narration": "So why do the green bars match the tall bars so neatly? Let's go back to the bars and nudge one of them. Take the bar at x = 2, height 7.39, and step to the right by a tiny amount h. The new bar is b^(x+h), which is b^x times b^h. So the growth you see is the old height times a fixed factor, (b^h \u2212 1)/h, once you divide by h. And that factor never asks where you are. There's nothing special about x = 2. Stand at x = 0 or x = 3 and you get the same leftover constant, just multiplying a different bar. Slope is proportional to height, plain and simple. Now, which b makes that constant exactly 1? Try (1 + 1/n)^n. For n = 1 you get 2. For n = 10, 2.594. For n = 1000, 2.717. That creeping number is e.",
+      "shots": [
+        {
+          "phrase": "So why do the green bars match the tall bars so neatly?",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -0.5,
+              3.6
+            ],
+            "y_range": [
+              0,
+              24
+            ],
+            "label": "e^x",
+            "bars_at": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "slope_bars": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "slope_bar_color": "#FFFF00",
+            "slope_bars_beside": true,
+            "bar_label_decimals": 1,
+            "draw": false
+          },
+          "why": "Reuse beat 3 scene: height and slope bars paired",
+          "start_s": 0.0,
+          "end_s": 3.95
+        },
+        {
+          "phrase": "Let's go back to the bars and nudge one of them.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              1.7,
+              2.4
+            ],
+            "y_range": [
+              0,
+              10
+            ],
+            "label": "b^x (drawn with b = e)",
+            "bars_at": [
+              2,
+              2.2
+            ]
+          },
+          "why": "Isolate the bar at x = 2, same framing",
+          "start_s": 3.95,
+          "end_s": 7.13
+        },
+        {
+          "phrase": "Take the bar at x = 2, height 7.39, and step to the right by a tiny amount h.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -0.5,
+              3.5
+            ],
+            "y_range": [
+              0,
+              22
+            ],
+            "label": "b^x (drawn with b = e)",
+            "bars_at": [
+              2,
+              2.3
+            ],
+            "point_at": 2,
+            "h_step": {
+              "from": 2,
+              "to": 2.3,
+              "label": "h",
+              "style": "brace",
+              "offset_y": -2.5
+            },
+            "bar_labels": [
+              null,
+              "b^(2+h)"
+            ],
+            "bar_label_offsets": [
+              {
+                "dx": -0.6,
+                "dy": 2
+              },
+              {
+                "dx": 0.5,
+                "dy": 2
+              }
+            ],
+            "axis_label_offset_y": -1.5
+          },
+          "why": "New bar appears with a labelled h gap",
+          "start_s": 7.13,
+          "end_s": 14.17
+        },
+        {
+          "phrase": "The new bar is b^(x+h), which is b^x times b^h.",
+          "template": "equation",
+          "props": {
+            "tex": "b^{x+h} = b^{x}\\cdot b^{h}",
+            "highlight": "b^{h}"
+          },
+          "why": "Key algebra line gets its own frame",
+          "start_s": 14.17,
+          "end_s": 19.15
+        },
+        {
+          "phrase": "So the growth you see is the old height times a fixed factor, (b^h \u2212 1)/h, once you divide by h.",
+          "template": "equation_morph",
+          "props": {
+            "from_tex": "b^{x+h}-b^{x} = b^{x}\\,(b^{h}-1)",
+            "to_tex": "\\frac{b^{x+h}-b^{x}}{h} = b^{x}\\cdot\\frac{b^{h}-1}{h}",
+            "highlight": "\\frac{b^{h}-1}{h}"
+          },
+          "why": "Divide by h; fixed factor highlighted",
+          "start_s": 19.15,
+          "end_s": 27.43
+        },
+        {
+          "phrase": "And that factor never asks where you are. There's nothing special about x = 2.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              0,
+              3.5
+            ],
+            "y_range": [
+              0,
+              25
+            ],
+            "label": "b^x (drawn with b = e)",
+            "bars_at": [
+              1,
+              2
+            ],
+            "bar_labels": [
+              "2.72 \u00d7 c",
+              "7.39 \u00d7 c"
+            ],
+            "overlay": "c = (b^h \u2212 1)/h does not depend on x"
+          },
+          "why": "Back to scene; factor c overlaid, no x in it",
+          "start_s": 27.43,
+          "end_s": 32.89
+        },
+        {
+          "phrase": "Stand at x = 0 or x = 3 and you get the same leftover constant, just multiplying a different bar.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -0.5,
+              3.5
+            ],
+            "y_range": [
+              0,
+              22
+            ],
+            "label": "b^x",
+            "bars_at": [
+              0,
+              3
+            ],
+            "slope_bars": [
+              0,
+              3
+            ],
+            "bar_labels": [
+              "1 \u00d7 c",
+              "20.09 \u00d7 c"
+            ],
+            "bar_width": 0.6,
+            "bar_x_labels": true,
+            "overlay": "c = (b^h \u2212 1)/h",
+            "tangent_at": 3
+          },
+          "why": "Same c on every bar, each labelled",
+          "start_s": 32.89,
+          "end_s": 41.36
+        },
+        {
+          "phrase": "Slope is proportional to height, plain and simple.",
+          "template": "equation",
+          "props": {
+            "tex": "\\text{slope} = \\frac{b^{h}-1}{h}\\cdot\\text{height}",
+            "highlight": "\\frac{b^{h}-1}{h}"
+          },
+          "why": "State the conclusion as one line",
+          "start_s": 41.36,
+          "end_s": 44.91
+        },
+        {
+          "phrase": "Now, which b makes that constant exactly 1? Try (1 + 1/n)^n.",
+          "template": "equation_morph",
+          "props": {
+            "from_tex": "\\frac{b^{h}-1}{h} = 1",
+            "to_tex": "b \\approx \\left(1+\\frac{1}{n}\\right)^{n}",
+            "highlight": "\\left(1+\\frac{1}{n}\\right)^{n}"
+          },
+          "why": "Constant = 1 question becomes the candidate b",
+          "start_s": 44.91,
+          "end_s": 50.78
+        },
+        {
+          "phrase": "For n = 1 you get 2. For n = 10, 2.594.",
+          "template": "number_line",
+          "props": {
+            "values": [
+              2,
+              2.594
+            ],
+            "labels": [
+              "n=1: 2",
+              "n=10: 2.594"
+            ],
+            "highlight_index": 1,
+            "range": [
+              1.5,
+              3
+            ]
+          },
+          "why": "First two values, axis zoomed so gaps show",
+          "start_s": 50.78,
+          "end_s": 56.37
+        },
+        {
+          "phrase": "For n = 1000, 2.717. That creeping number is e.",
+          "template": "number_line",
+          "props": {
+            "values": [
+              2,
+              2.594,
+              2.717,
+              2.718
+            ],
+            "labels": [
+              "n=1",
+              "n=10",
+              "n=1000: 2.717",
+              "e: 2.718"
+            ],
+            "highlight_index": 3,
+            "range": [
+              1.9,
+              2.75
+            ],
+            "title": "Creeping toward e",
+            "title_color": "cyan",
+            "title_align": "center",
+            "title_position": "top",
+            "label_size": "large",
+            "line_position": "center",
+            "label_offset": "far",
+            "spacing": "proportional"
+          },
+          "why": "Values creep toward e on the same axis",
+          "start_s": 56.37,
+          "end_s": 63.4
+        }
+      ],
+      "duration_s": 63.4,
+      "audio": "audio/3b1b/beat_4.mp3"
+    },
+    {
+      "i": 5,
+      "beat": "caveat",
+      "narration": "Maybe you're thinking: hold on, if any b gives slope proportional to height, why e? Let's test 2^x. The constant (2^h \u2212 1)/h tends to about 0.693 as h gets tiny, so the derivative is 0.693 times 2^x. The green bars come out shorter than the tall ones. With 3^x the constant is about 1.0986, and they come out taller. So proportional, yes, but equal, no. I'd say that's the real subtlety. Only one base makes the constant exactly 1, and the attentive viewers among you might notice it has to sit between 2 and 3. Which is where our creeping number from before lives. That base is e.",
+      "shots": [
+        {
+          "phrase": "Maybe you're thinking: hold on, if any b gives slope proportional to height, why e? Let's test 2^x.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.pow(2,x)",
+            "x_range": [
+              -0.5,
+              3.5
+            ],
+            "y_range": [
+              0,
+              12
+            ],
+            "label": "y = 2^x",
+            "bars_at": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "draw": true
+          },
+          "why": "Open on the bar scene with 2^x",
+          "start_s": 0.0,
+          "end_s": 7.0
+        },
+        {
+          "phrase": "The constant (2^h \u2212 1)/h tends to about 0.693 as h gets tiny,",
+          "template": "equation",
+          "props": {
+            "tex": "\\frac{2^h-1}{h}\\;\\to\\;0.693 \\quad (h\\to 0)",
+            "highlight": "0.693"
+          },
+          "why": "Key number gets its own line",
+          "start_s": 7.0,
+          "end_s": 14.51
+        },
+        {
+          "phrase": "so the derivative is 0.693 times 2^x.",
+          "template": "plot",
+          "props": {
+            "fn": "0.693*Math.pow(2,x)",
+            "x_range": [
+              0,
+              4
+            ],
+            "y_range": [
+              0,
+              9
+            ],
+            "label": "0.693 \u00b7 2^x",
+            "bars_at": [
+              1,
+              2,
+              3
+            ]
+          },
+          "why": "Green slope bars appear beside each height",
+          "start_s": 14.51,
+          "end_s": 18.93
+        },
+        {
+          "phrase": "The green bars come out shorter than the tall ones.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.pow(2,x)",
+            "x_range": [
+              0,
+              4.5
+            ],
+            "y_range": [
+              -2,
+              20
+            ],
+            "label": "bars at x=1, 2, 3: heights 2, 4, 8",
+            "bars_at": [
+              1,
+              2,
+              3
+            ]
+          },
+          "why": "Compare green and height bars at x=3",
+          "start_s": 18.93,
+          "end_s": 22.26
+        },
+        {
+          "phrase": "With 3^x the constant is about 1.0986, and they come out taller.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.pow(3,x)",
+            "x_range": [
+              -0.5,
+              3.5
+            ],
+            "y_range": [
+              0,
+              36
+            ],
+            "label": "3\u02e3: constant 1.0986, taller slopes",
+            "bars_at": [
+              0,
+              1,
+              2
+            ],
+            "tangent_at": 2.5,
+            "point_at": 2.5
+          },
+          "why": "Same framing, curve morphs to 3^x",
+          "start_s": 22.26,
+          "end_s": 28.45
+        },
+        {
+          "phrase": "So proportional, yes, but equal, no. I'd say that's the real subtlety.",
+          "template": "callout",
+          "props": {
+            "text": "Proportional, yes. Equal, no.",
+            "emphasis": "Equal, no."
+          },
+          "why": "State the caveat plainly",
+          "start_s": 28.45,
+          "end_s": 33.66
+        },
+        {
+          "phrase": "Only one base makes the constant exactly 1,",
+          "template": "equation",
+          "props": {
+            "tex": "\\frac{b^h-1}{h}\\;\\to\\;1 \\ \\text{ for exactly one } b",
+            "highlight": "1"
+          },
+          "why": "Pose the condition on b",
+          "start_s": 33.66,
+          "end_s": 36.88
+        },
+        {
+          "phrase": "and the attentive viewers among you might notice it has to sit between 2 and 3.",
+          "template": "number_line",
+          "props": {
+            "values": [
+              2,
+              2.718,
+              3
+            ],
+            "labels": [
+              "2",
+              "e \u2248 2.718",
+              "3"
+            ],
+            "highlight_index": 1
+          },
+          "why": "Constant crosses 1 between 2 and 3",
+          "start_s": 36.88,
+          "end_s": 42.24
+        },
+        {
+          "phrase": "Which is where our creeping number from before lives. That base is e.",
+          "template": "number_line",
+          "props": {
+            "values": [
+              2,
+              2.25,
+              2.594,
+              2.718
+            ],
+            "labels": [
+              "2",
+              "2.25",
+              "2.594",
+              "e \u2248 2.718"
+            ],
+            "highlight_index": 3
+          },
+          "why": "Recall the creeping number, land on e",
+          "start_s": 42.24,
+          "end_s": 47.95
+        }
+      ],
+      "duration_s": 47.95,
+      "audio": "audio/3b1b/beat_5.mp3"
+    },
+    {
+      "i": 6,
+      "beat": "reprise",
+      "narration": "Back to the bars, then. Picture x = 0, 1, 2, 3 again, blue height bars with green slope bars right next to them. Earlier, the green ones were stubby for 2^x and towering for 3^x. Now switch to e^x and watch them line up. Each green bar is exactly as tall as its blue partner. At x = 2, the blue bar sits at 7.39, and the green bar stops at 7.39 too. That's the loop closing. And if you want to check it yourself, try any other x. You'll find the same thing, since e is the base whose constant is 1. Height equals slope, everywhere.",
+      "shots": [
+        {
+          "phrase": "Back to the bars, then. Picture x = 0, 1, 2, 3 again,",
+          "template": "plot",
+          "props": {
+            "fn": "Math.pow(2,x)",
+            "x_range": [
+              -1,
+              4
+            ],
+            "y_range": [
+              0,
+              12
+            ],
+            "label": "y = 2\u02e3",
+            "bars_at": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "draw": false
+          },
+          "why": "Reprise the bar scene, same framing as beat 3",
+          "start_s": 0.0,
+          "end_s": 4.63
+        },
+        {
+          "phrase": "blue height bars with green slope bars right next to them.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.pow(2,x)",
+            "x_range": [
+              -0.5,
+              3.5
+            ],
+            "y_range": [
+              0,
+              9
+            ],
+            "label": "2^x",
+            "bars_at": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "slope_bars": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "slope_fn": "Math.pow(2,x)*Math.LN2",
+            "slope_bar_heights": [
+              0.693,
+              1.386,
+              2.773,
+              5.545
+            ],
+            "slope_bar_color": "green",
+            "slope_bar_width": 0.2,
+            "slope_bar_offset": 0.22,
+            "bar_labels": false,
+            "show_bar_values": false,
+            "x_tick_step": 1
+          },
+          "why": "Add green slope bar beside each blue bar",
+          "start_s": 4.63,
+          "end_s": 8.52
+        },
+        {
+          "phrase": "Earlier, the green ones were stubby for 2^x and towering for 3^x.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.pow(3,x)",
+            "x_range": [
+              -0.5,
+              4.5
+            ],
+            "y_range": [
+              0,
+              34
+            ],
+            "label": "3^x",
+            "bars_at": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "bar_labels": true,
+            "bar_color": "#22c55e",
+            "bar_label_size": 16,
+            "bar_label_offset": 14,
+            "compare_fn": "Math.pow(2,x)",
+            "compare_label": "2^x",
+            "compare_opacity": 0.3,
+            "compare_bars": true,
+            "x_tick_step": 1
+          },
+          "why": "Morph 2^x to 3^x, green bars grow",
+          "start_s": 8.52,
+          "end_s": 13.25
+        },
+        {
+          "phrase": "Now switch to e^x and watch them line up.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -0.5,
+              4
+            ],
+            "y_range": [
+              0,
+              24
+            ],
+            "label": "y = e^x",
+            "bars_at": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          "why": "Morph to e^x, green bars settle to blue",
+          "start_s": 13.25,
+          "end_s": 16.33
+        },
+        {
+          "phrase": "Each green bar is exactly as tall as its blue partner.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -0.5,
+              3.5
+            ],
+            "y_range": [
+              0,
+              24
+            ],
+            "label": "e^x",
+            "bars_at": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "slope_bars": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "bar_color": "#2196F3",
+            "slope_bar_color": "#4CAF50",
+            "bar_width": 0.2,
+            "slope_bar_width": 0.2,
+            "bar_offset": -0.12,
+            "slope_bar_offset": 0.12,
+            "slope_bar_fn": "Math.exp(x)",
+            "bar_labels": true,
+            "slope_bar_labels": true,
+            "bar_label_position": "above",
+            "slope_bar_label_position": "above",
+            "bar_label_dx": -0.12,
+            "slope_bar_label_dx": 0.12,
+            "bar_label_gap": 0.5,
+            "slope_bar_label_gap": 1.6,
+            "bar_label_decimals": 2,
+            "slope_bar_label_decimals": 2,
+            "x_ticks": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "x_tick_labels": [
+              "0",
+              "1",
+              "2",
+              "3"
+            ],
+            "tick_label_offset": 0.8
+          },
+          "why": "Every pair matches, labelled heights equal",
+          "start_s": 16.33,
+          "end_s": 20.39
+        },
+        {
+          "phrase": "At x = 2, the blue bar sits at 7.39, and the green bar stops at 7.39 too.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              0,
+              3.5
+            ],
+            "y_range": [
+              0,
+              10
+            ],
+            "label": "e^x",
+            "bars_at": [
+              2
+            ],
+            "slope_bars": [
+              2
+            ],
+            "bar_labels": true,
+            "bar_width": 0.3,
+            "slope_bar_offset": 0.3,
+            "slope_color": "green"
+          },
+          "why": "Highlight x=2 pair, both labelled 7.39",
+          "start_s": 20.39,
+          "end_s": 28.17
+        },
+        {
+          "phrase": "That's the loop closing. And if you want to check it yourself, try any other x.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -0.5,
+              4
+            ],
+            "y_range": [
+              0,
+              30
+            ],
+            "label": "e^x \u2014 try any x",
+            "bars_at": [],
+            "point_at": 2.5,
+            "tangent_at": 2.5
+          },
+          "why": "Sweep x continuously, height and slope readouts match",
+          "start_s": 28.17,
+          "end_s": 33.15
+        },
+        {
+          "phrase": "You'll find the same thing, since e is the base whose constant is 1. Height equals slope, everywhere.",
+          "template": "equation_morph",
+          "props": {
+            "from_tex": "\\lim_{h\\to 0}\\frac{e^h-1}{h}=1",
+            "to_tex": "\\text{slope}=\\text{height}\\quad\\text{for every } x",
+            "highlight": "height"
+          },
+          "why": "Constant is 1, so slope equals height",
+          "start_s": 33.15,
+          "end_s": 41.04
+        }
+      ],
+      "duration_s": 41.04,
+      "audio": "audio/3b1b/beat_6.mp3"
+    },
+    {
+      "i": 7,
+      "beat": "meta",
+      "narration": "That's just a peek at why e matters, and I'd say the core idea fits in one line: growth proportional to size, with e as the base making the constant 1. Next video, we'll flip the same bar picture across the diagonal and ask why the natural log has derivative 1/x. Until then, here's one to try yourself. Take e^(2x) and picture its bars. Can you see why the green ones should be twice as tall, giving 2e^(2x)?",
+      "shots": [
+        {
+          "phrase": "That's just a peek at why e matters, and I'd say the core idea fits in one line:",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -0.5,
+              4
+            ],
+            "y_range": [
+              -2,
+              30
+            ],
+            "label": "d/dx e\u02e3 = e\u02e3",
+            "bars_at": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "draw": false
+          },
+          "why": "Reopen on the bar scene: green matches height",
+          "start_s": 0.0,
+          "end_s": 5.16
+        },
+        {
+          "phrase": "growth proportional to size, with e as the base making the constant 1.",
+          "template": "equation",
+          "props": {
+            "tex": "\\text{slope} = \\mathbf{1}\\cdot\\text{height}",
+            "highlight": "1"
+          },
+          "why": "Key line: the constant is 1",
+          "start_s": 5.16,
+          "end_s": 10.24
+        },
+        {
+          "phrase": "Next video, we'll flip the same bar picture across the diagonal",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -1,
+              5
+            ],
+            "y_range": [
+              -1,
+              5
+            ],
+            "label": "e\u02e3 \u2192 ln x",
+            "bars_at": [
+              0.5,
+              1.5
+            ],
+            "draw": true
+          },
+          "why": "Show e^x reflecting over y=x into ln x",
+          "start_s": 10.24,
+          "end_s": 14.43
+        },
+        {
+          "phrase": "and ask why the natural log has derivative 1/x.",
+          "template": "equation",
+          "props": {
+            "tex": "\\frac{d}{dx}\\ln x = \\frac{1}{x}",
+            "highlight": "\\frac{1}{x}"
+          },
+          "why": "Preview the question",
+          "start_s": 14.43,
+          "end_s": 18.74
+        },
+        {
+          "phrase": "Until then, here's one to try yourself.",
+          "template": "callout",
+          "props": {
+            "text": "Your turn: try it yourself",
+            "emphasis": "try it yourself"
+          },
+          "why": "Hand over the exercise",
+          "start_s": 18.74,
+          "end_s": 21.66
+        },
+        {
+          "phrase": "Take e^(2x) and picture its bars.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(2*x)",
+            "x_range": [
+              -0.5,
+              2
+            ],
+            "y_range": [
+              0,
+              24
+            ],
+            "label": "e\u00b2\u02e3",
+            "label_pos": "top-left",
+            "x_tick_offset": 48,
+            "bars_at": [
+              0,
+              0.5,
+              1,
+              1.5
+            ],
+            "slope_bars": false,
+            "slope_factor": 2,
+            "draw": true
+          },
+          "why": "Show e^(2x) height bars with green bars",
+          "start_s": 21.66,
+          "end_s": 24.76
+        },
+        {
+          "phrase": "Can you see why the green ones should be twice as tall, giving 2e^(2x)?",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(2*x)",
+            "x_range": [
+              -0.25,
+              1.75
+            ],
+            "y_range": [
+              0,
+              50
+            ],
+            "label": "d/dx e\u00b2\u02e3 = 2e\u00b2\u02e3",
+            "label_position": "top-left",
+            "bars_at": [
+              0.25,
+              0.75,
+              1.25
+            ],
+            "slope_bars": true,
+            "slope_factor": 2,
+            "slope_color": "#00FF00",
+            "slope_bar_mode": "beside",
+            "slope_labels": true,
+            "slope_label_values": [
+              "3.30",
+              "8.96",
+              "24.36"
+            ]
+          },
+          "why": "Green bars twice as tall, same scene",
+          "start_s": 24.76,
+          "end_s": 31.09
+        }
+      ],
+      "duration_s": 31.09,
+      "audio": "audio/3b1b/beat_7.mp3"
+    }
+  ]
+}

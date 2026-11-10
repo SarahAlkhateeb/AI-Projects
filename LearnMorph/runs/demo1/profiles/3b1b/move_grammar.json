@@ -1,0 +1,277 @@
+{
+  "beat_sequences": [
+    [
+      "meta",
+      "meta",
+      "hook",
+      "concrete_example",
+      "visual",
+      "concrete_example",
+      "caveat",
+      "generalize",
+      "visual",
+      "generalize",
+      "reprise",
+      "meta",
+      "generalize",
+      "bridge",
+      "bridge",
+      "hook",
+      "concrete_example",
+      "meta",
+      "visual",
+      "generalize",
+      "concrete_example",
+      "generalize",
+      "bridge",
+      "generalize",
+      "meta"
+    ],
+    [
+      "hook",
+      "misconception",
+      "meta",
+      "bridge",
+      "bridge",
+      "caveat",
+      "visual",
+      "concrete_example",
+      "visual",
+      "caveat",
+      "generalize",
+      "concrete_example",
+      "hook",
+      "concrete_example",
+      "generalize",
+      "caveat",
+      "concrete_example",
+      "visual",
+      "caveat",
+      "bridge",
+      "hook",
+      "concrete_example",
+      "visual",
+      "concrete_example",
+      "generalize",
+      "concrete_example",
+      "generalize",
+      "generalize",
+      "meta",
+      "meta",
+      "generalize",
+      "bridge",
+      "generalize",
+      "reprise",
+      "bridge",
+      "meta",
+      "meta",
+      "exercise",
+      "caveat",
+      "concrete_example"
+    ],
+    [
+      "hook",
+      "bridge",
+      "concrete_example",
+      "concrete_example",
+      "hook",
+      "concrete_example",
+      "misconception",
+      "bridge",
+      "visual",
+      "concrete_example",
+      "visual",
+      "generalize",
+      "visual",
+      "hook",
+      "visual",
+      "concrete_example",
+      "visual",
+      "generalize",
+      "caveat",
+      "generalize",
+      "concrete_example",
+      "concrete_example",
+      "generalize",
+      "exercise",
+      "generalize",
+      "bridge",
+      "concrete_example",
+      "caveat",
+      "bridge",
+      "generalize",
+      "visual",
+      "generalize",
+      "generalize",
+      "generalize",
+      "generalize",
+      "caveat",
+      "generalize",
+      "concrete_example",
+      "generalize",
+      "caveat",
+      "reprise",
+      "meta"
+    ]
+  ],
+  "beat_frequency": {
+    "generalize": 0.234,
+    "concrete_example": 0.196,
+    "visual": 0.121,
+    "bridge": 0.112,
+    "meta": 0.103,
+    "caveat": 0.093,
+    "hook": 0.075,
+    "reprise": 0.028,
+    "misconception": 0.019,
+    "exercise": 0.019
+  },
+  "typical_position": {
+    "hook": "opening",
+    "misconception": "early",
+    "meta": "opening/closing (bimodal)",
+    "bridge": "middle",
+    "concrete_example": "early-middle",
+    "visual": "middle",
+    "generalize": "middle-late",
+    "caveat": "middle",
+    "exercise": "late-middle",
+    "reprise": "closing"
+  },
+  "transitions": {
+    "hook": {
+      "concrete_example": 6,
+      "visual": 1,
+      "bridge": 1,
+      "misconception": 1
+    },
+    "concrete_example": {
+      "generalize": 6,
+      "visual": 4,
+      "concrete_example": 2,
+      "caveat": 2,
+      "hook": 1,
+      "misconception": 1,
+      "meta": 1
+    },
+    "visual": {
+      "generalize": 4,
+      "concrete_example": 4,
+      "caveat": 2,
+      "hook": 1
+    },
+    "generalize": {
+      "concrete_example": 6,
+      "visual": 5,
+      "bridge": 4,
+      "caveat": 4,
+      "generalize": 4,
+      "reprise": 2,
+      "meta": 2,
+      "exercise": 1
+    },
+    "caveat": {
+      "generalize": 4,
+      "concrete_example": 3,
+      "bridge": 2,
+      "visual": 2,
+      "reprise": 1
+    },
+    "bridge": {
+      "bridge": 1,
+      "generalize": 3,
+      "hook": 2,
+      "concrete_example": 2,
+      "caveat": 1,
+      "meta": 1,
+      "visual": 1
+    },
+    "meta": {
+      "meta": 3,
+      "generalize": 2,
+      "hook": 1,
+      "bridge": 1,
+      "visual": 1,
+      "exercise": 1
+    },
+    "reprise": {
+      "meta": 2,
+      "bridge": 1
+    },
+    "misconception": {
+      "meta": 1,
+      "bridge": 1
+    },
+    "exercise": {
+      "caveat": 1,
+      "generalize": 1
+    }
+  },
+  "signature_devices": [
+    {
+      "device": "second person direct address",
+      "count": 25,
+      "example": "Maybe you start by imagining straightening out"
+    },
+    {
+      "device": "rhetorical question",
+      "count": 11,
+      "example": "And before jumping into the math"
+    },
+    {
+      "device": "meta commentary",
+      "count": 10,
+      "example": "All of this is only a high-level view"
+    },
+    {
+      "device": "visual description",
+      "count": 10,
+      "example": "I find it helpful to think of these weights"
+    },
+    {
+      "device": "callback/recap",
+      "count": 9,
+      "example": "Remember how earlier I said these neurons"
+    },
+    {
+      "device": "self-correction / caveat aside",
+      "count": 8,
+      "example": "And its thickness? Well, that depends on how"
+    },
+    {
+      "device": "named formula/concept",
+      "count": 7,
+      "example": "This whole plot is what I'll call"
+    },
+    {
+      "device": "concrete numbered example",
+      "count": 7,
+      "example": "In other words, we don't know what a"
+    },
+    {
+      "device": "direct address to viewer",
+      "count": 6,
+      "example": "By the way, so much of machine learning"
+    },
+    {
+      "device": "joke/aside",
+      "count": 4,
+      "example": "Unless you've been living under a rock"
+    }
+  ],
+  "sentence_traits": {
+    "avg_len": 18,
+    "person": "second person ('you') dominant, first person singular for meta-asides ('I'), occasional first-person plural ('we/let's') during derivations",
+    "hedging_words": [
+      "maybe",
+      "kind of",
+      "sort of",
+      "roughly",
+      "I think",
+      "in a sense",
+      "if you want"
+    ],
+    "jargon_density": "low-med (terms like 'derivative,' 'sigmoid,' 'Fourier transform' introduced only after a concrete visual buildup)"
+  },
+  "recipe": "1. Open with a hook: pose a concrete puzzle or show a single striking example (a handwritten 3, a circle, a sound wave) before naming any theory. 2. Address the viewer directly as 'you' throughout derivations, e.g. 'Maybe you start by imagining.' 3. Build every abstract idea from one small concrete numeric example (radius 3, x=3, a 3 Hz tone) before generalizing. 4. After each concrete step, explicitly generalize with a phrase like 'there's nothing special about...' to widen the claim. 5. Insert a caveat or self-correction right after an approximation ('but that's not quite right') to preempt objections. 6. Use visual/spatial language ('imagine unwrapping,' 'picture a wire') instead of pure symbols when introducing new operations. 7. Chain generalize→visual or generalize→concrete_example transitions repeatedly to alternate abstraction and grounding. 8. Drop in a short meta-comment every few minutes reminding the viewer of the overall goal or method ('if you want to think like a mathematician'). 9. End major derivations with a reprise line that explicitly answers the opening hook. 10. Bridge to the next big idea by naming a parallel problem structure ('a lot of other hard problems...') rather than a hard topic shift. 11. Reserve jargon (sigmoid, Fourier transform, fundamental theorem) until after the intuitive mechanism has been fully built. 12. Close with a short meta wrap-up: restate the scope of what was covered and preview the next video. 13. Occasionally invite the viewer to verify a claim themselves ('the attentive viewers among you might...') as a mini exercise. 14. Keep sentences short-to-medium (~18 words), favor declaratives punctuated by an occasional rhetorical question. 15. Use one running visual metaphor per video (rectangles/rings, wire center of mass, weighted pixel grid) and refer back to it via callbacks at key transitions."
+}

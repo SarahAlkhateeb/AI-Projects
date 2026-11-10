@@ -1,0 +1,971 @@
+{
+  "teacher": "lecturer",
+  "beats": [
+    {
+      "i": 1,
+      "beat": "hook",
+      "narration": "Welcome to the video on the derivative of e to the x. I think you're going to like this one, because it might be the nicest derivative you'll ever take. You've probably seen that the derivative of x squared is 2x, so the slope depends on where you are. But what if we wanted a function whose slope at every point was just its height? Let's say you're at a point on the curve, height 5, and the slope there is also 5. That function is e to the x. It models population growth and compound interest, so it's really useful.",
+      "shots": [
+        {
+          "phrase": "Welcome to the video on the derivative of e to the x.",
+          "template": "title_card",
+          "props": {
+            "title": "The Derivative of e^x",
+            "subtitle": "the nicest derivative you'll ever take"
+          },
+          "why": "Open on title card",
+          "start_s": 0.0,
+          "end_s": 4.18
+        },
+        {
+          "phrase": "I think you're going to like this one, because it might be the nicest derivative you'll ever take.",
+          "template": "equation",
+          "props": {
+            "tex": "\\frac{d}{dx}\\, e^x = \\;?",
+            "highlight": "?"
+          },
+          "why": "Tease the question, not restate",
+          "start_s": 4.18,
+          "end_s": 10.61
+        },
+        {
+          "phrase": "You've probably seen that the derivative of x squared is 2x, so the slope depends on where you are.",
+          "template": "equation",
+          "props": {
+            "tex": "\\frac{d}{dx}\\, x^2 = 2x",
+            "highlight": "2x"
+          },
+          "why": "Known rule; slope depends on x",
+          "start_s": 10.61,
+          "end_s": 17.61
+        },
+        {
+          "phrase": "But what if we wanted a function whose slope at every point was just its height?",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -1,
+              2.5
+            ],
+            "y_range": [
+              0,
+              16
+            ],
+            "label": "slope = height?",
+            "point_at": 1.5,
+            "tangent_at": 1.5,
+            "draw": true
+          },
+          "why": "Draw the curve, pose the question",
+          "start_s": 17.61,
+          "end_s": 22.86
+        },
+        {
+          "phrase": "Let's say you're at a point on the curve, height 5, and the slope there is also 5.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -3,
+              4.5
+            ],
+            "y_range": [
+              0,
+              14
+            ],
+            "label": "height 5, slope 5",
+            "point_at": 1.609,
+            "tangent_at": 1.609
+          },
+          "why": "Point at height 5 with tangent",
+          "start_s": 22.86,
+          "end_s": 29.07
+        },
+        {
+          "phrase": "That function is e to the x.",
+          "template": "equation",
+          "props": {
+            "tex": "\\frac{d}{dx}\\, e^x = e^x",
+            "highlight": "e^x"
+          },
+          "why": "Reveal the function and its rule",
+          "start_s": 29.07,
+          "end_s": 31.59
+        },
+        {
+          "phrase": "It models population growth and compound interest, so it's really useful.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -1,
+              2.5
+            ],
+            "y_range": [
+              0,
+              14
+            ],
+            "label": "growth \u00b7 interest"
+          },
+          "why": "Growth curve shows the applications",
+          "start_s": 31.59,
+          "end_s": 38.52
+        }
+      ],
+      "duration_s": 38.52,
+      "audio": "audio/lecturer/beat_1.mp3"
+    },
+    {
+      "i": 2,
+      "beat": "concrete_example",
+      "narration": "Let's anchor this in something you already know, which is that slope is just rise over run, or delta y over delta x. Let's say f of x is 2 to the x, and we want the slope at x equals 0. Well, f of 0 is 1, so we take a small step h of 0.1 and get 2 to the 0.1, which is about 1.072. So delta y over delta x is 0.072 over 0.1, roughly 0.718. Now shrink h to 0.01, and I think you'll get about 0.695. Let's say this settles near 0.693. Remember our height 5, slope 5 idea? Here the height at 0 is 1, but the slope isn't 1, so 2 is a bit off. What base would work?",
+      "shots": [
+        {
+          "phrase": "Let's anchor this in something you already know, which is that slope is just rise over run,",
+          "template": "whiteboard_write",
+          "props": {
+            "lines": [
+              "slope = rise / run",
+              "= \u0394y / \u0394x",
+              "rise = \u0394y, run = \u0394x"
+            ]
+          },
+          "why": "Write the rise-over-run idea",
+          "start_s": 0.0,
+          "end_s": 6.0
+        },
+        {
+          "phrase": "or delta y over delta x.",
+          "template": "equation",
+          "props": {
+            "tex": "\\textcolor{white}{\\text{slope}=}\\frac{\\textcolor{orange}{\\Delta y}}{\\textcolor{blue}{\\Delta x}}"
+          },
+          "why": "Key formula in \u0394y/\u0394x colours",
+          "start_s": 6.0,
+          "end_s": 8.86
+        },
+        {
+          "phrase": "Let's say f of x is 2 to the x, and we want the slope at x equals 0.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.pow(2,x)",
+            "x_range": [
+              -1,
+              3
+            ],
+            "y_range": [
+              0,
+              8
+            ],
+            "label": "f(x) = 2^x",
+            "point_at": 0,
+            "draw": true
+          },
+          "why": "Draw 2^x with the point at x=0",
+          "start_s": 8.86,
+          "end_s": 14.68
+        },
+        {
+          "phrase": "Well, f of 0 is 1, so we take a small step h of 0.1",
+          "template": "plot",
+          "props": {
+            "fn": "Math.pow(2,x)",
+            "x_range": [
+              -0.05,
+              0.15
+            ],
+            "y_range": [
+              0.96,
+              1.1
+            ],
+            "label": "step h = 0.1",
+            "point_at": 0,
+            "bars_at": [
+              0,
+              0.1
+            ]
+          },
+          "why": "Zoom in, keep the point at 0",
+          "start_s": 14.68,
+          "end_s": 19.95
+        },
+        {
+          "phrase": "and get 2 to the 0.1, which is about 1.072.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.pow(2,x)",
+            "x_range": [
+              -0.2,
+              0.3
+            ],
+            "y_range": [
+              0,
+              1.4
+            ],
+            "label": "2^0.1 \u2248 1.072",
+            "bars_at": [
+              0.1
+            ],
+            "point_at": 0.1
+          },
+          "why": "Second point at 0.1 shows the rise",
+          "start_s": 19.95,
+          "end_s": 25.65
+        },
+        {
+          "phrase": "So delta y over delta x is 0.072 over 0.1, roughly 0.718.",
+          "template": "equation_morph",
+          "props": {
+            "from_tex": "\\frac{\\Delta y}{\\Delta x}",
+            "to_tex": "\\frac{0.072}{0.1}\\approx 0.718",
+            "highlight": "0.072"
+          },
+          "why": "Plug in the numbers",
+          "start_s": 25.65,
+          "end_s": 35.13
+        },
+        {
+          "phrase": "Now shrink h to 0.01, and I think you'll get about 0.695.",
+          "template": "equation_morph",
+          "props": {
+            "from_tex": "h=0.1:\\ \\text{slope}\\approx 0.718",
+            "to_tex": "h=0.01:\\ \\text{slope}\\approx 0.695",
+            "highlight": "0.695"
+          },
+          "why": "Smaller h, slope drops",
+          "start_s": 35.13,
+          "end_s": 41.98
+        },
+        {
+          "phrase": "Let's say this settles near 0.693.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.pow(2,x)",
+            "x_range": [
+              -0.5,
+              0.5
+            ],
+            "y_range": [
+              0.5,
+              1.5
+            ],
+            "label": "slope \u2248 0.693",
+            "point_at": 0,
+            "tangent_at": 0
+          },
+          "why": "Tangent labelled with the limit",
+          "start_s": 41.98,
+          "end_s": 45.99
+        },
+        {
+          "phrase": "Remember our height 5, slope 5 idea? Here the height at 0 is 1,",
+          "template": "plot",
+          "props": {
+            "fn": "Math.pow(2,x)",
+            "x_range": [
+              -1,
+              2.5
+            ],
+            "y_range": [
+              -5,
+              11
+            ],
+            "label": "height 1.00",
+            "point_at": 0
+          },
+          "why": "Back to wide view, height 1",
+          "start_s": 45.99,
+          "end_s": 51.26
+        },
+        {
+          "phrase": "but the slope isn't 1, so 2 is a bit off. What base would work?",
+          "template": "callout",
+          "props": {
+            "text": "height 1 | slope 0.693 \u2717",
+            "emphasis": "\u2717"
+          },
+          "why": "Height and slope don't match",
+          "start_s": 51.26,
+          "end_s": 57.17
+        }
+      ],
+      "duration_s": 57.17,
+      "audio": "audio/lecturer/beat_2.mp3"
+    },
+    {
+      "i": 3,
+      "beat": "visual",
+      "narration": "Let's picture it. Axes first, and I'll draw y equals 2 to the x in blue, crossing the y-axis at 1, right here. Now the tangent line at x equals 0. Let me pick a green-- actually, no, red, that'll show up better. See how the red line just kisses the blue curve at this point? Its slope is about 0.693, so it's pretty gentle. Now let's say we swap in 3 to the x. Same starting point at 1, but this curve bends upward faster, so the tangent is steeper, slope roughly 1.099. Look at the two red lines together. A slope of exactly 1 would probably sit between them, so the right base is somewhere between 2 and 3.",
+      "shots": [
+        {
+          "phrase": "Let's picture it. Axes first, and I'll draw y equals 2 to the x in blue,",
+          "template": "plot",
+          "props": {
+            "fn": "Math.pow(2,x)",
+            "x_range": [
+              -2,
+              3
+            ],
+            "y_range": [
+              0,
+              8
+            ],
+            "label": "y = 2^x",
+            "draw": true
+          },
+          "why": "Open on axes and the 2^x curve",
+          "start_s": 0.0,
+          "end_s": 5.78
+        },
+        {
+          "phrase": "crossing the y-axis at 1, right here. Now the tangent line at x equals 0.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.pow(2,x)",
+            "x_range": [
+              -2,
+              3
+            ],
+            "y_range": [
+              0,
+              8
+            ],
+            "label": "y = 2^x",
+            "point_at": 0,
+            "tangent_at": 0
+          },
+          "why": "Point at (0,1), then tangent appears",
+          "start_s": 5.78,
+          "end_s": 12.48
+        },
+        {
+          "phrase": "Let me pick a green-- actually, no, red, that'll show up better.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.pow(2,x)",
+            "x_range": [
+              -2,
+              3
+            ],
+            "y_range": [
+              0,
+              12
+            ],
+            "label": "orange tangent at x = 0",
+            "point_at": 0,
+            "tangent_at": 0
+          },
+          "why": "Stay on plot, tangent drawn red",
+          "start_s": 12.48,
+          "end_s": 17.12
+        },
+        {
+          "phrase": "See how the red line just kisses the blue curve at this point?",
+          "template": "plot",
+          "props": {
+            "fn": "Math.pow(2,x)",
+            "x_range": [
+              -1.5,
+              2.5
+            ],
+            "y_range": [
+              0,
+              6
+            ],
+            "label": "tangent at x = 0, slope \u2248 0.69",
+            "point_at": 0,
+            "tangent_at": 0
+          },
+          "why": "Emphasise the touching point",
+          "start_s": 17.12,
+          "end_s": 21.3
+        },
+        {
+          "phrase": "Its slope is about 0.693, so it's pretty gentle.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.pow(2,x)",
+            "x_range": [
+              -2,
+              3
+            ],
+            "y_range": [
+              0,
+              8
+            ],
+            "label": "slope \u2248 0.693",
+            "point_at": 0,
+            "tangent_at": 0
+          },
+          "why": "Slope label sits on the tangent",
+          "start_s": 21.3,
+          "end_s": 26.38
+        },
+        {
+          "phrase": "Now let's say we swap in 3 to the x. Same starting point at 1,",
+          "template": "plot",
+          "props": {
+            "fn": "Math.pow(3,x)",
+            "overlay_fn": "Math.pow(2,x)",
+            "overlay_color": "#3b82f6",
+            "x_range": [
+              -2,
+              2
+            ],
+            "y_range": [
+              0,
+              9
+            ],
+            "label": "3^x added; both pass through (0, 1)",
+            "label_pos": "bottom-right",
+            "point_at": 0,
+            "tangent_at": 0
+          },
+          "why": "Overlay 3^x, keep 2^x on screen",
+          "start_s": 26.38,
+          "end_s": 31.33
+        },
+        {
+          "phrase": "but this curve bends upward faster, so the tangent is steeper, slope roughly 1.099.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.pow(3,x)",
+            "x_range": [
+              -2,
+              1.2
+            ],
+            "y_range": [
+              -0.5,
+              4
+            ],
+            "label": "slope \u2248 1.10",
+            "point_at": 0,
+            "tangent_at": 0
+          },
+          "why": "Steeper tangent on 3^x with label",
+          "start_s": 31.33,
+          "end_s": 39.12
+        },
+        {
+          "phrase": "Look at the two red lines together.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.pow(2,x)",
+            "overlay_fn": "Math.pow(3,x)",
+            "x_range": [
+              -2,
+              2
+            ],
+            "y_range": [
+              0,
+              8
+            ],
+            "label": "2^x: slope 0.693",
+            "tangent_at": 0,
+            "overlay_tangent_at": 0,
+            "overlay_color": "accent3",
+            "overlay_label": "3^x: slope 1.099"
+          },
+          "why": "Both curves, both tangents together",
+          "start_s": 39.12,
+          "end_s": 41.96
+        },
+        {
+          "phrase": "A slope of exactly 1 would probably sit between them, so the right base is somewhere between 2 and 3.",
+          "template": "equation",
+          "props": {
+            "tex": "0.693 < 1 < 1.099 \\;\\Rightarrow\\; 2 < \\text{base} < 3 \\;?",
+            "highlight": "?"
+          },
+          "why": "Slope 1 lies between, base is unknown",
+          "start_s": 41.96,
+          "end_s": 50.76
+        }
+      ],
+      "duration_s": 50.76,
+      "audio": "audio/lecturer/beat_3.mp3"
+    },
+    {
+      "i": 4,
+      "beat": "bridge",
+      "narration": "You've seen the slope at one point. But what if we wanted the slope at any x, not just 0? Let's say f of x is a to the x again. I'd write the difference quotient as f of x plus delta x minus f of x, over delta x, which here is a to the x plus delta x minus a to the x, over delta x. I'll swap delta x for h, kind of a shorthand. The limit of that as h approaches 0 is f prime of x, and that prime mark is Lagrange's notation. Now factor out a to the x, since both terms have it. You get a to the x times the quantity a to the h minus 1, all over h. Sort of interesting, I think. We'll dig into it next.",
+      "shots": [
+        {
+          "phrase": "You've seen the slope at one point.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.pow(2,x)",
+            "x_range": [
+              -2,
+              3
+            ],
+            "y_range": [
+              0,
+              8
+            ],
+            "label": "slope at x=0",
+            "point_at": 0,
+            "tangent_at": 0,
+            "draw": true
+          },
+          "why": "Anchor on the single point at x=0",
+          "start_s": 0.0,
+          "end_s": 2.56
+        },
+        {
+          "phrase": "But what if we wanted the slope at any x, not just 0?",
+          "template": "plot",
+          "props": {
+            "fn": "Math.pow(2,x)",
+            "x_range": [
+              -2,
+              3
+            ],
+            "y_range": [
+              0,
+              10
+            ],
+            "label": "slope 1.39",
+            "tangent_at": 1
+          },
+          "why": "Slide the point and tangent away from 0",
+          "start_s": 2.56,
+          "end_s": 6.83
+        },
+        {
+          "phrase": "Let's say f of x is a to the x again.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.pow(2,x)",
+            "x_range": [
+              -2,
+              3
+            ],
+            "y_range": [
+              0,
+              8
+            ],
+            "label": "f(x) = a^x",
+            "point_at": 2,
+            "tangent_at": 2
+          },
+          "why": "Same curve, named a^x, tangent moves on",
+          "start_s": 6.83,
+          "end_s": 10.33
+        },
+        {
+          "phrase": "I'd write the difference quotient as f of x plus delta x minus f of x, over delta x,",
+          "template": "equation",
+          "props": {
+            "tex": "\\frac{f(x+\\Delta x)-f(x)}{\\Delta x}",
+            "highlight": "\\Delta x"
+          },
+          "why": "Show the general difference quotient",
+          "start_s": 10.33,
+          "end_s": 17.16
+        },
+        {
+          "phrase": "which here is a to the x plus delta x minus a to the x, over delta x.",
+          "template": "equation",
+          "props": {
+            "tex": "\\frac{a^{x+\\Delta x}-a^{x}}{\\Delta x}",
+            "highlight": "a^{x+\\Delta x}"
+          },
+          "why": "Substitute a^x for f",
+          "start_s": 17.16,
+          "end_s": 22.99
+        },
+        {
+          "phrase": "I'll swap delta x for h, kind of a shorthand.",
+          "template": "equation_morph",
+          "props": {
+            "from_tex": "\\Large \\frac{a^{x+\\Delta x}-a^{x}}{\\Delta x}",
+            "to_tex": "\\Large \\frac{a^{x+\\textcolor{blue}{h}}-a^{x}}{\\textcolor{blue}{h}}"
+          },
+          "why": "\u0394x visibly becomes h",
+          "start_s": 22.99,
+          "end_s": 27.09
+        },
+        {
+          "phrase": "The limit of that as h approaches 0 is f prime of x, and that prime mark is Lagrange's notation.",
+          "template": "equation_morph",
+          "props": {
+            "from_tex": "\\frac{a^{x+h}-a^{x}}{h}",
+            "to_tex": "f'(x)=\\lim_{h\\to 0}\\frac{a^{x+h}-a^{x}}{h}",
+            "highlight": "f'(x)"
+          },
+          "why": "Add the limit and f\u2032(x)",
+          "start_s": 27.09,
+          "end_s": 35.11
+        },
+        {
+          "phrase": "Now factor out a to the x, since both terms have it.",
+          "template": "equation_morph",
+          "props": {
+            "from_tex": "f'(x)=\\lim_{h\\to 0}\\frac{\\textcolor{red}{a^{x}}\\textcolor{orange}{(a^{h}-1)}}{\\textcolor[HTML]{7FC8FF}{h}}",
+            "to_tex": "f'(x)=\\lim_{h\\to 0}\\frac{\\textcolor{red}{a^{x}}\\textcolor{orange}{(a^{h}-1)}}{\\textcolor[HTML]{7FC8FF}{h}}",
+            "highlight": "a^{x}"
+          },
+          "why": "Factor a^x out of numerator",
+          "start_s": 35.11,
+          "end_s": 39.0
+        },
+        {
+          "phrase": "You get a to the x times the quantity a to the h minus 1, all over h.",
+          "template": "equation_morph",
+          "props": {
+            "from_tex": "f'(x)=\\lim_{h\\to 0}\\frac{a^{x}(a^{h}-1)}{h}",
+            "to_tex": "f'(x)=a^{x}\\cdot\\lim_{h\\to 0}\\frac{a^{h}-1}{h}",
+            "highlight": "a^{x}"
+          },
+          "why": "a^x pulled outside the limit",
+          "start_s": 39.0,
+          "end_s": 44.46
+        },
+        {
+          "phrase": "Sort of interesting, I think. We'll dig into it next.",
+          "template": "equation",
+          "props": {
+            "tex": "f'(x)=a^{x}\\cdot\\lim_{h\\to 0}\\frac{a^{h}-1}{h}\\;?",
+            "highlight": "\\lim_{h\\to 0}\\frac{a^{h}-1}{h}"
+          },
+          "why": "Highlight the mystery limit factor",
+          "start_s": 44.46,
+          "end_s": 49.57
+        }
+      ],
+      "duration_s": 49.57,
+      "audio": "audio/lecturer/beat_4.mp3"
+    },
+    {
+      "i": 5,
+      "beat": "misconception",
+      "narration": "Here's a tempting thought, and I think you've probably had it: every exponential equals its own derivative. It's so tidy. But hold on, let's check it against what we've already done. For 2 to the x, the derivative was 0.693 times 2 to the x. For 3 to the x, it was 1.099 times 3 to the x. So each base drags along its own constant, sort of like a tax. I'll underline those in a different color-- let's say green. And that leaves us with a pretty interesting question. Could there be a base where that constant is exactly 1, so the tax disappears?",
+      "shots": [
+        {
+          "phrase": "Here's a tempting thought, and I think you've probably had it: every exponential equals its own derivative.",
+          "template": "misconception",
+          "props": {
+            "claim": "Every exponential is its own derivative",
+            "correction": "Only e\u02e3 is: (a\u02e3)\u2032 = ln(a)\u00b7a\u02e3"
+          },
+          "why": "State the tempting belief, flag it wrong",
+          "start_s": 0.0,
+          "end_s": 7.41
+        },
+        {
+          "phrase": "It's so tidy. But hold on, let's check it against what we've already done.",
+          "template": "equation",
+          "props": {
+            "tex": "\\frac{d}{dx}\\,a^x \\overset{?}{=} a^x",
+            "highlight": "?"
+          },
+          "why": "The claim as a testable equation",
+          "start_s": 7.41,
+          "end_s": 12.7
+        },
+        {
+          "phrase": "For 2 to the x, the derivative was 0.693 times 2 to the x.",
+          "template": "equation",
+          "props": {
+            "tex": "\\frac{d}{dx}\\,2^x = 0.693\\cdot 2^x",
+            "highlight": "0.693"
+          },
+          "why": "Base 2 result with its constant",
+          "start_s": 12.7,
+          "end_s": 18.89
+        },
+        {
+          "phrase": "For 3 to the x, it was 1.099 times 3 to the x.",
+          "template": "equation",
+          "props": {
+            "tex": "\\begin{aligned}\\frac{d}{dx}\\,2^x &= 0.693\\cdot 2^x\\\\ \\frac{d}{dx}\\,3^x &= 1.099\\cdot 3^x\\end{aligned}",
+            "highlight": "1.099"
+          },
+          "why": "Add base 3, keep base 2 on screen",
+          "start_s": 18.89,
+          "end_s": 24.46
+        },
+        {
+          "phrase": "So each base drags along its own constant, sort of like a tax.",
+          "template": "equation",
+          "props": {
+            "tex": "\\begin{aligned}\\frac{d}{dx}\\,2^x &= \\underbrace{0.693}_{\\text{tax}}\\cdot 2^x\\\\ \\frac{d}{dx}\\,3^x &= \\underbrace{1.099}_{\\text{tax}}\\cdot 3^x\\end{aligned}"
+          },
+          "why": "Label each constant as the tax",
+          "start_s": 24.46,
+          "end_s": 29.39
+        },
+        {
+          "phrase": "I'll underline those in a different color-- let's say green.",
+          "template": "equation",
+          "props": {
+            "tex": "\\begin{aligned}\\frac{d}{dx}\\,2^x &= {\\color{#5CD65C}\\underline{0.693}}\\cdot 2^x\\\\ \\frac{d}{dx}\\,3^x &= {\\color{#5CD65C}\\underline{1.099}}\\cdot 3^x\\end{aligned}"
+          },
+          "why": "Green underline on both constants",
+          "start_s": 29.39,
+          "end_s": 33.47
+        },
+        {
+          "phrase": "And that leaves us with a pretty interesting question.",
+          "template": "equation_morph",
+          "props": {
+            "from_tex": "\\frac{d}{dx}\\,2^x = {\\color{#66FF66}\\underline{\\,\\mathbf{0.693}\\,}}\\cdot 2^x",
+            "to_tex": "\\frac{d}{dx}\\,a^x = {\\color{#FF2B2B}\\underline{\\,\\mathbf{\\Huge ?}\\,}}\\cdot a^x",
+            "highlight": "?"
+          },
+          "why": "Constants generalize to an unknown",
+          "start_s": 33.47,
+          "end_s": 37.07
+        },
+        {
+          "phrase": "Could there be a base where that constant is exactly 1, so the tax disappears?",
+          "template": "equation",
+          "props": {
+            "tex": "\\frac{d}{dx}\\,a^x = {\\color{#5CD65C}\\underline{1}}\\cdot a^x\\ \\ ?",
+            "highlight": "1"
+          },
+          "why": "Ask: can the constant be 1?",
+          "start_s": 37.07,
+          "end_s": 44.15
+        }
+      ],
+      "duration_s": 44.15,
+      "audio": "audio/lecturer/beat_5.mp3"
+    },
+    {
+      "i": 6,
+      "beat": "generalize",
+      "narration": "So let's answer that question. We would define e as the base where the limit, as h approaches 0, of e to the h minus 1 over h, equals exactly 1. Not 0.693, not 1.099, just 1. Does that sound too convenient? Let's test it. With e about 2.718 and h equal to 0.01, I get roughly 1.005. Shrink h and it sneaks closer to 1. That means the derivative of e to the x is e to the x times 1, so it's simply e to the x. And those green constants? They have names. 0.693 is ln of 2, and 1.099 is ln of 3.",
+      "shots": [
+        {
+          "phrase": "So let's answer that question. We would define e as the base where the limit, as h approaches 0,",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -2,
+              2
+            ],
+            "y_range": [
+              0,
+              6
+            ],
+            "label": "lim h\u21920 (e^h \u2212 1)/h = 1 ?",
+            "point_at": 0,
+            "tangent_at": 0,
+            "draw": true
+          },
+          "why": "Open on the curve whose slope we want to be 1",
+          "start_s": 0.0,
+          "end_s": 7.34
+        },
+        {
+          "phrase": "of e to the h minus 1 over h, equals exactly 1.",
+          "template": "equation",
+          "props": {
+            "tex": "\\lim_{h\\to 0}\\frac{e^{h}-1}{h}=1",
+            "highlight": "=1"
+          },
+          "why": "Key definition on screen",
+          "start_s": 7.34,
+          "end_s": 12.36
+        },
+        {
+          "phrase": "Not 0.693, not 1.099, just 1. Does that sound too convenient?",
+          "template": "whiteboard_write",
+          "props": {
+            "lines": [
+              "ln 2 \u2192 0.693",
+              "ln 3 \u2192 1.099",
+              "ln e \u2192 1"
+            ]
+          },
+          "why": "Three-row comparison of constants",
+          "start_s": 12.36,
+          "end_s": 20.76
+        },
+        {
+          "phrase": "Let's test it. With e about 2.718 and h equal to 0.01, I get roughly 1.005.",
+          "template": "equation_morph",
+          "props": {
+            "from_tex": "\\frac{e^{h}-1}{h}",
+            "to_tex": "h=0.01:\\ \\frac{e^{0.01}-1}{0.01}\\approx 1.005",
+            "highlight": "1.005"
+          },
+          "why": "Plug in h=0.01, show 1.005",
+          "start_s": 20.76,
+          "end_s": 31.8
+        },
+        {
+          "phrase": "Shrink h and it sneaks closer to 1.",
+          "template": "equation_morph",
+          "props": {
+            "from_tex": "\\displaystyle h=0.01\\phantom{0}:\\ \\frac{e^{h}-1}{h}\\approx 1.005\\phantom{0}",
+            "to_tex": "\\displaystyle h=0.001:\\ \\frac{e^{h}-1}{h}\\approx 1.0005",
+            "highlight": "1.0005"
+          },
+          "why": "Morph chain shows value approaching 1",
+          "start_s": 31.8,
+          "end_s": 35.06
+        },
+        {
+          "phrase": "That means the derivative of e to the x is e to the x times 1,",
+          "template": "equation",
+          "props": {
+            "tex": "\\frac{d}{dx}e^{x}=e^{x}\\cdot 1",
+            "highlight": "\\cdot 1"
+          },
+          "why": "Constant factor equals 1",
+          "start_s": 35.06,
+          "end_s": 39.99
+        },
+        {
+          "phrase": "so it's simply e to the x.",
+          "template": "equation_morph",
+          "props": {
+            "from_tex": "\\frac{d}{dx}e^x=e^{x}",
+            "to_tex": "\\frac{d}{dx}e^x=e^{x}",
+            "highlight": "e^{x}"
+          },
+          "why": "The factor 1 drops away",
+          "start_s": 39.99,
+          "end_s": 42.49
+        },
+        {
+          "phrase": "And those green constants? They have names.",
+          "template": "whiteboard_write",
+          "props": {
+            "lines": [
+              "d/dx 2^x = 2^x \u00b7 0.693 = 2^x \u00b7 ln 2",
+              "d/dx 3^x = 3^x \u00b7 1.099 = 3^x \u00b7 ln 3"
+            ]
+          },
+          "why": "Bring back the earlier constants",
+          "start_s": 42.49,
+          "end_s": 46.06
+        },
+        {
+          "phrase": "0.693 is ln of 2, and 1.099 is ln of 3.",
+          "template": "equation_morph",
+          "props": {
+            "from_tex": "0.693 \\approx \\ln 2 \\qquad 1.099 \\approx \\ln 3",
+            "to_tex": "\\ln 2 \\approx 0.693 \\qquad \\ln 3 \\approx 1.099",
+            "highlight": "\\ln"
+          },
+          "why": "Numbers become named logarithms",
+          "start_s": 46.06,
+          "end_s": 54.56
+        }
+      ],
+      "duration_s": 54.56,
+      "audio": "audio/lecturer/beat_6.mp3"
+    },
+    {
+      "i": 7,
+      "beat": "meta",
+      "narration": "Let me draw that one more time, and I'll grab a red marker-- no, a brighter red-- for the tangent at x equals 0. For e to the x, that slope is exactly 1, not 0.693, not 1.099. Kind of neat, right? Next video, since ln 2 and ln 3 now have names, we'll look at the derivative of ln x, plus e to the 3x using the chain rule. Before then, maybe try e to the 2x with the same difference quotient. You've got this!",
+      "shots": [
+        {
+          "phrase": "Let me draw that one more time, and I'll grab a red marker-- no, a brighter red--",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -2,
+              2
+            ],
+            "y_range": [
+              0,
+              4
+            ],
+            "label": "y = e^x",
+            "point_at": 0,
+            "draw": true
+          },
+          "why": "Redraw the e^x curve with its point",
+          "start_s": 0.0,
+          "end_s": 4.95
+        },
+        {
+          "phrase": "for the tangent at x equals 0.",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -2,
+              2
+            ],
+            "y_range": [
+              0,
+              4
+            ],
+            "label": "tangent at x = 0",
+            "point_at": 0,
+            "tangent_at": 0
+          },
+          "why": "Red tangent appears at x=0",
+          "start_s": 4.95,
+          "end_s": 8.2
+        },
+        {
+          "phrase": "For e to the x, that slope is exactly 1, not 0.693, not 1.099. Kind of neat, right?",
+          "template": "plot",
+          "props": {
+            "fn": "Math.exp(x)",
+            "x_range": [
+              -2,
+              2
+            ],
+            "y_range": [
+              0,
+              4
+            ],
+            "label": "slope = 1 (not 0.693, not 1.099)",
+            "point_at": 0,
+            "tangent_at": 0
+          },
+          "why": "Slope 1 labelled on the tangent",
+          "start_s": 8.2,
+          "end_s": 18.27
+        },
+        {
+          "phrase": "Next video, since ln 2 and ln 3 now have names,",
+          "template": "equation",
+          "props": {
+            "tex": "\\ln 2 \\approx 0.693, \\quad \\ln 3 \\approx 1.099",
+            "highlight": "\\ln"
+          },
+          "why": "Show the two newly named constants",
+          "start_s": 18.27,
+          "end_s": 22.71
+        },
+        {
+          "phrase": "we'll look at the derivative of ln x, plus e to the 3x using the chain rule.",
+          "template": "equation",
+          "props": {
+            "tex": "\\frac{d}{dx}\\ln x \\quad\\text{and}\\quad \\frac{d}{dx}e^{3x}",
+            "highlight": "3x"
+          },
+          "why": "Preview both upcoming derivatives",
+          "start_s": 22.71,
+          "end_s": 28.85
+        },
+        {
+          "phrase": "Before then, maybe try e to the 2x with the same difference quotient. You've got this!",
+          "template": "equation",
+          "props": {
+            "tex": "\\frac{e^{2(x+h)}-e^{2x}}{h}",
+            "highlight": "2"
+          },
+          "why": "Homework quotient at general x",
+          "start_s": 28.85,
+          "end_s": 36.27
+        }
+      ],
+      "duration_s": 36.27,
+      "audio": "audio/lecturer/beat_7.mp3"
+    }
+  ]
+}
