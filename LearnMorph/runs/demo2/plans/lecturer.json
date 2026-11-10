@@ -1,0 +1,53 @@
+{
+  "beats": [
+    {
+      "i": 1,
+      "beat": "hook",
+      "goal": "Address the viewer directly, name the skill of spotting misleading charts, and show why it matters in daily life.",
+      "example_or_visual": "Say: 'You've probably scrolled past a chart today that was quietly lying to you.' Show a news-style bar chart titled 'Crime Is Skyrocketing!' where one bar looks about five times taller than the other, then ask, 'But what if I told you the two numbers are 52 and 50?'",
+      "target_words": 120
+    },
+    {
+      "i": 2,
+      "beat": "concrete_example",
+      "goal": "Anchor in something the viewer already knows (bar charts), then work the truncated-axis trick with named variables.",
+      "example_or_visual": "Redraw the chart live with two bars, A = 52 burglaries per 1,000 and B = 50 per 1,000. First, the y-axis starts at 49, so A looks 3x as tall as B. Narrate: 'let me pick a red-- no, a green marker for the axis.' Redraw with the axis starting at 0, and the bars look nearly identical. Compute the real difference: (52 \u2212 50)/50 = 4%.",
+      "target_words": 190
+    },
+    {
+      "i": 3,
+      "beat": "visual",
+      "goal": "Narrate a live side-by-side drawing so the viewer sees how the axis start alone changes the story.",
+      "example_or_visual": "Draw two panels side by side with the same data. Left: axis 49\u201353, bars labeled A and B with a dramatic gap. Right: axis 0\u201360, bars almost level. Circle the axis baseline in a different color: 'I'd take this orange-- let me use blue so it stands out.' Label the panels 'Zoomed' and 'Honest'.",
+      "target_words": 150
+    },
+    {
+      "i": 4,
+      "beat": "generalize",
+      "goal": "State the general rule in full sentences: a chart's visual size should be proportional to the quantity it represents.",
+      "example_or_visual": "Say: 'We would define a misleading chart as one where the visual change is bigger or smaller than the real change in the numbers.' Introduce the 'lie factor' (Edward Tufte's term): size of effect shown in the graphic divided by size of effect in the data. For the chart above, lie factor = 200% \u00f7 4% = 50.",
+      "target_words": 150
+    },
+    {
+      "i": 5,
+      "beat": "bridge",
+      "goal": "Use a rhetorical question to pivot from bar charts to a trickier case, where the numbers themselves are fine but the framing is not.",
+      "example_or_visual": "Ask: 'But what if the axis is perfectly honest and the chart still misleads you?' Preview a line chart of a town's monthly unemployment rate, 5.1% to 4.9% over 3 months, then the same data shown over 10 years.",
+      "target_words": 90
+    },
+    {
+      "i": 6,
+      "beat": "concrete_example",
+      "goal": "Show cherry-picking of time windows with a worked example the viewer can verify, with a callback to the axis trick.",
+      "example_or_visual": "A company ad says 'Our stock is up 30%!' using a window from March 1 ($100) to June 1 ($130). Draw the full-year line: the stock was $200 in January and fell to $100 by March. Draw the window as a small green box on the full curve. Compute the full-year change: (130 \u2212 200)/200 = \u221235%. Callback: 'Remember the zoomed panel? Same trick, different axis: time.'",
+      "target_words": 190
+    },
+    {
+      "i": 7,
+      "beat": "meta",
+      "goal": "Close with a checklist of questions to ask of any chart and preview the next video on misleading averages, ending with encouragement.",
+      "example_or_visual": "Write three questions on the board: 'Where does the axis start? What window of time? Compared to what?' Then say: 'Next time, we'll look at how the word \"average\" can mean mean, median, or mode, and why a company with a $50,000 \"average\" salary might pay most people $30,000.' End: 'You've already got the first three tools, so you'll be ready.'",
+      "target_words": 110
+    }
+  ]
+}

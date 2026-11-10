@@ -16,7 +16,8 @@ Snapshot of the baseline commit. Numbers come from the committed run files.
 
 | Measure | Result | Source |
 |---|---|---|
-| Blind test, demo1 | 10/10 correct (accuracy 1.0, verdict PASS) | `runs/demo1/validation/report.json` |
+| Blind test, demo1 | 10/10 correct (accuracy 1.0, verdict PASS); measures recipe-following, see eval section | `runs/demo1/validation/report.json` |
+| Blind test, demo2 | 10/10 correct (accuracy 1.0, verdict PASS); same caveat | `runs/demo2/validation/report.json` |
 | Grammar cosine similarity, 3b1b vs lecturer | 0.903 | `runs/demo1/log.md` |
 | Shots passing visual QA, demo1 3b1b, round 3 | 28 / 63 | `runs/demo1/video/3b1b_qa_r3.json` |
 | Shots passing visual QA, demo1 lecturer, round 3 | 42 / 59 | `runs/demo1/video/lecturer_qa_r3.json` |
@@ -59,8 +60,8 @@ raw auto-captions; beat labels come from one Sonnet segmentation per text.
 
 ## In progress
 
-- Chart templates (demo2 uses a `plot` template for bar charts; its QA notes flag truncated bars and axes).
-- Sentence-level narration (`tts_vm.py --mode sentence`, so intonation runs across shots).
+- Chart templates: `bar_chart`, `line_chart`, `compare_split`, `stat_reveal` are added and registered; tsc passes but a real Remotion render has not been run, so the QA numbers above predate them (demo2 used `plot` for bar charts and its QA notes flag truncated bars and axes).
+- Narration: sentence-level synthesis is the default in `tts_vm.py` (`--mode phrase` for the old behaviour). It changes little, because most phrases were already whole sentences; the flat delivery comes mainly from the TTS engine. `--engine chatterbox` is added but not run.
 
 ## Other open items
 
@@ -69,5 +70,5 @@ raw auto-captions; beat labels come from one Sonnet segmentation per text.
 - TTS in logged runs fell back to macOS `say` after ElevenLabs returned HTTP 402.
 - The 3b1b reference video download failed with HTTP 403 in one logged run (profile inferred without frames).
 - Repository hygiene (found while preparing this commit): `pyproject.toml` still points hatch at a
-  `learnmorph` package that now lives in `legacy/`, and `run_v2.command` calls
-  `uv run learnmorph_video.py true`, which does not match the script's required arguments.
+  `learnmorph` package that now lives in `legacy/`, and `run_v2.command` called
+  `uv run learnmorph_video.py true` (removed since).

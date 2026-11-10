@@ -1,0 +1,53 @@
+{
+  "beats": [
+    {
+      "i": 1,
+      "beat": "hook",
+      "goal": "Open with one striking chart before any theory, so viewers feel the trick before it is named.",
+      "example_or_visual": "A news-style bar chart titled 'Crime Is Skyrocketing!' shows two bars, 'Last year' tall and 'This year' towering. The y-axis starts at 98.2 and ends at 98.6, and the real change is 98.3 to 98.5. Ask the viewer: 'Does that look like a disaster to you? Now look at the numbers on the side.'",
+      "target_words": 150
+    },
+    {
+      "beat": "concrete_example",
+      "goal": "Build the truncated-axis trick from one small numeric case, with the numbers visible.",
+      "example_or_visual": "Redraw the same two values, 98.3 and 98.5, with the axis starting at 0. The bars are now almost identical, with a 0.2-point difference on a base of about 98. Say 'Maybe you start by imagining the bar as a physical object: the chart is saying one bar is three times taller, but the value is only 0.2% larger.'",
+      "target_words": 180,
+      "i": 2
+    },
+    {
+      "beat": "visual",
+      "goal": "Give the viewer a running visual metaphor for catching distortions: a ruler laid against the chart.",
+      "example_or_visual": "Picture a literal wooden ruler pressed against the y-axis. Mark where zero sits and slide it up so the bottom of the bars is cut off. Bar length should mean value, and the ruler shows how much of the bar has been 'sawed off'. Call this the 'ruler test', and name it only after the picture is built.",
+      "target_words": 150,
+      "i": 3
+    },
+    {
+      "beat": "generalize",
+      "goal": "Widen the claim: truncation is one case of a family where the picture's size does not match the number's size.",
+      "example_or_visual": "Say 'There's nothing special about crime or about bars.' The same trick works with a line chart that zooms in on two weeks of a stock that is flat over ten years. It also works with a pie chart in 3D, where the front slice looks bigger. State the rule: always ask what the visual size is proportional to.",
+      "target_words": 170,
+      "i": 4
+    },
+    {
+      "beat": "caveat",
+      "goal": "Preempt the overcorrection that every non-zero axis is dishonest.",
+      "example_or_visual": "Aside: 'But that's not quite right.' A line chart of body temperature from 97 to 101\u00b0F should not start at 0, because 0\u00b0F is meaningless for a human body and a small change matters. Zero baselines are essential for bars, which encode length, and less so for lines, which encode trend. Use hedges like 'roughly' and 'in a sense'.",
+      "target_words": 150,
+      "i": 5
+    },
+    {
+      "beat": "concrete_example",
+      "goal": "Show a second, different trick, a misleading statistic with no chart at all, to test the ruler idea against it.",
+      "example_or_visual": "A toothpaste ad says 'Cavities down 50%!' The numbers are 2 cavities in 10,000 people falling to 1 in 10,000, a relative change that hides an absolute change of 0.01 percentage points. Contrast it with a 50% drop from 40 in 100. Ask 'Fifty percent of what?' and give the viewer a two-column table: relative vs. absolute.",
+      "target_words": 180,
+      "i": 6
+    },
+    {
+      "beat": "meta",
+      "goal": "Close by restating the scope, tying back to the opening chart, and previewing what is next.",
+      "example_or_visual": "Reprise the opening: 'Remember that crime chart? The axis starting at 98.2 was the whole trick.' Give a three-question checklist: What does the axis start at? Percent of what? Compared to what? Note that this is a high-level view and does not cover cherry-picked dates or correlation vs. causation, which is the next video. Invite viewers to find one misleading chart in their feed this week.",
+      "target_words": 150,
+      "i": 7
+    }
+  ]
+}

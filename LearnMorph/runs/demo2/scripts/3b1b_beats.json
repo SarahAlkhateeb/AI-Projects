@@ -1,0 +1,44 @@
+[
+  {
+    "i": 1,
+    "beat": "hook",
+    "text": "Here's a bar chart, the kind you'd glance at over breakfast. 'Crime Is Skyrocketing!' it says. Two bars: 'Last year' is tall, and 'This year' is towering. It's a little scary, right? Now I want you to do something most people skip. Look at the numbers on the side. The y-axis starts at 98.2 and ends at 98.6. The real values are 98.3 and 98.5, so the actual change is two tenths. Does that look like a disaster to you? The bars didn't move at all. Your sense of the story did, and it moved because of one quiet choice about where the axis begins.",
+    "score": 5.0
+  },
+  {
+    "i": 2,
+    "beat": "concrete_example",
+    "text": "Redraw it honestly: 98.3 and 98.5, axis starting at 0. The two bars stand nearly side by side, and you'd have to squint to see which is taller. The difference is 0.2 points on a base of roughly 98. Maybe you start by imagining the bar as a physical object: the chart is saying one bar is three times taller, but the value is only 0.2% larger. So how did the first chart manage three times? Well, it only drew the part above 98.2. That leaves 0.1 for one bar and 0.3 for the other. Three to one, but that's a ratio of leftovers, not of the real quantities. And there's nothing special about 98.2. Any starting point near your data will exaggerate a small change, and the closer you cut, the louder it gets. This is the whole trick. Keep the numbers, shrink the base, and a two-tenths wobble looks like a skyrocket.",
+    "score": 4.8
+  },
+  {
+    "i": 3,
+    "beat": "visual",
+    "text": "Here's a way to catch this without redoing any arithmetic. Picture a wooden ruler laid against the y-axis. Mark where zero sits, and let the bar's length mean its value. On the honest chart, the ruler's end sits right at the base of the bars, and nothing is hidden. Now slide it up. The bottom edge climbs past the foot of each bar, and a chunk is sawed off. How big a chunk? Well, the ruler shows you: here it's about 98 units of a roughly 98.3-unit bar, nearly all of it. The bar you see is a sliver of the bar that exists. And there's nothing special about this chart; slide the ruler on any bar chart and you can measure what was cut. If you want a name for it, call this the ruler test. Does the bar's length still equal its value?",
+    "score": 5.0
+  },
+  {
+    "i": 4,
+    "beat": "generalize",
+    "text": "So is this just a crime-chart problem? Not at all. There's nothing special about crime or about bars. Picture a line chart of a stock, zoomed in on two weeks. It looks dramatic, a sharp climb. But zoom out and the same stock has gone sideways for ten years. The two weeks are real, but they're a sliver, like the sliver of bar we sawed off. Now picture a pie chart rendered in 3D. The front slice sits closer to you, so it looks bigger than a slice of the same size at the back. Different chart, different trick, same failure. What your eye reads as size isn't the size of the number. That's the family, and truncation is one member. Which gives you a rule that works anywhere: always ask what the visual size is proportional to. Length? Area? Distance from the camera? Then check whether that matches the value.",
+    "score": 5.0
+  },
+  {
+    "i": 5,
+    "beat": "caveat",
+    "text": "Before you take this too far, though, I should add a caveat. It might sound like I'm saying any axis that doesn't start at zero is lying. But that's not quite right. Imagine charting your body temperature over a week, with the axis running from 97 to 101°F. Should it start at 0? Well, no. 0°F is meaningless for a human body, and a single degree can mean you're sick. Start at zero and the interesting part gets squashed into a flat line. So what's the difference from the bars? Bars encode length, so a cut-off baseline breaks the ruler. Lines, in a sense, encode trend, and trend survives zooming. It's roughly a rule of thumb: zero is essential for bars, much less so for lines. The real rule is still the one from before. Ask what the size is proportional to.",
+    "score": 5.0
+  },
+  {
+    "i": 6,
+    "beat": "concrete_example",
+    "text": "Let's test the ruler idea on something with no axis whatsoever. A toothpaste ad announces, 'Cavities down 50%!' Picture the actual numbers: 2 cavities per 10,000 people before, 1 per 10,000 after. Half, yes. But fifty percent of what? Of 2. That's an absolute change of 0.01 percentage points, which you'd never notice in a real mouth. Now imagine a different town where cavities fall from 40 per 100 to 20 per 100. Same 50%, but now 20 percentage points of people are better off.\n\nRelative | Absolute\n50% (2 to 1 in 10,000) | 0.01 points\n50% (40 to 20 in 100) | 20 points\n\nThe attentive viewers among you may notice this is the cut-off bar again, just in disguise. Hiding the baseline breaks the ruler, and hiding the denominator does the same thing.",
+    "score": 4.6
+  },
+  {
+    "i": 7,
+    "beat": "meta",
+    "text": "Remember that crime chart? The axis starting at 98.2 was the whole trick. Once you saw where the ruler began, the dramatic cliff shrank back into a small wobble. And the toothpaste ad was the same trick wearing a different outfit.\n\nSo here's a little checklist you can carry around. First: what does the axis start at? Second: percent of what? Third: compared to what? Three questions, and they'll catch a surprising number of bad charts.\n\nBut all of this is only a high-level view, just a peek at how numbers get bent. I haven't touched cherry-picked dates, or the whole mess of correlation versus causation. That's the next video.\n\nUntil then, here's a small exercise. This week, find one misleading chart in your feed. Ask the three questions. I think you'll be a little annoyed at how quickly you spot it.",
+    "score": 4.6
+  }
+]

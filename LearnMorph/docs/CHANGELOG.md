@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-11-10 (follow-up commits)
+- Evaluation (`eval/`): recipe-free tests against real teachers. Generated text picked as human 0/40; unstyled
+  control labelled 3b1b 20/20 (so the 3b1b result is uninformative); lecturer 20/20 attribution is real signal.
+  The earlier 10/10 blind test measured recipe-following. Details in `docs/STATUS.md`.
+- Chart templates: `bar_chart`, `line_chart`, `compare_split`, `stat_reveal` plus storyboard prompt
+  sentences. tsc passes; no real Remotion render yet.
+- Narration: sentence-level TTS is the default (`--mode phrase` keeps the old way; chatterbox engine added, not run).
+  Little effect, since most phrases were already sentences. These files were already in the baseline commit.
+- Housekeeping: demo2 plans, scripts and validation report added; `run_v2.command` no longer calls
+  `learnmorph_video.py true`.
+
 Reconstructed from file timestamps, `runs/*/log.md` (times only, no dates; dates below come from file
 modification times) and `legacy/ROADMAP.md`. Anything uncertain is marked.
 

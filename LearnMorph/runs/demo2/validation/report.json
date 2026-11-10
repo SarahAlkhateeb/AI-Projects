@@ -1,0 +1,136 @@
+{
+  "accuracy": 1.0,
+  "verdict": "PASS",
+  "trials": [
+    {
+      "order": [
+        "lecturer",
+        "3b1b"
+      ],
+      "verdict": {
+        "script1": "Y",
+        "script2": "X",
+        "confidence": 0.92,
+        "most_telling_beat": "Script 1 narrates its drawing live and corrects itself mid-sentence about colors ('let me pick a red-- yes, red', 'I'd take this orange-- hmm, let me use blue'), uses delta notation, gives a full-sentence definition ('We would define a misleading chart as...') and closes previewing the next video. That matches Y. Script 2 matches X: it repeats 'there's nothing special about...' to generalize, keeps one running visual metaphor (the ruler test) with callbacks, adds a 'that's not quite right' caveat, includes 'the attentive viewers among you' and a mini exercise, and ends with the 'all of this is only a high-level view' meta wrap-up."
+      },
+      "correct": true
+    },
+    {
+      "order": [
+        "3b1b",
+        "lecturer"
+      ],
+      "verdict": {
+        "script1": "X",
+        "script2": "Y",
+        "confidence": 0.93,
+        "most_telling_beat": "Script 2 narrates its drawing live with mid-sentence color self-corrections ('I'll draw the axis in a red-- actually, let me grab a green marker'), opens with 'Hi there. Today we're going to talk about', and defines the idea outright ('We would define a misleading chart as'). That is Teacher Y. Script 1 repeats X's 'there's nothing special about...' generalization, follows its approximation with a 'but that's not quite right' caveat, invites 'the attentive viewers among you', and closes with an 'only a high-level view' meta wrap-up."
+      },
+      "correct": true
+    },
+    {
+      "order": [
+        "3b1b",
+        "lecturer"
+      ],
+      "verdict": {
+        "script1": "X",
+        "script2": "Y",
+        "confidence": 0.93,
+        "most_telling_beat": "Script 1 repeatedly generalizes with 'there's nothing special about...', uses a running visual metaphor (the ruler test), a caveat ('but that's not quite right'), an 'attentive viewers among you' exercise and an 'all of this is only a high-level view' meta close, all of which match X. Script 2 narrates live drawing with mid-sentence color self-corrections ('let me pick a green--'), opens with a direct greeting, gives a formal 'we would define...' statement, names a historical figure (Tufte) and previews the next video, all of which match Y."
+      },
+      "correct": true
+    },
+    {
+      "order": [
+        "3b1b",
+        "lecturer"
+      ],
+      "verdict": {
+        "script1": "X",
+        "script2": "Y",
+        "confidence": 0.92,
+        "most_telling_beat": "Script 2 narrates live drawing with marker-color self-corrections ('let me pick a green--'), opens with 'Hi there, today we're going to talk about', and closes previewing the next video with encouragement, all matching Y. Script 1 repeats 'there's nothing special about...' generalizations, has a 'that's not quite right' caveat, invites 'the attentive viewers among you', and ends with an 'only a high-level view' meta wrap-up, all matching X."
+      },
+      "correct": true
+    },
+    {
+      "order": [
+        "3b1b",
+        "lecturer"
+      ],
+      "verdict": {
+        "script1": "X",
+        "script2": "Y",
+        "confidence": 0.93,
+        "most_telling_beat": "Script 2 opens with a direct greeting that names the topic and its usefulness, and it narrates live drawing with color self-corrections ('let me pick a red--', 'I'd take this orange-- hmm, let me use blue'), states a definition as 'We would define...', and closes by previewing the next video with encouragement. All of that matches Y. Script 1 uses X's repeated 'there's nothing special about...' generalizations, the running ruler metaphor, the 'but that's not quite right' caveat, 'the attentive viewers among you', a reprise answering the hook, and the 'all of this is only a high-level view' meta close."
+      },
+      "correct": true
+    },
+    {
+      "order": [
+        "3b1b",
+        "lecturer"
+      ],
+      "verdict": {
+        "script1": "X",
+        "script2": "Y",
+        "confidence": 0.92,
+        "most_telling_beat": "Script 2 narrates live drawing with mid-sentence color self-corrections ('let me pick a red-- actually, let me grab a green marker') and opens with a direct topic greeting, both Y signatures. Script 1 repeats 'there's nothing special about...' generalizations, adds a 'that's not quite right' caveat, uses a running ruler metaphor, includes an 'attentive viewers among you' exercise, and closes with a 'high-level view' meta wrap-up, all X signatures."
+      },
+      "correct": true
+    },
+    {
+      "order": [
+        "3b1b",
+        "lecturer"
+      ],
+      "verdict": {
+        "script1": "X",
+        "script2": "Y",
+        "confidence": 0.93,
+        "most_telling_beat": "Script 2 narrates live drawing with mid-sentence color self-corrections ('let me grab a green marker', 'I'd take this orange-- hmm, let me use blue'), uses explicit delta notation, names Tufte's lie factor, and closes with an excited preview of the next video, all matching Y. Script 1 follows X: the repeated 'there's nothing special about...' generalizations, the running ruler-test visual metaphor, the 'that's not quite right' caveat, the 'attentive viewers among you' aside, the 'all of this is only a high-level view' meta close, and a final exercise."
+      },
+      "correct": true
+    },
+    {
+      "order": [
+        "lecturer",
+        "3b1b"
+      ],
+      "verdict": {
+        "script1": "Y",
+        "script2": "X",
+        "confidence": 0.9,
+        "most_telling_beat": "Script 1 narrates drawing live with mid-sentence color self-corrections ('let me pick a red-- yes, red', 'I'd take this orange-- hmm, let me use blue') and opens by addressing the viewer, naming the topic and its usefulness, which matches Y. Script 2 opens cold on a striking example and repeats 'there's nothing special about...' generalizations. It also uses a single running visual metaphor (the ruler test), a 'that's not quite right' caveat, the 'attentive viewers among you' exercise, a reprise answering the hook and a 'high-level view' meta close, all of which match X."
+      },
+      "correct": true
+    },
+    {
+      "order": [
+        "lecturer",
+        "3b1b"
+      ],
+      "verdict": {
+        "script1": "Y",
+        "script2": "X",
+        "confidence": 0.92,
+        "most_telling_beat": "Script 1 narrates live drawing with color self-corrections ('Let me pick a red-- yes, red', 'actually, let me grab a green marker'), uses explicit delta notation and the definitional phrasing 'We would define a misleading chart as...', all Y signatures. Script 2 uses repeated 'there's nothing special about...' generalizations, a running ruler metaphor, the caveat 'But that's not quite right', 'the attentive viewers among you', and closes with 'all of this is only a high-level view' plus an exercise, all X signatures."
+      },
+      "correct": true
+    },
+    {
+      "order": [
+        "3b1b",
+        "lecturer"
+      ],
+      "verdict": {
+        "script1": "X",
+        "script2": "Y",
+        "confidence": 0.92,
+        "most_telling_beat": "Script 2 narrates live drawing with mid-sentence color self-corrections ('let me pick a red-- actually, let me grab a green marker'), opens by naming the topic and its usefulness, and states a formal definition ('We would define a misleading chart as...'), all Y signatures. Script 1 repeats X's 'there's nothing special about...' generalization, uses a running ruler metaphor, adds a 'but that's not quite right' caveat, invites 'the attentive viewers among you,' and closes with the 'only a high-level view' meta wrap-up."
+      },
+      "correct": true
+    }
+  ]
+}
